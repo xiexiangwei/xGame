@@ -4,6 +4,7 @@ from twisted.internet import protocol
 import struct
 import logging
 import time
+from common import const
 
 class FPError(Exception):
     "xGame Protocol Error"
@@ -49,9 +50,6 @@ class FProtocol(protocol.Protocol):
 
             blen = len(self.__buffer)
 
-    def sendPacket(self, data):
-        self.transport.write(data)
-        self.__lastactivetime = time.time()
 
     def sendCmd(self, cmd, data):
         head = struct.pack("HH", len(data) + 2, cmd)
@@ -69,7 +67,7 @@ class FProtocol(protocol.Protocol):
         self.__buffer = ''
 
     def sendKeepAlive(self):
-        self.sendPacket(struct.pack("H", 0))
+        self.sendCmd(const.KEEPLIVE,struct.pack("H", 0))
 
     def isConnected(self):
         return self.connected

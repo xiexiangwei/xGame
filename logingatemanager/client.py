@@ -8,7 +8,7 @@ Created on 2016年1月11日
 import logging
 import time
 from twisted.internet import protocol
-from common import fprotocol
+from common import fprotocol,const
 import clientfactory
 import clientparse
 
@@ -25,6 +25,7 @@ class Client(fprotocol.FProtocol):
         self.__ip = addr.host.decode('utf-8')
         self.toclosetime = time.time()
         self.state = CLIENT_STATE_INIT
+        self.type= const.CLIENT_TYPE_USER
 
     def getId(self):
         return self.__id

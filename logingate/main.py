@@ -49,8 +49,7 @@ def MainRun(isdaemon):
 
 
 def GetLogingateConfig(isdaemon):
-    logingatemanager.instance.start(config.instance.logingatemanager_ip,
-                                    config.instance.logingatemanager_port,
+    logingatemanager.instance.start(config.instance,
                                     MainRun,
                                     isdaemon)
     reactor.run()

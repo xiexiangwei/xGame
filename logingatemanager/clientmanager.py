@@ -1,9 +1,18 @@
 #coding=utf-8
 import logging
+
+class CLoginGate(object):
+    def __init__(self,ip,port):
+        self.ip=ip
+        self.port=port
+        self.usetimes=0
+
+
 class ClientManager(object):
     def __init__(self):
         self.__logingate_id_pool = []
         self.__loginserver_id_pool = []
+        self.logingatemap={}
 
     def start(self,conf):
         if conf.max_logingate == None:
@@ -16,6 +25,22 @@ class ClientManager(object):
             self.__logingate_id_pool.append(i)
         for i in range(conf.max_loginserver):
             self.__loginserver_id_pool.append(i)
+
+    def GetLogingateID(self):
+        if len(self.__logingate_id_pool) > 0:
+            return self.__logingate_id_pool.pop()
+        return None
+
+    def GetLoginServerID(self):
+        if len(self.__loginserver_id_pool) > 0:
+            return self.__loginserver_id_pool.pop()
+        return None
+
+    def AddLogingate(self,id,ip,port):
+        print (id)
+        logingate = CLoginGate(ip,port)
+        self.logingatemap[id] = logingate
+
 
 instance = ClientManager()
 

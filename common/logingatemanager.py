@@ -5,6 +5,11 @@ from twisted.internet import reactor
 import logging
 import fprotocol
 import struct
+import const
+import json
+
+class ConfigException(Exception):
+    "xGame Config Error"
 
 class LogingateManagerFactory(ReconnectingClientFactory):
     def __init__(self):
@@ -30,11 +35,21 @@ class LogingateManagerFactory(ReconnectingClientFactory):
 class LogingateManager(fprotocol.FProtocol):
     def __init__(self):
         fprotocol.FProtocol.__init__(self)
+        self.startconfig = None
         self.callback = None
         self.isdaemon = False
 
-    def start(self, ip,port,callback,isdaemon):
-        reactor.connectTCP(ip,port, LogingateManagerFactory())
+    def start(self, conf,callback,isdaemon):
+        if conf.logingatemanager_ip == None:
+            logging.error(u"没有配置登录网关管理服务器地址!")
+            raise ConfigException
+        if conf.logingatemanager_port == None:
+            logging.error(u"没有配置登录网关管理服务器端口!")
+            raise ConfigException
+        reactor.connectTCP(conf.logingatemanager_ip,
+                           conf.logingatemanager_port,
+                           LogingateManagerFactory())
+        self.startconfig = conf
         self.callback = callback
         self.isdaemon = isdaemon
     def stop(self):
@@ -43,10 +58,17 @@ class LogingateManager(fprotocol.FProtocol):
     def connectionMade(self):
         logging.info(u"logingatemanager.connectionMade()")
         fprotocol.FProtocol.reset(self)
-        self.sendCmd(1,struct.pack("HH",100,88))
+        self.sendCmd(const.L2LGATE_REQUEST_CONFIG,
+                     json.dumps({'server_ip':self.startconfig.server_ip,
+                                 'server_port':self.startconfig.server_port
+                                 }
+                                ))
 
     def packetReceived(self, cmd, pkt):
-        logging.debug(u"logingatemanager.packetReceived()")
+        config = json.loads(pkt)
+        if config[u"error"]==const.ERROR_OK:
+            self.callback(self.isdaemon)
+            logging.debug(u"logingatemanager.packetReceived()")
 
 instance = LogingateManager()
 
