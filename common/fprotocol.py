@@ -49,8 +49,17 @@ class FProtocol(protocol.Protocol):
 
             blen = len(self.__buffer)
 
-    def sendCmd(self, data):
+    def sendPacket(self, data):
         self.transport.write(data)
+        self.__lastactivetime = time.time()
+
+    def sendCmd(self, cmd, data):
+        head = struct.pack("HH", len(data) + 2, cmd)
+        fmt = "%ds" % len(data)
+        body = struct.pack(fmt, data)
+        tail = struct.pack("H", 0)
+        senddata = head + body + tail
+        self.transport.write(senddata)
         self.__lastactivetime = time.time()
 
     def abort(self):
