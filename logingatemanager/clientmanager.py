@@ -37,9 +37,11 @@ class ClientManager(object):
         return None
 
     def AddLogingate(self,id,ip,port):
-        print (id)
         logingate = CLoginGate(ip,port)
         self.logingatemap[id] = logingate
+
+    def RemoveLogingate(self,id):
+        self.logingatemap.pop(id)
 
 
 instance = ClientManager()

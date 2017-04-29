@@ -43,7 +43,7 @@ class FProtocol(protocol.Protocol):
                 break
 
             pkt = self.__buffer[4:4 + plen - 2];
-            self.__buffer = self.__buffer[plen + 2:]
+            self.__buffer = self.__buffer[plen + 4:]
 
             if pcmd > 0:
                 self.packetReceived(pcmd, pkt)
@@ -52,10 +52,10 @@ class FProtocol(protocol.Protocol):
 
 
     def sendCmd(self, cmd, data):
-        head = struct.pack("HH", len(data) + 2, cmd)
         fmt = "%ds" % len(data)
         body = struct.pack(fmt, data)
         tail = struct.pack("H", 0)
+        head = struct.pack("HH", len(data+tail), cmd)
         senddata = head + body + tail
         self.transport.write(senddata)
         self.__lastactivetime = time.time()
@@ -67,7 +67,7 @@ class FProtocol(protocol.Protocol):
         self.__buffer = ''
 
     def sendKeepAlive(self):
-        self.sendCmd(const.KEEPLIVE,struct.pack("H", 0))
+        self.sendCmd(const.KEEPLIVE,struct.pack("H",0))
 
     def isConnected(self):
         return self.connected

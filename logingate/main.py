@@ -46,8 +46,6 @@ def MainRun(isdaemon):
     logging.info(u"登录网关服务器启动成功!")
 
 
-
-
 def GetLogingateConfig(isdaemon):
     logingatemanager.instance.start(config.instance,
                                     MainRun,

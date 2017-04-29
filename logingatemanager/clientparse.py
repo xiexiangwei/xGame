@@ -9,20 +9,21 @@ import json
 from common import fprotocol,const
 import clientmanager
 
-def l2lgate_request_config(client,pkt):
+def l2lgatem_request_config(client,pkt):
     reply={u"error":const.ERROR_OK}
-    client.type = const.CLIENT_TYPE_LOGINGATE
     active_id = clientmanager.instance.GetLogingateID()
     if active_id != None:
         loginserver_config = json.loads(pkt)
         clientmanager.instance.AddLogingate(active_id,loginserver_config[u"server_ip"],loginserver_config[u"server_port"])
         reply[u"id"]=active_id
+        client.id = active_id
+        client.type = const.CLIENT_TYPE_LOGINGATE
     else:
         reply[u"error"]=const.ERROR_MAX_LOGINGATE
-    client.sendCmd(const.LGATE2L_REPLY_CONFIG,json.dumps(reply))
+    client.sendCmd(const.LGATEM2L_REPLY_CONFIG, json.dumps(reply))
 
 __cmdTable = {
-                const.L2LGATE_REQUEST_CONFIG:l2lgate_request_config,
+                const.L2LGATEM_REQUEST_CONFIG:l2lgatem_request_config,
              }
 
 def parse(clinet, cmd, pkt):

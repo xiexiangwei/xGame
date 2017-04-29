@@ -11,6 +11,7 @@ from twisted.internet import protocol
 from common import fprotocol,const
 import clientfactory
 import clientparse
+import clientmanager
 
 CLIENT_STATE_INIT               = 0
 CLIENT_STATE_AUTH               = 1
@@ -25,6 +26,7 @@ class Client(fprotocol.FProtocol):
         self.__ip = addr.host.decode('utf-8')
         self.toclosetime = time.time()
         self.state = CLIENT_STATE_INIT
+        self.id = None
         self.type= const.CLIENT_TYPE_USER
 
     def getId(self):
@@ -54,6 +56,8 @@ class Client(fprotocol.FProtocol):
     def connectionLost(self, reason=protocol.connectionDone):
         logging.debug(u"Client.connectionLost %s", reason) 
         clientfactory.instance.removeProtocol(self)
+        if self.type == const.CLIENT_TYPE_LOGINGATE:
+            clientmanager.instance.RemoveLogingate(self.id)
     
     def goToClose(self):
         self.state = CLIENT_STATE_TO_CLOSE
