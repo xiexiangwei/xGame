@@ -58,18 +58,20 @@ class LogingateManager(fprotocol.FProtocol):
     def connectionMade(self):
         logging.info(u"logingatemanager.connectionMade()")
         fprotocol.FProtocol.reset(self)
-        self.sendCmd(const.L2LGATE_REQUEST_CONFIG,
+        self.sendCmd(const.L2LGATEM_REQUEST_CONFIG,
                      json.dumps({'server_ip':self.startconfig.server_ip,
                                  'server_port':self.startconfig.server_port
                                  }
                                 ))
 
     def packetReceived(self, cmd, pkt):
-        config = json.loads(pkt)
-        if config[u"error"]==const.ERROR_OK:
-            self.callback(self.isdaemon)
-            logging.debug(u"logingatemanager.packetReceived()")
-
+        if cmd==const.LGATEM2L_REPLY_CONFIG:
+            config = json.loads(pkt)
+            if config[u"error"]==const.ERROR_OK:
+                self.callback(self.isdaemon)
+                logging.debug(u"logingatemanager.packetReceived()")
+        else:
+            logging.warn(u"unknow cmd :%d",cmd)
 instance = LogingateManager()
 
 if __name__ == '__main__':
