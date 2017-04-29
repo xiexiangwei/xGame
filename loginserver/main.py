@@ -19,14 +19,14 @@ import clientfactory
 import config
 import random
 import time
-from common import logingatemanager
+from common import servermanager
 
 
 def MainStop():
     pass
 
 def MainRun(isdaemon,id):
-    logingatemanager.instance.stop()
+    servermanager.instance.stop()
     random.seed(time.time())
     logging.getLogger().setLevel(config.instance.log_level)
     handler = TimedRotatingFileHandler(filename=config.instance.log_file,when='D',interval=1)
@@ -48,9 +48,9 @@ def MainRun(isdaemon,id):
 
 
 def GetLogingateConfig(isdaemon):
-    logingatemanager.instance.startLoginServer(config.instance,
-                                    MainRun,
-                                    isdaemon)
+    servermanager.instance.startLoginServer(config.instance,
+                                            MainRun,
+                                            isdaemon)
     reactor.run()
     logging.info(u"登录服务器停止运行!服务器ID:%u",id)
     MainStop()

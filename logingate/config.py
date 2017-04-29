@@ -7,8 +7,8 @@ class Config(object):
         self.server_pid = u"/tmp/logingate.pid"
 
         #登录网关管理服务器地址
-        self.logingatemanager_ip = u"127.0.0.1"
-        self.logingatemanager_port = 1111
+        self.servermanager_ip = u"127.0.0.1"
+        self.servermanager_port = 1111
 
         self.log_file = u"logingate.log"
         self.log_format = u"%(asctime)s %(levelname)s %(message)s"

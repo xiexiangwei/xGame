@@ -19,7 +19,7 @@ import clientfactory
 import config
 import random
 import time
-from common import logingatemanager
+from common import servermanager
 
 
 def MainStop():
@@ -47,7 +47,7 @@ def MainRun(isdaemon,id):
 
 
 def GetLogingateConfig(isdaemon):
-    logingatemanager.instance.startLogingate(config.instance,MainRun,isdaemon)
+    servermanager.instance.startLogingate(config.instance, MainRun, isdaemon)
     reactor.run()
     logging.info(u"登录网关服务器停止运行!服务器ID:%u",id)
     MainStop()

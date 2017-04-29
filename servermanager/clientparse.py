@@ -9,7 +9,7 @@ import json
 from common import fprotocol,const
 import clientmanager
 
-def lg2lgatem_request_config(client, pkt):
+def lg2sm_request_config(client, pkt):
     reply={u"error":const.ERROR_OK}
     active_id = clientmanager.instance.GetLogingateID()
     if active_id != None:
@@ -20,9 +20,9 @@ def lg2lgatem_request_config(client, pkt):
         client.type = const.CLIENT_TYPE_LOGINGATE
     else:
         reply[u"error"]=const.ERROR_MAX_LOGINGATE
-    client.sendCmd(const.LGATEM2LG_REPLY_CONFIG, json.dumps(reply))
+    client.sendCmd(const.SM2LG_REPLY_CONFIG, json.dumps(reply))
 
-def l2lgatem_request_config(client,pkt):
+def l2sm_request_config(client, pkt):
     reply = {u"error": const.ERROR_OK}
     active_id = clientmanager.instance.GetLoginServerID()
     if active_id != None:
@@ -31,12 +31,12 @@ def l2lgatem_request_config(client,pkt):
         client.type = const.CLIENT_TYPE_LOGINSERVER
     else:
         reply[u"error"] = const.ERROR_MAX_LOGINGATE
-    client.sendCmd(const.LGATEM2L_REPLY_CONFIG, json.dumps(reply))
+    client.sendCmd(const.SM2L_REPLY_CONFIG, json.dumps(reply))
 
 
 __cmdTable = {
-                const.LG2LGATEM_REQUEST_CONFIG:lg2lgatem_request_config,
-                const.L2LGATEM_REQUEST_CONFIG:l2lgatem_request_config,
+                const.LG2SM_REQUEST_CONFIG:lg2sm_request_config,
+                const.L2SM_REQUEST_CONFIG:l2sm_request_config,
              }
 
 def parse(clinet, cmd, pkt):

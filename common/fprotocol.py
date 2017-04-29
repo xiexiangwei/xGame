@@ -25,7 +25,7 @@ class FProtocol(protocol.Protocol):
         return self.__lastactivetime
 
     def dataReceived(self, data):
-        logging.debug("dataReceived (%d)", len(data))
+        logging.debug("dataReceived len:%d", len(data))
         self.__buffer += data
         self.__lastactivetime = time.time()
         try:

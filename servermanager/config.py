@@ -4,9 +4,9 @@ class Config(object):
         self.server_ip = u""
         self.server_port = 1111
         self.max_client = 10000
-        self.server_pid = u"/tmp/logingatemanager.pid"
+        self.server_pid = u"/tmp/servermanager.pid"
 
-        self.log_file = u"logingatemanager.log"
+        self.log_file = u"servermanager.log"
         self.log_format = u"%(asctime)s %(levelname)s %(message)s"
         self.log_level = u"DEBUG"
 
