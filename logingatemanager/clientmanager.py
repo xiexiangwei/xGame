@@ -42,6 +42,10 @@ class ClientManager(object):
 
     def RemoveLogingate(self,id):
         self.logingatemap.pop(id)
+        self.__logingate_id_pool.append(id)
+
+    def RemoveLoginServer(self,id):
+        self.__loginserver_id_pool.append(id)
 
 
 instance = ClientManager()

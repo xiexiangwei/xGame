@@ -8,6 +8,11 @@ import struct
 import const
 import json
 
+START_TYPE_LOGINGATE=1
+START_TYPE_LOGINSERVER=2
+
+
+
 class ConfigException(Exception):
     "xGame Config Error"
 
@@ -38,8 +43,9 @@ class LogingateManager(fprotocol.FProtocol):
         self.startconfig = None
         self.callback = None
         self.isdaemon = False
+        self.starttype = None
 
-    def start(self, conf,callback,isdaemon):
+    def startLogingate(self, conf,callback,isdaemon):
         if conf.logingatemanager_ip == None:
             logging.error(u"没有配置登录网关管理服务器地址!")
             raise ConfigException
@@ -52,23 +58,48 @@ class LogingateManager(fprotocol.FProtocol):
         self.startconfig = conf
         self.callback = callback
         self.isdaemon = isdaemon
+        self.starttype = START_TYPE_LOGINGATE
+
+    def startLoginServer(self,conf,callback,isdaemon):
+        if conf.logingatemanager_ip == None:
+            logging.error(u"没有配置登录网关管理服务器地址!")
+            raise ConfigException
+        if conf.logingatemanager_port == None:
+            logging.error(u"没有配置登录网关管理服务器端口!")
+            raise ConfigException
+        reactor.connectTCP(conf.logingatemanager_ip,
+                           conf.logingatemanager_port,
+                           LogingateManagerFactory())
+        self.startconfig = conf
+        self.callback = callback
+        self.isdaemon = isdaemon
+        self.starttype = START_TYPE_LOGINSERVER
+
     def stop(self):
+        #TODO：断开socket连接
         pass
 
     def connectionMade(self):
         logging.info(u"logingatemanager.connectionMade()")
         fprotocol.FProtocol.reset(self)
-        self.sendCmd(const.L2LGATEM_REQUEST_CONFIG,
-                     json.dumps({'server_ip':self.startconfig.server_ip,
+        if self.starttype ==  START_TYPE_LOGINGATE:
+            self.sendCmd(const.LG2LGATEM_REQUEST_CONFIG,
+                         json.dumps({'server_ip':self.startconfig.server_ip,
                                  'server_port':self.startconfig.server_port
                                  }
                                 ))
+        elif self.starttype == START_TYPE_LOGINSERVER:
+            self.sendCmd(const.L2LGATEM_REQUEST_CONFIG,
+                         json.dumps({'server_ip': self.startconfig.server_ip,
+                                     'server_port': self.startconfig.server_port
+                                     }
+                                    ))
 
     def packetReceived(self, cmd, pkt):
-        if cmd==const.LGATEM2L_REPLY_CONFIG:
+        if cmd in (const.LGATEM2L_REPLY_CONFIG,const.LGATEM2LG_REPLY_CONFIG):
             config = json.loads(pkt)
             if config[u"error"]==const.ERROR_OK:
-                self.callback(self.isdaemon)
+                self.callback(self.isdaemon,config[u"id"])
                 logging.debug(u"logingatemanager.packetReceived()")
         else:
             logging.warn(u"unknow cmd :%d",cmd)

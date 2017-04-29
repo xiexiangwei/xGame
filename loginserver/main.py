@@ -26,6 +26,7 @@ def MainStop():
     pass
 
 def MainRun(isdaemon,id):
+    logingatemanager.instance.stop()
     random.seed(time.time())
     logging.getLogger().setLevel(config.instance.log_level)
     handler = TimedRotatingFileHandler(filename=config.instance.log_file,when='D',interval=1)
@@ -43,13 +44,15 @@ def MainRun(isdaemon,id):
 
     #建立socket监听
     clientfactory.instance.start(config.instance.server_ip,config.instance.server_port,config.instance.max_client)
-    logging.info(u"登录网关服务器启动成功!服务器ID:%u",id)
+    logging.info(u"登录服务器启动成功!服务器ID:%u",id)
 
 
 def GetLogingateConfig(isdaemon):
-    logingatemanager.instance.startLogingate(config.instance,MainRun,isdaemon)
+    logingatemanager.instance.startLoginServer(config.instance,
+                                    MainRun,
+                                    isdaemon)
     reactor.run()
-    logging.info(u"登录网关服务器停止运行!服务器ID:%u",id)
+    logging.info(u"登录服务器停止运行!服务器ID:%u",id)
     MainStop()
 
 def run():

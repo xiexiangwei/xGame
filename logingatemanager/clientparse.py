@@ -9,7 +9,7 @@ import json
 from common import fprotocol,const
 import clientmanager
 
-def l2lgatem_request_config(client,pkt):
+def lg2lgatem_request_config(client, pkt):
     reply={u"error":const.ERROR_OK}
     active_id = clientmanager.instance.GetLogingateID()
     if active_id != None:
@@ -20,9 +20,22 @@ def l2lgatem_request_config(client,pkt):
         client.type = const.CLIENT_TYPE_LOGINGATE
     else:
         reply[u"error"]=const.ERROR_MAX_LOGINGATE
+    client.sendCmd(const.LGATEM2LG_REPLY_CONFIG, json.dumps(reply))
+
+def l2lgatem_request_config(client,pkt):
+    reply = {u"error": const.ERROR_OK}
+    active_id = clientmanager.instance.GetLoginServerID()
+    if active_id != None:
+        reply[u"id"] = active_id
+        client.id = active_id
+        client.type = const.CLIENT_TYPE_LOGINSERVER
+    else:
+        reply[u"error"] = const.ERROR_MAX_LOGINGATE
     client.sendCmd(const.LGATEM2L_REPLY_CONFIG, json.dumps(reply))
 
+
 __cmdTable = {
+                const.LG2LGATEM_REQUEST_CONFIG:lg2lgatem_request_config,
                 const.L2LGATEM_REQUEST_CONFIG:l2lgatem_request_config,
              }
 
