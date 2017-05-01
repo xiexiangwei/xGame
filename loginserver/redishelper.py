@@ -19,7 +19,7 @@ class RedisHelper(object):
                                              db=conf.redis_db,
                                              password=conf.redis_pwd)
         logging.info(u"正在连接redis ip:%s port:%d",conf.redis_ip,conf.redis_port)
-        print(self.redisclient.ping())
+        self.redisclient.ping()
         logging.info(u"redis连接成功 ip:%s port:%d", conf.redis_ip, conf.redis_port)
 
     def stop(self):
