@@ -2,7 +2,7 @@
 class Config(object):
     def __init__(self):
         self.server_ip = u""
-        self.server_port = 3001
+        self.server_port = 3002
         self.server_pid = u"/tmp/logingate.pid"
         self.max_client = 500
         # 登录网关管理服务器地址(取服务器索引,取到之后立刻断开连接)

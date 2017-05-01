@@ -51,6 +51,7 @@ class ClientManager(object):
     def GetFreeLoginGate(self):
         if len(self.logingatemap) > 0:
             sorted_res = sorted(self.logingatemap.values(), lambda x, y:cmp(x.usetimes, y.usetimes),reverse=False)
+            sorted_res[0].usetimes +=1
             return sorted_res[0]
         return None
 

@@ -1,0 +1,472 @@
+2017-05-02 00:47:37,760 INFO Starting factory <servermanager.ServerManagerFactory instance at 0x0000000004517348>
+2017-05-02 00:47:37,760 INFO servermanager is  connecting ...
+2017-05-02 00:47:37,762 INFO 机器人服务器启动成功
+2017-05-02 00:47:37,762 INFO servermanager is connected !
+2017-05-02 00:47:37,763 INFO servermanager.connectionMade()
+2017-05-02 00:48:40,944 DEBUG dataReceived len:8
+2017-05-02 00:48:40,946 INFO servermanager.packetReceived()
+2017-05-02 00:49:50,944 DEBUG dataReceived len:8
+2017-05-02 00:49:50,944 INFO servermanager.packetReceived()
+2017-05-02 00:51:00,944 DEBUG dataReceived len:8
+2017-05-02 00:51:00,944 INFO servermanager.packetReceived()
+2017-05-02 00:52:10,944 DEBUG dataReceived len:8
+2017-05-02 00:52:10,947 INFO servermanager.packetReceived()
+2017-05-02 00:53:20,944 DEBUG dataReceived len:8
+2017-05-02 00:53:20,944 INFO servermanager.packetReceived()
+2017-05-02 00:54:20,946 DEBUG dataReceived len:8
+2017-05-02 00:54:20,946 INFO servermanager.packetReceived()
+2017-05-02 00:55:30,946 DEBUG dataReceived len:8
+2017-05-02 00:55:30,946 INFO servermanager.packetReceived()
+2017-05-02 00:56:40,944 DEBUG dataReceived len:8
+2017-05-02 00:56:40,944 INFO servermanager.packetReceived()
+2017-05-02 00:57:40,946 DEBUG dataReceived len:8
+2017-05-02 00:57:40,946 INFO servermanager.packetReceived()
+2017-05-02 00:58:50,946 DEBUG dataReceived len:8
+2017-05-02 00:58:50,946 INFO servermanager.packetReceived()
+2017-05-02 01:00:00,944 DEBUG dataReceived len:8
+2017-05-02 01:00:00,944 INFO servermanager.packetReceived()
+2017-05-02 01:01:00,946 DEBUG dataReceived len:8
+2017-05-02 01:01:00,946 INFO servermanager.packetReceived()
+2017-05-02 01:02:10,946 DEBUG dataReceived len:8
+2017-05-02 01:02:10,946 INFO servermanager.packetReceived()
+2017-05-02 01:03:20,946 DEBUG dataReceived len:8
+2017-05-02 01:03:20,946 INFO servermanager.packetReceived()
+2017-05-02 01:04:30,944 DEBUG dataReceived len:8
+2017-05-02 01:04:30,944 INFO servermanager.packetReceived()
+2017-05-02 01:05:30,946 DEBUG dataReceived len:8
+2017-05-02 01:05:30,946 INFO servermanager.packetReceived()
+2017-05-02 01:06:41,240 INFO 机器人服务器启动成功
+2017-05-02 01:06:41,240 CRITICAL   File "C:\Program Files\JetBrains\PyCharm 2017.1.1\helpers\pydev\pydevd.py", line 1578, in <module>
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "C:\Program Files\JetBrains\PyCharm 2017.1.1\helpers\pydev\pydevd.py", line 1015, in run
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "D:/xGame/robot/main.py", line 53, in <module>
+    run()
+  File "D:/xGame/robot/main.py", line 50, in run
+    daemon.run(config.instance.server_pid,MainRun)
+  File "D:\xGame\common\daemon.py", line 164, in run
+    func(False)
+  File "D:/xGame/robot/main.py", line 44, in MainRun
+    robotmanager.instance.start(1)
+
+2017-05-02 01:06:41,240 CRITICAL <type 'exceptions.TypeError'>: unbound method start() must be called with RobotManager instance as first argument (got int instance instead)
+2017-05-02 01:07:35,092 INFO 机器人服务器启动成功
+2017-05-02 01:07:35,092 INFO Starting factory <servermanager.ServerManagerFactory instance at 0x00000000045FAF88>
+2017-05-02 01:07:35,094 INFO servermanager is  connecting ...
+2017-05-02 01:07:35,095 CRITICAL   File "C:\Program Files\JetBrains\PyCharm 2017.1.1\helpers\pydev\pydevd.py", line 1578, in <module>
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "C:\Program Files\JetBrains\PyCharm 2017.1.1\helpers\pydev\pydevd.py", line 1015, in run
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "D:/xGame/robot/main.py", line 53, in <module>
+    run()
+  File "D:/xGame/robot/main.py", line 50, in run
+    daemon.run(config.instance.server_pid,MainRun)
+  File "D:\xGame\common\daemon.py", line 164, in run
+    func(False)
+  File "D:/xGame/robot/main.py", line 44, in MainRun
+    robotmanager.instance.start(1)
+  File "D:/xGame/robot\robotmanager.py", line 12, in start
+    self.robotmapp[i]=r
+
+2017-05-02 01:07:35,095 CRITICAL <type 'exceptions.AttributeError'>: 'RobotManager' object has no attribute 'robotmapp'
+2017-05-02 01:08:12,898 INFO 机器人服务器启动成功
+2017-05-02 01:08:12,898 INFO Starting factory <servermanager.ServerManagerFactory instance at 0x0000000003EFCF88>
+2017-05-02 01:08:12,898 INFO servermanager is  connecting ...
+2017-05-02 01:08:12,898 INFO servermanager is connected !
+2017-05-02 01:08:12,901 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 88, in callWithLogger
+    return callWithContext({"system": lp}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 73, in callWithContext
+    return context.call({ILogContext: newCtx}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 81, in callWithContext
+    return func(*args,**kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 118, in _callEventCallback
+    evt.callback(rc, bytes, evt)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\tcp.py", line 288, in cbConnect
+    self.protocol = self.connector.buildProtocol(self.getPeer())
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 1071, in buildProtocol
+    return self.factory.buildProtocol(addr)
+  File "D:/xGame/robot\servermanager.py", line 24, in buildProtocol
+    return instance
+exceptions.NameError: global name 'instance' is not defined
+
+2017-05-02 01:08:13,898 ERROR Unhandled error in Deferred:
+2017-05-02 01:08:13,898 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 1192, in run
+    self.mainLoop()
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 1201, in mainLoop
+    self.runUntilCurrent()
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+    call.func(*call.args, **call.kw)
+  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 218, in __call__
+    d = defer.maybeDeferred(self.f, *self.a, **self.kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 137, in maybeDeferred
+    result = f(*args, **kw)
+exceptions.TypeError: 'NoneType' object is not callable
+
+2017-05-02 01:08:42,694 INFO 机器人服务器启动成功
+2017-05-02 01:08:42,694 INFO Starting factory <servermanager.ServerManagerFactory instance at 0x0000000003A64F88>
+2017-05-02 01:08:42,694 INFO servermanager is  connecting ...
+2017-05-02 01:08:42,696 INFO servermanager is connected !
+2017-05-02 01:08:42,697 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 88, in callWithLogger
+    return callWithContext({"system": lp}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 73, in callWithContext
+    return context.call({ILogContext: newCtx}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 81, in callWithContext
+    return func(*args,**kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 118, in _callEventCallback
+    evt.callback(rc, bytes, evt)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\tcp.py", line 292, in cbConnect
+    self.protocol.makeConnection(self)
+exceptions.AttributeError: 'NoneType' object has no attribute 'makeConnection'
+
+2017-05-02 01:08:42,697 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 88, in callWithLogger
+    return callWithContext({"system": lp}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 73, in callWithContext
+    return context.call({ILogContext: newCtx}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 81, in callWithContext
+    return func(*args,**kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 118, in _callEventCallback
+    evt.callback(rc, bytes, evt)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\abstract.py", line 193, in _cbWrite
+    if self._handleWrite(rc, bytes, evt):
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\abstract.py", line 227, in _handleWrite
+    self.connectionLost(failure.Failure(main.CONNECTION_DONE))
+  File "C:\Python27\lib\site-packages\twisted\internet\tcp.py", line 485, in connectionLost
+    self._commonConnection.connectionLost(self, reason)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\tcp.py", line 116, in connectionLost
+    protocol.connectionLost(reason)
+exceptions.AttributeError: 'NoneType' object has no attribute 'connectionLost'
+
+2017-05-02 01:08:43,694 ERROR Unhandled error in Deferred:
+2017-05-02 01:08:43,694 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 1192, in run
+    self.mainLoop()
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 1201, in mainLoop
+    self.runUntilCurrent()
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+    call.func(*call.args, **call.kw)
+  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 218, in __call__
+    d = defer.maybeDeferred(self.f, *self.a, **self.kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 137, in maybeDeferred
+    result = f(*args, **kw)
+exceptions.TypeError: 'NoneType' object is not callable
+
+2017-05-02 01:09:57,871 INFO 机器人服务器启动成功
+2017-05-02 01:09:57,872 INFO Starting factory <servermanager.ServerManagerFactory instance at 0x000000000462B248>
+2017-05-02 01:09:57,872 INFO servermanager is  connecting ...
+2017-05-02 01:09:57,874 INFO servermanager is connected !
+2017-05-02 01:09:57,875 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 88, in callWithLogger
+    return callWithContext({"system": lp}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 73, in callWithContext
+    return context.call({ILogContext: newCtx}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 81, in callWithContext
+    return func(*args,**kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 118, in _callEventCallback
+    evt.callback(rc, bytes, evt)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\tcp.py", line 292, in cbConnect
+    self.protocol.makeConnection(self)
+exceptions.AttributeError: 'NoneType' object has no attribute 'makeConnection'
+
+2017-05-02 01:09:57,875 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 88, in callWithLogger
+    return callWithContext({"system": lp}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 73, in callWithContext
+    return context.call({ILogContext: newCtx}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 81, in callWithContext
+    return func(*args,**kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 118, in _callEventCallback
+    evt.callback(rc, bytes, evt)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\abstract.py", line 193, in _cbWrite
+    if self._handleWrite(rc, bytes, evt):
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\abstract.py", line 227, in _handleWrite
+    self.connectionLost(failure.Failure(main.CONNECTION_DONE))
+  File "C:\Python27\lib\site-packages\twisted\internet\tcp.py", line 485, in connectionLost
+    self._commonConnection.connectionLost(self, reason)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\tcp.py", line 116, in connectionLost
+    protocol.connectionLost(reason)
+exceptions.AttributeError: 'NoneType' object has no attribute 'connectionLost'
+
+2017-05-02 01:09:58,871 ERROR Unhandled error in Deferred:
+2017-05-02 01:09:58,872 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 1192, in run
+    self.mainLoop()
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 1201, in mainLoop
+    self.runUntilCurrent()
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+    call.func(*call.args, **call.kw)
+  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 218, in __call__
+    d = defer.maybeDeferred(self.f, *self.a, **self.kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 137, in maybeDeferred
+    result = f(*args, **kw)
+exceptions.TypeError: 'NoneType' object is not callable
+
+2017-05-02 01:10:06,171 INFO 机器人服务器启动成功
+2017-05-02 01:10:20,677 INFO Starting factory <servermanager.ServerManagerFactory instance at 0x0000000004174B08>
+2017-05-02 01:10:20,678 INFO servermanager is  connecting ...
+2017-05-02 01:10:20,678 ERROR Unhandled error in Deferred:
+2017-05-02 01:10:20,680 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 1192, in run
+    self.mainLoop()
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 1201, in mainLoop
+    self.runUntilCurrent()
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+    call.func(*call.args, **call.kw)
+  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 218, in __call__
+    d = defer.maybeDeferred(self.f, *self.a, **self.kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 137, in maybeDeferred
+    result = f(*args, **kw)
+exceptions.TypeError: 'NoneType' object is not callable
+
+2017-05-02 01:10:20,681 INFO servermanager is connected !
+2017-05-02 01:10:20,683 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 88, in callWithLogger
+    return callWithContext({"system": lp}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 73, in callWithContext
+    return context.call({ILogContext: newCtx}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 81, in callWithContext
+    return func(*args,**kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 118, in _callEventCallback
+    evt.callback(rc, bytes, evt)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\tcp.py", line 292, in cbConnect
+    self.protocol.makeConnection(self)
+exceptions.AttributeError: 'NoneType' object has no attribute 'makeConnection'
+
+2017-05-02 01:10:20,684 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 88, in callWithLogger
+    return callWithContext({"system": lp}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 73, in callWithContext
+    return context.call({ILogContext: newCtx}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 81, in callWithContext
+    return func(*args,**kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 118, in _callEventCallback
+    evt.callback(rc, bytes, evt)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\abstract.py", line 193, in _cbWrite
+    if self._handleWrite(rc, bytes, evt):
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\abstract.py", line 227, in _handleWrite
+    self.connectionLost(failure.Failure(main.CONNECTION_DONE))
+  File "C:\Python27\lib\site-packages\twisted\internet\tcp.py", line 485, in connectionLost
+    self._commonConnection.connectionLost(self, reason)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\tcp.py", line 116, in connectionLost
+    protocol.connectionLost(reason)
+exceptions.AttributeError: 'NoneType' object has no attribute 'connectionLost'
+
+2017-05-02 01:11:25,194 INFO 机器人服务器启动成功
+2017-05-02 01:11:25,194 INFO Starting factory <servermanager.ServerManagerFactory instance at 0x00000000041DE048>
+2017-05-02 01:11:25,196 INFO servermanager is  connecting ...
+2017-05-02 01:11:25,197 INFO servermanager is connected !
+2017-05-02 01:11:25,197 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 88, in callWithLogger
+    return callWithContext({"system": lp}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 73, in callWithContext
+    return context.call({ILogContext: newCtx}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 81, in callWithContext
+    return func(*args,**kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 118, in _callEventCallback
+    evt.callback(rc, bytes, evt)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\tcp.py", line 292, in cbConnect
+    self.protocol.makeConnection(self)
+exceptions.AttributeError: 'NoneType' object has no attribute 'makeConnection'
+
+2017-05-02 01:11:25,198 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 88, in callWithLogger
+    return callWithContext({"system": lp}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 73, in callWithContext
+    return context.call({ILogContext: newCtx}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 81, in callWithContext
+    return func(*args,**kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 118, in _callEventCallback
+    evt.callback(rc, bytes, evt)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\abstract.py", line 193, in _cbWrite
+    if self._handleWrite(rc, bytes, evt):
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\abstract.py", line 227, in _handleWrite
+    self.connectionLost(failure.Failure(main.CONNECTION_DONE))
+  File "C:\Python27\lib\site-packages\twisted\internet\tcp.py", line 485, in connectionLost
+    self._commonConnection.connectionLost(self, reason)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\tcp.py", line 116, in connectionLost
+    protocol.connectionLost(reason)
+exceptions.AttributeError: 'NoneType' object has no attribute 'connectionLost'
+
+2017-05-02 01:11:26,194 ERROR Unhandled error in Deferred:
+2017-05-02 01:11:26,196 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 1192, in run
+    self.mainLoop()
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 1201, in mainLoop
+    self.runUntilCurrent()
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+    call.func(*call.args, **call.kw)
+  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 218, in __call__
+    d = defer.maybeDeferred(self.f, *self.a, **self.kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 137, in maybeDeferred
+    result = f(*args, **kw)
+exceptions.TypeError: 'NoneType' object is not callable
+
+2017-05-02 01:13:02,640 INFO 机器人服务器启动成功
+2017-05-02 01:13:02,641 INFO Starting factory <servermanager.ServerManagerFactory instance at 0x0000000004462248>
+2017-05-02 01:13:02,641 INFO servermanager is  connecting ...
+2017-05-02 01:13:02,641 INFO servermanager is connected !
+2017-05-02 01:13:02,642 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 88, in callWithLogger
+    return callWithContext({"system": lp}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 73, in callWithContext
+    return context.call({ILogContext: newCtx}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 81, in callWithContext
+    return func(*args,**kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 118, in _callEventCallback
+    evt.callback(rc, bytes, evt)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\tcp.py", line 292, in cbConnect
+    self.protocol.makeConnection(self)
+exceptions.AttributeError: 'NoneType' object has no attribute 'makeConnection'
+
+2017-05-02 01:13:02,644 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 88, in callWithLogger
+    return callWithContext({"system": lp}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 73, in callWithContext
+    return context.call({ILogContext: newCtx}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 81, in callWithContext
+    return func(*args,**kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 118, in _callEventCallback
+    evt.callback(rc, bytes, evt)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\abstract.py", line 193, in _cbWrite
+    if self._handleWrite(rc, bytes, evt):
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\abstract.py", line 227, in _handleWrite
+    self.connectionLost(failure.Failure(main.CONNECTION_DONE))
+  File "C:\Python27\lib\site-packages\twisted\internet\tcp.py", line 485, in connectionLost
+    self._commonConnection.connectionLost(self, reason)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\tcp.py", line 116, in connectionLost
+    protocol.connectionLost(reason)
+exceptions.AttributeError: 'NoneType' object has no attribute 'connectionLost'
+
+2017-05-02 01:13:03,640 ERROR Unhandled error in Deferred:
+2017-05-02 01:13:03,641 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 1192, in run
+    self.mainLoop()
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 1201, in mainLoop
+    self.runUntilCurrent()
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+    call.func(*call.args, **call.kw)
+  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 218, in __call__
+    d = defer.maybeDeferred(self.f, *self.a, **self.kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 137, in maybeDeferred
+    result = f(*args, **kw)
+exceptions.TypeError: 'NoneType' object is not callable
+
+2017-05-02 01:15:01,755 INFO 机器人服务器启动成功
+2017-05-02 01:15:01,756 INFO Starting factory <servermanager.ServerManagerFactory instance at 0x0000000003B1A248>
+2017-05-02 01:15:01,756 INFO servermanager is  connecting ...
+2017-05-02 01:15:01,757 INFO servermanager is connected !
+2017-05-02 01:15:01,759 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 88, in callWithLogger
+    return callWithContext({"system": lp}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 73, in callWithContext
+    return context.call({ILogContext: newCtx}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 81, in callWithContext
+    return func(*args,**kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 118, in _callEventCallback
+    evt.callback(rc, bytes, evt)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\tcp.py", line 292, in cbConnect
+    self.protocol.makeConnection(self)
+exceptions.AttributeError: 'NoneType' object has no attribute 'makeConnection'
+
+2017-05-02 01:15:01,760 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 88, in callWithLogger
+    return callWithContext({"system": lp}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 73, in callWithContext
+    return context.call({ILogContext: newCtx}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 81, in callWithContext
+    return func(*args,**kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 118, in _callEventCallback
+    evt.callback(rc, bytes, evt)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\abstract.py", line 193, in _cbWrite
+    if self._handleWrite(rc, bytes, evt):
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\abstract.py", line 227, in _handleWrite
+    self.connectionLost(failure.Failure(main.CONNECTION_DONE))
+  File "C:\Python27\lib\site-packages\twisted\internet\tcp.py", line 485, in connectionLost
+    self._commonConnection.connectionLost(self, reason)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\tcp.py", line 116, in connectionLost
+    protocol.connectionLost(reason)
+exceptions.AttributeError: 'NoneType' object has no attribute 'connectionLost'
+
+2017-05-02 01:15:02,756 ERROR Unhandled error in Deferred:
+2017-05-02 01:15:02,757 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 1192, in run
+    self.mainLoop()
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 1201, in mainLoop
+    self.runUntilCurrent()
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+    call.func(*call.args, **call.kw)
+  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 218, in __call__
+    d = defer.maybeDeferred(self.f, *self.a, **self.kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 137, in maybeDeferred
+    result = f(*args, **kw)
+exceptions.TypeError: 'NoneType' object is not callable
+

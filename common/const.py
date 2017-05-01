@@ -26,8 +26,11 @@ L2SM_REQUEST_CONFIG=301
 #=======管理服务器--->登录服务器消息ID:[401-500]
 SM2L_REPLY_CONFIG=401
 
-#客戶端---->管理服务器消息ID:[501-600]
+#客戶端--->管理服务器消息ID:[501-600]
 C2SM_GET_LOGINGATE=501
 
 #管理服务器--->客戶端消息ID:[601-700]
 SM2C_GET_LOGINGATE_REPLY=601
+
+#客户端--->登录网关消息ID:[701-800]
+C2LG_Login=701

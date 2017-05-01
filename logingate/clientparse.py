@@ -5,21 +5,15 @@ Created on 2016年1月11日
 @author: xxw
 '''
 import struct
-from common import fprotocol
+from common import fprotocol,const
 
-def sendcmd(client,cmd,data):
-    head = struct.pack("HH",len(data)+2,cmd)
-    fmt = "%ds" % len(data)
-    body = struct.pack(fmt,data)
-    tail = struct.pack("H",0)
-    senddata = head+body+tail
-    client.sendCmd(senddata)
-
-def test(client,pkt):
-    pass
+#登录
+def c2lg_login(client,pkt):
+    user_name = u"xGame_test"
+    user_pwd = u"xGame_pwd"
 
 __cmdTable = {
-                888:test,
+                const.C2LG_Login:c2lg_login,
              }
 
 def parse(clinet, cmd, pkt):
