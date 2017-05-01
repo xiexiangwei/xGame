@@ -33,10 +33,22 @@ def l2sm_request_config(client, pkt):
         reply[u"error"] = const.ERROR_MAX_LOGINGATE
     client.sendCmd(const.SM2L_REPLY_CONFIG, json.dumps(reply))
 
+#客户端请求管理服务器获取登录网关地址
+def c2sm_get_logingate(client,pkt):
+    reply={u"error":const.ERROR_OK}
+    c_free_logingate = clientmanager.instance.GetFreeLoginGate()
+    if c_free_logingate:
+        reply[u"ip"]=c_free_logingate.ip
+        reply[u"port"]=c_free_logingate.port
+    else:
+        reply[u"error"] =const.ERROR_NO_LOGINGATE
+    client.sendCmd(const.SM2C_GET_LOGINGATE_REPLY, json.dumps(reply))
+
 
 __cmdTable = {
                 const.LG2SM_REQUEST_CONFIG:lg2sm_request_config,
                 const.L2SM_REQUEST_CONFIG:l2sm_request_config,
+                const.C2SM_GET_LOGINGATE:c2sm_get_logingate,
              }
 
 def parse(clinet, cmd, pkt):

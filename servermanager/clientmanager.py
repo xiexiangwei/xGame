@@ -47,6 +47,12 @@ class ClientManager(object):
     def RemoveLoginServer(self,id):
         self.__loginserver_id_pool.append(id)
 
+    #获取一个空闲网关信息
+    def GetFreeLoginGate(self):
+        if len(self.logingatemap) > 0:
+            sorted_res = sorted(self.logingatemap.values(), lambda x, y:cmp(x.usetimes, y.usetimes),reverse=False)
+            return sorted_res[0]
+        return None
 
 instance = ClientManager()
 

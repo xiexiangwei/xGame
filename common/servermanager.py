@@ -76,7 +76,6 @@ class ServerManager(fprotocol.FProtocol):
         self.starttype = START_TYPE_LOGINSERVER
 
     def stop(self):
-        #TODO：断开socket连接
         pass
 
     def connectionMade(self):

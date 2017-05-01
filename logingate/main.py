@@ -20,6 +20,7 @@ import config
 import random
 import time
 from common import servermanager
+import redishelper
 
 
 def MainStop():
@@ -43,6 +44,8 @@ def MainRun(isdaemon,id):
 
     #建立socket监听
     clientfactory.instance.start(config.instance.server_ip,config.instance.server_port,config.instance.max_client)
+    redishelper.instance.start(config.instance)
+
     logging.info(u"登录网关服务器启动成功!服务器ID:%u",id)
 
 

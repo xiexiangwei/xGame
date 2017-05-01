@@ -18,5 +18,13 @@ class Config(object):
         self.redis_db = 0
         self.redis_pwd = u""
 
+        self.db_name = u"xGame-Login"
+        self.db_host = u"192.168.195.128"
+        self.db_port = 3306
+        self.db_user = u"root"
+        self.db_pwd = u"123456"
+        self.db_linkcount = 2
+
+
 
 instance = Config()

@@ -42,7 +42,7 @@ def MainRun(isdaemon):
         logging.getLogger().addHandler(handler)
     #建立socket监听
     clientfactory.instance.start(config.instance.server_ip,config.instance.server_port,config.instance.max_client)
-    #redishelper.instance.start(config.instance)
+    redishelper.instance.start(config.instance)
     clientmanager.instance.start(config.instance)
     logging.info(u"服务器管理服务器启动成功!")
     reactor.run()

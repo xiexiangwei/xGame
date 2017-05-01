@@ -19,14 +19,17 @@ import clientfactory
 import config
 import random
 import time
-from common import servermanager
+from common import servermanager,utils
+import redishelper
+import mysqlhelper
+
 
 
 def MainStop():
-    pass
+    redishelper.instance.stop()
+    mysqlhelper.instance.stop()
 
 def MainRun(isdaemon,id):
-    servermanager.instance.stop()
     random.seed(time.time())
     logging.getLogger().setLevel(config.instance.log_level)
     handler = TimedRotatingFileHandler(filename=config.instance.log_file,when='D',interval=1)
@@ -44,6 +47,12 @@ def MainRun(isdaemon,id):
 
     #建立socket监听
     clientfactory.instance.start(config.instance.server_ip,config.instance.server_port,config.instance.max_client)
+    #连接redis
+    redishelper.instance.start(config.instance)
+    redishelper.instance.AddLoginServer(id,utils.getExternalIP(),config.instance.server_port)
+    #连接mysql
+    mysqlhelper.instance.start()
+
     logging.info(u"登录服务器启动成功!服务器ID:%u",id)
 
 
