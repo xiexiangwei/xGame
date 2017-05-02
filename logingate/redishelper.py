@@ -37,4 +37,15 @@ class RedisHelper(object):
                 self.redisclient.srem(u"loginserver:loginserver_list",loginserverid)
         return res
 
+
+    #更新登录服务器使用次数
+    def UpdateLoginServerTimes(self,id,value):
+        loginserver_key = u"loginserver:loginserver%d" % id
+        if self.redisclient.exists(loginserver_key):
+            curtimes = int(self.redisclient.hget(loginserver_key,u"times"))
+            self.redisclient.hset(loginserver_key, u"times",curtimes+value)
+        else:
+            self.redisclient.srem(u"loginserver:loginserver_list",id)
+
+
 instance = RedisHelper()

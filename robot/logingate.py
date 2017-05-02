@@ -64,7 +64,6 @@ class Logingate(fprotocol.FProtocol):
             reply = json.loads(pkt)
             if reply[u"error"]==const.ERROR_OK:
                 logging.debug(u"机器人登录成功! robot:%d",self.robot.id)
-
                 self.abort()
                 logging.debug(u"机器人断开网关!准备进入游戏! robot:%d",self.robot.id)
 

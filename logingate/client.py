@@ -14,6 +14,7 @@ import clientparse
 import loginservermanager
 import loginserver
 import json
+import redishelper
 
 CLIENT_STATE_INIT               = 0
 CLIENT_STATE_AUTH               = 1
@@ -29,6 +30,7 @@ class Client(fprotocol.FProtocol):
         self.__ip = addr.host.decode('utf-8')
         self.toclosetime = time.time()
         self.state = CLIENT_STATE_INIT
+        self.loginserver_id = None
         self.loginserver =  loginserver.LoginServer(self)
 
     def getId(self):
@@ -62,6 +64,7 @@ class Client(fprotocol.FProtocol):
             port = int(freeloginserver[u"port"])
             logging.warn(u"分配用户空闲登录服务器成功 client_id:%d loginserver_id:%s loginserver_ip:%s loginserver_port:%s",self.getId(),id,ip,port)
             #分配成功之后，建立连接
+            self.loginserver_id = id
             self.loginserver.start(ip,port)
         else:
             self.kick()
@@ -70,6 +73,7 @@ class Client(fprotocol.FProtocol):
     def connectionLost(self, reason=protocol.connectionDone):
         logging.debug(u"Client.connectionLost %s", reason) 
         clientfactory.instance.removeProtocol(self)
+        redishelper.instance.UpdateLoginServerTimes(self.loginserver_id, -1)
     
     def goToClose(self):
         self.state = CLIENT_STATE_TO_CLOSE
@@ -81,7 +85,9 @@ class Client(fprotocol.FProtocol):
 
     def ReadyToLogin(self,ok):
         reply = {u"error":const.ERROR_OK}
-        if not ok:
+        if ok:
+            redishelper.instance.UpdateLoginServerTimes(self.loginserver_id, 1)
+        else:
             reply[u"error"]=const.ERROR_NOT_READY_LOGIN
         self.sendCmd(const.LG2C_READY_TO_LOGIN,json.dumps(reply))
 

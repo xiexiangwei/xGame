@@ -10,10 +10,10 @@ class Config(object):
         self.log_format = u"%(asctime)s %(levelname)s %(message)s"
         self.log_level = u"DEBUG"
 
-        self.redis_ip = u"192.168.1.6"
+        self.redis_ip = u"192.168.195.128"
         self.redis_port = 6379
         self.redis_db = 0
-        self.redis_pwd = u"zhanghe"
+        self.redis_pwd = u""
 
         #最大登录网关数量
         self.max_logingate = 88
