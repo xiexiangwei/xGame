@@ -1,5 +1,4 @@
 #coding=utf-8
-from twisted.internet import task
 import servermanager
 import config
 from common import const
