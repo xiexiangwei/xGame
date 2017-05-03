@@ -28,7 +28,7 @@ class Client(fprotocol.FProtocol):
         self.__ip = addr.host.decode('utf-8')
         self.toclosetime = time.time()
         self.state = CLIENT_STATE_INIT
-        self.loginserver = None
+        self.loginserver =  loginserver.LoginServer(self)
 
     def getId(self):
         return self.__id
@@ -61,11 +61,9 @@ class Client(fprotocol.FProtocol):
             port = int(freeloginserver[u"port"])
             logging.warn(u"分配用户空闲登录服务器成功 client_id:%d loginserver_id:%s loginserver_ip:%s loginserver_port:%s",self.getId(),id,ip,port)
             #分配成功之后，建立连接
-            loginsvr_client = loginservermanager.instance.GetLoginServer(id)
-            if not loginsvr_client:
-                loginserver.LoginServer().start(id,ip,port,self.ConnectLoginSvrCB)
+            self.loginserver.start(ip,port)
         else:
-            self.goToClose()
+            self.kick()
             logging.warn(u"分配用户空闲登录服务器失败() client_id:%d",self.getId())
    
     def connectionLost(self, reason=protocol.connectionDone):
@@ -80,11 +78,8 @@ class Client(fprotocol.FProtocol):
         logging.debug(u"Client.kick()")
         self.goToClose()
 
-    def ConnectLoginSvrCB(self,connected,loginserver):
-        if connected:
-            loginservermanager.instance.AddLoginServer(loginserver.id,loginserver)
-            logging.warn(u"连接用户所在登录服务器成功 client_id:%d loginserver_id:%d",self.getId(),id)
-            self.loginserver = loginserver
-        else:
-            loginservermanager.instance.AddLoginServer(loginserver.id)
-            self.goToClose()
+    def ReadyToLogin(self,err):
+        pass
+
+    def Login(self):
+       pass

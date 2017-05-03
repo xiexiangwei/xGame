@@ -4,7 +4,7 @@ import redishelper
 
 class LoginServerManager(object):
     def __init__(self):
-        self.loginservermap={}
+        pass
 
     #获取一个空闲的登录服务器ID
     def GetFreeLoginServerID(self):
@@ -14,14 +14,6 @@ class LoginServerManager(object):
             return loginserver_list[0]
         return None
 
-    def GetLoginServer(self,id):
-        return self.loginservermap.get(id)
-
-    def AddLoginServer(self,id,loginserver):
-        self.loginservermap[id] = loginserver
-
-    def RemoveLoginServer(self,id):
-        self.loginservermap.pop(id)
 
 
 instance = LoginServerManager()

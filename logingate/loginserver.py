@@ -6,15 +6,15 @@ from common import fprotocol
 import logging
 import loginserverparse
 
-
-
 class LoginServerFactory(ReconnectingClientFactory):
-    def __init__(self):
+    def __init__(self,loginserver):
         ReconnectingClientFactory.maxDelay = 5
+        self.loginserver = loginserver
 
     def buildProtocol(self, addr):
         logging.warn(u" LoginServer CONNECTED!!!")
         self.resetDelay()
+        return  self.loginserver
 
     def startedConnecting(self, connector):
         logging.warn(u" LoginServer connecting!!!")
@@ -29,17 +29,15 @@ class LoginServerFactory(ReconnectingClientFactory):
 
 
 class LoginServer(fprotocol.FProtocol):
-    def __init__(self):
+    def __init__(self,client):
         fprotocol.FProtocol.__init__(self)
-        self.id=None
-        self.callback=None
+        self.factory = LoginServerFactory(self)
+        self.client = client
 
-    def start(self,id,ip,port,callback):
+    def start(self,ip,port):
         reactor.connectTCP(ip,
                            port,
-                           LoginServerFactory())
-        self.id=id
-        self.callback =callback
+                           self.factory)
 
     def stop(self):
         pass
@@ -47,10 +45,9 @@ class LoginServer(fprotocol.FProtocol):
     def connectionMade(self):
         logging.warn(u"LoginServer.connectionMade()")
         fprotocol.FProtocol.reset(self)
-        self.callback(True,self)
 
     def connectionLost(self):
-        self.callback(False,self)
+        pass
 
     def packetReceived(self, cmd, pkt):
         try:
