@@ -19,7 +19,7 @@ import clientfactory
 import config
 import random
 import time
-from common import servermanager
+from common import servermanager,utils
 import redishelper
 
 
@@ -50,6 +50,7 @@ def MainRun(isdaemon,id):
 
 
 def GetLogingateConfig(isdaemon):
+    config.instance.server_ip = utils.getExternalIP()
     servermanager.instance.startLogingate(config.instance, MainRun, isdaemon)
     reactor.run()
     logging.info(u"登录网关服务器停止运行!服务器ID:%u",id)

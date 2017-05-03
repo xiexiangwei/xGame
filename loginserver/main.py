@@ -57,6 +57,7 @@ def MainRun(isdaemon,id):
 
 
 def GetLogingateConfig(isdaemon):
+    config.instance.server_ip = utils.getExternalIP()
     servermanager.instance.startLoginServer(config.instance,
                                             MainRun,
                                             isdaemon)

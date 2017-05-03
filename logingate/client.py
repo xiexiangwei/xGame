@@ -66,7 +66,7 @@ class Client(fprotocol.FProtocol):
                 loginserver.LoginServer().start(id,ip,port,self.ConnectLoginSvrCB)
         else:
             self.goToClose()
-            logging.warn(u"分配用户空闲登录服务器失败 client_id:%d",self.getId())
+            logging.warn(u"分配用户空闲登录服务器失败() client_id:%d",self.getId())
    
     def connectionLost(self, reason=protocol.connectionDone):
         logging.debug(u"Client.connectionLost %s", reason) 

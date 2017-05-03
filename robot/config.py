@@ -6,7 +6,7 @@ class Config(object):
         self.servermanager_ip = u"127.0.0.1"
         self.servermanager_port = 1111
 
-        self.log_file = u"loginserver.log"
+        self.log_file = u"robot.log"
         self.log_format = u"%(asctime)s %(levelname)s %(message)s"
         self.log_level = u"DEBUG"
 
