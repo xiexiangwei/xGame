@@ -6,11 +6,11 @@ Created on 2016年1月11日
 '''
 import struct
 from common import fprotocol,const
+import logging
 
 #登录
 def c2lg_login(client,pkt):
-    user_name = u"xGame_test"
-    user_pwd = u"xGame_pwd"
+    client.Trans2Loginserver(const.C2LG_Login,pkt)
 
 __cmdTable = {
                 const.C2LG_Login:c2lg_login,

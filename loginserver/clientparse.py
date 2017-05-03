@@ -5,21 +5,18 @@ Created on 2016年1月11日
 @author: xxw
 '''
 import struct
-from common import fprotocol
+from common import fprotocol,const
+import json
 
-def sendcmd(client,cmd,data):
-    head = struct.pack("HH",len(data)+2,cmd)
-    fmt = "%ds" % len(data)
-    body = struct.pack(fmt,data)
-    tail = struct.pack("H",0)
-    senddata = head+body+tail
-    client.sendCmd(senddata)
 
-def test(client,pkt):
-    pass
+def Login(client,pkt):
+    data = json.loads(pkt)
+    print data
+    reply={u"error":const.ERROR_OK}
+    client.sendCmd(const.L2LG_LOGIN_RESULT,json.dumps(reply))
 
 __cmdTable = {
-                888:test,
+                const.C2LG_Login:Login,
              }
 
 def parse(clinet, cmd, pkt):

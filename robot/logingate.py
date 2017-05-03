@@ -4,6 +4,7 @@ from twisted.internet.protocol import ClientFactory
 from twisted.internet import reactor
 import logging
 from common import fprotocol,const
+import json
 
 class ConfigException(Exception):
     "xGame Config Error"
@@ -45,7 +46,7 @@ class Logingate(fprotocol.FProtocol):
 
     def connectionMade(self):
         logging.info(u"servermanager.connectionMade()")
-        self.robot.Login()
+
 
     def connectionFail(self):
         pass
@@ -55,6 +56,18 @@ class Logingate(fprotocol.FProtocol):
 
     def packetReceived(self, cmd, pkt):
         logging.info(u"servermanager.packetReceived() cmd:%d pkt:%s",cmd,pkt)
+        if cmd == const.LG2C_READY_TO_LOGIN:
+            reply = json.loads(pkt)
+            if reply[u"error"]==const.ERROR_OK:
+                self.robot.Login()
+        elif cmd == const.LG2C_LOGIN_RESULT:
+            reply = json.loads(pkt)
+            if reply[u"error"]==const.ERROR_OK:
+                logging.debug(u"机器人登录成功! robot:%d",self.robot.id)
+
+                self.abort()
+                logging.debug(u"机器人断开网关!准备进入游戏! robot:%d",self.robot.id)
+
 
 
 if __name__ == '__main__':

@@ -8,11 +8,12 @@ Created on 2016年1月11日
 import logging
 import time
 from twisted.internet import protocol
-from common import fprotocol
+from common import fprotocol,const
 import clientfactory
 import clientparse
 import loginservermanager
 import loginserver
+import json
 
 CLIENT_STATE_INIT               = 0
 CLIENT_STATE_AUTH               = 1
@@ -78,8 +79,15 @@ class Client(fprotocol.FProtocol):
         logging.debug(u"Client.kick()")
         self.goToClose()
 
-    def ReadyToLogin(self,err):
-        pass
+    def ReadyToLogin(self,ok):
+        reply = {u"error":const.ERROR_OK}
+        if not ok:
+            reply[u"error"]=const.ERROR_NOT_READY_LOGIN
+        self.sendCmd(const.LG2C_READY_TO_LOGIN,json.dumps(reply))
 
-    def Login(self):
-       pass
+    def Trans2Loginserver(self,cmd,pkt):
+        if self.loginserver:
+            self.loginserver.sendCmd(cmd,pkt)
+        else:
+            logging.error(u"玩家分配的登录服无效!")
+
