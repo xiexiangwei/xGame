@@ -41,7 +41,7 @@ def MainRun(isdaemon):
         logging.getLogger().addHandler(handler)
 
     logging.info(u"机器人服务器启动成功")
-    robotmanager.instance.start(50)
+    robotmanager.instance.start(config.instance.robot_num)
     reactor.run()
     MainStop()
 

@@ -1,51 +1,84 @@
 #coding=utf-8
-import redis
 import logging
 from twisted.internet import task
+import config
+from common import redispool
+import time
 
 class RedisHelper(object):
     def __init__(self):
-        self.redisclient = None
+        self.redis_linkcount = config.instance.redis_linkcount if config.instance.redis_linkcount else 2
+        self.__redispool = redispool.RedisConnectionPool(ip=config.instance.redis_ip,
+                                                         port=config.instance.redis_port,
+                                                         db=config.instance.redis_db,
+                                                         password=config.instance.redis_pwd,
+                                                         linkcount=self.redis_linkcount)
 
-    def start(self,conf):
+        #登录服务器列表
+        self.__loginserverlist=[]
+        self.time = 0
+
+    def start(self):
         l = task.LoopingCall(self.OnTimer)
         l.start(1, False)
-
-        self.redisclient = redis.StrictRedis(host=conf.redis_ip,
-                                             port=conf.redis_port,
-                                             db=conf.redis_db,
-                                             password=conf.redis_pwd)
-        logging.info(u"正在连接redis ip:%s port:%d",conf.redis_ip,conf.redis_port)
-        self.redisclient.ping()
-        logging.info(u"redis连接成功 ip:%s port:%d", conf.redis_ip, conf.redis_port)
+        self.__redispool.start()
 
 
     def OnTimer(self):
-        pass
-        loginserver_list= self.GetLoginServerList()
-        loginserver_list.sort(cmp=lambda x,y:cmp(int(x[u"times"]), int(y[u"times"])),reverse=False)
+        self.LoadLoginServerList()
+        print self.time
+
+    def HashIndex(self, v):
+        return int(v) % self.redis_linkcount
 
     #获取登录服务器信息列表
-    def GetLoginServerList(self):
+    def LoadLoginServerList(self):
+        cmd = redispool.RedisCommand(index=self.HashIndex(time.time()),
+                                     func=self.LoadLoginServerListFunc,
+                                     params=(),
+                                     ctx=(),
+                                     finish=self.LoadLoginServerListFinish)
+        self.__redispool.putCmd(cmd)
+
+    def LoadLoginServerListFunc(self,redisclient):
         res = []
-        loginserverid_list = self.redisclient.smembers(u"loginserver:loginserver_list")
+        loginserverid_list = redisclient.smembers(u"loginserver:loginserver_list")
         for loginserverid in loginserverid_list:
             key = u"loginserver:loginserver%s"%loginserverid
-            if self.redisclient.exists(key):
-                res.append(self.redisclient.hgetall(key))
+            if redisclient.exists(key):
+                res.append(redisclient.hgetall(key))
             else:
-                self.redisclient.srem(u"loginserver:loginserver_list",loginserverid)
+                redisclient.srem(u"loginserver:loginserver_list",loginserverid)
         return res
 
+    def LoadLoginServerListFinish(self,err,ctx,rows):
+        self.__loginserverlist = rows
 
     #更新登录服务器使用次数
     def UpdateLoginServerTimes(self,id,value):
+        cmd = redispool.RedisCommand(index=self.HashIndex(time.time()),
+                                     func=self.UpdateLoginServerTimesFunc,
+                                     params=(id,value),
+                                     ctx=(),
+                                     finish=self.UpdateLoginServerTimesFinish)
+        self.__redispool.putCmd(cmd)
+
+
+    def UpdateLoginServerTimesFunc(self,redisclient, id, value):
+        self.time +=1
         loginserver_key = u"loginserver:loginserver%d" % id
-        if self.redisclient.exists(loginserver_key):
-            curtimes = int(self.redisclient.hget(loginserver_key,u"times"))
-            self.redisclient.hset(loginserver_key, u"times",curtimes+value)
+        if redisclient.exists(loginserver_key):
+            curtimes = int(redisclient.hget(loginserver_key, u"times"))
+            redisclient.hset(loginserver_key, u"times", curtimes + value)
         else:
-            self.redisclient.srem(u"loginserver:loginserver_list",id)
+            redisclient.srem(u"loginserver:loginserver_list", id)
+
+    def UpdateLoginServerTimesFinish(self,err,ctx,rows):
+        pass
+
+
+    def GetLoginServerList(self):
+        return self.__loginserverlist
 
 
 instance = RedisHelper()

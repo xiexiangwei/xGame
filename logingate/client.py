@@ -57,11 +57,11 @@ class Client(fprotocol.FProtocol):
     def connectionMade(self):
         logging.debug(u"Client.connectionMade() ip=%s", self.__ip)
         #分配一个空闲的loginserver
-        freeloginserver = loginservermanager.instance.GetFreeLoginServerID()
-        if freeloginserver:
-            id = int(freeloginserver[u"id"])
-            ip = freeloginserver[u"ip"]
-            port = int(freeloginserver[u"port"])
+        loginserverinfo = loginservermanager.instance.DisLoginServer(self.__id)
+        if loginserverinfo:
+            id = int(loginserverinfo[u"id"])
+            ip = loginserverinfo[u"ip"]
+            port = int(loginserverinfo[u"port"])
             logging.warn(u"分配用户空闲登录服务器成功 client_id:%d loginserver_id:%s loginserver_ip:%s loginserver_port:%s",self.getId(),id,ip,port)
             #分配成功之后，建立连接
             self.loginserver_id = id

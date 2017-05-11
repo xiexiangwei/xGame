@@ -6,14 +6,13 @@ class LoginServerManager(object):
     def __init__(self):
         pass
 
-    #获取一个空闲的登录服务器ID
-    def GetFreeLoginServerID(self):
+    #分配登录服务器
+    def DisLoginServer(self,pid):
         loginserver_list = redishelper.instance.GetLoginServerList()
-        if len(loginserver_list) > 0:
-            loginserver_list.sort(cmp=lambda x, y: cmp(int(x[u"times"]), int(y[u"times"])), reverse=False)
-            return loginserver_list[0]
+        l = len(loginserver_list)
+        if l > 0:
+            return loginserver_list[pid % l ]
         return None
-
 
 
 instance = LoginServerManager()

@@ -17,5 +17,8 @@ class RedisHelper(object):
     def stop(self):
         self.__redispool.stop()
 
+    def HashIndex(self, v):
+        return int(v) % self.redis_linkcount
+
 
 instance = RedisHelper()
