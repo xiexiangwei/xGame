@@ -48,7 +48,7 @@ def MainRun(isdaemon,id):
     #建立socket监听
     clientfactory.instance.start(config.instance.server_ip,config.instance.server_port,config.instance.max_client)
     #连接redis
-    redishelper.instance.start(config.instance)
+    redishelper.instance.start()
     redishelper.instance.AddLoginServer(id,utils.getExternalIP(),config.instance.server_port)
     #连接mysql
     mysqlhelper.instance.start()

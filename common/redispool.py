@@ -53,7 +53,6 @@ class RedisConnection(object):
             self.__strictredis = None
         if self.__strictredis:
             logging.info(u"redis connected %s:%d[%d]",self.__ip,self.__port,self.__db)
-            print (u"redis connected %s:%d[%d]",self.__ip,self.__port,self.__db)
             self.__event = threading.Event()
             self.__lock = threading.Lock()
             self.__thread = threading.Thread(target=self.run)
@@ -100,7 +99,7 @@ class RedisConnection(object):
             self.__lock.release()
             try:
                 cmd.excute(self.__strictredis)
-            except Exception,e:
+            except Exception as e:
                 if isinstance(e, redis.exceptions.ConnectionError):
                     self.connect()
                 reactor.callFromThread(cmd.finish, e)
@@ -153,7 +152,8 @@ if __name__ == "__main__":
                                     linkcount=10)
     redispool.start()
 
-    def func(rediscon,ctx):
+    def func(rediscon,ip,prot):
+        print (ip,prot)
         rediscon.sadd(u"testset",time.time())
 
     def finesh(error,ctx,rows):
@@ -161,7 +161,7 @@ if __name__ == "__main__":
 
     testcmd = RedisCommand(index=1,
                            func=func,
-                           params=(999,),
+                           params=("127.0.0.1",1000),
                            ctx=(100,888,999),
                            finish=finesh)
 

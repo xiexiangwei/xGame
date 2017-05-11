@@ -230,7 +230,7 @@ class DBConnection(object):
             lastexecutetime = time.time()
             try:
                 cmd.execute(self.__con)
-            except Exception, e:
+            except Exception as e:
                 reactor.callFromThread(cmd.finish, e)
                 logging.exception(u"cmd.execute()")
                 logging.error(u"cmd.excute exception, class=%s error=%s",
@@ -248,7 +248,7 @@ class DBConnection(object):
     def checkConnect(self):
         try:
             self.__con.ping()
-        except Exception, e:
+        except Exception as e:
             logging.exception(u"self.__con.ping()")
             logging.error(u"__con.ping() exception, error=%s", e)
             self.__con.close()

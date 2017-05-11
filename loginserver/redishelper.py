@@ -1,7 +1,10 @@
 #coding=utf-8
+import config
 import redis
 import logging
 from twisted.internet import task
+from common import redispool
+import time
 
 class RedisHelper(object):
     def __init__(self):
@@ -9,50 +12,92 @@ class RedisHelper(object):
         self.loginserver_id = None
         self.loginserver_ip = None
         self.loginserver_port = None
-
-    def start(self,conf):
+        self.redis_linkcount = config.instance.redis_linkcount if config.instance.redis_linkcount else 2
+        self.__redispool = redispool.RedisConnectionPool(ip=config.instance.redis_ip,
+                                                         port=config.instance.redis_port,
+                                                         db=config.instance.redis_db,
+                                                         password=config.instance.redis_pwd,
+                                                         linkcount=self.redis_linkcount)
+    def start(self):
         l = task.LoopingCall(self.OnTimer)
-        l.start(1, False)
+        l.start(5, False)
+        self.__redispool.start()
 
-        self.redisclient = redis.StrictRedis(host=conf.redis_ip,
-                                             port=conf.redis_port,
-                                             db=conf.redis_db,
-                                             password=conf.redis_pwd)
-        logging.info(u"正在连接redis ip:%s port:%d",conf.redis_ip,conf.redis_port)
-        self.redisclient.ping()
-        logging.info(u"redis连接成功 ip:%s port:%d", conf.redis_ip, conf.redis_port)
 
     def stop(self):
-        if self.loginserver_id != None:
-            pipeline = self.redisclient.pipeline()
-            pipeline.srem(u"loginserver:loginserver_list",self.loginserver_id)
-            loginserver_key = u"loginserver:loginserver%d" % self.loginserver_id
-            pipeline.rem(loginserver_key)
-            pipeline.execute()
+        self.RemoveLoginServer()
+        while self.loginserver_id==None:
+            self.__redispool.stop()
+
+    def HashIndex(self, v):
+        return int(v) % self.redis_linkcount
 
     def OnTimer(self):
-        if self.loginserver_id != None:
-            pipeline = self.redisclient.pipeline()
-            if not self.redisclient.sismember(u"loginserver:loginserver_list",self.loginserver_id):
-                pipeline.sadd(u"loginserver:loginserver_list", self.loginserver_id)
-            loginserver_key = u"loginserver:loginserver%d" % self.loginserver_id
-            if not self.redisclient.exists(loginserver_key):
-                new_loginserver = {u"id": self.loginserver_id, u"ip":  self.loginserver_ip, u"port":  self.loginserver_port, u"times": 0}
-                pipeline.hmset(loginserver_key, new_loginserver)
-            pipeline.expire(loginserver_key, 5)
-            pipeline.execute()
+        self.UpdateLoginServerExpireTime()
 
+    #添加登录服务器到redis
     def AddLoginServer(self,id,ip,port):
-        pipeline = self.redisclient.pipeline()
-        pipeline.sadd(u"loginserver:loginserver_list",id)
-        new_loginserver = {u"id":id,u"ip":ip,u"port":port,u"times":0}
-        loginserver_key = u"loginserver:loginserver%d"%id
-        pipeline.hmset(loginserver_key,new_loginserver)
-        pipeline.expire(loginserver_key,5)
-        pipeline.execute()
         self.loginserver_id = id
         self.loginserver_ip = ip
         self.loginserver_port = port
+        cmd = redispool.RedisCommand(index=self.HashIndex(time.time()),
+                                     func=self.AddLoginServerFunc,
+                                     params=(id,ip,port),
+                                     ctx=(id,ip,port),
+                                     finish=self.AddLoginServerFinish)
+        self.__redispool.putCmd(cmd)
+
+    def AddLoginServerFunc(self,redisclient,id,ip,port):
+        redisclient.sadd(u"loginserver:loginserver_list", id)
+        new_loginserver = {u"id": id, u"ip": ip, u"port": port, u"times": 0}
+        loginserver_key = u"loginserver:loginserver%d" % id
+        redisclient.hmset(loginserver_key, new_loginserver)
+        redisclient.expire(loginserver_key, 10)
+
+    def AddLoginServerFinish(self,error,ctx,rows):
+        logging.info(u"AddLoginServerFinish() [%d] %s:%d",ctx[0],ctx[1],ctx[2])
+
+    #更新登录服务器过期时间
+    def UpdateLoginServerExpireTime(self):
+        cmd = redispool.RedisCommand(index=self.HashIndex(time.time()),
+                                     func=self.UpdateLoginServerExpireTimeFunc,
+                                     params=(self.loginserver_id,self.loginserver_ip,self.loginserver_port),
+                                     ctx=(self.loginserver_id,),
+                                     finish=self.UpdateLoginServerExpireTimeFinish)
+        self.__redispool.putCmd(cmd)
+
+    def UpdateLoginServerExpireTimeFunc(self,redisclient,id,ip,port):
+            if not redisclient.sismember(u"loginserver:loginserver_list", id):
+                redisclient.sadd(u"loginserver:loginserver_list", id)
+            loginserver_key = u"loginserver:loginserver%d" % id
+            if not redisclient.exists(loginserver_key):
+                new_loginserver = {u"id": id, u"ip": ip,u"port": port, u"times": 0}
+                redisclient.hmset(loginserver_key, new_loginserver)
+            redisclient.expire(loginserver_key, 10)
+
+    def UpdateLoginServerExpireTimeFinish(self,error,ctx,rows):
+        pass
+
+    #从redis中删除登录服务器
+    def RemoveLoginServer(self):
+        if self.loginserver_id:
+            cmd = redispool.RedisCommand(index=self.HashIndex(time.time()),
+                                     func=self.RemoveLoginServerFunc,
+                                     params=(self.loginserver_id),
+                                     ctx=(self.loginserver_id,),
+                                     finish=self.RemoveLoginServerFinish)
+            self.__redispool.putCmd(cmd)
+
+    def RemoveLoginServerFunc(self,redisclient,loginserver_id):
+        redisclient.srem(u"loginserver:loginserver_list", loginserver_id)
+        loginserver_key = u"loginserver:loginserver%d" % loginserver_id
+        redisclient.rem(loginserver_key)
+
+    def RemoveLoginServerFinish(self, error,ctx,rows):
+        self.loginserver_id = None
+        self.loginserver_ip = None
+        self.loginserver_port = None
+
 
 
 
