@@ -1,18 +1,21 @@
 #coding=utf-8
-import redis
-import logging
+from common import redispool
+import config
+
 class RedisHelper(object):
     def __init__(self):
-        self.redisclient = None
+        self.redis_linkcount = config.instance.redis_linkcount if config.instance.redis_linkcount else 2
+        self.__redispool = redispool.RedisConnectionPool(ip=config.instance.redis_ip,
+                                                         port=config.instance.redis_port,
+                                                         db=config.instance.redis_db,
+                                                         password=config.instance.redis_pwd,
+                                                         linkcount=self.redis_linkcount)
 
-    def start(self,conf):
-        self.redisclient = redis.StrictRedis(host=conf.redis_ip,
-                                             port=conf.redis_port,
-                                             db=conf.redis_db,
-                                             password=conf.redis_pwd)
-        logging.info(u"正在连接redis ip:%s port:%d",conf.redis_ip,conf.redis_port)
-        self.redisclient.ping()
-        logging.info(u"redis连接成功 ip:%s port:%d", conf.redis_ip, conf.redis_port)
+    def start(self):
+        self.__redispool.start()
+
+    def stop(self):
+        self.__redispool.stop()
 
 
 instance = RedisHelper()
