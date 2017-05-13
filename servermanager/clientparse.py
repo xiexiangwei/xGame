@@ -6,8 +6,9 @@ Created on 2016年1月11日
 '''
 import struct
 import json
-from common import fprotocol,const
+from common import fprotocol,const,CmdMessage_pb2
 import clientmanager
+import logging
 
 def lg2sm_request_config(client, pkt):
     reply={u"error":const.ERROR_OK}
@@ -35,6 +36,7 @@ def l2sm_request_config(client, pkt):
 
 #客户端请求管理服务器获取登录网关地址
 def c2sm_get_logingate(client,pkt):
+    '''
     reply={u"error":const.ERROR_OK}
     c_free_logingate = clientmanager.instance.GetFreeLoginGate()
     if c_free_logingate:
@@ -43,6 +45,16 @@ def c2sm_get_logingate(client,pkt):
     else:
         reply[u"error"] =const.ERROR_NO_LOGINGATE
     client.sendCmd(const.SM2C_GET_LOGINGATE_REPLY, json.dumps(reply))
+    '''
+    reply = CmdMessage_pb2.RePly_Get_LoginGateInfo()
+    reply.error=const.ERROR_OK
+    c_free_logingate = clientmanager.instance.GetFreeLoginGate()
+    if c_free_logingate:
+        reply.ip = c_free_logingate.ip
+        reply.port = c_free_logingate.port
+    else:
+        reply.error= const.ERROR_NO_LOGINGATE
+    client.sendCmd(const.SM2C_GET_LOGINGATE_REPLY, reply.SerializeToString())
 
 
 __cmdTable = {
@@ -55,6 +67,7 @@ def parse(clinet, cmd, pkt):
     func = __cmdTable.get(cmd)
     if not func:
         raise fprotocol.FPError(u"unknow cmd=%d" % cmd)
+    logging.debug(u"clientparse() cmd:%s",func.func_name)
     func(clinet, pkt)
 
 if __name__ == '__main__':
