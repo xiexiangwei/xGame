@@ -16,7 +16,6 @@ class RedisHelper(object):
 
         #登录服务器列表
         self.__loginserverlist=[]
-        self.time = 0
 
     def start(self):
         l = task.LoopingCall(self.OnTimer)
@@ -26,7 +25,6 @@ class RedisHelper(object):
 
     def OnTimer(self):
         self.LoadLoginServerList()
-        print self.time
 
     def HashIndex(self, v):
         return int(v) % self.redis_linkcount
@@ -65,7 +63,6 @@ class RedisHelper(object):
 
 
     def UpdateLoginServerTimesFunc(self,redisclient, id, value):
-        self.time +=1
         loginserver_key = u"loginserver:loginserver%d" % id
         if redisclient.exists(loginserver_key):
             curtimes = int(redisclient.hget(loginserver_key, u"times"))

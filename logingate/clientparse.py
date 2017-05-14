@@ -20,6 +20,7 @@ def parse(clinet, cmd, pkt):
     func = __cmdTable.get(cmd)
     if not func:
         raise fprotocol.FPError(u"unknow cmd=%d" % cmd)
+    logging.debug(u"clientparse() cmd:%s", func.func_name)
     func(clinet, pkt)
 
 if __name__ == '__main__':

@@ -8,7 +8,7 @@ Created on 2016年1月11日
 import logging
 import time
 from twisted.internet import protocol
-from common import fprotocol,const
+from common import fprotocol,const,CmdMessage_pb2
 import clientfactory
 import clientparse
 import loginservermanager
@@ -67,6 +67,10 @@ class Client(fprotocol.FProtocol):
             self.loginserver_id = id
             self.loginserver.start(ip,port)
         else:
+            reply = CmdMessage_pb2.Reply_Connect_Logingate()
+            reply.error = const.ERROR_NOT_READY_LOGIN
+            self.sendCmd(const.LG2C_READY_TO_LOGIN,reply.SerializeToString())
+
             self.kick()
             logging.warn(u"分配用户空闲登录服务器失败() client_id:%d",self.getId())
    
@@ -84,12 +88,13 @@ class Client(fprotocol.FProtocol):
         self.goToClose()
 
     def ReadyToLogin(self,ok):
-        reply = {u"error":const.ERROR_OK}
+        reply = CmdMessage_pb2.Reply_Connect_Logingate()
+        reply.error = const.ERROR_OK
         if ok:
             redishelper.instance.UpdateLoginServerTimes(self.loginserver_id, 1)
         else:
-            reply[u"error"]=const.ERROR_NOT_READY_LOGIN
-        self.sendCmd(const.LG2C_READY_TO_LOGIN,json.dumps(reply))
+            reply.error=const.ERROR_NOT_READY_LOGIN
+        self.sendCmd(const.LG2C_READY_TO_LOGIN, reply.SerializeToString())
 
     def Trans2Loginserver(self,cmd,pkt):
         if self.loginserver:

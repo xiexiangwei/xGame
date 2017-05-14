@@ -13,14 +13,14 @@ class Config(object):
         self.log_format = u"%(asctime)s %(levelname)s %(message)s"
         self.log_level = u"DEBUG"
 
-        self.redis_ip = u"192.168.1.6"
+        self.redis_ip = u"192.168.195.128"
         self.redis_port = 6379
         self.redis_db = 0
-        self.redis_pwd = u"zhanghe"
+        self.redis_pwd = u""
         self.redis_linkcount = 5
 
         self.db_name = u"xGame-Login"
-        self.db_host = u"127.0.0.1"
+        self.db_host = u"192.168.195.128"
         self.db_port = 3306
         self.db_user = u"root"
         self.db_pwd = u"123456"
