@@ -5,15 +5,21 @@ Created on 2016年1月11日
 @author: xxw
 '''
 import struct
-from common import fprotocol,const
+from common import fprotocol,const,CmdMessage_pb2
 import json
+import logging
 
 
 def Login(client,pkt):
-    data = json.loads(pkt)
-    print data
-    reply={u"error":const.ERROR_OK}
-    client.sendCmd(const.L2LG_LOGIN_RESULT,json.dumps(reply))
+    login_request = CmdMessage_pb2.Request_Login()
+    login_request.ParseFromString(pkt)
+    logging.debug(u"Login() account_name:%s account_pwd:%s",login_request.account_name,login_request.account_pwd)
+
+    reply = CmdMessage_pb2.Reply_Login()
+    reply.error = const.ERROR_OK
+    if login_request.account_name and login_request.account_pwd:
+        logging.debug(u"登录成功")
+    client.send2client(const.LG2C_LOGIN_RESULT,reply.SerializeToString())
 
 __cmdTable = {
                 const.C2LG_Login:Login,

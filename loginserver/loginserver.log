@@ -1,0 +1,589 @@
+2017-05-15 10:51:36,795 INFO ClientFactory starting on 3002
+2017-05-15 10:51:36,795 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000032CABC8>
+2017-05-15 10:51:36,811 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:51:36,811 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:51:36,811 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:51:36,825 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:51:36,825 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:51:36,825 INFO 登录服务器启动成功!服务器ID:199
+2017-05-15 10:51:36,825 DEBUG servermanager.packetReceived()
+2017-05-15 10:51:36,842 INFO AddLoginServerFinish() [199] 192.168.111.1:3002
+2017-05-15 10:51:36,857 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 10:51:36,857 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 10:52:40,825 DEBUG dataReceived len:8
+2017-05-15 10:52:40,825 WARNING unknow cmd :1
+2017-05-15 10:53:40,825 DEBUG dataReceived len:8
+2017-05-15 10:53:40,825 WARNING unknow cmd :1
+2017-05-15 10:54:19,571 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 10:54:19,572 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 10:54:19,581 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 10:54:19,582 DEBUG removeProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 10:54:50,825 DEBUG dataReceived len:8
+2017-05-15 10:54:50,825 WARNING unknow cmd :1
+2017-05-15 10:55:37,822 DEBUG buildProtocol(), id=1 len(self.__pmap)=0
+2017-05-15 10:55:37,822 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 10:55:37,823 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 10:55:37,825 DEBUG removeProtocol(), id=1 len(self.__pmap)=0
+2017-05-15 10:56:00,822 DEBUG dataReceived len:8
+2017-05-15 10:56:00,822 WARNING unknow cmd :1
+2017-05-15 10:57:10,822 DEBUG dataReceived len:8
+2017-05-15 10:57:10,823 WARNING unknow cmd :1
+2017-05-15 10:58:20,822 DEBUG dataReceived len:8
+2017-05-15 10:58:20,823 WARNING unknow cmd :1
+2017-05-15 10:59:13,719 DEBUG buildProtocol(), id=2 len(self.__pmap)=0
+2017-05-15 10:59:13,719 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 10:59:13,720 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 10:59:13,720 DEBUG removeProtocol(), id=2 len(self.__pmap)=0
+2017-05-15 11:00:11,566 INFO ClientFactory starting on 3002
+2017-05-15 11:00:11,568 INFO Starting factory <clientfactory.ClientFactory instance at 0x0000000003234BC8>
+2017-05-15 11:00:11,578 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 11:00:11,585 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 11:00:11,591 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 11:00:11,595 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 11:00:11,601 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 11:00:11,605 INFO 登录服务器启动成功!服务器ID:199
+2017-05-15 11:00:11,605 DEBUG servermanager.packetReceived()
+2017-05-15 11:00:11,621 INFO AddLoginServerFinish() [199] 192.168.111.1:3002
+2017-05-15 11:00:11,630 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 11:00:11,630 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 11:00:17,213 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 11:00:17,213 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:01:14,730 DEBUG dataReceived len:8
+2017-05-15 11:01:14,732 WARNING unknow cmd :1
+2017-05-15 11:02:24,730 DEBUG dataReceived len:8
+2017-05-15 11:02:24,730 WARNING unknow cmd :1
+2017-05-15 11:03:34,730 DEBUG dataReceived len:8
+2017-05-15 11:03:34,730 WARNING unknow cmd :1
+2017-05-15 11:04:44,730 DEBUG dataReceived len:8
+2017-05-15 11:04:44,730 WARNING unknow cmd :1
+2017-05-15 11:05:08,832 DEBUG buildProtocol(), id=1 len(self.__pmap)=1
+2017-05-15 11:05:08,832 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:05:54,730 DEBUG dataReceived len:8
+2017-05-15 11:05:54,730 WARNING unknow cmd :1
+2017-05-15 11:07:04,730 DEBUG dataReceived len:8
+2017-05-15 11:07:04,730 WARNING unknow cmd :1
+2017-05-15 11:08:14,730 DEBUG dataReceived len:8
+2017-05-15 11:08:14,730 WARNING unknow cmd :1
+2017-05-15 11:09:24,730 DEBUG dataReceived len:8
+2017-05-15 11:09:24,732 WARNING unknow cmd :1
+2017-05-15 11:10:34,730 DEBUG dataReceived len:8
+2017-05-15 11:10:34,732 WARNING unknow cmd :1
+2017-05-15 11:11:44,730 DEBUG dataReceived len:8
+2017-05-15 11:11:44,732 WARNING unknow cmd :1
+2017-05-15 11:12:54,730 DEBUG dataReceived len:8
+2017-05-15 11:12:54,730 WARNING unknow cmd :1
+2017-05-15 11:14:04,730 DEBUG dataReceived len:8
+2017-05-15 11:14:04,730 WARNING unknow cmd :1
+2017-05-15 11:15:14,730 DEBUG dataReceived len:8
+2017-05-15 11:15:14,730 WARNING unknow cmd :1
+2017-05-15 11:16:24,730 DEBUG dataReceived len:8
+2017-05-15 11:16:24,730 WARNING unknow cmd :1
+2017-05-15 11:17:34,730 DEBUG dataReceived len:8
+2017-05-15 11:17:34,730 WARNING unknow cmd :1
+2017-05-15 11:18:44,730 DEBUG dataReceived len:8
+2017-05-15 11:18:44,730 WARNING unknow cmd :1
+2017-05-15 11:19:54,730 DEBUG dataReceived len:8
+2017-05-15 11:19:54,730 WARNING unknow cmd :1
+2017-05-15 11:21:04,730 DEBUG dataReceived len:8
+2017-05-15 11:21:04,732 WARNING unknow cmd :1
+2017-05-15 11:22:14,730 DEBUG dataReceived len:8
+2017-05-15 11:22:14,730 WARNING unknow cmd :1
+2017-05-15 11:23:24,730 DEBUG dataReceived len:8
+2017-05-15 11:23:24,730 WARNING unknow cmd :1
+2017-05-15 11:24:34,730 DEBUG dataReceived len:8
+2017-05-15 11:24:34,732 WARNING unknow cmd :1
+2017-05-15 11:25:44,730 DEBUG dataReceived len:8
+2017-05-15 11:25:44,730 WARNING unknow cmd :1
+2017-05-15 11:26:54,730 DEBUG dataReceived len:8
+2017-05-15 11:26:54,730 WARNING unknow cmd :1
+2017-05-15 11:28:04,730 DEBUG dataReceived len:8
+2017-05-15 11:28:04,730 WARNING unknow cmd :1
+2017-05-15 11:29:14,730 DEBUG dataReceived len:8
+2017-05-15 11:29:14,732 WARNING unknow cmd :1
+2017-05-15 11:30:24,730 DEBUG dataReceived len:8
+2017-05-15 11:30:24,730 WARNING unknow cmd :1
+2017-05-15 11:31:34,730 DEBUG dataReceived len:8
+2017-05-15 11:31:34,732 WARNING unknow cmd :1
+2017-05-15 11:32:44,730 DEBUG dataReceived len:8
+2017-05-15 11:32:44,730 WARNING unknow cmd :1
+2017-05-15 11:33:54,730 DEBUG dataReceived len:8
+2017-05-15 11:33:54,732 WARNING unknow cmd :1
+2017-05-15 11:35:04,730 DEBUG dataReceived len:8
+2017-05-15 11:35:04,730 WARNING unknow cmd :1
+2017-05-15 11:36:14,730 DEBUG dataReceived len:8
+2017-05-15 11:36:14,730 WARNING unknow cmd :1
+2017-05-15 11:37:24,730 DEBUG dataReceived len:8
+2017-05-15 11:37:24,730 WARNING unknow cmd :1
+2017-05-15 11:38:34,730 DEBUG dataReceived len:8
+2017-05-15 11:38:34,730 WARNING unknow cmd :1
+2017-05-15 11:39:44,730 DEBUG dataReceived len:8
+2017-05-15 11:39:44,730 WARNING unknow cmd :1
+2017-05-15 11:39:58,963 DEBUG buildProtocol(), id=2 len(self.__pmap)=2
+2017-05-15 11:39:58,963 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:40:06,683 DEBUG buildProtocol(), id=3 len(self.__pmap)=3
+2017-05-15 11:40:06,683 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:40:12,313 DEBUG buildProtocol(), id=4 len(self.__pmap)=4
+2017-05-15 11:40:12,313 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:40:54,730 DEBUG dataReceived len:8
+2017-05-15 11:40:54,730 WARNING unknow cmd :1
+2017-05-15 11:42:04,730 DEBUG dataReceived len:8
+2017-05-15 11:42:04,730 WARNING unknow cmd :1
+2017-05-15 11:42:17,539 DEBUG buildProtocol(), id=5 len(self.__pmap)=5
+2017-05-15 11:42:17,539 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:43:14,730 DEBUG dataReceived len:8
+2017-05-15 11:43:14,730 WARNING unknow cmd :1
+2017-05-15 11:44:24,730 DEBUG dataReceived len:8
+2017-05-15 11:44:24,730 WARNING unknow cmd :1
+2017-05-15 11:45:24,732 DEBUG dataReceived len:8
+2017-05-15 11:45:24,733 WARNING unknow cmd :1
+2017-05-15 11:46:24,443 DEBUG buildProtocol(), id=6 len(self.__pmap)=6
+2017-05-15 11:46:24,443 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:46:34,732 DEBUG dataReceived len:8
+2017-05-15 11:46:34,732 WARNING unknow cmd :1
+2017-05-15 11:46:45,451 DEBUG buildProtocol(), id=7 len(self.__pmap)=7
+2017-05-15 11:46:45,451 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:46:48,986 DEBUG buildProtocol(), id=8 len(self.__pmap)=8
+2017-05-15 11:46:48,987 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:46:50,697 DEBUG buildProtocol(), id=9 len(self.__pmap)=9
+2017-05-15 11:46:50,697 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:47:44,732 DEBUG dataReceived len:8
+2017-05-15 11:47:44,732 WARNING unknow cmd :1
+2017-05-15 11:48:54,732 DEBUG dataReceived len:8
+2017-05-15 11:48:54,732 WARNING unknow cmd :1
+2017-05-15 11:49:16,135 DEBUG buildProtocol(), id=10 len(self.__pmap)=10
+2017-05-15 11:49:16,135 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:50:04,732 DEBUG dataReceived len:8
+2017-05-15 11:50:04,733 WARNING unknow cmd :1
+2017-05-15 11:51:14,732 DEBUG dataReceived len:8
+2017-05-15 11:51:14,732 WARNING unknow cmd :1
+2017-05-15 11:52:10,220 DEBUG buildProtocol(), id=11 len(self.__pmap)=11
+2017-05-15 11:52:10,220 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:52:24,732 DEBUG dataReceived len:8
+2017-05-15 11:52:24,733 WARNING unknow cmd :1
+2017-05-15 11:52:26,588 DEBUG buildProtocol(), id=12 len(self.__pmap)=12
+2017-05-15 11:52:26,589 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:53:34,732 DEBUG dataReceived len:8
+2017-05-15 11:53:34,733 WARNING unknow cmd :1
+2017-05-15 11:54:44,732 DEBUG dataReceived len:8
+2017-05-15 11:54:44,733 WARNING unknow cmd :1
+2017-05-15 11:55:54,732 DEBUG dataReceived len:8
+2017-05-15 11:55:54,732 WARNING unknow cmd :1
+2017-05-15 11:57:04,732 DEBUG dataReceived len:8
+2017-05-15 11:57:04,732 WARNING unknow cmd :1
+2017-05-15 11:58:14,732 DEBUG dataReceived len:8
+2017-05-15 11:58:14,732 WARNING unknow cmd :1
+2017-05-15 11:59:24,732 DEBUG dataReceived len:8
+2017-05-15 11:59:24,732 WARNING unknow cmd :1
+2017-05-15 12:00:34,732 DEBUG dataReceived len:8
+2017-05-15 12:00:34,732 WARNING unknow cmd :1
+2017-05-15 12:01:44,732 DEBUG dataReceived len:8
+2017-05-15 12:01:44,732 WARNING unknow cmd :1
+2017-05-15 12:02:54,732 DEBUG dataReceived len:8
+2017-05-15 12:02:54,733 WARNING unknow cmd :1
+2017-05-15 12:04:04,732 DEBUG dataReceived len:8
+2017-05-15 12:04:04,732 WARNING unknow cmd :1
+2017-05-15 12:05:14,732 DEBUG dataReceived len:8
+2017-05-15 12:05:14,732 WARNING unknow cmd :1
+2017-05-15 12:06:24,732 DEBUG dataReceived len:8
+2017-05-15 12:06:24,732 WARNING unknow cmd :1
+2017-05-15 12:07:34,732 DEBUG dataReceived len:8
+2017-05-15 12:07:34,732 WARNING unknow cmd :1
+2017-05-15 12:08:44,732 DEBUG dataReceived len:8
+2017-05-15 12:08:44,732 WARNING unknow cmd :1
+2017-05-15 12:09:54,732 DEBUG dataReceived len:8
+2017-05-15 12:09:54,733 WARNING unknow cmd :1
+2017-05-15 12:11:04,732 DEBUG dataReceived len:8
+2017-05-15 12:11:04,732 WARNING unknow cmd :1
+2017-05-15 12:12:14,732 DEBUG dataReceived len:8
+2017-05-15 12:12:14,732 WARNING unknow cmd :1
+2017-05-15 12:13:24,732 DEBUG dataReceived len:8
+2017-05-15 12:13:24,732 WARNING unknow cmd :1
+2017-05-15 12:14:34,732 DEBUG dataReceived len:8
+2017-05-15 12:14:34,732 WARNING unknow cmd :1
+2017-05-15 12:15:44,732 DEBUG dataReceived len:8
+2017-05-15 12:15:44,732 WARNING unknow cmd :1
+2017-05-15 12:16:54,732 DEBUG dataReceived len:8
+2017-05-15 12:16:54,732 WARNING unknow cmd :1
+2017-05-15 12:18:04,732 DEBUG dataReceived len:8
+2017-05-15 12:18:04,732 WARNING unknow cmd :1
+2017-05-15 12:19:14,732 DEBUG dataReceived len:8
+2017-05-15 12:19:14,732 WARNING unknow cmd :1
+2017-05-15 12:20:24,730 DEBUG dataReceived len:8
+2017-05-15 12:20:24,732 WARNING unknow cmd :1
+2017-05-15 12:20:34,506 DEBUG buildProtocol(), id=13 len(self.__pmap)=13
+2017-05-15 12:20:34,506 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 12:20:38,680 DEBUG dataReceived len:27
+2017-05-15 12:20:38,680 ERROR clientparse.parse() cmd=701
+Traceback (most recent call last):
+  File "C:/xGame/loginserver\client.py", line 45, in packetReceived
+    clientparse.parse(self, cmd, pkt)
+  File "C:/xGame/loginserver\clientparse.py", line 26, in parse
+    func(clinet, pkt)
+  File "C:/xGame/loginserver\clientparse.py", line 13, in Login
+    data = json.loads(pkt)
+  File "C:\Python27\lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\lib\json\decoder.py", line 365, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\lib\json\decoder.py", line 383, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+2017-05-15 12:20:38,684 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionAborted'>: Connection was aborted locally, using.
+]
+2017-05-15 12:20:38,684 DEBUG removeProtocol(), id=13 len(self.__pmap)=13
+2017-05-15 12:21:10,210 DEBUG buildProtocol(), id=14 len(self.__pmap)=13
+2017-05-15 12:21:10,210 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 12:21:13,128 DEBUG dataReceived len:27
+2017-05-15 12:21:13,128 ERROR clientparse.parse() cmd=701
+Traceback (most recent call last):
+  File "C:/xGame/loginserver\client.py", line 45, in packetReceived
+    clientparse.parse(self, cmd, pkt)
+  File "C:/xGame/loginserver\clientparse.py", line 26, in parse
+    func(clinet, pkt)
+  File "C:/xGame/loginserver\clientparse.py", line 13, in Login
+    data = json.loads(pkt)
+  File "C:\Python27\lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\lib\json\decoder.py", line 365, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\lib\json\decoder.py", line 383, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+2017-05-15 12:21:13,128 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionAborted'>: Connection was aborted locally, using.
+]
+2017-05-15 12:21:13,130 DEBUG removeProtocol(), id=14 len(self.__pmap)=13
+2017-05-15 12:21:34,730 DEBUG dataReceived len:8
+2017-05-15 12:21:34,730 WARNING unknow cmd :1
+2017-05-15 12:22:44,730 DEBUG dataReceived len:8
+2017-05-15 12:22:44,732 WARNING unknow cmd :1
+2017-05-15 12:23:54,730 DEBUG dataReceived len:8
+2017-05-15 12:23:54,732 WARNING unknow cmd :1
+2017-05-15 12:25:04,730 DEBUG dataReceived len:8
+2017-05-15 12:25:04,732 WARNING unknow cmd :1
+2017-05-15 12:26:14,730 DEBUG dataReceived len:8
+2017-05-15 12:26:14,730 WARNING unknow cmd :1
+2017-05-15 12:26:34,647 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:26:34,647 DEBUG removeProtocol(), id=7 len(self.__pmap)=12
+2017-05-15 12:26:34,647 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:26:34,648 DEBUG removeProtocol(), id=4 len(self.__pmap)=11
+2017-05-15 12:26:34,648 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:26:34,648 DEBUG removeProtocol(), id=9 len(self.__pmap)=10
+2017-05-15 12:26:34,648 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:26:34,648 DEBUG removeProtocol(), id=8 len(self.__pmap)=9
+2017-05-15 12:26:34,650 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:26:34,650 DEBUG removeProtocol(), id=10 len(self.__pmap)=8
+2017-05-15 12:26:34,651 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:26:34,651 DEBUG removeProtocol(), id=12 len(self.__pmap)=7
+2017-05-15 12:26:34,651 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:26:34,651 DEBUG removeProtocol(), id=11 len(self.__pmap)=6
+2017-05-15 12:26:34,653 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:26:34,653 DEBUG removeProtocol(), id=6 len(self.__pmap)=5
+2017-05-15 12:26:34,654 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:26:34,654 DEBUG removeProtocol(), id=5 len(self.__pmap)=4
+2017-05-15 12:26:34,654 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:26:34,655 DEBUG removeProtocol(), id=0 len(self.__pmap)=3
+2017-05-15 12:26:34,655 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:26:34,657 DEBUG removeProtocol(), id=2 len(self.__pmap)=2
+2017-05-15 12:26:34,657 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:26:34,657 DEBUG removeProtocol(), id=1 len(self.__pmap)=1
+2017-05-15 12:26:34,657 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:26:34,658 DEBUG removeProtocol(), id=3 len(self.__pmap)=0
+2017-05-15 12:31:43,575 INFO ClientFactory starting on 3002
+2017-05-15 12:31:43,575 INFO Starting factory <clientfactory.ClientFactory instance at 0x0000000004578C88>
+2017-05-15 12:31:43,588 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:31:43,592 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:31:43,598 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:31:43,604 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:31:43,608 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:31:43,614 INFO 登录服务器启动成功!服务器ID:199
+2017-05-15 12:31:43,615 DEBUG servermanager.packetReceived()
+2017-05-15 12:31:43,618 INFO AddLoginServerFinish() [199] 192.168.111.1:3002
+2017-05-15 12:31:43,654 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 12:31:43,654 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 12:31:52,971 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:31:52,973 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 12:31:55,309 DEBUG dataReceived len:27
+2017-05-15 12:31:55,309 DEBUG Login() account_name:xiexiangwei account_pwd:123456
+2017-05-15 12:32:45,944 DEBUG dataReceived len:8
+2017-05-15 12:32:45,944 WARNING unknow cmd :1
+2017-05-15 12:33:55,944 DEBUG dataReceived len:8
+2017-05-15 12:33:55,944 WARNING unknow cmd :1
+2017-05-15 12:35:05,944 DEBUG dataReceived len:8
+2017-05-15 12:35:05,944 WARNING unknow cmd :1
+2017-05-15 12:36:15,944 DEBUG dataReceived len:8
+2017-05-15 12:36:15,944 WARNING unknow cmd :1
+2017-05-15 12:37:25,944 DEBUG dataReceived len:8
+2017-05-15 12:37:25,944 WARNING unknow cmd :1
+2017-05-15 12:38:35,944 DEBUG dataReceived len:8
+2017-05-15 12:38:35,944 WARNING unknow cmd :1
+2017-05-15 12:39:45,944 DEBUG dataReceived len:8
+2017-05-15 12:39:45,944 WARNING unknow cmd :1
+2017-05-15 12:40:55,944 DEBUG dataReceived len:8
+2017-05-15 12:40:55,944 WARNING unknow cmd :1
+2017-05-15 12:42:05,944 DEBUG dataReceived len:8
+2017-05-15 12:42:05,944 WARNING unknow cmd :1
+2017-05-15 12:43:15,944 DEBUG dataReceived len:8
+2017-05-15 12:43:15,944 WARNING unknow cmd :1
+2017-05-15 12:44:25,944 DEBUG dataReceived len:8
+2017-05-15 12:44:25,946 WARNING unknow cmd :1
+2017-05-15 12:45:35,944 DEBUG dataReceived len:8
+2017-05-15 12:45:35,944 WARNING unknow cmd :1
+2017-05-15 12:46:45,944 DEBUG dataReceived len:8
+2017-05-15 12:46:45,944 WARNING unknow cmd :1
+2017-05-15 12:47:20,421 INFO ClientFactory starting on 3002
+2017-05-15 12:47:20,421 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000045CC2C8>
+2017-05-15 12:47:20,433 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:47:20,437 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:47:20,440 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:47:20,447 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:47:20,453 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:47:20,456 INFO 登录服务器启动成功!服务器ID:199
+2017-05-15 12:47:20,457 DEBUG servermanager.packetReceived()
+2017-05-15 12:47:20,470 INFO AddLoginServerFinish() [199] 192.168.111.1:3002
+2017-05-15 12:47:20,476 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 12:47:20,476 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 12:47:38,628 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:47:38,628 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 12:47:40,802 DEBUG dataReceived len:27
+2017-05-15 12:47:40,803 DEBUG Login() account_name:xiexiangwei account_pwd:123456
+2017-05-15 12:47:40,803 DEBUG 登录成功
+2017-05-15 12:48:29,186 DEBUG dataReceived len:8
+2017-05-15 12:48:29,186 WARNING unknow cmd :1
+2017-05-15 12:49:39,186 DEBUG dataReceived len:8
+2017-05-15 12:49:39,186 WARNING unknow cmd :1
+2017-05-15 12:50:49,186 DEBUG dataReceived len:8
+2017-05-15 12:50:49,186 WARNING unknow cmd :1
+2017-05-15 12:50:52,953 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:50:52,953 DEBUG removeProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:51:42,483 INFO ClientFactory starting on 3002
+2017-05-15 12:51:42,483 INFO Starting factory <clientfactory.ClientFactory instance at 0x000000000463C2C8>
+2017-05-15 12:51:42,493 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:51:42,497 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:51:42,503 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:51:42,506 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:51:42,510 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:51:42,515 INFO 登录服务器启动成功!服务器ID:199
+2017-05-15 12:51:42,516 DEBUG servermanager.packetReceived()
+2017-05-15 12:51:42,523 INFO AddLoginServerFinish() [199] 192.168.111.1:3002
+2017-05-15 12:51:42,532 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 12:51:42,533 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 12:51:50,634 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:51:50,634 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 12:51:52,921 DEBUG dataReceived len:27
+2017-05-15 12:51:52,921 DEBUG Login() account_name:xiexiangwei account_pwd:123456
+2017-05-15 12:51:52,921 DEBUG 登录成功
+2017-05-15 12:52:43,104 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:52:43,105 DEBUG removeProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:52:43,214 DEBUG dataReceived len:8
+2017-05-15 12:52:43,214 WARNING unknow cmd :1
+2017-05-15 12:53:01,540 INFO ClientFactory starting on 3002
+2017-05-15 12:53:01,542 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000046352C8>
+2017-05-15 12:53:01,553 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:53:01,559 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:53:01,563 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:53:01,568 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:53:01,573 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:53:01,578 INFO 登录服务器启动成功!服务器ID:199
+2017-05-15 12:53:01,578 DEBUG servermanager.packetReceived()
+2017-05-15 12:53:01,595 INFO AddLoginServerFinish() [199] 192.168.111.1:3002
+2017-05-15 12:53:01,596 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 12:53:01,596 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 12:53:07,036 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:53:07,038 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 12:53:08,691 DEBUG dataReceived len:27
+2017-05-15 12:53:08,691 DEBUG Login() account_name:xiexiangwei account_pwd:123456
+2017-05-15 12:53:08,693 DEBUG 登录成功
+2017-05-15 12:54:03,811 DEBUG dataReceived len:8
+2017-05-15 12:54:03,812 WARNING unknow cmd :1
+2017-05-15 12:55:03,812 DEBUG dataReceived len:8
+2017-05-15 12:55:03,812 WARNING unknow cmd :1
+2017-05-15 12:55:13,611 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:55:13,612 DEBUG removeProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:56:13,812 DEBUG dataReceived len:8
+2017-05-15 12:56:13,812 WARNING unknow cmd :1
+2017-05-15 12:56:32,930 INFO ClientFactory starting on 3002
+2017-05-15 12:56:32,931 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000045E62C8>
+2017-05-15 12:56:32,943 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:56:32,947 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:56:32,951 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:56:32,957 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:56:32,961 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:56:32,964 INFO 登录服务器启动成功!服务器ID:199
+2017-05-15 12:56:32,966 DEBUG servermanager.packetReceived()
+2017-05-15 12:56:32,971 INFO AddLoginServerFinish() [199] 192.168.111.1:3002
+2017-05-15 12:56:32,983 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 12:56:32,983 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 12:56:38,503 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:56:38,503 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 12:56:39,447 DEBUG dataReceived len:27
+2017-05-15 12:56:39,447 DEBUG Login() account_name:xiexiangwei account_pwd:123456
+2017-05-15 12:56:39,447 DEBUG 登录成功
+2017-05-15 12:57:32,930 DEBUG dataReceived len:8
+2017-05-15 12:57:32,930 WARNING unknow cmd :1
+2017-05-15 12:58:15,851 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:58:15,851 DEBUG removeProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:58:34,572 INFO ClientFactory starting on 3002
+2017-05-15 12:58:34,572 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000047462C8>
+2017-05-15 12:58:34,585 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:58:34,588 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:58:34,592 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:58:34,596 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:58:34,601 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:58:34,605 INFO 登录服务器启动成功!服务器ID:199
+2017-05-15 12:58:34,605 DEBUG servermanager.packetReceived()
+2017-05-15 12:58:34,607 INFO AddLoginServerFinish() [199] 192.168.111.1:3002
+2017-05-15 12:58:34,625 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 12:58:34,625 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 12:58:39,848 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:58:39,849 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 12:58:42,473 DEBUG dataReceived len:27
+2017-05-15 12:58:42,473 DEBUG Login() account_name:xiexiangwei account_pwd:123456
+2017-05-15 12:58:42,473 DEBUG 登录成功
+2017-05-15 12:59:20,197 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:59:20,198 DEBUG removeProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 13:00:17,936 INFO ClientFactory starting on 3002
+2017-05-15 13:00:17,937 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000046822C8>
+2017-05-15 13:00:17,947 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:00:17,953 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:00:17,957 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:00:17,961 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:00:17,966 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:00:17,969 INFO 登录服务器启动成功!服务器ID:199
+2017-05-15 13:00:17,970 DEBUG servermanager.packetReceived()
+2017-05-15 13:00:17,977 INFO AddLoginServerFinish() [199] 192.168.111.1:3002
+2017-05-15 13:00:17,987 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 13:00:17,989 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 13:00:24,884 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 13:00:24,884 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 13:00:27,563 DEBUG dataReceived len:27
+2017-05-15 13:00:27,563 DEBUG Login() account_name:xiexiangwei account_pwd:123456
+2017-05-15 13:00:27,565 DEBUG 登录成功
+2017-05-15 13:01:22,930 DEBUG dataReceived len:8
+2017-05-15 13:01:22,930 WARNING unknow cmd :1
+2017-05-15 13:02:32,930 DEBUG dataReceived len:8
+2017-05-15 13:02:32,930 WARNING unknow cmd :1
+2017-05-15 13:03:42,930 DEBUG dataReceived len:8
+2017-05-15 13:03:42,930 WARNING unknow cmd :1
+2017-05-15 13:04:03,900 INFO ClientFactory starting on 3002
+2017-05-15 13:04:03,901 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000046322C8>
+2017-05-15 13:04:03,911 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:04:03,915 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:04:03,921 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:04:03,926 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:04:03,930 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:04:03,934 INFO 登录服务器启动成功!服务器ID:199
+2017-05-15 13:04:03,934 DEBUG servermanager.packetReceived()
+2017-05-15 13:04:03,937 INFO AddLoginServerFinish() [199] 192.168.111.1:3002
+2017-05-15 13:04:03,950 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 13:04:03,950 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 13:05:12,930 DEBUG dataReceived len:8
+2017-05-15 13:05:12,930 WARNING unknow cmd :1
+2017-05-15 13:06:22,930 DEBUG dataReceived len:8
+2017-05-15 13:06:22,930 WARNING unknow cmd :1
+2017-05-15 13:06:46,711 INFO ClientFactory starting on 3002
+2017-05-15 13:06:46,713 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000047C52C8>
+2017-05-15 13:06:46,723 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:06:46,727 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:06:46,732 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:06:46,736 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:06:46,740 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:06:46,743 INFO 登录服务器启动成功!服务器ID:199
+2017-05-15 13:06:46,744 DEBUG servermanager.packetReceived()
+2017-05-15 13:06:46,747 INFO AddLoginServerFinish() [199] 192.168.111.1:3002
+2017-05-15 13:06:46,760 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 13:06:46,760 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 13:06:52,220 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 13:06:52,221 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 13:06:54,378 DEBUG dataReceived len:27
+2017-05-15 13:06:54,378 DEBUG Login() account_name:xiexiangwei account_pwd:123456
+2017-05-15 13:06:54,378 DEBUG 登录成功
+2017-05-15 13:07:26,941 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 13:07:26,941 DEBUG removeProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 13:07:35,573 INFO ClientFactory starting on 3002
+2017-05-15 13:07:35,573 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000045922C8>
+2017-05-15 13:07:35,584 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:07:35,588 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:07:35,592 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:07:35,596 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:07:35,601 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:07:35,604 INFO 登录服务器启动成功!服务器ID:199
+2017-05-15 13:07:35,605 DEBUG servermanager.packetReceived()
+2017-05-15 13:07:35,619 INFO AddLoginServerFinish() [199] 192.168.111.1:3002
+2017-05-15 13:07:35,621 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 13:07:35,621 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 13:07:40,325 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 13:07:40,326 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 13:07:43,365 DEBUG dataReceived len:27
+2017-05-15 13:07:43,367 DEBUG Login() account_name:xiexiangwei account_pwd:123456
+2017-05-15 13:07:43,367 DEBUG 登录成功
+2017-05-15 13:08:42,930 DEBUG dataReceived len:8
+2017-05-15 13:08:42,930 WARNING unknow cmd :1
+2017-05-15 13:09:52,930 DEBUG dataReceived len:8
+2017-05-15 13:09:52,930 WARNING unknow cmd :1
+2017-05-15 13:10:53,269 INFO ClientFactory starting on 3002
+2017-05-15 13:10:53,270 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000047862C8>
+2017-05-15 13:10:53,282 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:10:53,289 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:10:53,293 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:10:53,301 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:10:53,305 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:10:53,309 INFO 登录服务器启动成功!服务器ID:199
+2017-05-15 13:10:53,309 DEBUG servermanager.packetReceived()
+2017-05-15 13:10:53,313 INFO AddLoginServerFinish() [199] 192.168.111.1:3002
+2017-05-15 13:10:53,328 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 13:10:53,328 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 13:10:57,144 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 13:10:57,144 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 13:10:58,530 DEBUG dataReceived len:27
+2017-05-15 13:10:58,532 DEBUG Login() account_name:xiexiangwei account_pwd:123456
+2017-05-15 13:10:58,532 DEBUG 登录成功
+2017-05-15 13:12:02,930 DEBUG dataReceived len:8
+2017-05-15 13:12:02,930 WARNING unknow cmd :1
+2017-05-15 13:13:12,930 DEBUG dataReceived len:8
+2017-05-15 13:13:12,930 WARNING unknow cmd :1
+2017-05-15 13:14:22,930 DEBUG dataReceived len:8
+2017-05-15 13:14:22,930 WARNING unknow cmd :1
+2017-05-15 13:15:32,930 DEBUG dataReceived len:8
+2017-05-15 13:15:32,930 WARNING unknow cmd :1
+2017-05-15 13:15:47,183 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 13:15:47,184 DEBUG removeProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 13:19:12,944 INFO ClientFactory starting on 3002
+2017-05-15 13:19:12,946 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000046F62C8>
+2017-05-15 13:19:12,957 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:19:12,961 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:19:12,966 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:19:12,970 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:19:12,973 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:19:12,976 INFO 登录服务器启动成功!服务器ID:199
+2017-05-15 13:19:12,977 DEBUG servermanager.packetReceived()
+2017-05-15 13:19:12,987 INFO AddLoginServerFinish() [199] 192.168.111.1:3002
+2017-05-15 13:19:12,997 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 13:19:12,997 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 13:19:17,492 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 13:19:17,492 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 13:19:20,398 DEBUG dataReceived len:27
+2017-05-15 13:19:20,401 DEBUG Login() account_name:xiexiangwei account_pwd:123456
+2017-05-15 13:19:20,401 DEBUG 登录成功

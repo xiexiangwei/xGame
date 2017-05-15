@@ -47,10 +47,10 @@ class ServerManager(fprotocol.FProtocol):
 
     def startLogingate(self, conf,callback,isdaemon):
         if conf.servermanager_ip == None:
-            logging.error(u"没有配置登录网关管理服务器地址!")
+            logging.error(u"没有配置管理服务器地址!")
             raise ConfigException
         if conf.servermanager_port == None:
-            logging.error(u"没有配置登录网关管理服务器端口!")
+            logging.error(u"没有配置管理服务器端口!")
             raise ConfigException
         reactor.connectTCP(conf.servermanager_ip,
                            conf.servermanager_port,

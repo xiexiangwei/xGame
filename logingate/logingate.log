@@ -1,0 +1,1630 @@
+2017-05-15 10:47:09,045 INFO ClientFactory starting on 2001
+2017-05-15 10:47:09,045 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000033BC748>
+2017-05-15 10:47:09,065 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:47:09,065 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:47:09,075 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:47:09,075 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:47:09,085 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:47:09,085 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:47:09,095 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:47:09,095 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:47:09,105 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:47:09,105 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:47:09,105 INFO 登录网关服务器启动成功!服务器ID:87
+2017-05-15 10:47:09,105 DEBUG servermanager.packetReceived()
+2017-05-15 10:48:17,372 DEBUG dataReceived len:8
+2017-05-15 10:48:17,372 WARNING unknow cmd :1
+2017-05-15 10:49:27,372 DEBUG dataReceived len:8
+2017-05-15 10:49:27,372 WARNING unknow cmd :1
+2017-05-15 10:50:35,970 INFO ClientFactory starting on 2001
+2017-05-15 10:50:35,970 INFO Starting factory <clientfactory.ClientFactory instance at 0x000000000463F348>
+2017-05-15 10:51:28,246 INFO ClientFactory starting on 2001
+2017-05-15 10:51:28,246 INFO Starting factory <clientfactory.ClientFactory instance at 0x000000000470B348>
+2017-05-15 10:51:28,262 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:51:28,276 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:51:28,276 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:51:28,276 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:51:28,276 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:51:28,292 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:51:28,292 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:51:28,292 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:51:28,292 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:51:28,309 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:51:28,309 INFO 登录网关服务器启动成功!服务器ID:87
+2017-05-15 10:51:28,309 DEBUG servermanager.packetReceived()
+2017-05-15 10:52:30,835 DEBUG dataReceived len:8
+2017-05-15 10:52:30,835 WARNING unknow cmd :1
+2017-05-15 10:53:40,825 DEBUG dataReceived len:8
+2017-05-15 10:53:40,825 WARNING unknow cmd :1
+2017-05-15 10:54:19,565 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 10:54:19,566 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 10:54:19,566 WARNING 分配用户空闲登录服务器成功 client_id:0 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 10:54:19,568 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000004755E88>
+2017-05-15 10:54:19,569 WARNING  LoginServer connecting!!!
+2017-05-15 10:54:19,571 WARNING  LoginServer CONNECTED!!!
+2017-05-15 10:54:19,572 WARNING LoginServer.connectionMade()
+2017-05-15 10:54:19,575 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 88, in callWithLogger
+    return callWithContext({"system": lp}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 73, in callWithContext
+    return context.call({ILogContext: newCtx}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 81, in callWithContext
+    return func(*args,**kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 118, in _callEventCallback
+    evt.callback(rc, bytes, evt)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\tcp.py", line 292, in cbConnect
+    self.protocol.makeConnection(self)
+  File "C:\Python27\lib\site-packages\twisted\internet\protocol.py", line 481, in makeConnection
+    self.connectionMade()
+  File "C:/xGame/logingate\loginserver.py", line 50, in connectionMade
+    self.user.ReadyToLogin(True)
+  File "C:/xGame/logingate\client.py", line 91, in ReadyToLogin
+    reply = CmdMessage_pb2.Reply_Connect_Logingate()
+exceptions.AttributeError: 'module' object has no attribute 'Reply_Connect_Logingate'
+
+2017-05-15 10:54:19,578 WARNING  LoginServer DOWN!!! reason:[Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 10:54:19,579 WARNING LoginServer.onConnectionLost()
+2017-05-15 10:54:19,584 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 88, in callWithLogger
+    return callWithContext({"system": lp}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 73, in callWithContext
+    return context.call({ILogContext: newCtx}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 81, in callWithContext
+    return func(*args,**kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 118, in _callEventCallback
+    evt.callback(rc, bytes, evt)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\abstract.py", line 193, in _cbWrite
+    if self._handleWrite(rc, bytes, evt):
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\abstract.py", line 227, in _handleWrite
+    self.connectionLost(failure.Failure(main.CONNECTION_DONE))
+  File "C:\Python27\lib\site-packages\twisted\internet\tcp.py", line 486, in connectionLost
+    self.connector.connectionLost(reason)
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 1085, in connectionLost
+    self.factory.clientConnectionLost(self, reason)
+  File "C:/xGame/logingate\loginserver.py", line 24, in clientConnectionLost
+    self.loginserver.onConnectionLost()
+  File "C:/xGame/logingate\loginserver.py", line 60, in onConnectionLost
+    self.user.ReadyToLogin(False)
+  File "C:/xGame/logingate\client.py", line 91, in ReadyToLogin
+    reply = CmdMessage_pb2.Reply_Connect_Logingate()
+exceptions.AttributeError: 'module' object has no attribute 'Reply_Connect_Logingate'
+
+2017-05-15 10:54:28,062 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 10:54:28,063 DEBUG removeProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 10:54:50,825 DEBUG dataReceived len:8
+2017-05-15 10:54:50,825 WARNING unknow cmd :1
+2017-05-15 10:55:37,819 DEBUG buildProtocol(), id=1 len(self.__pmap)=0
+2017-05-15 10:55:37,819 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 10:55:37,819 WARNING 分配用户空闲登录服务器成功 client_id:1 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 10:55:37,821 INFO Starting factory <loginserver.LoginServerFactory instance at 0x00000000047562C8>
+2017-05-15 10:55:37,821 WARNING  LoginServer connecting!!!
+2017-05-15 10:55:37,822 WARNING  LoginServer CONNECTED!!!
+2017-05-15 10:55:37,822 WARNING LoginServer.connectionMade()
+2017-05-15 10:55:37,822 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 88, in callWithLogger
+    return callWithContext({"system": lp}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 73, in callWithContext
+    return context.call({ILogContext: newCtx}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 81, in callWithContext
+    return func(*args,**kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 118, in _callEventCallback
+    evt.callback(rc, bytes, evt)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\tcp.py", line 292, in cbConnect
+    self.protocol.makeConnection(self)
+  File "C:\Python27\lib\site-packages\twisted\internet\protocol.py", line 481, in makeConnection
+    self.connectionMade()
+  File "C:/xGame/logingate\loginserver.py", line 50, in connectionMade
+    self.user.ReadyToLogin(True)
+  File "C:/xGame/logingate\client.py", line 91, in ReadyToLogin
+    reply = CmdMessage_pb2.Reply_Connect_Logingate()
+exceptions.AttributeError: 'module' object has no attribute 'Reply_Connect_Logingate'
+
+2017-05-15 10:55:37,823 WARNING  LoginServer DOWN!!! reason:[Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 10:55:37,825 WARNING LoginServer.onConnectionLost()
+2017-05-15 10:55:37,825 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 88, in callWithLogger
+    return callWithContext({"system": lp}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 73, in callWithContext
+    return context.call({ILogContext: newCtx}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 81, in callWithContext
+    return func(*args,**kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 118, in _callEventCallback
+    evt.callback(rc, bytes, evt)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\abstract.py", line 193, in _cbWrite
+    if self._handleWrite(rc, bytes, evt):
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\abstract.py", line 227, in _handleWrite
+    self.connectionLost(failure.Failure(main.CONNECTION_DONE))
+  File "C:\Python27\lib\site-packages\twisted\internet\tcp.py", line 486, in connectionLost
+    self.connector.connectionLost(reason)
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 1085, in connectionLost
+    self.factory.clientConnectionLost(self, reason)
+  File "C:/xGame/logingate\loginserver.py", line 24, in clientConnectionLost
+    self.loginserver.onConnectionLost()
+  File "C:/xGame/logingate\loginserver.py", line 60, in onConnectionLost
+    self.user.ReadyToLogin(False)
+  File "C:/xGame/logingate\client.py", line 91, in ReadyToLogin
+    reply = CmdMessage_pb2.Reply_Connect_Logingate()
+exceptions.AttributeError: 'module' object has no attribute 'Reply_Connect_Logingate'
+
+2017-05-15 10:55:44,710 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 10:55:44,710 DEBUG removeProtocol(), id=1 len(self.__pmap)=0
+2017-05-15 10:56:00,822 DEBUG dataReceived len:8
+2017-05-15 10:56:00,822 WARNING unknow cmd :1
+2017-05-15 10:57:10,822 DEBUG dataReceived len:8
+2017-05-15 10:57:10,823 WARNING unknow cmd :1
+2017-05-15 10:58:20,822 DEBUG dataReceived len:8
+2017-05-15 10:58:20,823 WARNING unknow cmd :1
+2017-05-15 10:59:13,714 DEBUG buildProtocol(), id=2 len(self.__pmap)=0
+2017-05-15 10:59:13,716 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 10:59:13,716 WARNING 分配用户空闲登录服务器成功 client_id:2 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 10:59:13,717 INFO Starting factory <loginserver.LoginServerFactory instance at 0x00000000047560C8>
+2017-05-15 10:59:13,717 WARNING  LoginServer connecting!!!
+2017-05-15 10:59:13,717 WARNING  LoginServer CONNECTED!!!
+2017-05-15 10:59:13,717 WARNING LoginServer.connectionMade()
+2017-05-15 10:59:13,719 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 88, in callWithLogger
+    return callWithContext({"system": lp}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 73, in callWithContext
+    return context.call({ILogContext: newCtx}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 81, in callWithContext
+    return func(*args,**kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 118, in _callEventCallback
+    evt.callback(rc, bytes, evt)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\tcp.py", line 292, in cbConnect
+    self.protocol.makeConnection(self)
+  File "C:\Python27\lib\site-packages\twisted\internet\protocol.py", line 481, in makeConnection
+    self.connectionMade()
+  File "C:/xGame/logingate\loginserver.py", line 50, in connectionMade
+    self.user.ReadyToLogin(True)
+  File "C:/xGame/logingate\client.py", line 91, in ReadyToLogin
+    reply = CmdMessage_pb2.Reply_Connect_Logingate()
+exceptions.AttributeError: 'module' object has no attribute 'Reply_Connect_Logingate'
+
+2017-05-15 10:59:13,720 WARNING  LoginServer DOWN!!! reason:[Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 10:59:13,720 WARNING LoginServer.onConnectionLost()
+2017-05-15 10:59:13,720 ERROR Unhandled Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 88, in callWithLogger
+    return callWithContext({"system": lp}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\log.py", line 73, in callWithContext
+    return context.call({ILogContext: newCtx}, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "C:\Python27\lib\site-packages\twisted\python\context.py", line 81, in callWithContext
+    return func(*args,**kw)
+--- <exception caught here> ---
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 118, in _callEventCallback
+    evt.callback(rc, bytes, evt)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\abstract.py", line 193, in _cbWrite
+    if self._handleWrite(rc, bytes, evt):
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\abstract.py", line 227, in _handleWrite
+    self.connectionLost(failure.Failure(main.CONNECTION_DONE))
+  File "C:\Python27\lib\site-packages\twisted\internet\tcp.py", line 486, in connectionLost
+    self.connector.connectionLost(reason)
+  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 1085, in connectionLost
+    self.factory.clientConnectionLost(self, reason)
+  File "C:/xGame/logingate\loginserver.py", line 24, in clientConnectionLost
+    self.loginserver.onConnectionLost()
+  File "C:/xGame/logingate\loginserver.py", line 60, in onConnectionLost
+    self.user.ReadyToLogin(False)
+  File "C:/xGame/logingate\client.py", line 91, in ReadyToLogin
+    reply = CmdMessage_pb2.Reply_Connect_Logingate()
+exceptions.AttributeError: 'module' object has no attribute 'Reply_Connect_Logingate'
+
+2017-05-15 11:00:08,101 INFO ClientFactory starting on 2001
+2017-05-15 11:00:08,102 INFO Starting factory <clientfactory.ClientFactory instance at 0x0000000004825988>
+2017-05-15 11:00:08,114 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 11:00:08,118 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 11:00:08,122 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 11:00:08,127 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 11:00:08,131 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 11:00:08,134 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 11:00:08,140 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 11:00:08,144 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 11:00:08,147 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 11:00:08,150 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 11:00:08,150 INFO 登录网关服务器启动成功!服务器ID:87
+2017-05-15 11:00:08,151 DEBUG servermanager.packetReceived()
+2017-05-15 11:00:17,207 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 11:00:17,209 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:00:17,209 WARNING 分配用户空闲登录服务器成功 client_id:0 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 11:00:17,210 INFO Starting factory <loginserver.LoginServerFactory instance at 0x000000000486D348>
+2017-05-15 11:00:17,210 WARNING  LoginServer connecting!!!
+2017-05-15 11:00:17,213 WARNING  LoginServer CONNECTED!!!
+2017-05-15 11:00:17,213 WARNING LoginServer.connectionMade()
+2017-05-15 11:00:17,217 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:00:17,219 DEBUG removeProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 11:01:14,730 DEBUG dataReceived len:8
+2017-05-15 11:01:14,732 WARNING unknow cmd :1
+2017-05-15 11:01:21,569 DEBUG dataReceived len:8
+2017-05-15 11:02:24,730 DEBUG dataReceived len:8
+2017-05-15 11:02:24,730 WARNING unknow cmd :1
+2017-05-15 11:02:31,569 DEBUG dataReceived len:8
+2017-05-15 11:03:34,730 DEBUG dataReceived len:8
+2017-05-15 11:03:34,730 WARNING unknow cmd :1
+2017-05-15 11:03:41,569 DEBUG dataReceived len:8
+2017-05-15 11:04:44,730 DEBUG dataReceived len:8
+2017-05-15 11:04:44,730 WARNING unknow cmd :1
+2017-05-15 11:04:51,569 DEBUG dataReceived len:8
+2017-05-15 11:05:08,828 DEBUG buildProtocol(), id=1 len(self.__pmap)=0
+2017-05-15 11:05:08,828 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:05:08,828 WARNING 分配用户空闲登录服务器成功 client_id:1 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 11:05:08,828 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000004870048>
+2017-05-15 11:05:08,829 WARNING  LoginServer connecting!!!
+2017-05-15 11:05:08,829 WARNING  LoginServer CONNECTED!!!
+2017-05-15 11:05:08,831 WARNING LoginServer.connectionMade()
+2017-05-15 11:05:32,905 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:05:32,907 DEBUG removeProtocol(), id=1 len(self.__pmap)=0
+2017-05-15 11:05:54,730 DEBUG dataReceived len:8
+2017-05-15 11:05:54,730 WARNING unknow cmd :1
+2017-05-15 11:06:01,569 DEBUG dataReceived len:8
+2017-05-15 11:06:11,569 DEBUG dataReceived len:8
+2017-05-15 11:07:04,730 DEBUG dataReceived len:8
+2017-05-15 11:07:04,730 WARNING unknow cmd :1
+2017-05-15 11:07:11,569 DEBUG dataReceived len:8
+2017-05-15 11:07:21,569 DEBUG dataReceived len:8
+2017-05-15 11:08:14,730 DEBUG dataReceived len:8
+2017-05-15 11:08:14,730 WARNING unknow cmd :1
+2017-05-15 11:08:21,569 DEBUG dataReceived len:8
+2017-05-15 11:08:31,569 DEBUG dataReceived len:8
+2017-05-15 11:09:24,730 DEBUG dataReceived len:8
+2017-05-15 11:09:24,730 WARNING unknow cmd :1
+2017-05-15 11:09:31,569 DEBUG dataReceived len:8
+2017-05-15 11:09:41,569 DEBUG dataReceived len:8
+2017-05-15 11:10:34,730 DEBUG dataReceived len:8
+2017-05-15 11:10:34,730 WARNING unknow cmd :1
+2017-05-15 11:10:41,569 DEBUG dataReceived len:8
+2017-05-15 11:10:51,569 DEBUG dataReceived len:8
+2017-05-15 11:11:44,730 DEBUG dataReceived len:8
+2017-05-15 11:11:44,732 WARNING unknow cmd :1
+2017-05-15 11:11:51,569 DEBUG dataReceived len:8
+2017-05-15 11:12:01,569 DEBUG dataReceived len:8
+2017-05-15 11:12:54,730 DEBUG dataReceived len:8
+2017-05-15 11:12:54,730 WARNING unknow cmd :1
+2017-05-15 11:13:01,569 DEBUG dataReceived len:8
+2017-05-15 11:13:11,569 DEBUG dataReceived len:8
+2017-05-15 11:14:04,730 DEBUG dataReceived len:8
+2017-05-15 11:14:04,730 WARNING unknow cmd :1
+2017-05-15 11:14:11,569 DEBUG dataReceived len:8
+2017-05-15 11:14:21,569 DEBUG dataReceived len:8
+2017-05-15 11:15:14,730 DEBUG dataReceived len:8
+2017-05-15 11:15:14,730 WARNING unknow cmd :1
+2017-05-15 11:15:21,569 DEBUG dataReceived len:8
+2017-05-15 11:15:31,569 DEBUG dataReceived len:8
+2017-05-15 11:16:24,730 DEBUG dataReceived len:8
+2017-05-15 11:16:24,730 WARNING unknow cmd :1
+2017-05-15 11:16:31,569 DEBUG dataReceived len:8
+2017-05-15 11:16:41,569 DEBUG dataReceived len:8
+2017-05-15 11:17:34,730 DEBUG dataReceived len:8
+2017-05-15 11:17:34,730 WARNING unknow cmd :1
+2017-05-15 11:17:41,569 DEBUG dataReceived len:8
+2017-05-15 11:17:51,569 DEBUG dataReceived len:8
+2017-05-15 11:18:44,730 DEBUG dataReceived len:8
+2017-05-15 11:18:44,730 WARNING unknow cmd :1
+2017-05-15 11:18:51,569 DEBUG dataReceived len:8
+2017-05-15 11:19:01,569 DEBUG dataReceived len:8
+2017-05-15 11:19:54,730 DEBUG dataReceived len:8
+2017-05-15 11:19:54,730 WARNING unknow cmd :1
+2017-05-15 11:20:01,569 DEBUG dataReceived len:8
+2017-05-15 11:20:11,569 DEBUG dataReceived len:8
+2017-05-15 11:21:04,730 DEBUG dataReceived len:8
+2017-05-15 11:21:04,732 WARNING unknow cmd :1
+2017-05-15 11:21:11,569 DEBUG dataReceived len:8
+2017-05-15 11:21:21,569 DEBUG dataReceived len:8
+2017-05-15 11:22:14,730 DEBUG dataReceived len:8
+2017-05-15 11:22:14,730 WARNING unknow cmd :1
+2017-05-15 11:22:21,569 DEBUG dataReceived len:8
+2017-05-15 11:22:21,571 DEBUG dataReceived len:8
+2017-05-15 11:23:24,730 DEBUG dataReceived len:8
+2017-05-15 11:23:24,730 WARNING unknow cmd :1
+2017-05-15 11:23:31,569 DEBUG dataReceived len:8
+2017-05-15 11:23:31,569 DEBUG dataReceived len:8
+2017-05-15 11:24:34,730 DEBUG dataReceived len:8
+2017-05-15 11:24:34,732 WARNING unknow cmd :1
+2017-05-15 11:24:41,569 DEBUG dataReceived len:8
+2017-05-15 11:24:41,569 DEBUG dataReceived len:8
+2017-05-15 11:25:44,730 DEBUG dataReceived len:8
+2017-05-15 11:25:44,730 WARNING unknow cmd :1
+2017-05-15 11:25:51,569 DEBUG dataReceived len:8
+2017-05-15 11:25:51,569 DEBUG dataReceived len:8
+2017-05-15 11:26:54,730 DEBUG dataReceived len:8
+2017-05-15 11:26:54,730 WARNING unknow cmd :1
+2017-05-15 11:27:01,569 DEBUG dataReceived len:8
+2017-05-15 11:27:01,569 DEBUG dataReceived len:8
+2017-05-15 11:28:04,730 DEBUG dataReceived len:8
+2017-05-15 11:28:04,730 WARNING unknow cmd :1
+2017-05-15 11:28:11,569 DEBUG dataReceived len:8
+2017-05-15 11:28:11,569 DEBUG dataReceived len:8
+2017-05-15 11:29:14,730 DEBUG dataReceived len:8
+2017-05-15 11:29:14,732 WARNING unknow cmd :1
+2017-05-15 11:29:21,569 DEBUG dataReceived len:8
+2017-05-15 11:29:21,569 DEBUG dataReceived len:8
+2017-05-15 11:30:24,730 DEBUG dataReceived len:8
+2017-05-15 11:30:24,730 WARNING unknow cmd :1
+2017-05-15 11:30:31,569 DEBUG dataReceived len:8
+2017-05-15 11:30:31,569 DEBUG dataReceived len:8
+2017-05-15 11:31:34,730 DEBUG dataReceived len:8
+2017-05-15 11:31:34,732 WARNING unknow cmd :1
+2017-05-15 11:31:41,569 DEBUG dataReceived len:8
+2017-05-15 11:31:41,569 DEBUG dataReceived len:8
+2017-05-15 11:32:44,730 DEBUG dataReceived len:8
+2017-05-15 11:32:44,730 WARNING unknow cmd :1
+2017-05-15 11:32:51,569 DEBUG dataReceived len:8
+2017-05-15 11:32:51,569 DEBUG dataReceived len:8
+2017-05-15 11:33:54,730 DEBUG dataReceived len:8
+2017-05-15 11:33:54,732 WARNING unknow cmd :1
+2017-05-15 11:34:01,569 DEBUG dataReceived len:8
+2017-05-15 11:34:01,571 DEBUG dataReceived len:8
+2017-05-15 11:35:04,730 DEBUG dataReceived len:8
+2017-05-15 11:35:04,732 WARNING unknow cmd :1
+2017-05-15 11:35:11,569 DEBUG dataReceived len:8
+2017-05-15 11:35:11,569 DEBUG dataReceived len:8
+2017-05-15 11:36:14,730 DEBUG dataReceived len:8
+2017-05-15 11:36:14,730 WARNING unknow cmd :1
+2017-05-15 11:36:21,569 DEBUG dataReceived len:8
+2017-05-15 11:36:21,569 DEBUG dataReceived len:8
+2017-05-15 11:37:24,730 DEBUG dataReceived len:8
+2017-05-15 11:37:24,730 WARNING unknow cmd :1
+2017-05-15 11:37:31,569 DEBUG dataReceived len:8
+2017-05-15 11:37:31,569 DEBUG dataReceived len:8
+2017-05-15 11:38:34,730 DEBUG dataReceived len:8
+2017-05-15 11:38:34,730 WARNING unknow cmd :1
+2017-05-15 11:38:41,569 DEBUG dataReceived len:8
+2017-05-15 11:38:41,569 DEBUG dataReceived len:8
+2017-05-15 11:39:44,730 DEBUG dataReceived len:8
+2017-05-15 11:39:44,730 WARNING unknow cmd :1
+2017-05-15 11:39:51,569 DEBUG dataReceived len:8
+2017-05-15 11:39:51,569 DEBUG dataReceived len:8
+2017-05-15 11:39:58,960 DEBUG buildProtocol(), id=2 len(self.__pmap)=0
+2017-05-15 11:39:58,960 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:39:58,960 WARNING 分配用户空闲登录服务器成功 client_id:2 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 11:39:58,960 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000004870B88>
+2017-05-15 11:39:58,961 WARNING  LoginServer connecting!!!
+2017-05-15 11:39:58,963 WARNING  LoginServer CONNECTED!!!
+2017-05-15 11:39:58,963 WARNING LoginServer.connectionMade()
+2017-05-15 11:40:02,535 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:40:02,535 DEBUG removeProtocol(), id=2 len(self.__pmap)=0
+2017-05-15 11:40:06,680 DEBUG buildProtocol(), id=3 len(self.__pmap)=0
+2017-05-15 11:40:06,680 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:40:06,680 WARNING 分配用户空闲登录服务器成功 client_id:3 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 11:40:06,680 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000004872048>
+2017-05-15 11:40:06,681 WARNING  LoginServer connecting!!!
+2017-05-15 11:40:06,683 WARNING  LoginServer CONNECTED!!!
+2017-05-15 11:40:06,683 WARNING LoginServer.connectionMade()
+2017-05-15 11:40:08,398 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:40:08,400 DEBUG removeProtocol(), id=3 len(self.__pmap)=0
+2017-05-15 11:40:12,309 DEBUG buildProtocol(), id=4 len(self.__pmap)=0
+2017-05-15 11:40:12,311 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:40:12,311 WARNING 分配用户空闲登录服务器成功 client_id:4 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 11:40:12,311 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000004872488>
+2017-05-15 11:40:12,312 WARNING  LoginServer connecting!!!
+2017-05-15 11:40:12,312 WARNING  LoginServer CONNECTED!!!
+2017-05-15 11:40:12,313 WARNING LoginServer.connectionMade()
+2017-05-15 11:40:18,444 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:40:18,446 DEBUG removeProtocol(), id=4 len(self.__pmap)=0
+2017-05-15 11:40:54,730 DEBUG dataReceived len:8
+2017-05-15 11:40:54,730 WARNING unknow cmd :1
+2017-05-15 11:41:01,569 DEBUG dataReceived len:8
+2017-05-15 11:41:01,569 DEBUG dataReceived len:8
+2017-05-15 11:41:01,569 DEBUG dataReceived len:8
+2017-05-15 11:41:11,569 DEBUG dataReceived len:8
+2017-05-15 11:41:21,569 DEBUG dataReceived len:8
+2017-05-15 11:42:04,730 DEBUG dataReceived len:8
+2017-05-15 11:42:04,730 WARNING unknow cmd :1
+2017-05-15 11:42:11,569 DEBUG dataReceived len:8
+2017-05-15 11:42:11,569 DEBUG dataReceived len:8
+2017-05-15 11:42:11,569 DEBUG dataReceived len:8
+2017-05-15 11:42:17,536 DEBUG buildProtocol(), id=5 len(self.__pmap)=0
+2017-05-15 11:42:17,536 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:42:17,536 WARNING 分配用户空闲登录服务器成功 client_id:5 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 11:42:17,536 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000004872188>
+2017-05-15 11:42:17,538 WARNING  LoginServer connecting!!!
+2017-05-15 11:42:17,539 WARNING  LoginServer CONNECTED!!!
+2017-05-15 11:42:17,539 WARNING LoginServer.connectionMade()
+2017-05-15 11:42:21,569 DEBUG dataReceived len:8
+2017-05-15 11:42:31,569 DEBUG dataReceived len:8
+2017-05-15 11:42:34,836 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:42:34,838 DEBUG removeProtocol(), id=5 len(self.__pmap)=0
+2017-05-15 11:43:14,730 DEBUG dataReceived len:8
+2017-05-15 11:43:14,730 WARNING unknow cmd :1
+2017-05-15 11:43:21,569 DEBUG dataReceived len:8
+2017-05-15 11:43:21,569 DEBUG dataReceived len:8
+2017-05-15 11:43:21,569 DEBUG dataReceived len:8
+2017-05-15 11:43:21,569 DEBUG dataReceived len:8
+2017-05-15 11:43:31,569 DEBUG dataReceived len:8
+2017-05-15 11:43:41,569 DEBUG dataReceived len:8
+2017-05-15 11:44:24,730 DEBUG dataReceived len:8
+2017-05-15 11:44:24,730 WARNING unknow cmd :1
+2017-05-15 11:44:31,569 DEBUG dataReceived len:8
+2017-05-15 11:44:31,569 DEBUG dataReceived len:8
+2017-05-15 11:44:31,569 DEBUG dataReceived len:8
+2017-05-15 11:44:31,571 DEBUG dataReceived len:8
+2017-05-15 11:44:41,569 DEBUG dataReceived len:8
+2017-05-15 11:44:51,569 DEBUG dataReceived len:8
+2017-05-15 11:45:24,732 DEBUG dataReceived len:8
+2017-05-15 11:45:24,733 WARNING unknow cmd :1
+2017-05-15 11:45:41,569 DEBUG dataReceived len:8
+2017-05-15 11:45:41,569 DEBUG dataReceived len:8
+2017-05-15 11:45:41,569 DEBUG dataReceived len:8
+2017-05-15 11:45:41,569 DEBUG dataReceived len:8
+2017-05-15 11:45:51,569 DEBUG dataReceived len:8
+2017-05-15 11:46:01,569 DEBUG dataReceived len:8
+2017-05-15 11:46:24,438 DEBUG buildProtocol(), id=6 len(self.__pmap)=0
+2017-05-15 11:46:24,440 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:46:24,440 WARNING 分配用户空闲登录服务器成功 client_id:6 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 11:46:24,440 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000004872CC8>
+2017-05-15 11:46:24,441 WARNING  LoginServer connecting!!!
+2017-05-15 11:46:24,441 WARNING  LoginServer CONNECTED!!!
+2017-05-15 11:46:24,443 WARNING LoginServer.connectionMade()
+2017-05-15 11:46:26,963 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:46:26,964 DEBUG removeProtocol(), id=6 len(self.__pmap)=0
+2017-05-15 11:46:34,732 DEBUG dataReceived len:8
+2017-05-15 11:46:34,733 WARNING unknow cmd :1
+2017-05-15 11:46:45,450 DEBUG buildProtocol(), id=7 len(self.__pmap)=0
+2017-05-15 11:46:45,450 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:46:45,450 WARNING 分配用户空闲登录服务器成功 client_id:7 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 11:46:45,450 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000004875248>
+2017-05-15 11:46:45,450 WARNING  LoginServer connecting!!!
+2017-05-15 11:46:45,451 WARNING  LoginServer CONNECTED!!!
+2017-05-15 11:46:45,451 WARNING LoginServer.connectionMade()
+2017-05-15 11:46:46,969 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:46:46,970 DEBUG removeProtocol(), id=7 len(self.__pmap)=0
+2017-05-15 11:46:48,984 DEBUG buildProtocol(), id=8 len(self.__pmap)=0
+2017-05-15 11:46:48,984 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:46:48,986 WARNING 分配用户空闲登录服务器成功 client_id:8 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 11:46:48,986 INFO Starting factory <loginserver.LoginServerFactory instance at 0x00000000048756C8>
+2017-05-15 11:46:48,986 WARNING  LoginServer connecting!!!
+2017-05-15 11:46:48,986 WARNING  LoginServer CONNECTED!!!
+2017-05-15 11:46:48,986 WARNING LoginServer.connectionMade()
+2017-05-15 11:46:49,306 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:46:49,308 DEBUG removeProtocol(), id=8 len(self.__pmap)=0
+2017-05-15 11:46:50,694 DEBUG buildProtocol(), id=9 len(self.__pmap)=0
+2017-05-15 11:46:50,694 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:46:50,694 WARNING 分配用户空闲登录服务器成功 client_id:9 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 11:46:50,694 INFO Starting factory <loginserver.LoginServerFactory instance at 0x00000000048758C8>
+2017-05-15 11:46:50,696 WARNING  LoginServer connecting!!!
+2017-05-15 11:46:50,697 WARNING  LoginServer CONNECTED!!!
+2017-05-15 11:46:50,697 WARNING LoginServer.connectionMade()
+2017-05-15 11:46:51,549 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:46:51,551 DEBUG removeProtocol(), id=9 len(self.__pmap)=0
+2017-05-15 11:46:51,569 DEBUG dataReceived len:8
+2017-05-15 11:46:51,569 DEBUG dataReceived len:8
+2017-05-15 11:46:51,569 DEBUG dataReceived len:8
+2017-05-15 11:46:51,569 DEBUG dataReceived len:8
+2017-05-15 11:47:01,569 DEBUG dataReceived len:8
+2017-05-15 11:47:11,569 DEBUG dataReceived len:8
+2017-05-15 11:47:31,569 DEBUG dataReceived len:8
+2017-05-15 11:47:44,732 DEBUG dataReceived len:8
+2017-05-15 11:47:44,732 WARNING unknow cmd :1
+2017-05-15 11:47:51,569 DEBUG dataReceived len:8
+2017-05-15 11:47:51,569 DEBUG dataReceived len:8
+2017-05-15 11:47:51,569 DEBUG dataReceived len:8
+2017-05-15 11:48:01,569 DEBUG dataReceived len:8
+2017-05-15 11:48:01,569 DEBUG dataReceived len:8
+2017-05-15 11:48:01,569 DEBUG dataReceived len:8
+2017-05-15 11:48:01,569 DEBUG dataReceived len:8
+2017-05-15 11:48:11,569 DEBUG dataReceived len:8
+2017-05-15 11:48:21,571 DEBUG dataReceived len:8
+2017-05-15 11:48:41,569 DEBUG dataReceived len:8
+2017-05-15 11:48:54,732 DEBUG dataReceived len:8
+2017-05-15 11:48:54,732 WARNING unknow cmd :1
+2017-05-15 11:49:01,569 DEBUG dataReceived len:8
+2017-05-15 11:49:01,569 DEBUG dataReceived len:8
+2017-05-15 11:49:01,569 DEBUG dataReceived len:8
+2017-05-15 11:49:11,569 DEBUG dataReceived len:8
+2017-05-15 11:49:11,569 DEBUG dataReceived len:8
+2017-05-15 11:49:11,571 DEBUG dataReceived len:8
+2017-05-15 11:49:11,571 DEBUG dataReceived len:8
+2017-05-15 11:49:16,132 DEBUG buildProtocol(), id=10 len(self.__pmap)=0
+2017-05-15 11:49:16,132 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:49:16,134 WARNING 分配用户空闲登录服务器成功 client_id:10 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 11:49:16,134 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000004875DC8>
+2017-05-15 11:49:16,134 WARNING  LoginServer connecting!!!
+2017-05-15 11:49:16,135 WARNING  LoginServer CONNECTED!!!
+2017-05-15 11:49:16,135 WARNING LoginServer.connectionMade()
+2017-05-15 11:49:17,456 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:49:17,457 DEBUG removeProtocol(), id=10 len(self.__pmap)=0
+2017-05-15 11:49:21,569 DEBUG dataReceived len:8
+2017-05-15 11:49:31,569 DEBUG dataReceived len:8
+2017-05-15 11:49:51,569 DEBUG dataReceived len:8
+2017-05-15 11:50:04,732 DEBUG dataReceived len:8
+2017-05-15 11:50:04,733 WARNING unknow cmd :1
+2017-05-15 11:50:11,569 DEBUG dataReceived len:8
+2017-05-15 11:50:11,569 DEBUG dataReceived len:8
+2017-05-15 11:50:11,569 DEBUG dataReceived len:8
+2017-05-15 11:50:21,569 DEBUG dataReceived len:8
+2017-05-15 11:50:21,569 DEBUG dataReceived len:8
+2017-05-15 11:50:21,571 DEBUG dataReceived len:8
+2017-05-15 11:50:21,571 DEBUG dataReceived len:8
+2017-05-15 11:50:21,571 DEBUG dataReceived len:8
+2017-05-15 11:50:31,569 DEBUG dataReceived len:8
+2017-05-15 11:50:41,569 DEBUG dataReceived len:8
+2017-05-15 11:51:01,569 DEBUG dataReceived len:8
+2017-05-15 11:51:14,732 DEBUG dataReceived len:8
+2017-05-15 11:51:14,732 WARNING unknow cmd :1
+2017-05-15 11:51:21,569 DEBUG dataReceived len:8
+2017-05-15 11:51:21,569 DEBUG dataReceived len:8
+2017-05-15 11:51:21,569 DEBUG dataReceived len:8
+2017-05-15 11:51:31,569 DEBUG dataReceived len:8
+2017-05-15 11:51:31,569 DEBUG dataReceived len:8
+2017-05-15 11:51:31,569 DEBUG dataReceived len:8
+2017-05-15 11:51:31,571 DEBUG dataReceived len:8
+2017-05-15 11:51:31,571 DEBUG dataReceived len:8
+2017-05-15 11:51:41,569 DEBUG dataReceived len:8
+2017-05-15 11:51:51,569 DEBUG dataReceived len:8
+2017-05-15 11:52:10,217 DEBUG buildProtocol(), id=11 len(self.__pmap)=0
+2017-05-15 11:52:10,217 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:52:10,217 WARNING 分配用户空闲登录服务器成功 client_id:11 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 11:52:10,217 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000004877308>
+2017-05-15 11:52:10,219 WARNING  LoginServer connecting!!!
+2017-05-15 11:52:10,220 WARNING  LoginServer CONNECTED!!!
+2017-05-15 11:52:10,220 WARNING LoginServer.connectionMade()
+2017-05-15 11:52:11,569 DEBUG dataReceived len:8
+2017-05-15 11:52:21,592 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:52:21,592 DEBUG removeProtocol(), id=11 len(self.__pmap)=0
+2017-05-15 11:52:24,732 DEBUG dataReceived len:8
+2017-05-15 11:52:24,733 WARNING unknow cmd :1
+2017-05-15 11:52:26,585 DEBUG buildProtocol(), id=12 len(self.__pmap)=0
+2017-05-15 11:52:26,585 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 11:52:26,586 WARNING 分配用户空闲登录服务器成功 client_id:12 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 11:52:26,586 INFO Starting factory <loginserver.LoginServerFactory instance at 0x00000000048776C8>
+2017-05-15 11:52:26,588 WARNING  LoginServer connecting!!!
+2017-05-15 11:52:26,588 WARNING  LoginServer CONNECTED!!!
+2017-05-15 11:52:26,588 WARNING LoginServer.connectionMade()
+2017-05-15 11:52:31,569 DEBUG dataReceived len:8
+2017-05-15 11:52:31,569 DEBUG dataReceived len:8
+2017-05-15 11:52:31,569 DEBUG dataReceived len:8
+2017-05-15 11:52:41,569 DEBUG dataReceived len:8
+2017-05-15 11:52:41,569 DEBUG dataReceived len:8
+2017-05-15 11:52:41,569 DEBUG dataReceived len:8
+2017-05-15 11:52:41,569 DEBUG dataReceived len:8
+2017-05-15 11:52:41,571 DEBUG dataReceived len:8
+2017-05-15 11:52:51,569 DEBUG dataReceived len:8
+2017-05-15 11:52:58,561 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:52:58,562 DEBUG removeProtocol(), id=12 len(self.__pmap)=0
+2017-05-15 11:53:01,569 DEBUG dataReceived len:8
+2017-05-15 11:53:11,569 DEBUG dataReceived len:8
+2017-05-15 11:53:21,569 DEBUG dataReceived len:8
+2017-05-15 11:53:31,569 DEBUG dataReceived len:8
+2017-05-15 11:53:34,732 DEBUG dataReceived len:8
+2017-05-15 11:53:34,733 WARNING unknow cmd :1
+2017-05-15 11:53:41,569 DEBUG dataReceived len:8
+2017-05-15 11:53:41,569 DEBUG dataReceived len:8
+2017-05-15 11:53:41,569 DEBUG dataReceived len:8
+2017-05-15 11:53:51,569 DEBUG dataReceived len:8
+2017-05-15 11:53:51,569 DEBUG dataReceived len:8
+2017-05-15 11:53:51,571 DEBUG dataReceived len:8
+2017-05-15 11:53:51,571 DEBUG dataReceived len:8
+2017-05-15 11:53:51,571 DEBUG dataReceived len:8
+2017-05-15 11:54:01,569 DEBUG dataReceived len:8
+2017-05-15 11:54:11,569 DEBUG dataReceived len:8
+2017-05-15 11:54:21,569 DEBUG dataReceived len:8
+2017-05-15 11:54:31,569 DEBUG dataReceived len:8
+2017-05-15 11:54:41,569 DEBUG dataReceived len:8
+2017-05-15 11:54:44,732 DEBUG dataReceived len:8
+2017-05-15 11:54:44,733 WARNING unknow cmd :1
+2017-05-15 11:54:51,569 DEBUG dataReceived len:8
+2017-05-15 11:54:51,569 DEBUG dataReceived len:8
+2017-05-15 11:54:51,569 DEBUG dataReceived len:8
+2017-05-15 11:55:01,569 DEBUG dataReceived len:8
+2017-05-15 11:55:01,569 DEBUG dataReceived len:8
+2017-05-15 11:55:01,569 DEBUG dataReceived len:8
+2017-05-15 11:55:01,569 DEBUG dataReceived len:8
+2017-05-15 11:55:01,571 DEBUG dataReceived len:8
+2017-05-15 11:55:11,569 DEBUG dataReceived len:8
+2017-05-15 11:55:21,569 DEBUG dataReceived len:8
+2017-05-15 11:55:31,569 DEBUG dataReceived len:8
+2017-05-15 11:55:41,569 DEBUG dataReceived len:8
+2017-05-15 11:55:51,569 DEBUG dataReceived len:8
+2017-05-15 11:55:54,732 DEBUG dataReceived len:8
+2017-05-15 11:55:54,732 WARNING unknow cmd :1
+2017-05-15 11:56:01,569 DEBUG dataReceived len:8
+2017-05-15 11:56:01,569 DEBUG dataReceived len:8
+2017-05-15 11:56:01,569 DEBUG dataReceived len:8
+2017-05-15 11:56:11,569 DEBUG dataReceived len:8
+2017-05-15 11:56:11,569 DEBUG dataReceived len:8
+2017-05-15 11:56:11,569 DEBUG dataReceived len:8
+2017-05-15 11:56:11,571 DEBUG dataReceived len:8
+2017-05-15 11:56:11,571 DEBUG dataReceived len:8
+2017-05-15 11:56:21,569 DEBUG dataReceived len:8
+2017-05-15 11:56:31,569 DEBUG dataReceived len:8
+2017-05-15 11:56:41,569 DEBUG dataReceived len:8
+2017-05-15 11:56:51,569 DEBUG dataReceived len:8
+2017-05-15 11:57:01,569 DEBUG dataReceived len:8
+2017-05-15 11:57:04,732 DEBUG dataReceived len:8
+2017-05-15 11:57:04,732 WARNING unknow cmd :1
+2017-05-15 11:57:11,569 DEBUG dataReceived len:8
+2017-05-15 11:57:11,569 DEBUG dataReceived len:8
+2017-05-15 11:57:11,569 DEBUG dataReceived len:8
+2017-05-15 11:57:21,569 DEBUG dataReceived len:8
+2017-05-15 11:57:21,571 DEBUG dataReceived len:8
+2017-05-15 11:57:21,571 DEBUG dataReceived len:8
+2017-05-15 11:57:21,571 DEBUG dataReceived len:8
+2017-05-15 11:57:21,572 DEBUG dataReceived len:8
+2017-05-15 11:57:21,572 DEBUG dataReceived len:8
+2017-05-15 11:57:41,569 DEBUG dataReceived len:8
+2017-05-15 11:57:51,569 DEBUG dataReceived len:8
+2017-05-15 11:58:01,569 DEBUG dataReceived len:8
+2017-05-15 11:58:11,569 DEBUG dataReceived len:8
+2017-05-15 11:58:14,732 DEBUG dataReceived len:8
+2017-05-15 11:58:14,732 WARNING unknow cmd :1
+2017-05-15 11:58:21,569 DEBUG dataReceived len:8
+2017-05-15 11:58:21,569 DEBUG dataReceived len:8
+2017-05-15 11:58:21,569 DEBUG dataReceived len:8
+2017-05-15 11:58:31,569 DEBUG dataReceived len:8
+2017-05-15 11:58:31,571 DEBUG dataReceived len:8
+2017-05-15 11:58:31,572 DEBUG dataReceived len:8
+2017-05-15 11:58:31,572 DEBUG dataReceived len:8
+2017-05-15 11:58:31,572 DEBUG dataReceived len:8
+2017-05-15 11:58:31,572 DEBUG dataReceived len:8
+2017-05-15 11:58:51,569 DEBUG dataReceived len:8
+2017-05-15 11:59:01,569 DEBUG dataReceived len:8
+2017-05-15 11:59:11,569 DEBUG dataReceived len:8
+2017-05-15 11:59:21,569 DEBUG dataReceived len:8
+2017-05-15 11:59:24,732 DEBUG dataReceived len:8
+2017-05-15 11:59:24,732 WARNING unknow cmd :1
+2017-05-15 11:59:31,569 DEBUG dataReceived len:8
+2017-05-15 11:59:31,569 DEBUG dataReceived len:8
+2017-05-15 11:59:31,571 DEBUG dataReceived len:8
+2017-05-15 11:59:41,571 DEBUG dataReceived len:8
+2017-05-15 11:59:41,571 DEBUG dataReceived len:8
+2017-05-15 11:59:41,572 DEBUG dataReceived len:8
+2017-05-15 11:59:41,572 DEBUG dataReceived len:8
+2017-05-15 11:59:41,572 DEBUG dataReceived len:8
+2017-05-15 11:59:41,572 DEBUG dataReceived len:8
+2017-05-15 12:00:01,569 DEBUG dataReceived len:8
+2017-05-15 12:00:11,569 DEBUG dataReceived len:8
+2017-05-15 12:00:21,569 DEBUG dataReceived len:8
+2017-05-15 12:00:31,569 DEBUG dataReceived len:8
+2017-05-15 12:00:34,732 DEBUG dataReceived len:8
+2017-05-15 12:00:34,733 WARNING unknow cmd :1
+2017-05-15 12:00:41,569 DEBUG dataReceived len:8
+2017-05-15 12:00:41,569 DEBUG dataReceived len:8
+2017-05-15 12:00:41,571 DEBUG dataReceived len:8
+2017-05-15 12:00:51,571 DEBUG dataReceived len:8
+2017-05-15 12:00:51,571 DEBUG dataReceived len:8
+2017-05-15 12:00:51,572 DEBUG dataReceived len:8
+2017-05-15 12:00:51,572 DEBUG dataReceived len:8
+2017-05-15 12:00:51,572 DEBUG dataReceived len:8
+2017-05-15 12:00:51,572 DEBUG dataReceived len:8
+2017-05-15 12:01:11,569 DEBUG dataReceived len:8
+2017-05-15 12:01:21,569 DEBUG dataReceived len:8
+2017-05-15 12:01:31,569 DEBUG dataReceived len:8
+2017-05-15 12:01:41,569 DEBUG dataReceived len:8
+2017-05-15 12:01:44,732 DEBUG dataReceived len:8
+2017-05-15 12:01:44,732 WARNING unknow cmd :1
+2017-05-15 12:01:51,569 DEBUG dataReceived len:8
+2017-05-15 12:01:51,569 DEBUG dataReceived len:8
+2017-05-15 12:01:51,569 DEBUG dataReceived len:8
+2017-05-15 12:02:01,569 DEBUG dataReceived len:8
+2017-05-15 12:02:01,571 DEBUG dataReceived len:8
+2017-05-15 12:02:01,571 DEBUG dataReceived len:8
+2017-05-15 12:02:01,571 DEBUG dataReceived len:8
+2017-05-15 12:02:01,572 DEBUG dataReceived len:8
+2017-05-15 12:02:01,572 DEBUG dataReceived len:8
+2017-05-15 12:02:21,569 DEBUG dataReceived len:8
+2017-05-15 12:02:31,569 DEBUG dataReceived len:8
+2017-05-15 12:02:41,569 DEBUG dataReceived len:8
+2017-05-15 12:02:51,569 DEBUG dataReceived len:8
+2017-05-15 12:02:54,732 DEBUG dataReceived len:8
+2017-05-15 12:02:54,732 WARNING unknow cmd :1
+2017-05-15 12:03:01,569 DEBUG dataReceived len:8
+2017-05-15 12:03:01,569 DEBUG dataReceived len:8
+2017-05-15 12:03:01,569 DEBUG dataReceived len:8
+2017-05-15 12:03:11,569 DEBUG dataReceived len:8
+2017-05-15 12:03:11,571 DEBUG dataReceived len:8
+2017-05-15 12:03:11,571 DEBUG dataReceived len:8
+2017-05-15 12:03:11,571 DEBUG dataReceived len:8
+2017-05-15 12:03:11,572 DEBUG dataReceived len:8
+2017-05-15 12:03:11,572 DEBUG dataReceived len:8
+2017-05-15 12:03:31,569 DEBUG dataReceived len:8
+2017-05-15 12:03:41,569 DEBUG dataReceived len:8
+2017-05-15 12:03:51,569 DEBUG dataReceived len:8
+2017-05-15 12:04:01,569 DEBUG dataReceived len:8
+2017-05-15 12:04:04,732 DEBUG dataReceived len:8
+2017-05-15 12:04:04,732 WARNING unknow cmd :1
+2017-05-15 12:04:11,569 DEBUG dataReceived len:8
+2017-05-15 12:04:11,569 DEBUG dataReceived len:8
+2017-05-15 12:04:11,569 DEBUG dataReceived len:8
+2017-05-15 12:04:21,569 DEBUG dataReceived len:8
+2017-05-15 12:04:21,571 DEBUG dataReceived len:8
+2017-05-15 12:04:21,571 DEBUG dataReceived len:8
+2017-05-15 12:04:21,572 DEBUG dataReceived len:8
+2017-05-15 12:04:21,572 DEBUG dataReceived len:8
+2017-05-15 12:04:21,572 DEBUG dataReceived len:8
+2017-05-15 12:04:41,569 DEBUG dataReceived len:8
+2017-05-15 12:04:51,569 DEBUG dataReceived len:8
+2017-05-15 12:05:01,569 DEBUG dataReceived len:8
+2017-05-15 12:05:11,569 DEBUG dataReceived len:8
+2017-05-15 12:05:14,732 DEBUG dataReceived len:8
+2017-05-15 12:05:14,732 WARNING unknow cmd :1
+2017-05-15 12:05:21,569 DEBUG dataReceived len:8
+2017-05-15 12:05:21,569 DEBUG dataReceived len:8
+2017-05-15 12:05:21,569 DEBUG dataReceived len:8
+2017-05-15 12:05:31,569 DEBUG dataReceived len:8
+2017-05-15 12:05:31,571 DEBUG dataReceived len:8
+2017-05-15 12:05:31,571 DEBUG dataReceived len:8
+2017-05-15 12:05:31,571 DEBUG dataReceived len:8
+2017-05-15 12:05:31,572 DEBUG dataReceived len:8
+2017-05-15 12:05:31,572 DEBUG dataReceived len:8
+2017-05-15 12:05:51,569 DEBUG dataReceived len:8
+2017-05-15 12:06:01,569 DEBUG dataReceived len:8
+2017-05-15 12:06:11,569 DEBUG dataReceived len:8
+2017-05-15 12:06:21,569 DEBUG dataReceived len:8
+2017-05-15 12:06:24,732 DEBUG dataReceived len:8
+2017-05-15 12:06:24,732 WARNING unknow cmd :1
+2017-05-15 12:06:31,569 DEBUG dataReceived len:8
+2017-05-15 12:06:31,569 DEBUG dataReceived len:8
+2017-05-15 12:06:31,569 DEBUG dataReceived len:8
+2017-05-15 12:06:41,569 DEBUG dataReceived len:8
+2017-05-15 12:06:41,571 DEBUG dataReceived len:8
+2017-05-15 12:06:41,571 DEBUG dataReceived len:8
+2017-05-15 12:06:41,572 DEBUG dataReceived len:8
+2017-05-15 12:06:41,572 DEBUG dataReceived len:8
+2017-05-15 12:06:41,572 DEBUG dataReceived len:8
+2017-05-15 12:07:01,569 DEBUG dataReceived len:8
+2017-05-15 12:07:11,569 DEBUG dataReceived len:8
+2017-05-15 12:07:21,569 DEBUG dataReceived len:8
+2017-05-15 12:07:31,569 DEBUG dataReceived len:8
+2017-05-15 12:07:34,732 DEBUG dataReceived len:8
+2017-05-15 12:07:34,732 WARNING unknow cmd :1
+2017-05-15 12:07:41,569 DEBUG dataReceived len:8
+2017-05-15 12:07:41,569 DEBUG dataReceived len:8
+2017-05-15 12:07:41,569 DEBUG dataReceived len:8
+2017-05-15 12:07:51,569 DEBUG dataReceived len:8
+2017-05-15 12:07:51,571 DEBUG dataReceived len:8
+2017-05-15 12:07:51,571 DEBUG dataReceived len:8
+2017-05-15 12:07:51,572 DEBUG dataReceived len:8
+2017-05-15 12:07:51,572 DEBUG dataReceived len:8
+2017-05-15 12:07:51,572 DEBUG dataReceived len:8
+2017-05-15 12:08:11,569 DEBUG dataReceived len:8
+2017-05-15 12:08:21,569 DEBUG dataReceived len:8
+2017-05-15 12:08:31,569 DEBUG dataReceived len:8
+2017-05-15 12:08:41,569 DEBUG dataReceived len:8
+2017-05-15 12:08:44,732 DEBUG dataReceived len:8
+2017-05-15 12:08:44,732 WARNING unknow cmd :1
+2017-05-15 12:08:51,569 DEBUG dataReceived len:8
+2017-05-15 12:08:51,569 DEBUG dataReceived len:8
+2017-05-15 12:08:51,569 DEBUG dataReceived len:8
+2017-05-15 12:09:01,569 DEBUG dataReceived len:8
+2017-05-15 12:09:01,571 DEBUG dataReceived len:8
+2017-05-15 12:09:01,571 DEBUG dataReceived len:8
+2017-05-15 12:09:01,571 DEBUG dataReceived len:8
+2017-05-15 12:09:01,572 DEBUG dataReceived len:8
+2017-05-15 12:09:01,572 DEBUG dataReceived len:8
+2017-05-15 12:09:21,569 DEBUG dataReceived len:8
+2017-05-15 12:09:31,569 DEBUG dataReceived len:8
+2017-05-15 12:09:41,569 DEBUG dataReceived len:8
+2017-05-15 12:09:51,569 DEBUG dataReceived len:8
+2017-05-15 12:09:54,732 DEBUG dataReceived len:8
+2017-05-15 12:09:54,733 WARNING unknow cmd :1
+2017-05-15 12:10:01,569 DEBUG dataReceived len:8
+2017-05-15 12:10:01,569 DEBUG dataReceived len:8
+2017-05-15 12:10:01,569 DEBUG dataReceived len:8
+2017-05-15 12:10:11,569 DEBUG dataReceived len:8
+2017-05-15 12:10:11,571 DEBUG dataReceived len:8
+2017-05-15 12:10:11,571 DEBUG dataReceived len:8
+2017-05-15 12:10:11,571 DEBUG dataReceived len:8
+2017-05-15 12:10:11,572 DEBUG dataReceived len:8
+2017-05-15 12:10:11,572 DEBUG dataReceived len:8
+2017-05-15 12:10:31,569 DEBUG dataReceived len:8
+2017-05-15 12:10:41,569 DEBUG dataReceived len:8
+2017-05-15 12:10:51,569 DEBUG dataReceived len:8
+2017-05-15 12:11:01,569 DEBUG dataReceived len:8
+2017-05-15 12:11:04,732 DEBUG dataReceived len:8
+2017-05-15 12:11:04,732 WARNING unknow cmd :1
+2017-05-15 12:11:11,569 DEBUG dataReceived len:8
+2017-05-15 12:11:11,569 DEBUG dataReceived len:8
+2017-05-15 12:11:11,569 DEBUG dataReceived len:8
+2017-05-15 12:11:21,569 DEBUG dataReceived len:8
+2017-05-15 12:11:21,571 DEBUG dataReceived len:8
+2017-05-15 12:11:21,571 DEBUG dataReceived len:8
+2017-05-15 12:11:21,572 DEBUG dataReceived len:8
+2017-05-15 12:11:21,572 DEBUG dataReceived len:8
+2017-05-15 12:11:21,572 DEBUG dataReceived len:8
+2017-05-15 12:11:41,569 DEBUG dataReceived len:8
+2017-05-15 12:11:51,569 DEBUG dataReceived len:8
+2017-05-15 12:12:01,569 DEBUG dataReceived len:8
+2017-05-15 12:12:11,569 DEBUG dataReceived len:8
+2017-05-15 12:12:14,732 DEBUG dataReceived len:8
+2017-05-15 12:12:14,732 WARNING unknow cmd :1
+2017-05-15 12:12:21,569 DEBUG dataReceived len:8
+2017-05-15 12:12:21,569 DEBUG dataReceived len:8
+2017-05-15 12:12:21,569 DEBUG dataReceived len:8
+2017-05-15 12:12:31,569 DEBUG dataReceived len:8
+2017-05-15 12:12:31,571 DEBUG dataReceived len:8
+2017-05-15 12:12:31,571 DEBUG dataReceived len:8
+2017-05-15 12:12:31,571 DEBUG dataReceived len:8
+2017-05-15 12:12:31,572 DEBUG dataReceived len:8
+2017-05-15 12:12:31,572 DEBUG dataReceived len:8
+2017-05-15 12:12:51,569 DEBUG dataReceived len:8
+2017-05-15 12:13:01,569 DEBUG dataReceived len:8
+2017-05-15 12:13:11,569 DEBUG dataReceived len:8
+2017-05-15 12:13:21,569 DEBUG dataReceived len:8
+2017-05-15 12:13:24,732 DEBUG dataReceived len:8
+2017-05-15 12:13:24,732 WARNING unknow cmd :1
+2017-05-15 12:13:31,569 DEBUG dataReceived len:8
+2017-05-15 12:13:31,569 DEBUG dataReceived len:8
+2017-05-15 12:13:31,569 DEBUG dataReceived len:8
+2017-05-15 12:13:41,569 DEBUG dataReceived len:8
+2017-05-15 12:13:41,569 DEBUG dataReceived len:8
+2017-05-15 12:13:41,569 DEBUG dataReceived len:8
+2017-05-15 12:13:41,569 DEBUG dataReceived len:8
+2017-05-15 12:13:41,571 DEBUG dataReceived len:8
+2017-05-15 12:13:41,571 DEBUG dataReceived len:8
+2017-05-15 12:14:01,569 DEBUG dataReceived len:8
+2017-05-15 12:14:11,569 DEBUG dataReceived len:8
+2017-05-15 12:14:21,569 DEBUG dataReceived len:8
+2017-05-15 12:14:31,569 DEBUG dataReceived len:8
+2017-05-15 12:14:34,732 DEBUG dataReceived len:8
+2017-05-15 12:14:34,732 WARNING unknow cmd :1
+2017-05-15 12:14:41,569 DEBUG dataReceived len:8
+2017-05-15 12:14:41,569 DEBUG dataReceived len:8
+2017-05-15 12:14:41,569 DEBUG dataReceived len:8
+2017-05-15 12:14:51,569 DEBUG dataReceived len:8
+2017-05-15 12:14:51,569 DEBUG dataReceived len:8
+2017-05-15 12:14:51,569 DEBUG dataReceived len:8
+2017-05-15 12:14:51,569 DEBUG dataReceived len:8
+2017-05-15 12:14:51,571 DEBUG dataReceived len:8
+2017-05-15 12:14:51,571 DEBUG dataReceived len:8
+2017-05-15 12:15:11,569 DEBUG dataReceived len:8
+2017-05-15 12:15:21,569 DEBUG dataReceived len:8
+2017-05-15 12:15:31,569 DEBUG dataReceived len:8
+2017-05-15 12:15:41,569 DEBUG dataReceived len:8
+2017-05-15 12:15:44,732 DEBUG dataReceived len:8
+2017-05-15 12:15:44,732 WARNING unknow cmd :1
+2017-05-15 12:15:51,569 DEBUG dataReceived len:8
+2017-05-15 12:15:51,569 DEBUG dataReceived len:8
+2017-05-15 12:15:51,569 DEBUG dataReceived len:8
+2017-05-15 12:16:01,569 DEBUG dataReceived len:8
+2017-05-15 12:16:01,569 DEBUG dataReceived len:8
+2017-05-15 12:16:01,569 DEBUG dataReceived len:8
+2017-05-15 12:16:01,569 DEBUG dataReceived len:8
+2017-05-15 12:16:01,571 DEBUG dataReceived len:8
+2017-05-15 12:16:01,571 DEBUG dataReceived len:8
+2017-05-15 12:16:21,569 DEBUG dataReceived len:8
+2017-05-15 12:16:31,569 DEBUG dataReceived len:8
+2017-05-15 12:16:41,569 DEBUG dataReceived len:8
+2017-05-15 12:16:51,569 DEBUG dataReceived len:8
+2017-05-15 12:16:54,732 DEBUG dataReceived len:8
+2017-05-15 12:16:54,732 WARNING unknow cmd :1
+2017-05-15 12:17:01,569 DEBUG dataReceived len:8
+2017-05-15 12:17:01,569 DEBUG dataReceived len:8
+2017-05-15 12:17:01,569 DEBUG dataReceived len:8
+2017-05-15 12:17:11,569 DEBUG dataReceived len:8
+2017-05-15 12:17:11,569 DEBUG dataReceived len:8
+2017-05-15 12:17:11,569 DEBUG dataReceived len:8
+2017-05-15 12:17:11,569 DEBUG dataReceived len:8
+2017-05-15 12:17:11,571 DEBUG dataReceived len:8
+2017-05-15 12:17:11,571 DEBUG dataReceived len:8
+2017-05-15 12:17:31,569 DEBUG dataReceived len:8
+2017-05-15 12:17:41,569 DEBUG dataReceived len:8
+2017-05-15 12:17:51,569 DEBUG dataReceived len:8
+2017-05-15 12:18:01,569 DEBUG dataReceived len:8
+2017-05-15 12:18:04,732 DEBUG dataReceived len:8
+2017-05-15 12:18:04,733 WARNING unknow cmd :1
+2017-05-15 12:18:11,569 DEBUG dataReceived len:8
+2017-05-15 12:18:11,569 DEBUG dataReceived len:8
+2017-05-15 12:18:11,569 DEBUG dataReceived len:8
+2017-05-15 12:18:21,569 DEBUG dataReceived len:8
+2017-05-15 12:18:21,569 DEBUG dataReceived len:8
+2017-05-15 12:18:21,571 DEBUG dataReceived len:8
+2017-05-15 12:18:21,571 DEBUG dataReceived len:8
+2017-05-15 12:18:21,571 DEBUG dataReceived len:8
+2017-05-15 12:18:21,572 DEBUG dataReceived len:8
+2017-05-15 12:18:41,569 DEBUG dataReceived len:8
+2017-05-15 12:18:51,569 DEBUG dataReceived len:8
+2017-05-15 12:19:01,569 DEBUG dataReceived len:8
+2017-05-15 12:19:11,569 DEBUG dataReceived len:8
+2017-05-15 12:19:14,732 DEBUG dataReceived len:8
+2017-05-15 12:19:14,732 WARNING unknow cmd :1
+2017-05-15 12:19:21,569 DEBUG dataReceived len:8
+2017-05-15 12:19:21,569 DEBUG dataReceived len:8
+2017-05-15 12:19:21,569 DEBUG dataReceived len:8
+2017-05-15 12:19:31,569 DEBUG dataReceived len:8
+2017-05-15 12:19:31,569 DEBUG dataReceived len:8
+2017-05-15 12:19:31,569 DEBUG dataReceived len:8
+2017-05-15 12:19:31,571 DEBUG dataReceived len:8
+2017-05-15 12:19:31,571 DEBUG dataReceived len:8
+2017-05-15 12:19:31,571 DEBUG dataReceived len:8
+2017-05-15 12:19:51,569 DEBUG dataReceived len:8
+2017-05-15 12:20:01,569 DEBUG dataReceived len:8
+2017-05-15 12:20:11,569 DEBUG dataReceived len:8
+2017-05-15 12:20:21,569 DEBUG dataReceived len:8
+2017-05-15 12:20:24,730 DEBUG dataReceived len:8
+2017-05-15 12:20:24,732 WARNING unknow cmd :1
+2017-05-15 12:20:31,569 DEBUG dataReceived len:8
+2017-05-15 12:20:31,569 DEBUG dataReceived len:8
+2017-05-15 12:20:31,571 DEBUG dataReceived len:8
+2017-05-15 12:20:34,503 DEBUG buildProtocol(), id=13 len(self.__pmap)=0
+2017-05-15 12:20:34,503 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 12:20:34,503 WARNING 分配用户空闲登录服务器成功 client_id:13 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 12:20:34,505 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000004877AC8>
+2017-05-15 12:20:34,505 WARNING  LoginServer connecting!!!
+2017-05-15 12:20:34,506 WARNING  LoginServer CONNECTED!!!
+2017-05-15 12:20:34,506 WARNING LoginServer.connectionMade()
+2017-05-15 12:20:38,678 DEBUG dataReceived len:27
+2017-05-15 12:20:38,678 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:20:38,684 WARNING  LoginServer DOWN!!! reason:[Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:20:38,684 WARNING LoginServer.onConnectionLost()
+2017-05-15 12:20:38,686 INFO Stopping factory <loginserver.LoginServerFactory instance at 0x0000000004877AC8>
+2017-05-15 12:20:41,569 DEBUG dataReceived len:8
+2017-05-15 12:20:41,569 DEBUG dataReceived len:8
+2017-05-15 12:20:41,569 DEBUG dataReceived len:8
+2017-05-15 12:20:41,569 DEBUG dataReceived len:8
+2017-05-15 12:20:41,571 DEBUG dataReceived len:8
+2017-05-15 12:20:41,571 DEBUG dataReceived len:8
+2017-05-15 12:20:52,822 DEBUG dataReceived len:27
+2017-05-15 12:20:52,822 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:20:54,578 DEBUG dataReceived len:27
+2017-05-15 12:20:54,578 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:20:55,970 DEBUG dataReceived len:27
+2017-05-15 12:20:55,970 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:20:56,599 DEBUG dataReceived len:27
+2017-05-15 12:20:56,599 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:20:57,128 DEBUG dataReceived len:27
+2017-05-15 12:20:57,130 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:20:57,592 DEBUG dataReceived len:27
+2017-05-15 12:20:57,594 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:20:57,992 DEBUG dataReceived len:27
+2017-05-15 12:20:57,992 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:20:58,339 DEBUG dataReceived len:27
+2017-05-15 12:20:58,341 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:20:58,671 DEBUG dataReceived len:27
+2017-05-15 12:20:58,671 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:20:58,970 DEBUG dataReceived len:27
+2017-05-15 12:20:58,970 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:20:59,301 DEBUG dataReceived len:27
+2017-05-15 12:20:59,301 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:20:59,615 DEBUG dataReceived len:27
+2017-05-15 12:20:59,615 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:20:59,947 DEBUG dataReceived len:27
+2017-05-15 12:20:59,947 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:21:00,278 DEBUG dataReceived len:27
+2017-05-15 12:21:00,279 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:21:00,808 DEBUG dataReceived len:27
+2017-05-15 12:21:00,809 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:21:01,569 DEBUG dataReceived len:8
+2017-05-15 12:21:03,098 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 12:21:03,098 DEBUG removeProtocol(), id=13 len(self.__pmap)=0
+2017-05-15 12:21:10,207 DEBUG buildProtocol(), id=14 len(self.__pmap)=0
+2017-05-15 12:21:10,207 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 12:21:10,207 WARNING 分配用户空闲登录服务器成功 client_id:14 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 12:21:10,207 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000004877C88>
+2017-05-15 12:21:10,209 WARNING  LoginServer connecting!!!
+2017-05-15 12:21:10,210 WARNING  LoginServer CONNECTED!!!
+2017-05-15 12:21:10,210 WARNING LoginServer.connectionMade()
+2017-05-15 12:21:11,569 DEBUG dataReceived len:8
+2017-05-15 12:21:13,127 DEBUG dataReceived len:27
+2017-05-15 12:21:13,127 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:21:13,130 WARNING  LoginServer DOWN!!! reason:[Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:21:13,130 WARNING LoginServer.onConnectionLost()
+2017-05-15 12:21:13,131 INFO Stopping factory <loginserver.LoginServerFactory instance at 0x0000000004877C88>
+2017-05-15 12:21:21,569 DEBUG dataReceived len:8
+2017-05-15 12:21:31,569 DEBUG dataReceived len:8
+2017-05-15 12:21:34,730 DEBUG dataReceived len:8
+2017-05-15 12:21:34,730 WARNING unknow cmd :1
+2017-05-15 12:21:41,569 DEBUG dataReceived len:8
+2017-05-15 12:21:41,569 DEBUG dataReceived len:8
+2017-05-15 12:21:41,569 DEBUG dataReceived len:8
+2017-05-15 12:21:51,569 DEBUG dataReceived len:8
+2017-05-15 12:21:51,569 DEBUG dataReceived len:8
+2017-05-15 12:21:51,569 DEBUG dataReceived len:8
+2017-05-15 12:21:51,569 DEBUG dataReceived len:8
+2017-05-15 12:21:51,571 DEBUG dataReceived len:8
+2017-05-15 12:21:51,571 DEBUG dataReceived len:8
+2017-05-15 12:22:11,569 DEBUG dataReceived len:8
+2017-05-15 12:22:21,569 DEBUG dataReceived len:8
+2017-05-15 12:22:31,569 DEBUG dataReceived len:8
+2017-05-15 12:22:41,569 DEBUG dataReceived len:8
+2017-05-15 12:22:44,730 DEBUG dataReceived len:8
+2017-05-15 12:22:44,732 WARNING unknow cmd :1
+2017-05-15 12:22:51,569 DEBUG dataReceived len:8
+2017-05-15 12:22:51,569 DEBUG dataReceived len:8
+2017-05-15 12:22:51,569 DEBUG dataReceived len:8
+2017-05-15 12:23:01,569 DEBUG dataReceived len:8
+2017-05-15 12:23:01,569 DEBUG dataReceived len:8
+2017-05-15 12:23:01,569 DEBUG dataReceived len:8
+2017-05-15 12:23:01,569 DEBUG dataReceived len:8
+2017-05-15 12:23:01,571 DEBUG dataReceived len:8
+2017-05-15 12:23:01,571 DEBUG dataReceived len:8
+2017-05-15 12:23:21,569 DEBUG dataReceived len:8
+2017-05-15 12:23:31,569 DEBUG dataReceived len:8
+2017-05-15 12:23:41,569 DEBUG dataReceived len:8
+2017-05-15 12:23:51,569 DEBUG dataReceived len:8
+2017-05-15 12:23:54,732 DEBUG dataReceived len:8
+2017-05-15 12:23:54,732 WARNING unknow cmd :1
+2017-05-15 12:24:01,569 DEBUG dataReceived len:8
+2017-05-15 12:24:01,569 DEBUG dataReceived len:8
+2017-05-15 12:24:01,569 DEBUG dataReceived len:8
+2017-05-15 12:24:11,569 DEBUG dataReceived len:8
+2017-05-15 12:24:11,569 DEBUG dataReceived len:8
+2017-05-15 12:24:11,569 DEBUG dataReceived len:8
+2017-05-15 12:24:11,569 DEBUG dataReceived len:8
+2017-05-15 12:24:11,571 DEBUG dataReceived len:8
+2017-05-15 12:24:11,571 DEBUG dataReceived len:8
+2017-05-15 12:24:31,569 DEBUG dataReceived len:8
+2017-05-15 12:24:41,569 DEBUG dataReceived len:8
+2017-05-15 12:24:51,569 DEBUG dataReceived len:8
+2017-05-15 12:25:01,569 DEBUG dataReceived len:8
+2017-05-15 12:25:04,730 DEBUG dataReceived len:8
+2017-05-15 12:25:04,732 WARNING unknow cmd :1
+2017-05-15 12:25:11,569 DEBUG dataReceived len:8
+2017-05-15 12:25:11,569 DEBUG dataReceived len:8
+2017-05-15 12:25:11,569 DEBUG dataReceived len:8
+2017-05-15 12:25:21,569 DEBUG dataReceived len:8
+2017-05-15 12:25:21,569 DEBUG dataReceived len:8
+2017-05-15 12:25:21,569 DEBUG dataReceived len:8
+2017-05-15 12:25:21,569 DEBUG dataReceived len:8
+2017-05-15 12:25:21,571 DEBUG dataReceived len:8
+2017-05-15 12:25:21,571 DEBUG dataReceived len:8
+2017-05-15 12:25:41,569 DEBUG dataReceived len:8
+2017-05-15 12:25:51,569 DEBUG dataReceived len:8
+2017-05-15 12:26:01,569 DEBUG dataReceived len:8
+2017-05-15 12:26:11,569 DEBUG dataReceived len:8
+2017-05-15 12:26:14,730 DEBUG dataReceived len:8
+2017-05-15 12:26:14,730 WARNING unknow cmd :1
+2017-05-15 12:26:21,569 DEBUG dataReceived len:8
+2017-05-15 12:26:21,569 DEBUG dataReceived len:8
+2017-05-15 12:26:21,569 DEBUG dataReceived len:8
+2017-05-15 12:26:31,569 DEBUG dataReceived len:8
+2017-05-15 12:26:31,569 DEBUG dataReceived len:8
+2017-05-15 12:26:31,569 DEBUG dataReceived len:8
+2017-05-15 12:26:31,569 DEBUG dataReceived len:8
+2017-05-15 12:26:31,569 DEBUG dataReceived len:8
+2017-05-15 12:26:31,571 DEBUG dataReceived len:8
+2017-05-15 12:31:39,674 INFO ClientFactory starting on 2001
+2017-05-15 12:31:39,676 INFO Starting factory <clientfactory.ClientFactory instance at 0x000000000479B248>
+2017-05-15 12:31:39,688 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:31:39,693 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:31:39,698 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:31:39,707 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:31:39,713 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:31:39,719 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:31:39,723 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:31:39,729 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:31:39,733 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:31:39,737 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:31:39,739 INFO 登录网关服务器启动成功!服务器ID:87
+2017-05-15 12:31:39,739 DEBUG servermanager.packetReceived()
+2017-05-15 12:31:52,967 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:31:52,967 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 12:31:52,967 WARNING 分配用户空闲登录服务器成功 client_id:0 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 12:31:52,969 INFO Starting factory <loginserver.LoginServerFactory instance at 0x00000000047BCD48>
+2017-05-15 12:31:52,969 WARNING  LoginServer connecting!!!
+2017-05-15 12:31:52,973 WARNING  LoginServer CONNECTED!!!
+2017-05-15 12:31:52,973 WARNING LoginServer.connectionMade()
+2017-05-15 12:31:55,308 DEBUG dataReceived len:27
+2017-05-15 12:31:55,309 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:31:59,690 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 12:31:59,691 DEBUG removeProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:32:45,944 DEBUG dataReceived len:8
+2017-05-15 12:32:45,944 WARNING unknow cmd :1
+2017-05-15 12:33:03,575 DEBUG dataReceived len:8
+2017-05-15 12:33:55,944 DEBUG dataReceived len:8
+2017-05-15 12:33:55,944 WARNING unknow cmd :1
+2017-05-15 12:34:13,575 DEBUG dataReceived len:8
+2017-05-15 12:35:05,944 DEBUG dataReceived len:8
+2017-05-15 12:35:05,944 WARNING unknow cmd :1
+2017-05-15 12:35:23,576 DEBUG dataReceived len:8
+2017-05-15 12:36:15,944 DEBUG dataReceived len:8
+2017-05-15 12:36:15,944 WARNING unknow cmd :1
+2017-05-15 12:36:33,576 DEBUG dataReceived len:8
+2017-05-15 12:37:25,944 DEBUG dataReceived len:8
+2017-05-15 12:37:25,944 WARNING unknow cmd :1
+2017-05-15 12:37:43,575 DEBUG dataReceived len:8
+2017-05-15 12:38:35,944 DEBUG dataReceived len:8
+2017-05-15 12:38:35,944 WARNING unknow cmd :1
+2017-05-15 12:38:53,575 DEBUG dataReceived len:8
+2017-05-15 12:39:45,944 DEBUG dataReceived len:8
+2017-05-15 12:39:45,944 WARNING unknow cmd :1
+2017-05-15 12:40:03,575 DEBUG dataReceived len:8
+2017-05-15 12:40:55,944 DEBUG dataReceived len:8
+2017-05-15 12:40:55,944 WARNING unknow cmd :1
+2017-05-15 12:41:13,575 DEBUG dataReceived len:8
+2017-05-15 12:42:05,944 DEBUG dataReceived len:8
+2017-05-15 12:42:05,944 WARNING unknow cmd :1
+2017-05-15 12:42:23,575 DEBUG dataReceived len:8
+2017-05-15 12:43:15,944 DEBUG dataReceived len:8
+2017-05-15 12:43:15,944 WARNING unknow cmd :1
+2017-05-15 12:43:33,575 DEBUG dataReceived len:8
+2017-05-15 12:44:25,944 DEBUG dataReceived len:8
+2017-05-15 12:44:25,946 WARNING unknow cmd :1
+2017-05-15 12:44:43,575 DEBUG dataReceived len:8
+2017-05-15 12:45:35,944 DEBUG dataReceived len:8
+2017-05-15 12:45:35,944 WARNING unknow cmd :1
+2017-05-15 12:45:53,575 DEBUG dataReceived len:8
+2017-05-15 12:46:45,944 DEBUG dataReceived len:8
+2017-05-15 12:46:45,944 WARNING unknow cmd :1
+2017-05-15 12:46:53,823 WARNING  LoginServer DOWN!!! reason:[Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:46:53,825 WARNING LoginServer.onConnectionLost()
+2017-05-15 12:46:53,825 INFO Stopping factory <loginserver.LoginServerFactory instance at 0x00000000047BCD48>
+2017-05-15 12:47:14,559 INFO ClientFactory starting on 2001
+2017-05-15 12:47:14,559 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000046B0708>
+2017-05-15 12:47:14,569 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:47:14,575 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:47:14,578 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:47:14,584 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:47:14,586 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:47:14,592 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:47:14,596 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:47:14,601 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:47:14,604 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:47:14,608 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:47:14,608 INFO 登录网关服务器启动成功!服务器ID:87
+2017-05-15 12:47:14,608 DEBUG servermanager.packetReceived()
+2017-05-15 12:47:38,625 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:47:38,625 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 12:47:38,625 WARNING 分配用户空闲登录服务器成功 client_id:0 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 12:47:38,625 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000002B8C808>
+2017-05-15 12:47:38,627 WARNING  LoginServer connecting!!!
+2017-05-15 12:47:38,628 WARNING  LoginServer CONNECTED!!!
+2017-05-15 12:47:38,628 WARNING LoginServer.connectionMade()
+2017-05-15 12:47:40,801 DEBUG dataReceived len:27
+2017-05-15 12:47:40,802 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:47:40,805 DEBUG dataReceived len:37
+2017-05-15 12:47:40,805 DEBUG loginserver parse() func:l2lg_transform_client
+2017-05-15 12:48:19,186 DEBUG dataReceived len:8
+2017-05-15 12:48:19,186 WARNING unknow cmd :1
+2017-05-15 12:48:50,423 DEBUG dataReceived len:8
+2017-05-15 12:48:50,423 DEBUG loginserver parse() func:keeplive
+2017-05-15 12:49:29,186 DEBUG dataReceived len:8
+2017-05-15 12:49:29,186 WARNING unknow cmd :1
+2017-05-15 12:50:00,423 DEBUG dataReceived len:8
+2017-05-15 12:50:00,423 DEBUG loginserver parse() func:keeplive
+2017-05-15 12:50:39,186 DEBUG dataReceived len:8
+2017-05-15 12:50:39,186 WARNING unknow cmd :1
+2017-05-15 12:51:39,135 INFO ClientFactory starting on 2001
+2017-05-15 12:51:39,137 INFO Starting factory <clientfactory.ClientFactory instance at 0x0000000004607808>
+2017-05-15 12:51:39,148 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:51:39,153 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:51:39,157 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:51:39,161 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:51:39,164 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:51:39,168 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:51:39,173 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:51:39,177 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:51:39,181 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:51:39,184 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:51:39,184 INFO 登录网关服务器启动成功!服务器ID:87
+2017-05-15 12:51:39,186 DEBUG servermanager.packetReceived()
+2017-05-15 12:51:50,631 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:51:50,631 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 12:51:50,631 WARNING 分配用户空闲登录服务器成功 client_id:0 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 12:51:50,631 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000002B0B1C8>
+2017-05-15 12:51:50,632 WARNING  LoginServer connecting!!!
+2017-05-15 12:51:50,632 WARNING  LoginServer CONNECTED!!!
+2017-05-15 12:51:50,634 WARNING LoginServer.connectionMade()
+2017-05-15 12:51:52,920 DEBUG dataReceived len:27
+2017-05-15 12:51:52,921 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:51:52,923 DEBUG dataReceived len:37
+2017-05-15 12:51:52,923 DEBUG loginserver parse() func:l2lg_transform_client
+2017-05-15 12:51:52,924 ERROR LoginServer.parse() cmd=902
+Traceback (most recent call last):
+  File "C:/xGame/logingate\loginserver.py", line 64, in packetReceived
+    loginserverparse.parse(self, cmd, pkt)
+  File "C:/xGame/logingate\loginserverparse.py", line 34, in parse
+    func(clinet, pkt)
+  File "C:/xGame/logingate\loginserverparse.py", line 12, in l2lg_transform_client
+    logging.debug(u"l2lg_transform_client parse() cmd:%s", data.cmd)
+AttributeError: 'dict' object has no attribute 'cmd'
+2017-05-15 12:52:58,339 INFO ClientFactory starting on 2001
+2017-05-15 12:52:58,341 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000047587C8>
+2017-05-15 12:52:58,351 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:52:58,357 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:52:58,361 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:52:58,365 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:52:58,371 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:52:58,374 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:52:58,380 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:52:58,382 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:52:58,385 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:52:58,390 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:52:58,391 INFO 登录网关服务器启动成功!服务器ID:87
+2017-05-15 12:52:58,391 DEBUG servermanager.packetReceived()
+2017-05-15 12:53:07,033 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:53:07,033 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 12:53:07,033 WARNING 分配用户空闲登录服务器成功 client_id:0 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 12:53:07,035 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000002C6AEC8>
+2017-05-15 12:53:07,036 WARNING  LoginServer connecting!!!
+2017-05-15 12:53:07,036 WARNING  LoginServer CONNECTED!!!
+2017-05-15 12:53:07,038 WARNING LoginServer.connectionMade()
+2017-05-15 12:53:08,690 DEBUG dataReceived len:27
+2017-05-15 12:53:08,690 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:53:08,693 DEBUG dataReceived len:37
+2017-05-15 12:53:08,694 DEBUG loginserver parse() func:l2lg_transform_client
+2017-05-15 12:53:08,694 DEBUG l2lg_transform_client parse() cmd:802
+2017-05-15 12:53:08,694 ERROR LoginServer.parse() cmd=902
+Traceback (most recent call last):
+  File "C:/xGame/logingate\loginserver.py", line 64, in packetReceived
+    loginserverparse.parse(self, cmd, pkt)
+  File "C:/xGame/logingate\loginserverparse.py", line 34, in parse
+    func(clinet, pkt)
+  File "C:/xGame/logingate\loginserverparse.py", line 13, in l2lg_transform_client
+    client.send2client(data["cmd"],data["pkt"])
+  File "C:/xGame/logingate\loginserver.py", line 69, in send2client
+    self.user.sendCmd(cmd,data)
+  File "C:\xGame\common\fprotocol.py", line 56, in sendCmd
+    body = struct.pack(fmt, data)
+error: argument for 's' must be a string
+2017-05-15 12:54:03,811 DEBUG dataReceived len:8
+2017-05-15 12:54:03,812 WARNING unknow cmd :1
+2017-05-15 12:54:11,543 DEBUG dataReceived len:8
+2017-05-15 12:54:11,543 DEBUG loginserver parse() func:keeplive
+2017-05-15 12:55:03,812 DEBUG dataReceived len:8
+2017-05-15 12:55:03,812 WARNING unknow cmd :1
+2017-05-15 12:56:27,082 INFO ClientFactory starting on 2001
+2017-05-15 12:56:27,082 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000047277C8>
+2017-05-15 12:56:27,092 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:56:27,098 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:56:27,102 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:56:27,107 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:56:27,111 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:56:27,115 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:56:27,118 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:56:27,121 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:56:27,125 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:56:27,128 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:56:27,128 INFO 登录网关服务器启动成功!服务器ID:87
+2017-05-15 12:56:27,128 DEBUG servermanager.packetReceived()
+2017-05-15 12:56:38,500 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:56:38,500 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 12:56:38,500 WARNING 分配用户空闲登录服务器成功 client_id:0 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 12:56:38,502 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000002B3B188>
+2017-05-15 12:56:38,502 WARNING  LoginServer connecting!!!
+2017-05-15 12:56:38,503 WARNING  LoginServer CONNECTED!!!
+2017-05-15 12:56:38,503 WARNING LoginServer.connectionMade()
+2017-05-15 12:56:39,446 DEBUG dataReceived len:27
+2017-05-15 12:56:39,446 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:56:39,448 DEBUG dataReceived len:37
+2017-05-15 12:56:39,450 DEBUG loginserver parse() func:l2lg_transform_client
+2017-05-15 12:56:39,450 DEBUG l2lg_transform_client parse() data:{u'cmd': 802, u'pkt': u'\x08\x00'}
+2017-05-15 12:56:39,451 ERROR LoginServer.parse() cmd=902
+Traceback (most recent call last):
+  File "C:/xGame/logingate\loginserver.py", line 64, in packetReceived
+    loginserverparse.parse(self, cmd, pkt)
+  File "C:/xGame/logingate\loginserverparse.py", line 34, in parse
+    func(clinet, pkt)
+  File "C:/xGame/logingate\loginserverparse.py", line 13, in l2lg_transform_client
+    client.send2client(data["cmd"],data["pkt"])
+  File "C:/xGame/logingate\loginserver.py", line 69, in send2client
+    self.user.sendCmd(cmd,data)
+  File "C:\xGame\common\fprotocol.py", line 56, in sendCmd
+    body = struct.pack(fmt, data)
+error: argument for 's' must be a string
+2017-05-15 12:57:32,930 DEBUG dataReceived len:8
+2017-05-15 12:57:32,930 WARNING unknow cmd :1
+2017-05-15 12:57:42,933 DEBUG dataReceived len:8
+2017-05-15 12:57:42,933 DEBUG loginserver parse() func:keeplive
+2017-05-15 12:58:31,686 INFO ClientFactory starting on 2001
+2017-05-15 12:58:31,687 INFO Starting factory <clientfactory.ClientFactory instance at 0x0000000004648808>
+2017-05-15 12:58:31,697 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:58:31,703 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:58:31,709 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:58:31,713 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:58:31,717 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:58:31,720 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:58:31,724 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:58:31,729 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:58:31,733 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:58:31,736 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:58:31,737 INFO 登录网关服务器启动成功!服务器ID:87
+2017-05-15 12:58:31,737 DEBUG servermanager.packetReceived()
+2017-05-15 12:58:39,845 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:58:39,846 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 12:58:39,846 WARNING 分配用户空闲登录服务器成功 client_id:0 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 12:58:39,848 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000002B6A608>
+2017-05-15 12:58:39,848 WARNING  LoginServer connecting!!!
+2017-05-15 12:58:39,848 WARNING  LoginServer CONNECTED!!!
+2017-05-15 12:58:39,849 WARNING LoginServer.connectionMade()
+2017-05-15 12:58:42,471 DEBUG dataReceived len:27
+2017-05-15 12:58:42,471 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 12:58:42,474 DEBUG dataReceived len:37
+2017-05-15 12:58:42,474 DEBUG loginserver parse() func:l2lg_transform_client
+2017-05-15 12:58:42,476 DEBUG l2lg_transform_client parse() data:{u'cmd': 802, u'pkt': u'\x08\x00'}
+2017-05-15 12:58:42,476 DEBUG send2client() cmd:802 data: 
+2017-05-15 12:58:42,476 ERROR LoginServer.parse() cmd=902
+Traceback (most recent call last):
+  File "C:/xGame/logingate\loginserver.py", line 64, in packetReceived
+    loginserverparse.parse(self, cmd, pkt)
+  File "C:/xGame/logingate\loginserverparse.py", line 34, in parse
+    func(clinet, pkt)
+  File "C:/xGame/logingate\loginserverparse.py", line 13, in l2lg_transform_client
+    client.send2client(data["cmd"],data["pkt"])
+  File "C:/xGame/logingate\loginserver.py", line 70, in send2client
+    self.user.sendCmd(cmd,data)
+  File "C:\xGame\common\fprotocol.py", line 56, in sendCmd
+    body = struct.pack(fmt, data)
+error: argument for 's' must be a string
+2017-05-15 13:00:06,948 INFO ClientFactory starting on 2001
+2017-05-15 13:00:06,950 INFO Starting factory <clientfactory.ClientFactory instance at 0x000000000468C808>
+2017-05-15 13:00:09,957 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:00:12,963 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:00:12,967 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:00:12,971 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:00:12,976 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:00:12,980 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:00:12,983 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:00:12,990 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:00:12,994 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:00:12,999 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:00:12,999 INFO 登录网关服务器启动成功!服务器ID:87
+2017-05-15 13:00:13,000 DEBUG servermanager.packetReceived()
+2017-05-15 13:00:24,881 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 13:00:24,881 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 13:00:24,882 WARNING 分配用户空闲登录服务器成功 client_id:0 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 13:00:24,882 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000002B0C388>
+2017-05-15 13:00:24,884 WARNING  LoginServer connecting!!!
+2017-05-15 13:00:24,884 WARNING  LoginServer CONNECTED!!!
+2017-05-15 13:00:24,884 WARNING LoginServer.connectionMade()
+2017-05-15 13:00:27,562 DEBUG dataReceived len:27
+2017-05-15 13:00:27,562 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 13:00:27,565 DEBUG dataReceived len:37
+2017-05-15 13:00:27,566 DEBUG loginserver parse() func:l2lg_transform_client
+2017-05-15 13:00:27,566 DEBUG l2lg_transform_client parse() data:{u'cmd': 802, u'pkt': u'\x08\x00'}
+2017-05-15 13:00:27,566 DEBUG send2client() cmd:802 data:<type 'unicode'>
+2017-05-15 13:00:27,568 ERROR LoginServer.parse() cmd=902
+Traceback (most recent call last):
+  File "C:/xGame/logingate\loginserver.py", line 64, in packetReceived
+    loginserverparse.parse(self, cmd, pkt)
+  File "C:/xGame/logingate\loginserverparse.py", line 34, in parse
+    func(clinet, pkt)
+  File "C:/xGame/logingate\loginserverparse.py", line 13, in l2lg_transform_client
+    client.send2client(data["cmd"],data["pkt"])
+  File "C:/xGame/logingate\loginserver.py", line 70, in send2client
+    self.user.sendCmd(cmd,data)
+  File "C:\xGame\common\fprotocol.py", line 56, in sendCmd
+    body = struct.pack(fmt, data)
+error: argument for 's' must be a string
+2017-05-15 13:01:12,930 DEBUG dataReceived len:8
+2017-05-15 13:01:12,930 WARNING unknow cmd :1
+2017-05-15 13:01:27,937 DEBUG dataReceived len:8
+2017-05-15 13:01:27,938 DEBUG loginserver parse() func:keeplive
+2017-05-15 13:02:22,930 DEBUG dataReceived len:8
+2017-05-15 13:02:22,930 WARNING unknow cmd :1
+2017-05-15 13:02:37,937 DEBUG dataReceived len:8
+2017-05-15 13:02:37,937 DEBUG loginserver parse() func:keeplive
+2017-05-15 13:03:32,930 DEBUG dataReceived len:8
+2017-05-15 13:03:32,930 WARNING unknow cmd :1
+2017-05-15 13:03:47,937 DEBUG dataReceived len:8
+2017-05-15 13:03:47,937 DEBUG loginserver parse() func:keeplive
+2017-05-15 13:03:50,917 WARNING  LoginServer DOWN!!! reason:[Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 13:03:50,917 WARNING LoginServer.onConnectionLost()
+2017-05-15 13:03:50,917 INFO Stopping factory <loginserver.LoginServerFactory instance at 0x0000000002B0C388>
+2017-05-15 13:04:01,006 INFO ClientFactory starting on 2001
+2017-05-15 13:04:01,006 INFO Starting factory <clientfactory.ClientFactory instance at 0x0000000004648808>
+2017-05-15 13:04:01,016 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:04:01,022 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:04:01,026 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:04:01,029 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:04:01,035 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:04:01,039 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:04:01,043 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:04:01,049 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:04:01,052 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:04:01,055 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:04:01,056 INFO 登录网关服务器启动成功!服务器ID:87
+2017-05-15 13:04:01,056 DEBUG servermanager.packetReceived()
+2017-05-15 13:05:02,930 DEBUG dataReceived len:8
+2017-05-15 13:05:02,930 WARNING unknow cmd :1
+2017-05-15 13:06:12,930 DEBUG dataReceived len:8
+2017-05-15 13:06:12,930 WARNING unknow cmd :1
+2017-05-15 13:06:43,569 INFO ClientFactory starting on 2001
+2017-05-15 13:06:43,569 INFO Starting factory <clientfactory.ClientFactory instance at 0x0000000004889808>
+2017-05-15 13:06:43,581 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:06:43,585 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:06:43,589 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:06:43,592 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:06:43,598 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:06:43,601 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:06:43,605 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:06:43,608 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:06:43,612 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:06:43,615 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:06:43,615 INFO 登录网关服务器启动成功!服务器ID:87
+2017-05-15 13:06:43,617 DEBUG servermanager.packetReceived()
+2017-05-15 13:06:52,217 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 13:06:52,219 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 13:06:52,219 WARNING 分配用户空闲登录服务器成功 client_id:0 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 13:06:52,219 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000002C5AFC8>
+2017-05-15 13:06:52,220 WARNING  LoginServer connecting!!!
+2017-05-15 13:06:52,220 WARNING  LoginServer CONNECTED!!!
+2017-05-15 13:06:52,220 WARNING LoginServer.connectionMade()
+2017-05-15 13:06:54,377 DEBUG dataReceived len:27
+2017-05-15 13:06:54,377 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 13:06:54,380 DEBUG dataReceived len:37
+2017-05-15 13:06:54,381 DEBUG loginserver parse() func:l2lg_transform_client
+2017-05-15 13:06:54,381 DEBUG l2lg_transform_client parse() data:{u'cmd': 802, u'pkt': u'\x08\x00'}
+2017-05-15 13:06:54,381 DEBUG send2client() cmd:802 data:<type 'unicode'>
+2017-05-15 13:06:54,381 ERROR LoginServer.parse() cmd=902
+Traceback (most recent call last):
+  File "C:/xGame/logingate\loginserver.py", line 64, in packetReceived
+    loginserverparse.parse(self, cmd, pkt)
+  File "C:/xGame/logingate\loginserverparse.py", line 34, in parse
+    func(clinet, pkt)
+  File "C:/xGame/logingate\loginserverparse.py", line 13, in l2lg_transform_client
+    client.send2client(data[u"cmd"], data[u"pkt"])
+  File "C:/xGame/logingate\loginserver.py", line 70, in send2client
+    self.user.sendCmd(cmd,data)
+  File "C:\xGame\common\fprotocol.py", line 56, in sendCmd
+    body = struct.pack(fmt, data)
+error: argument for 's' must be a string
+2017-05-15 13:07:32,885 INFO ClientFactory starting on 2001
+2017-05-15 13:07:32,887 INFO Starting factory <clientfactory.ClientFactory instance at 0x0000000004737808>
+2017-05-15 13:07:32,898 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:07:32,904 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:07:32,908 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:07:32,913 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:07:32,917 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:07:32,921 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:07:32,927 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:07:32,933 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:07:32,937 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:07:32,941 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:07:32,941 INFO 登录网关服务器启动成功!服务器ID:87
+2017-05-15 13:07:32,943 DEBUG servermanager.packetReceived()
+2017-05-15 13:07:40,322 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 13:07:40,322 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 13:07:40,323 WARNING 分配用户空闲登录服务器成功 client_id:0 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 13:07:40,323 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000002B098C8>
+2017-05-15 13:07:40,325 WARNING  LoginServer connecting!!!
+2017-05-15 13:07:40,325 WARNING  LoginServer CONNECTED!!!
+2017-05-15 13:07:40,326 WARNING LoginServer.connectionMade()
+2017-05-15 13:07:43,365 DEBUG dataReceived len:27
+2017-05-15 13:07:43,365 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 13:07:43,368 DEBUG dataReceived len:37
+2017-05-15 13:07:43,368 DEBUG loginserver parse() func:l2lg_transform_client
+2017-05-15 13:07:43,368 DEBUG l2lg_transform_client parse() data:{u'cmd': 802, u'pkt': u'\x08\x00'}
+2017-05-15 13:07:43,368 DEBUG send2client() cmd:802 data:<type 'unicode'>
+2017-05-15 13:07:43,368 ERROR LoginServer.parse() cmd=902
+Traceback (most recent call last):
+  File "C:/xGame/logingate\loginserver.py", line 64, in packetReceived
+    loginserverparse.parse(self, cmd, pkt)
+  File "C:/xGame/logingate\loginserverparse.py", line 34, in parse
+    func(clinet, pkt)
+  File "C:/xGame/logingate\loginserverparse.py", line 13, in l2lg_transform_client
+    client.send2client(data[u"cmd"], data[u"pkt"])
+  File "C:/xGame/logingate\loginserver.py", line 70, in send2client
+    self.user.sendCmd(cmd,data)
+  File "C:\xGame\common\fprotocol.py", line 56, in sendCmd
+    body = struct.pack(fmt, data)
+error: argument for 's' must be a string
+2017-05-15 13:08:32,930 DEBUG dataReceived len:8
+2017-05-15 13:08:32,930 WARNING unknow cmd :1
+2017-05-15 13:08:45,575 DEBUG dataReceived len:8
+2017-05-15 13:08:45,576 DEBUG loginserver parse() func:keeplive
+2017-05-15 13:09:42,930 DEBUG dataReceived len:8
+2017-05-15 13:09:42,930 WARNING unknow cmd :1
+2017-05-15 13:09:55,575 DEBUG dataReceived len:8
+2017-05-15 13:09:55,575 DEBUG loginserver parse() func:keeplive
+2017-05-15 13:10:44,905 WARNING  LoginServer DOWN!!! reason:[Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 13:10:44,905 WARNING LoginServer.onConnectionLost()
+2017-05-15 13:10:44,907 INFO Stopping factory <loginserver.LoginServerFactory instance at 0x0000000002B098C8>
+2017-05-15 13:10:50,286 INFO ClientFactory starting on 2001
+2017-05-15 13:10:50,288 INFO Starting factory <clientfactory.ClientFactory instance at 0x0000000004728808>
+2017-05-15 13:10:50,299 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:10:50,303 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:10:50,308 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:10:50,312 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:10:50,316 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:10:50,321 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:10:50,325 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:10:50,328 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:10:50,332 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:10:50,335 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:10:50,335 INFO 登录网关服务器启动成功!服务器ID:87
+2017-05-15 13:10:50,336 DEBUG servermanager.packetReceived()
+2017-05-15 13:10:57,141 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 13:10:57,141 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 13:10:57,141 WARNING 分配用户空闲登录服务器成功 client_id:0 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 13:10:57,142 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000002CCAE48>
+2017-05-15 13:10:57,142 WARNING  LoginServer connecting!!!
+2017-05-15 13:10:57,144 WARNING  LoginServer CONNECTED!!!
+2017-05-15 13:10:57,144 WARNING LoginServer.connectionMade()
+2017-05-15 13:10:58,529 DEBUG dataReceived len:27
+2017-05-15 13:10:58,529 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 13:10:58,532 DEBUG dataReceived len:37
+2017-05-15 13:10:58,532 DEBUG loginserver parse() func:l2lg_transform_client
+2017-05-15 13:10:58,532 DEBUG l2lg_transform_client parse() data:{u'cmd': 802, u'pkt': u'\x08\x00'}
+2017-05-15 13:10:58,533 DEBUG send2client() cmd:802 data:<type 'unicode'>
+2017-05-15 13:10:58,533 ERROR LoginServer.parse() cmd=902
+Traceback (most recent call last):
+  File "C:/xGame/logingate\loginserver.py", line 64, in packetReceived
+    loginserverparse.parse(self, cmd, pkt)
+  File "C:/xGame/logingate\loginserverparse.py", line 34, in parse
+    func(clinet, pkt)
+  File "C:/xGame/logingate\loginserverparse.py", line 13, in l2lg_transform_client
+    client.send2client(data[u"cmd"], data[u"pkt"])
+  File "C:/xGame/logingate\loginserver.py", line 70, in send2client
+    self.user.sendCmd(cmd,data)
+  File "C:\xGame\common\fprotocol.py", line 56, in sendCmd
+    body = struct.pack(fmt, data)
+error: argument for 's' must be a string
+2017-05-15 13:11:52,930 DEBUG dataReceived len:8
+2017-05-15 13:11:52,930 WARNING unknow cmd :1
+2017-05-15 13:12:03,270 DEBUG dataReceived len:8
+2017-05-15 13:12:03,272 DEBUG loginserver parse() func:keeplive
+2017-05-15 13:13:02,930 DEBUG dataReceived len:8
+2017-05-15 13:13:02,930 WARNING unknow cmd :1
+2017-05-15 13:13:13,270 DEBUG dataReceived len:8
+2017-05-15 13:13:13,270 DEBUG loginserver parse() func:keeplive
+2017-05-15 13:14:12,930 DEBUG dataReceived len:8
+2017-05-15 13:14:12,930 WARNING unknow cmd :1
+2017-05-15 13:14:23,270 DEBUG dataReceived len:8
+2017-05-15 13:14:23,270 DEBUG loginserver parse() func:keeplive
+2017-05-15 13:15:22,930 DEBUG dataReceived len:8
+2017-05-15 13:15:22,930 WARNING unknow cmd :1
+2017-05-15 13:15:33,270 DEBUG dataReceived len:8
+2017-05-15 13:15:33,270 DEBUG loginserver parse() func:keeplive
+2017-05-15 13:19:09,575 INFO ClientFactory starting on 2001
+2017-05-15 13:19:09,576 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000046F9808>
+2017-05-15 13:19:09,588 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:19:09,592 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:19:09,596 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:19:09,601 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:19:09,605 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:19:09,611 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:19:09,615 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:19:09,618 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:19:09,622 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:19:09,625 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:19:09,627 INFO 登录网关服务器启动成功!服务器ID:87
+2017-05-15 13:19:09,627 DEBUG servermanager.packetReceived()
+2017-05-15 13:19:17,487 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 13:19:17,487 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 13:19:17,489 WARNING 分配用户空闲登录服务器成功 client_id:0 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 13:19:17,489 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000002B0A608>
+2017-05-15 13:19:17,490 WARNING  LoginServer connecting!!!
+2017-05-15 13:19:17,490 WARNING  LoginServer CONNECTED!!!
+2017-05-15 13:19:17,490 WARNING LoginServer.connectionMade()
+2017-05-15 13:19:20,398 DEBUG dataReceived len:27
+2017-05-15 13:19:20,398 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 13:19:20,401 DEBUG dataReceived len:37
+2017-05-15 13:19:20,401 DEBUG loginserver parse() func:l2lg_transform_client
+2017-05-15 13:19:20,401 DEBUG l2lg_transform_client parse() data:{u'cmd': 802, u'pkt': u'\x08\x00'}
+2017-05-15 13:19:20,404 DEBUG send2client() cmd:802 data:<type 'str'>

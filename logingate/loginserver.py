@@ -64,3 +64,6 @@ class LoginServer(fprotocol.FProtocol):
             loginserverparse.parse(self, cmd, pkt)
         except Exception:
             logging.exception(u"LoginServer.parse() cmd=%d" % cmd)
+
+    def send2client(self, cmd, data):
+        self.user.sendCmd(cmd,data)

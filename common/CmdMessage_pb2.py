@@ -13,7 +13,7 @@ from google.protobuf import descriptor_pb2
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='CmdMessage.proto',
   package='',
-  serialized_pb='\n\x10\x43mdMessage.proto\"\x1b\n\x19Request_Get_LoginGateInfo\"B\n\x17RePly_Get_LoginGateInfo\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\n\n\x02ip\x18\x02 \x01(\t\x12\x0c\n\x04port\x18\x03 \x01(\r\"(\n\x17Reply_Connect_Logingate\x12\r\n\x05\x65rror\x18\x01 \x02(\r')
+  serialized_pb='\n\x10\x43mdMessage.proto\"\x1b\n\x19Request_Get_LoginGateInfo\"B\n\x17RePly_Get_LoginGateInfo\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\n\n\x02ip\x18\x02 \x01(\t\x12\x0c\n\x04port\x18\x03 \x01(\r\"(\n\x17Reply_Connect_Logingate\x12\r\n\x05\x65rror\x18\x01 \x02(\r\":\n\rRequest_Login\x12\x14\n\x0c\x61\x63\x63ount_name\x18\x01 \x02(\t\x12\x13\n\x0b\x61\x63\x63ount_pwd\x18\x02 \x02(\t\"\x1c\n\x0bReply_Login\x12\r\n\x05\x65rror\x18\x01 \x02(\r')
 
 
 
@@ -108,9 +108,74 @@ _REPLY_CONNECT_LOGINGATE = _descriptor.Descriptor(
   serialized_end=157,
 )
 
+
+_REQUEST_LOGIN = _descriptor.Descriptor(
+  name='Request_Login',
+  full_name='Request_Login',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='account_name', full_name='Request_Login.account_name', index=0,
+      number=1, type=9, cpp_type=9, label=2,
+      has_default_value=False, default_value=unicode("", "utf-8"),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='account_pwd', full_name='Request_Login.account_pwd', index=1,
+      number=2, type=9, cpp_type=9, label=2,
+      has_default_value=False, default_value=unicode("", "utf-8"),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  extension_ranges=[],
+  serialized_start=159,
+  serialized_end=217,
+)
+
+
+_REPLY_LOGIN = _descriptor.Descriptor(
+  name='Reply_Login',
+  full_name='Reply_Login',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='error', full_name='Reply_Login.error', index=0,
+      number=1, type=13, cpp_type=3, label=2,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  extension_ranges=[],
+  serialized_start=219,
+  serialized_end=247,
+)
+
 DESCRIPTOR.message_types_by_name['Request_Get_LoginGateInfo'] = _REQUEST_GET_LOGINGATEINFO
 DESCRIPTOR.message_types_by_name['RePly_Get_LoginGateInfo'] = _REPLY_GET_LOGINGATEINFO
 DESCRIPTOR.message_types_by_name['Reply_Connect_Logingate'] = _REPLY_CONNECT_LOGINGATE
+DESCRIPTOR.message_types_by_name['Request_Login'] = _REQUEST_LOGIN
+DESCRIPTOR.message_types_by_name['Reply_Login'] = _REPLY_LOGIN
 
 class Request_Get_LoginGateInfo(_message.Message):
   __metaclass__ = _reflection.GeneratedProtocolMessageType
@@ -129,6 +194,18 @@ class Reply_Connect_Logingate(_message.Message):
   DESCRIPTOR = _REPLY_CONNECT_LOGINGATE
 
   # @@protoc_insertion_point(class_scope:Reply_Connect_Logingate)
+
+class Request_Login(_message.Message):
+  __metaclass__ = _reflection.GeneratedProtocolMessageType
+  DESCRIPTOR = _REQUEST_LOGIN
+
+  # @@protoc_insertion_point(class_scope:Request_Login)
+
+class Reply_Login(_message.Message):
+  __metaclass__ = _reflection.GeneratedProtocolMessageType
+  DESCRIPTOR = _REPLY_LOGIN
+
+  # @@protoc_insertion_point(class_scope:Reply_Login)
 
 
 # @@protoc_insertion_point(module_scope)

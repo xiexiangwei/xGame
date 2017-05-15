@@ -1,0 +1,569 @@
+2017-05-15 10:39:55,516 CRITICAL   File "C:\Program Files\JetBrains\PyCharm 2017.1.1\helpers\pydev\pydevd.py", line 1578, in <module>
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "C:\Program Files\JetBrains\PyCharm 2017.1.1\helpers\pydev\pydevd.py", line 1015, in run
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:/xGame/servermanager/main.py", line 57, in <module>
+    run()
+  File "C:/xGame/servermanager/main.py", line 54, in run
+    daemon.run(config.instance.server_pid,MainRun)
+  File "C:\xGame\common\daemon.py", line 164, in run
+    func(False)
+  File "C:/xGame/servermanager/main.py", line 44, in MainRun
+    clientfactory.instance.start(config.instance.server_ip,config.instance.server_port,config.instance.max_client)
+  File "C:\xGame\common\baseclientfactory.py", line 17, in start
+    reactor.listenTCP(port, self, interface=ip)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 156, in listenTCP
+    p.startListening()
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\tcp.py", line 432, in startListening
+    raise error.CannotListenError, (self.interface, self.port, le)
+
+2017-05-15 10:40:53,252 CRITICAL   File "C:\Program Files\JetBrains\PyCharm 2017.1.1\helpers\pydev\pydevd.py", line 1578, in <module>
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "C:\Program Files\JetBrains\PyCharm 2017.1.1\helpers\pydev\pydevd.py", line 1015, in run
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:/xGame/servermanager/main.py", line 57, in <module>
+    run()
+  File "C:/xGame/servermanager/main.py", line 54, in run
+    daemon.run(config.instance.server_pid,MainRun)
+  File "C:\xGame\common\daemon.py", line 164, in run
+    func(False)
+  File "C:/xGame/servermanager/main.py", line 44, in MainRun
+    clientfactory.instance.start(config.instance.server_ip,config.instance.server_port,config.instance.max_client)
+  File "C:\xGame\common\baseclientfactory.py", line 17, in start
+    reactor.listenTCP(port, self, interface=ip)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 156, in listenTCP
+    p.startListening()
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\tcp.py", line 432, in startListening
+    raise error.CannotListenError, (self.interface, self.port, le)
+
+2017-05-15 10:42:20,763 CRITICAL   File "C:\Program Files\JetBrains\PyCharm 2017.1.1\helpers\pydev\pydevd.py", line 1578, in <module>
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "C:\Program Files\JetBrains\PyCharm 2017.1.1\helpers\pydev\pydevd.py", line 1015, in run
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:/xGame/servermanager/main.py", line 57, in <module>
+    run()
+  File "C:/xGame/servermanager/main.py", line 54, in run
+    daemon.run(config.instance.server_pid,MainRun)
+  File "C:\xGame\common\daemon.py", line 164, in run
+    func(False)
+  File "C:/xGame/servermanager/main.py", line 44, in MainRun
+    clientfactory.instance.start(config.instance.server_ip,config.instance.server_port,config.instance.max_client)
+  File "C:\xGame\common\baseclientfactory.py", line 17, in start
+    reactor.listenTCP(port, self, interface=ip)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 156, in listenTCP
+    p.startListening()
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\tcp.py", line 432, in startListening
+    raise error.CannotListenError, (self.interface, self.port, le)
+
+2017-05-15 10:43:43,585 CRITICAL   File "C:\Program Files\JetBrains\PyCharm 2017.1.1\helpers\pydev\pydevd.py", line 1578, in <module>
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "C:\Program Files\JetBrains\PyCharm 2017.1.1\helpers\pydev\pydevd.py", line 1015, in run
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:/xGame/servermanager/main.py", line 57, in <module>
+    run()
+  File "C:/xGame/servermanager/main.py", line 54, in run
+    daemon.run(config.instance.server_pid,MainRun)
+  File "C:\xGame\common\daemon.py", line 164, in run
+    func(False)
+  File "C:/xGame/servermanager/main.py", line 44, in MainRun
+    clientfactory.instance.start(config.instance.server_ip,config.instance.server_port,config.instance.max_client)
+  File "C:\xGame\common\baseclientfactory.py", line 17, in start
+    reactor.listenTCP(port, self, interface=ip)
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\reactor.py", line 156, in listenTCP
+    p.startListening()
+  File "C:\Python27\lib\site-packages\twisted\internet\iocpreactor\tcp.py", line 432, in startListening
+    raise error.CannotListenError, (self.interface, self.port, le)
+
+2017-05-15 10:46:57,365 INFO ClientFactory starting on 1111
+2017-05-15 10:46:57,365 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000043C7608>
+2017-05-15 10:46:57,375 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:46:57,375 INFO 最大登录网关数量:88
+2017-05-15 10:46:57,375 INFO 最大登录服务器数量:200
+2017-05-15 10:46:57,375 INFO 服务器管理服务器启动成功!
+2017-05-15 10:47:09,035 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 10:47:09,035 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 10:47:09,045 DEBUG dataReceived len:57
+2017-05-15 10:47:09,045 DEBUG clientparse() cmd:lg2sm_request_config
+2017-05-15 10:50:25,049 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 10:50:25,049 DEBUG removeProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 10:50:30,822 INFO ClientFactory starting on 1111
+2017-05-15 10:50:30,822 INFO Starting factory <clientfactory.ClientFactory instance at 0x0000000004718608>
+2017-05-15 10:50:30,822 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 10:50:30,822 INFO 最大登录网关数量:88
+2017-05-15 10:50:30,822 INFO 最大登录服务器数量:200
+2017-05-15 10:50:30,822 INFO 服务器管理服务器启动成功!
+2017-05-15 10:50:35,956 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 10:50:35,956 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 10:50:35,970 DEBUG dataReceived len:57
+2017-05-15 10:50:35,970 DEBUG clientparse() cmd:lg2sm_request_config
+2017-05-15 10:50:46,720 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 10:50:46,720 DEBUG removeProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 10:51:28,246 DEBUG buildProtocol(), id=1 len(self.__pmap)=0
+2017-05-15 10:51:28,246 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 10:51:28,246 DEBUG dataReceived len:57
+2017-05-15 10:51:28,246 DEBUG clientparse() cmd:lg2sm_request_config
+2017-05-15 10:51:36,795 DEBUG buildProtocol(), id=2 len(self.__pmap)=1
+2017-05-15 10:51:36,795 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 10:51:36,795 DEBUG dataReceived len:57
+2017-05-15 10:51:36,795 DEBUG clientparse() cmd:l2sm_request_config
+2017-05-15 10:54:19,476 DEBUG buildProtocol(), id=3 len(self.__pmap)=2
+2017-05-15 10:54:19,477 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 10:54:19,477 DEBUG buildProtocol(), id=4 len(self.__pmap)=3
+2017-05-15 10:54:19,477 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 10:54:19,490 DEBUG dataReceived len:6
+2017-05-15 10:54:19,490 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 10:54:19,490 DEBUG dataReceived len:6
+2017-05-15 10:54:19,490 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 10:54:19,559 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 10:54:19,561 DEBUG removeProtocol(), id=3 len(self.__pmap)=3
+2017-05-15 10:54:40,908 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 10:54:40,908 DEBUG removeProtocol(), id=4 len(self.__pmap)=2
+2017-05-15 10:55:37,743 DEBUG buildProtocol(), id=5 len(self.__pmap)=2
+2017-05-15 10:55:37,743 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 10:55:37,744 DEBUG buildProtocol(), id=6 len(self.__pmap)=3
+2017-05-15 10:55:37,744 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 10:55:37,756 DEBUG dataReceived len:6
+2017-05-15 10:55:37,756 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 10:55:37,756 DEBUG dataReceived len:6
+2017-05-15 10:55:37,756 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 10:55:37,818 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 10:55:37,818 DEBUG removeProtocol(), id=5 len(self.__pmap)=3
+2017-05-15 10:58:51,960 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 10:58:51,960 DEBUG removeProtocol(), id=6 len(self.__pmap)=2
+2017-05-15 10:59:13,635 DEBUG buildProtocol(), id=7 len(self.__pmap)=2
+2017-05-15 10:59:13,637 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 10:59:13,637 DEBUG buildProtocol(), id=8 len(self.__pmap)=3
+2017-05-15 10:59:13,637 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 10:59:13,648 DEBUG dataReceived len:6
+2017-05-15 10:59:13,648 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 10:59:13,648 DEBUG dataReceived len:6
+2017-05-15 10:59:13,648 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 10:59:13,713 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 10:59:13,713 DEBUG removeProtocol(), id=7 len(self.__pmap)=3
+2017-05-15 10:59:26,259 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 10:59:26,260 DEBUG removeProtocol(), id=1 len(self.__pmap)=2
+2017-05-15 10:59:26,977 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 10:59:26,977 DEBUG removeProtocol(), id=2 len(self.__pmap)=1
+2017-05-15 11:00:04,729 INFO ClientFactory starting on 1111
+2017-05-15 11:00:04,730 INFO Starting factory <clientfactory.ClientFactory instance at 0x000000000452BC48>
+2017-05-15 11:00:04,734 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 11:00:04,736 INFO 最大登录网关数量:88
+2017-05-15 11:00:04,736 INFO 最大登录服务器数量:200
+2017-05-15 11:00:04,736 INFO 服务器管理服务器启动成功!
+2017-05-15 11:00:08,096 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 11:00:08,098 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 11:00:08,098 DEBUG dataReceived len:57
+2017-05-15 11:00:08,098 DEBUG clientparse() cmd:lg2sm_request_config
+2017-05-15 11:00:11,563 DEBUG buildProtocol(), id=1 len(self.__pmap)=1
+2017-05-15 11:00:11,563 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 11:00:11,565 DEBUG dataReceived len:57
+2017-05-15 11:00:11,565 DEBUG clientparse() cmd:l2sm_request_config
+2017-05-15 11:00:17,130 DEBUG buildProtocol(), id=2 len(self.__pmap)=2
+2017-05-15 11:00:17,130 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 11:00:17,131 DEBUG buildProtocol(), id=3 len(self.__pmap)=3
+2017-05-15 11:00:17,131 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 11:00:17,141 DEBUG dataReceived len:6
+2017-05-15 11:00:17,141 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 11:00:17,142 DEBUG dataReceived len:6
+2017-05-15 11:00:17,142 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 11:00:17,206 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:00:17,206 DEBUG removeProtocol(), id=3 len(self.__pmap)=3
+2017-05-15 11:00:42,938 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 11:00:42,940 DEBUG removeProtocol(), id=2 len(self.__pmap)=2
+2017-05-15 11:05:08,759 DEBUG buildProtocol(), id=4 len(self.__pmap)=2
+2017-05-15 11:05:08,759 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 11:05:08,759 DEBUG buildProtocol(), id=5 len(self.__pmap)=3
+2017-05-15 11:05:08,759 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 11:05:08,769 DEBUG dataReceived len:6
+2017-05-15 11:05:08,769 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 11:05:08,769 DEBUG dataReceived len:6
+2017-05-15 11:05:08,769 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 11:05:08,825 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:05:08,825 DEBUG removeProtocol(), id=5 len(self.__pmap)=3
+2017-05-15 11:08:03,734 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 11:08:03,734 DEBUG removeProtocol(), id=4 len(self.__pmap)=2
+2017-05-15 11:39:58,884 DEBUG buildProtocol(), id=6 len(self.__pmap)=2
+2017-05-15 11:39:58,884 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 11:39:58,894 DEBUG dataReceived len:6
+2017-05-15 11:39:58,894 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 11:39:58,953 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:39:58,954 DEBUG removeProtocol(), id=6 len(self.__pmap)=2
+2017-05-15 11:40:06,608 DEBUG buildProtocol(), id=7 len(self.__pmap)=2
+2017-05-15 11:40:06,608 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 11:40:06,618 DEBUG dataReceived len:6
+2017-05-15 11:40:06,618 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 11:40:06,677 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:40:06,677 DEBUG removeProtocol(), id=7 len(self.__pmap)=2
+2017-05-15 11:40:12,243 DEBUG buildProtocol(), id=8 len(self.__pmap)=2
+2017-05-15 11:40:12,243 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 11:40:12,252 DEBUG dataReceived len:6
+2017-05-15 11:40:12,252 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 11:40:12,308 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:40:12,308 DEBUG removeProtocol(), id=8 len(self.__pmap)=2
+2017-05-15 11:42:17,456 DEBUG buildProtocol(), id=9 len(self.__pmap)=2
+2017-05-15 11:42:17,456 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 11:42:17,467 DEBUG dataReceived len:6
+2017-05-15 11:42:17,467 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 11:42:17,529 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:42:17,529 DEBUG removeProtocol(), id=9 len(self.__pmap)=2
+2017-05-15 11:46:24,365 DEBUG buildProtocol(), id=10 len(self.__pmap)=2
+2017-05-15 11:46:24,367 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 11:46:24,377 DEBUG dataReceived len:6
+2017-05-15 11:46:24,377 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 11:46:24,433 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:46:24,433 DEBUG removeProtocol(), id=10 len(self.__pmap)=2
+2017-05-15 11:46:45,375 DEBUG buildProtocol(), id=11 len(self.__pmap)=2
+2017-05-15 11:46:45,375 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 11:46:45,385 DEBUG dataReceived len:6
+2017-05-15 11:46:45,387 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 11:46:45,444 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:46:45,444 DEBUG removeProtocol(), id=11 len(self.__pmap)=2
+2017-05-15 11:46:48,918 DEBUG buildProtocol(), id=12 len(self.__pmap)=2
+2017-05-15 11:46:48,918 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 11:46:48,927 DEBUG dataReceived len:6
+2017-05-15 11:46:48,928 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 11:46:48,983 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:46:48,983 DEBUG removeProtocol(), id=12 len(self.__pmap)=2
+2017-05-15 11:46:50,618 DEBUG buildProtocol(), id=13 len(self.__pmap)=2
+2017-05-15 11:46:50,618 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 11:46:50,628 DEBUG dataReceived len:6
+2017-05-15 11:46:50,628 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 11:46:50,690 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:46:50,690 DEBUG removeProtocol(), id=13 len(self.__pmap)=2
+2017-05-15 11:49:16,058 DEBUG buildProtocol(), id=14 len(self.__pmap)=2
+2017-05-15 11:49:16,058 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 11:49:16,068 DEBUG dataReceived len:6
+2017-05-15 11:49:16,068 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 11:49:16,130 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:49:16,130 DEBUG removeProtocol(), id=14 len(self.__pmap)=2
+2017-05-15 11:52:10,145 DEBUG buildProtocol(), id=15 len(self.__pmap)=2
+2017-05-15 11:52:10,145 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 11:52:10,154 DEBUG dataReceived len:6
+2017-05-15 11:52:10,154 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 11:52:10,216 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:52:10,216 DEBUG removeProtocol(), id=15 len(self.__pmap)=2
+2017-05-15 11:52:26,512 DEBUG buildProtocol(), id=16 len(self.__pmap)=2
+2017-05-15 11:52:26,512 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 11:52:26,522 DEBUG dataReceived len:6
+2017-05-15 11:52:26,522 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 11:52:26,582 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 11:52:26,584 DEBUG removeProtocol(), id=16 len(self.__pmap)=2
+2017-05-15 12:20:34,428 DEBUG buildProtocol(), id=17 len(self.__pmap)=2
+2017-05-15 12:20:34,430 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 12:20:34,438 DEBUG dataReceived len:6
+2017-05-15 12:20:34,440 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 12:20:34,496 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 12:20:34,496 DEBUG removeProtocol(), id=17 len(self.__pmap)=2
+2017-05-15 12:21:10,134 DEBUG buildProtocol(), id=18 len(self.__pmap)=2
+2017-05-15 12:21:10,134 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 12:21:10,144 DEBUG dataReceived len:6
+2017-05-15 12:21:10,144 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 12:21:10,200 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 12:21:10,201 DEBUG removeProtocol(), id=18 len(self.__pmap)=2
+2017-05-15 12:26:34,647 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:26:34,648 DEBUG removeProtocol(), id=0 len(self.__pmap)=1
+2017-05-15 12:26:35,092 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:26:35,094 DEBUG removeProtocol(), id=1 len(self.__pmap)=0
+2017-05-15 12:31:35,941 INFO ClientFactory starting on 1111
+2017-05-15 12:31:35,943 INFO Starting factory <clientfactory.ClientFactory instance at 0x000000000451E408>
+2017-05-15 12:31:35,959 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:31:35,960 INFO 最大登录网关数量:88
+2017-05-15 12:31:35,960 INFO 最大登录服务器数量:200
+2017-05-15 12:31:35,960 INFO 服务器管理服务器启动成功!
+2017-05-15 12:31:39,670 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:31:39,671 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 12:31:39,671 DEBUG dataReceived len:57
+2017-05-15 12:31:39,671 DEBUG clientparse() cmd:lg2sm_request_config
+2017-05-15 12:31:43,572 DEBUG buildProtocol(), id=1 len(self.__pmap)=1
+2017-05-15 12:31:43,572 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 12:31:43,572 DEBUG dataReceived len:57
+2017-05-15 12:31:43,572 DEBUG clientparse() cmd:l2sm_request_config
+2017-05-15 12:31:52,894 DEBUG buildProtocol(), id=2 len(self.__pmap)=2
+2017-05-15 12:31:52,895 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 12:31:52,904 DEBUG dataReceived len:6
+2017-05-15 12:31:52,904 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 12:31:52,964 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 12:31:52,966 DEBUG removeProtocol(), id=2 len(self.__pmap)=2
+2017-05-15 12:46:53,823 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:46:53,825 DEBUG removeProtocol(), id=1 len(self.__pmap)=1
+2017-05-15 12:46:56,576 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:46:56,576 DEBUG removeProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:47:09,184 INFO ClientFactory starting on 1111
+2017-05-15 12:47:09,186 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000044189C8>
+2017-05-15 12:47:09,190 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:47:09,190 INFO 最大登录网关数量:88
+2017-05-15 12:47:09,191 INFO 最大登录服务器数量:200
+2017-05-15 12:47:09,191 INFO 服务器管理服务器启动成功!
+2017-05-15 12:47:14,552 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:47:14,553 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 12:47:14,555 DEBUG dataReceived len:57
+2017-05-15 12:47:14,555 DEBUG clientparse() cmd:lg2sm_request_config
+2017-05-15 12:47:20,417 DEBUG buildProtocol(), id=1 len(self.__pmap)=1
+2017-05-15 12:47:20,417 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 12:47:20,418 DEBUG dataReceived len:57
+2017-05-15 12:47:20,418 DEBUG clientparse() cmd:l2sm_request_config
+2017-05-15 12:47:38,549 DEBUG buildProtocol(), id=2 len(self.__pmap)=2
+2017-05-15 12:47:38,549 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 12:47:38,559 DEBUG dataReceived len:6
+2017-05-15 12:47:38,559 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 12:47:38,618 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 12:47:38,618 DEBUG removeProtocol(), id=2 len(self.__pmap)=2
+2017-05-15 12:50:52,951 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:50:52,953 DEBUG removeProtocol(), id=0 len(self.__pmap)=1
+2017-05-15 12:50:55,624 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:50:55,624 DEBUG removeProtocol(), id=1 len(self.__pmap)=0
+2017-05-15 12:51:33,213 INFO ClientFactory starting on 1111
+2017-05-15 12:51:33,213 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000046339C8>
+2017-05-15 12:51:33,219 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:51:33,220 INFO 最大登录网关数量:88
+2017-05-15 12:51:33,220 INFO 最大登录服务器数量:200
+2017-05-15 12:51:33,220 INFO 服务器管理服务器启动成功!
+2017-05-15 12:51:39,131 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:51:39,131 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 12:51:39,131 DEBUG dataReceived len:57
+2017-05-15 12:51:39,131 DEBUG clientparse() cmd:lg2sm_request_config
+2017-05-15 12:51:42,480 DEBUG buildProtocol(), id=1 len(self.__pmap)=1
+2017-05-15 12:51:42,480 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 12:51:42,480 DEBUG dataReceived len:57
+2017-05-15 12:51:42,480 DEBUG clientparse() cmd:l2sm_request_config
+2017-05-15 12:51:50,558 DEBUG buildProtocol(), id=2 len(self.__pmap)=2
+2017-05-15 12:51:50,558 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 12:51:50,566 DEBUG dataReceived len:6
+2017-05-15 12:51:50,566 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 12:51:50,624 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 12:51:50,625 DEBUG removeProtocol(), id=2 len(self.__pmap)=2
+2017-05-15 12:52:43,101 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:52:43,102 DEBUG removeProtocol(), id=0 len(self.__pmap)=1
+2017-05-15 12:52:47,164 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:52:47,164 DEBUG removeProtocol(), id=1 len(self.__pmap)=0
+2017-05-15 12:52:53,809 INFO ClientFactory starting on 1111
+2017-05-15 12:52:53,809 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000045639C8>
+2017-05-15 12:52:53,815 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:52:53,815 INFO 最大登录网关数量:88
+2017-05-15 12:52:53,815 INFO 最大登录服务器数量:200
+2017-05-15 12:52:53,815 INFO 服务器管理服务器启动成功!
+2017-05-15 12:52:58,335 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:52:58,335 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 12:52:58,335 DEBUG dataReceived len:57
+2017-05-15 12:52:58,335 DEBUG clientparse() cmd:lg2sm_request_config
+2017-05-15 12:53:01,538 DEBUG buildProtocol(), id=1 len(self.__pmap)=1
+2017-05-15 12:53:01,539 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 12:53:01,539 DEBUG dataReceived len:57
+2017-05-15 12:53:01,539 DEBUG clientparse() cmd:l2sm_request_config
+2017-05-15 12:53:06,960 DEBUG buildProtocol(), id=2 len(self.__pmap)=2
+2017-05-15 12:53:06,961 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 12:53:06,970 DEBUG dataReceived len:6
+2017-05-15 12:53:06,970 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 12:53:07,032 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 12:53:07,032 DEBUG removeProtocol(), id=2 len(self.__pmap)=2
+2017-05-15 12:55:13,611 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:55:13,611 DEBUG removeProtocol(), id=0 len(self.__pmap)=1
+2017-05-15 12:56:15,404 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:56:15,404 DEBUG removeProtocol(), id=1 len(self.__pmap)=0
+2017-05-15 12:56:22,927 INFO ClientFactory starting on 1111
+2017-05-15 12:56:22,928 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000042939C8>
+2017-05-15 12:56:22,934 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 12:56:22,934 INFO 最大登录网关数量:88
+2017-05-15 12:56:22,934 INFO 最大登录服务器数量:200
+2017-05-15 12:56:22,934 INFO 服务器管理服务器启动成功!
+2017-05-15 12:56:27,076 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 12:56:27,078 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 12:56:27,078 DEBUG dataReceived len:57
+2017-05-15 12:56:27,078 DEBUG clientparse() cmd:lg2sm_request_config
+2017-05-15 12:56:32,927 DEBUG buildProtocol(), id=1 len(self.__pmap)=1
+2017-05-15 12:56:32,927 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 12:56:32,928 DEBUG dataReceived len:57
+2017-05-15 12:56:32,928 DEBUG clientparse() cmd:l2sm_request_config
+2017-05-15 12:56:38,436 DEBUG buildProtocol(), id=2 len(self.__pmap)=2
+2017-05-15 12:56:38,436 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 12:56:38,444 DEBUG dataReceived len:6
+2017-05-15 12:56:38,446 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 12:56:38,497 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 12:56:38,499 DEBUG removeProtocol(), id=2 len(self.__pmap)=2
+2017-05-15 12:58:15,851 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:58:15,851 DEBUG removeProtocol(), id=0 len(self.__pmap)=1
+2017-05-15 12:58:25,130 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:58:25,130 DEBUG removeProtocol(), id=1 len(self.__pmap)=0
+2017-05-15 12:58:31,680 DEBUG buildProtocol(), id=3 len(self.__pmap)=0
+2017-05-15 12:58:31,680 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 12:58:31,681 DEBUG dataReceived len:57
+2017-05-15 12:58:31,681 DEBUG clientparse() cmd:lg2sm_request_config
+2017-05-15 12:58:34,569 DEBUG buildProtocol(), id=4 len(self.__pmap)=1
+2017-05-15 12:58:34,569 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 12:58:34,569 DEBUG dataReceived len:57
+2017-05-15 12:58:34,569 DEBUG clientparse() cmd:l2sm_request_config
+2017-05-15 12:58:39,770 DEBUG buildProtocol(), id=5 len(self.__pmap)=2
+2017-05-15 12:58:39,770 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 12:58:39,779 DEBUG dataReceived len:6
+2017-05-15 12:58:39,779 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 12:58:39,841 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 12:58:39,841 DEBUG removeProtocol(), id=5 len(self.__pmap)=2
+2017-05-15 12:59:20,197 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:59:20,197 DEBUG removeProtocol(), id=3 len(self.__pmap)=1
+2017-05-15 12:59:22,628 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 12:59:22,628 DEBUG removeProtocol(), id=4 len(self.__pmap)=0
+2017-05-15 13:00:06,944 DEBUG buildProtocol(), id=6 len(self.__pmap)=0
+2017-05-15 13:00:06,944 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 13:00:06,944 DEBUG dataReceived len:57
+2017-05-15 13:00:06,944 DEBUG clientparse() cmd:lg2sm_request_config
+2017-05-15 13:00:17,933 DEBUG buildProtocol(), id=7 len(self.__pmap)=1
+2017-05-15 13:00:17,933 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 13:00:17,933 DEBUG dataReceived len:57
+2017-05-15 13:00:17,934 DEBUG clientparse() cmd:l2sm_request_config
+2017-05-15 13:00:24,803 DEBUG buildProtocol(), id=8 len(self.__pmap)=2
+2017-05-15 13:00:24,805 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 13:00:24,813 DEBUG dataReceived len:6
+2017-05-15 13:00:24,813 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 13:00:24,878 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 13:00:24,878 DEBUG removeProtocol(), id=8 len(self.__pmap)=2
+2017-05-15 13:03:50,914 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 13:03:50,915 DEBUG removeProtocol(), id=7 len(self.__pmap)=1
+2017-05-15 13:03:52,573 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 13:03:52,573 DEBUG removeProtocol(), id=6 len(self.__pmap)=0
+2017-05-15 13:04:01,000 DEBUG buildProtocol(), id=9 len(self.__pmap)=0
+2017-05-15 13:04:01,002 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 13:04:01,002 DEBUG dataReceived len:57
+2017-05-15 13:04:01,002 DEBUG clientparse() cmd:lg2sm_request_config
+2017-05-15 13:04:03,897 DEBUG buildProtocol(), id=10 len(self.__pmap)=1
+2017-05-15 13:04:03,898 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 13:04:03,898 DEBUG dataReceived len:57
+2017-05-15 13:04:03,898 DEBUG clientparse() cmd:l2sm_request_config
+2017-05-15 13:06:36,517 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 13:06:36,519 DEBUG removeProtocol(), id=10 len(self.__pmap)=1
+2017-05-15 13:06:38,219 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 13:06:38,220 DEBUG removeProtocol(), id=9 len(self.__pmap)=0
+2017-05-15 13:06:43,563 DEBUG buildProtocol(), id=11 len(self.__pmap)=0
+2017-05-15 13:06:43,563 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 13:06:43,565 DEBUG dataReceived len:57
+2017-05-15 13:06:43,565 DEBUG clientparse() cmd:lg2sm_request_config
+2017-05-15 13:06:46,707 DEBUG buildProtocol(), id=12 len(self.__pmap)=1
+2017-05-15 13:06:46,709 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 13:06:46,709 DEBUG dataReceived len:57
+2017-05-15 13:06:46,709 DEBUG clientparse() cmd:l2sm_request_config
+2017-05-15 13:06:52,144 DEBUG buildProtocol(), id=13 len(self.__pmap)=2
+2017-05-15 13:06:52,145 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 13:06:52,154 DEBUG dataReceived len:6
+2017-05-15 13:06:52,154 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 13:06:52,216 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 13:06:52,216 DEBUG removeProtocol(), id=13 len(self.__pmap)=2
+2017-05-15 13:07:26,940 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 13:07:26,940 DEBUG removeProtocol(), id=11 len(self.__pmap)=1
+2017-05-15 13:07:29,453 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 13:07:29,453 DEBUG removeProtocol(), id=12 len(self.__pmap)=0
+2017-05-15 13:07:32,881 DEBUG buildProtocol(), id=14 len(self.__pmap)=0
+2017-05-15 13:07:32,881 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 13:07:32,881 DEBUG dataReceived len:57
+2017-05-15 13:07:32,881 DEBUG clientparse() cmd:lg2sm_request_config
+2017-05-15 13:07:35,569 DEBUG buildProtocol(), id=15 len(self.__pmap)=1
+2017-05-15 13:07:35,571 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 13:07:35,571 DEBUG dataReceived len:57
+2017-05-15 13:07:35,572 DEBUG clientparse() cmd:l2sm_request_config
+2017-05-15 13:07:40,256 DEBUG buildProtocol(), id=16 len(self.__pmap)=2
+2017-05-15 13:07:40,256 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 13:07:40,266 DEBUG dataReceived len:6
+2017-05-15 13:07:40,266 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 13:07:40,321 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 13:07:40,321 DEBUG removeProtocol(), id=16 len(self.__pmap)=2
+2017-05-15 13:10:44,904 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 13:10:44,904 DEBUG removeProtocol(), id=15 len(self.__pmap)=1
+2017-05-15 13:10:45,467 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 13:10:45,467 DEBUG removeProtocol(), id=14 len(self.__pmap)=0
+2017-05-15 13:10:50,282 DEBUG buildProtocol(), id=17 len(self.__pmap)=0
+2017-05-15 13:10:50,282 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 13:10:50,282 DEBUG dataReceived len:57
+2017-05-15 13:10:50,282 DEBUG clientparse() cmd:lg2sm_request_config
+2017-05-15 13:10:53,266 DEBUG buildProtocol(), id=18 len(self.__pmap)=1
+2017-05-15 13:10:53,266 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 13:10:53,266 DEBUG dataReceived len:57
+2017-05-15 13:10:53,266 DEBUG clientparse() cmd:l2sm_request_config
+2017-05-15 13:10:57,063 DEBUG buildProtocol(), id=19 len(self.__pmap)=2
+2017-05-15 13:10:57,065 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 13:10:57,075 DEBUG dataReceived len:6
+2017-05-15 13:10:57,075 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 13:10:57,138 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 13:10:57,140 DEBUG removeProtocol(), id=19 len(self.__pmap)=2
+2017-05-15 13:15:47,177 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 13:15:47,177 DEBUG removeProtocol(), id=17 len(self.__pmap)=1
+2017-05-15 13:15:48,085 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 13:15:48,085 DEBUG removeProtocol(), id=18 len(self.__pmap)=0
+2017-05-15 13:19:06,545 INFO ClientFactory starting on 1111
+2017-05-15 13:19:06,546 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000045139C8>
+2017-05-15 13:19:06,551 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 13:19:06,552 INFO 最大登录网关数量:88
+2017-05-15 13:19:06,552 INFO 最大登录服务器数量:200
+2017-05-15 13:19:06,552 INFO 服务器管理服务器启动成功!
+2017-05-15 13:19:09,571 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 13:19:09,571 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 13:19:09,572 DEBUG dataReceived len:57
+2017-05-15 13:19:09,572 DEBUG clientparse() cmd:lg2sm_request_config
+2017-05-15 13:19:12,941 DEBUG buildProtocol(), id=1 len(self.__pmap)=1
+2017-05-15 13:19:12,941 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 13:19:12,943 DEBUG dataReceived len:57
+2017-05-15 13:19:12,943 DEBUG clientparse() cmd:l2sm_request_config
+2017-05-15 13:19:17,414 DEBUG buildProtocol(), id=2 len(self.__pmap)=2
+2017-05-15 13:19:17,414 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-15 13:19:17,424 DEBUG dataReceived len:6
+2017-05-15 13:19:17,426 DEBUG clientparse() cmd:c2sm_get_logingate
+2017-05-15 13:19:17,483 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 13:19:17,484 DEBUG removeProtocol(), id=2 len(self.__pmap)=2

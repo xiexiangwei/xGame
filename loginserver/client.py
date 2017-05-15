@@ -8,9 +8,10 @@ Created on 2016年1月11日
 import logging
 import time
 from twisted.internet import protocol
-from common import fprotocol
+from common import fprotocol,const
 import clientfactory
 import clientparse
+import json
 
 CLIENT_STATE_INIT               = 0
 CLIENT_STATE_AUTH               = 1
@@ -61,4 +62,6 @@ class Client(fprotocol.FProtocol):
     def kick(self):
         logging.debug(u"Client.kick()")
         self.goToClose()
-        
+
+    def send2client(self,cmd,pkt):
+        self.sendCmd(const.L2LG_TRANSFORM_CLIENT,json.dumps({"cmd":cmd,"pkt":pkt}))

@@ -1,0 +1,2154 @@
+2017-05-11 18:48:03,723 INFO ClientFactory starting on 1111
+2017-05-11 18:48:03,723 INFO Starting factory <clientfactory.ClientFactory instance at 0x000000000323A608>
+2017-05-11 18:48:03,729 INFO redis connected 192.168.1.6:6379[0]
+2017-05-11 18:48:03,730 INFO 最大登录网关数量:88
+2017-05-11 18:48:03,730 INFO 最大登录服务器数量:200
+2017-05-11 18:48:03,730 INFO 服务器管理服务器启动成功!
+2017-05-11 18:48:07,052 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-11 18:48:07,053 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:07,053 DEBUG dataReceived len:57
+2017-05-11 18:48:10,697 DEBUG buildProtocol(), id=1 len(self.__pmap)=1
+2017-05-11 18:48:10,697 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:10,697 DEBUG dataReceived len:57
+2017-05-11 18:48:18,749 DEBUG buildProtocol(), id=2 len(self.__pmap)=2
+2017-05-11 18:48:18,750 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:18,750 DEBUG dataReceived len:57
+2017-05-11 18:48:18,753 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:18,755 DEBUG removeProtocol(), id=2 len(self.__pmap)=2
+2017-05-11 18:48:21,161 DEBUG buildProtocol(), id=3 len(self.__pmap)=2
+2017-05-11 18:48:21,161 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:21,163 DEBUG dataReceived len:57
+2017-05-11 18:48:21,165 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:21,165 DEBUG removeProtocol(), id=3 len(self.__pmap)=2
+2017-05-11 18:48:23,723 DEBUG buildProtocol(), id=4 len(self.__pmap)=2
+2017-05-11 18:48:23,723 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:23,723 DEBUG dataReceived len:57
+2017-05-11 18:48:23,730 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:23,730 DEBUG removeProtocol(), id=4 len(self.__pmap)=2
+2017-05-11 18:48:34,654 DEBUG buildProtocol(), id=5 len(self.__pmap)=2
+2017-05-11 18:48:34,654 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,654 DEBUG buildProtocol(), id=6 len(self.__pmap)=3
+2017-05-11 18:48:34,655 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,655 DEBUG buildProtocol(), id=7 len(self.__pmap)=4
+2017-05-11 18:48:34,655 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,657 DEBUG buildProtocol(), id=8 len(self.__pmap)=5
+2017-05-11 18:48:34,657 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,657 DEBUG buildProtocol(), id=9 len(self.__pmap)=6
+2017-05-11 18:48:34,657 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,657 DEBUG buildProtocol(), id=10 len(self.__pmap)=7
+2017-05-11 18:48:34,657 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,658 DEBUG buildProtocol(), id=11 len(self.__pmap)=8
+2017-05-11 18:48:34,658 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,658 DEBUG buildProtocol(), id=12 len(self.__pmap)=9
+2017-05-11 18:48:34,660 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,660 DEBUG buildProtocol(), id=13 len(self.__pmap)=10
+2017-05-11 18:48:34,660 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,661 DEBUG buildProtocol(), id=14 len(self.__pmap)=11
+2017-05-11 18:48:34,661 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,661 DEBUG buildProtocol(), id=15 len(self.__pmap)=12
+2017-05-11 18:48:34,661 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,661 DEBUG buildProtocol(), id=16 len(self.__pmap)=13
+2017-05-11 18:48:34,661 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,661 DEBUG buildProtocol(), id=17 len(self.__pmap)=14
+2017-05-11 18:48:34,663 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,663 DEBUG buildProtocol(), id=18 len(self.__pmap)=15
+2017-05-11 18:48:34,663 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,664 DEBUG buildProtocol(), id=19 len(self.__pmap)=16
+2017-05-11 18:48:34,664 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,664 DEBUG buildProtocol(), id=20 len(self.__pmap)=17
+2017-05-11 18:48:34,664 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,664 DEBUG buildProtocol(), id=21 len(self.__pmap)=18
+2017-05-11 18:48:34,664 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,665 DEBUG buildProtocol(), id=22 len(self.__pmap)=19
+2017-05-11 18:48:34,665 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,665 DEBUG buildProtocol(), id=23 len(self.__pmap)=20
+2017-05-11 18:48:34,667 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,667 DEBUG buildProtocol(), id=24 len(self.__pmap)=21
+2017-05-11 18:48:34,667 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,667 DEBUG buildProtocol(), id=25 len(self.__pmap)=22
+2017-05-11 18:48:34,667 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,667 DEBUG buildProtocol(), id=26 len(self.__pmap)=23
+2017-05-11 18:48:34,667 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,668 DEBUG buildProtocol(), id=27 len(self.__pmap)=24
+2017-05-11 18:48:34,668 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,668 DEBUG buildProtocol(), id=28 len(self.__pmap)=25
+2017-05-11 18:48:34,670 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,670 DEBUG buildProtocol(), id=29 len(self.__pmap)=26
+2017-05-11 18:48:34,670 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,671 DEBUG buildProtocol(), id=30 len(self.__pmap)=27
+2017-05-11 18:48:34,671 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,671 DEBUG buildProtocol(), id=31 len(self.__pmap)=28
+2017-05-11 18:48:34,671 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,671 DEBUG buildProtocol(), id=32 len(self.__pmap)=29
+2017-05-11 18:48:34,671 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,673 DEBUG buildProtocol(), id=33 len(self.__pmap)=30
+2017-05-11 18:48:34,673 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,674 DEBUG buildProtocol(), id=34 len(self.__pmap)=31
+2017-05-11 18:48:34,674 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,674 DEBUG buildProtocol(), id=35 len(self.__pmap)=32
+2017-05-11 18:48:34,674 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,674 DEBUG buildProtocol(), id=36 len(self.__pmap)=33
+2017-05-11 18:48:34,674 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,676 DEBUG buildProtocol(), id=37 len(self.__pmap)=34
+2017-05-11 18:48:34,676 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,676 DEBUG buildProtocol(), id=38 len(self.__pmap)=35
+2017-05-11 18:48:34,677 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,677 DEBUG buildProtocol(), id=39 len(self.__pmap)=36
+2017-05-11 18:48:34,677 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,677 DEBUG buildProtocol(), id=40 len(self.__pmap)=37
+2017-05-11 18:48:34,677 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,677 DEBUG buildProtocol(), id=41 len(self.__pmap)=38
+2017-05-11 18:48:34,677 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,678 DEBUG buildProtocol(), id=42 len(self.__pmap)=39
+2017-05-11 18:48:34,678 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,678 DEBUG buildProtocol(), id=43 len(self.__pmap)=40
+2017-05-11 18:48:34,680 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,680 DEBUG buildProtocol(), id=44 len(self.__pmap)=41
+2017-05-11 18:48:34,680 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,680 DEBUG buildProtocol(), id=45 len(self.__pmap)=42
+2017-05-11 18:48:34,680 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,680 DEBUG buildProtocol(), id=46 len(self.__pmap)=43
+2017-05-11 18:48:34,681 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,681 DEBUG buildProtocol(), id=47 len(self.__pmap)=44
+2017-05-11 18:48:34,681 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,683 DEBUG buildProtocol(), id=48 len(self.__pmap)=45
+2017-05-11 18:48:34,683 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,683 DEBUG buildProtocol(), id=49 len(self.__pmap)=46
+2017-05-11 18:48:34,684 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,684 DEBUG buildProtocol(), id=50 len(self.__pmap)=47
+2017-05-11 18:48:34,684 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,684 DEBUG buildProtocol(), id=51 len(self.__pmap)=48
+2017-05-11 18:48:34,684 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,684 DEBUG buildProtocol(), id=52 len(self.__pmap)=49
+2017-05-11 18:48:34,684 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,686 DEBUG buildProtocol(), id=53 len(self.__pmap)=50
+2017-05-11 18:48:34,686 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,686 DEBUG buildProtocol(), id=54 len(self.__pmap)=51
+2017-05-11 18:48:34,687 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,687 DEBUG buildProtocol(), id=55 len(self.__pmap)=52
+2017-05-11 18:48:34,687 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,687 DEBUG buildProtocol(), id=56 len(self.__pmap)=53
+2017-05-11 18:48:34,687 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,687 DEBUG buildProtocol(), id=57 len(self.__pmap)=54
+2017-05-11 18:48:34,688 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,688 DEBUG buildProtocol(), id=58 len(self.__pmap)=55
+2017-05-11 18:48:34,688 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,690 DEBUG buildProtocol(), id=59 len(self.__pmap)=56
+2017-05-11 18:48:34,690 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,690 DEBUG buildProtocol(), id=60 len(self.__pmap)=57
+2017-05-11 18:48:34,690 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,690 DEBUG buildProtocol(), id=61 len(self.__pmap)=58
+2017-05-11 18:48:34,690 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,690 DEBUG buildProtocol(), id=62 len(self.__pmap)=59
+2017-05-11 18:48:34,691 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,691 DEBUG buildProtocol(), id=63 len(self.__pmap)=60
+2017-05-11 18:48:34,691 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,693 DEBUG buildProtocol(), id=64 len(self.__pmap)=61
+2017-05-11 18:48:34,693 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,693 DEBUG buildProtocol(), id=65 len(self.__pmap)=62
+2017-05-11 18:48:34,694 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,694 DEBUG buildProtocol(), id=66 len(self.__pmap)=63
+2017-05-11 18:48:34,694 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,694 DEBUG buildProtocol(), id=67 len(self.__pmap)=64
+2017-05-11 18:48:34,694 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,696 DEBUG buildProtocol(), id=68 len(self.__pmap)=65
+2017-05-11 18:48:34,696 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,696 DEBUG buildProtocol(), id=69 len(self.__pmap)=66
+2017-05-11 18:48:34,697 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,697 DEBUG buildProtocol(), id=70 len(self.__pmap)=67
+2017-05-11 18:48:34,697 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,697 DEBUG buildProtocol(), id=71 len(self.__pmap)=68
+2017-05-11 18:48:34,697 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,697 DEBUG buildProtocol(), id=72 len(self.__pmap)=69
+2017-05-11 18:48:34,697 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,698 DEBUG buildProtocol(), id=73 len(self.__pmap)=70
+2017-05-11 18:48:34,698 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,698 DEBUG buildProtocol(), id=74 len(self.__pmap)=71
+2017-05-11 18:48:34,700 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,700 DEBUG buildProtocol(), id=75 len(self.__pmap)=72
+2017-05-11 18:48:34,700 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,700 DEBUG buildProtocol(), id=76 len(self.__pmap)=73
+2017-05-11 18:48:34,700 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,700 DEBUG buildProtocol(), id=77 len(self.__pmap)=74
+2017-05-11 18:48:34,700 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,701 DEBUG buildProtocol(), id=78 len(self.__pmap)=75
+2017-05-11 18:48:34,701 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,703 DEBUG buildProtocol(), id=79 len(self.__pmap)=76
+2017-05-11 18:48:34,703 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,703 DEBUG buildProtocol(), id=80 len(self.__pmap)=77
+2017-05-11 18:48:34,703 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,703 DEBUG buildProtocol(), id=81 len(self.__pmap)=78
+2017-05-11 18:48:34,704 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,704 DEBUG buildProtocol(), id=82 len(self.__pmap)=79
+2017-05-11 18:48:34,704 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,706 DEBUG buildProtocol(), id=83 len(self.__pmap)=80
+2017-05-11 18:48:34,706 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,706 DEBUG buildProtocol(), id=84 len(self.__pmap)=81
+2017-05-11 18:48:34,706 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,707 DEBUG buildProtocol(), id=85 len(self.__pmap)=82
+2017-05-11 18:48:34,707 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,707 DEBUG buildProtocol(), id=86 len(self.__pmap)=83
+2017-05-11 18:48:34,707 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,707 DEBUG buildProtocol(), id=87 len(self.__pmap)=84
+2017-05-11 18:48:34,707 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,709 DEBUG buildProtocol(), id=88 len(self.__pmap)=85
+2017-05-11 18:48:34,709 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,709 DEBUG buildProtocol(), id=89 len(self.__pmap)=86
+2017-05-11 18:48:34,709 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,710 DEBUG buildProtocol(), id=90 len(self.__pmap)=87
+2017-05-11 18:48:34,710 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,710 DEBUG buildProtocol(), id=91 len(self.__pmap)=88
+2017-05-11 18:48:34,710 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,710 DEBUG buildProtocol(), id=92 len(self.__pmap)=89
+2017-05-11 18:48:34,710 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,711 DEBUG buildProtocol(), id=93 len(self.__pmap)=90
+2017-05-11 18:48:34,711 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,711 DEBUG buildProtocol(), id=94 len(self.__pmap)=91
+2017-05-11 18:48:34,713 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,713 DEBUG buildProtocol(), id=95 len(self.__pmap)=92
+2017-05-11 18:48:34,713 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,713 DEBUG buildProtocol(), id=96 len(self.__pmap)=93
+2017-05-11 18:48:34,713 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,713 DEBUG buildProtocol(), id=97 len(self.__pmap)=94
+2017-05-11 18:48:34,713 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,714 DEBUG buildProtocol(), id=98 len(self.__pmap)=95
+2017-05-11 18:48:34,714 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,714 DEBUG buildProtocol(), id=99 len(self.__pmap)=96
+2017-05-11 18:48:34,716 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,716 DEBUG buildProtocol(), id=100 len(self.__pmap)=97
+2017-05-11 18:48:34,716 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,717 DEBUG buildProtocol(), id=101 len(self.__pmap)=98
+2017-05-11 18:48:34,717 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,717 DEBUG buildProtocol(), id=102 len(self.__pmap)=99
+2017-05-11 18:48:34,717 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,719 DEBUG buildProtocol(), id=103 len(self.__pmap)=100
+2017-05-11 18:48:34,719 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,719 DEBUG buildProtocol(), id=104 len(self.__pmap)=101
+2017-05-11 18:48:34,720 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,720 DEBUG buildProtocol(), id=105 len(self.__pmap)=102
+2017-05-11 18:48:34,720 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,720 DEBUG buildProtocol(), id=106 len(self.__pmap)=103
+2017-05-11 18:48:34,720 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,720 DEBUG buildProtocol(), id=107 len(self.__pmap)=104
+2017-05-11 18:48:34,721 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,721 DEBUG buildProtocol(), id=108 len(self.__pmap)=105
+2017-05-11 18:48:34,721 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,723 DEBUG buildProtocol(), id=109 len(self.__pmap)=106
+2017-05-11 18:48:34,723 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,723 DEBUG buildProtocol(), id=110 len(self.__pmap)=107
+2017-05-11 18:48:34,723 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,723 DEBUG buildProtocol(), id=111 len(self.__pmap)=108
+2017-05-11 18:48:34,723 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:34,749 DEBUG dataReceived len:8
+2017-05-11 18:48:34,749 DEBUG dataReceived len:8
+2017-05-11 18:48:34,749 DEBUG dataReceived len:8
+2017-05-11 18:48:34,750 DEBUG dataReceived len:8
+2017-05-11 18:48:34,750 DEBUG dataReceived len:8
+2017-05-11 18:48:34,750 DEBUG dataReceived len:8
+2017-05-11 18:48:34,750 DEBUG dataReceived len:8
+2017-05-11 18:48:34,750 DEBUG dataReceived len:8
+2017-05-11 18:48:34,752 DEBUG dataReceived len:8
+2017-05-11 18:48:34,752 DEBUG dataReceived len:8
+2017-05-11 18:48:34,752 DEBUG dataReceived len:8
+2017-05-11 18:48:34,753 DEBUG dataReceived len:8
+2017-05-11 18:48:34,753 DEBUG dataReceived len:8
+2017-05-11 18:48:34,753 DEBUG dataReceived len:8
+2017-05-11 18:48:34,753 DEBUG dataReceived len:8
+2017-05-11 18:48:34,753 DEBUG dataReceived len:8
+2017-05-11 18:48:34,753 DEBUG dataReceived len:8
+2017-05-11 18:48:34,755 DEBUG dataReceived len:8
+2017-05-11 18:48:34,755 DEBUG dataReceived len:8
+2017-05-11 18:48:34,755 DEBUG dataReceived len:8
+2017-05-11 18:48:34,755 DEBUG dataReceived len:8
+2017-05-11 18:48:34,756 DEBUG dataReceived len:8
+2017-05-11 18:48:34,756 DEBUG dataReceived len:8
+2017-05-11 18:48:34,756 DEBUG dataReceived len:8
+2017-05-11 18:48:34,756 DEBUG dataReceived len:8
+2017-05-11 18:48:34,756 DEBUG dataReceived len:8
+2017-05-11 18:48:34,756 DEBUG dataReceived len:8
+2017-05-11 18:48:34,757 DEBUG dataReceived len:8
+2017-05-11 18:48:34,757 DEBUG dataReceived len:8
+2017-05-11 18:48:34,757 DEBUG dataReceived len:8
+2017-05-11 18:48:34,759 DEBUG dataReceived len:8
+2017-05-11 18:48:34,759 DEBUG dataReceived len:8
+2017-05-11 18:48:34,759 DEBUG dataReceived len:8
+2017-05-11 18:48:34,759 DEBUG dataReceived len:8
+2017-05-11 18:48:34,759 DEBUG dataReceived len:8
+2017-05-11 18:48:34,759 DEBUG dataReceived len:8
+2017-05-11 18:48:34,760 DEBUG dataReceived len:8
+2017-05-11 18:48:34,760 DEBUG dataReceived len:8
+2017-05-11 18:48:34,760 DEBUG dataReceived len:8
+2017-05-11 18:48:34,760 DEBUG dataReceived len:8
+2017-05-11 18:48:34,762 DEBUG dataReceived len:8
+2017-05-11 18:48:34,762 DEBUG dataReceived len:8
+2017-05-11 18:48:34,762 DEBUG dataReceived len:8
+2017-05-11 18:48:34,763 DEBUG dataReceived len:8
+2017-05-11 18:48:34,763 DEBUG dataReceived len:8
+2017-05-11 18:48:34,763 DEBUG dataReceived len:8
+2017-05-11 18:48:34,763 DEBUG dataReceived len:8
+2017-05-11 18:48:34,763 DEBUG dataReceived len:8
+2017-05-11 18:48:34,763 DEBUG dataReceived len:8
+2017-05-11 18:48:34,765 DEBUG dataReceived len:8
+2017-05-11 18:48:34,765 DEBUG dataReceived len:8
+2017-05-11 18:48:34,765 DEBUG dataReceived len:8
+2017-05-11 18:48:34,766 DEBUG dataReceived len:8
+2017-05-11 18:48:34,766 DEBUG dataReceived len:8
+2017-05-11 18:48:34,766 DEBUG dataReceived len:8
+2017-05-11 18:48:34,766 DEBUG dataReceived len:8
+2017-05-11 18:48:34,766 DEBUG dataReceived len:8
+2017-05-11 18:48:34,766 DEBUG dataReceived len:8
+2017-05-11 18:48:34,767 DEBUG dataReceived len:8
+2017-05-11 18:48:34,767 DEBUG dataReceived len:8
+2017-05-11 18:48:34,767 DEBUG dataReceived len:8
+2017-05-11 18:48:34,767 DEBUG dataReceived len:8
+2017-05-11 18:48:34,769 DEBUG dataReceived len:8
+2017-05-11 18:48:34,769 DEBUG dataReceived len:8
+2017-05-11 18:48:34,769 DEBUG dataReceived len:8
+2017-05-11 18:48:34,769 DEBUG dataReceived len:8
+2017-05-11 18:48:34,769 DEBUG dataReceived len:8
+2017-05-11 18:48:34,770 DEBUG dataReceived len:8
+2017-05-11 18:48:34,770 DEBUG dataReceived len:8
+2017-05-11 18:48:34,770 DEBUG dataReceived len:8
+2017-05-11 18:48:34,772 DEBUG dataReceived len:8
+2017-05-11 18:48:34,772 DEBUG dataReceived len:8
+2017-05-11 18:48:34,772 DEBUG dataReceived len:8
+2017-05-11 18:48:34,773 DEBUG dataReceived len:8
+2017-05-11 18:48:34,773 DEBUG dataReceived len:8
+2017-05-11 18:48:34,773 DEBUG dataReceived len:8
+2017-05-11 18:48:34,773 DEBUG dataReceived len:8
+2017-05-11 18:48:34,773 DEBUG dataReceived len:8
+2017-05-11 18:48:34,773 DEBUG dataReceived len:8
+2017-05-11 18:48:34,775 DEBUG dataReceived len:8
+2017-05-11 18:48:34,775 DEBUG dataReceived len:8
+2017-05-11 18:48:34,775 DEBUG dataReceived len:8
+2017-05-11 18:48:34,775 DEBUG dataReceived len:8
+2017-05-11 18:48:34,776 DEBUG dataReceived len:8
+2017-05-11 18:48:34,776 DEBUG dataReceived len:8
+2017-05-11 18:48:34,776 DEBUG dataReceived len:8
+2017-05-11 18:48:34,776 DEBUG dataReceived len:8
+2017-05-11 18:48:34,776 DEBUG dataReceived len:8
+2017-05-11 18:48:34,776 DEBUG dataReceived len:8
+2017-05-11 18:48:34,778 DEBUG dataReceived len:8
+2017-05-11 18:48:34,778 DEBUG dataReceived len:8
+2017-05-11 18:48:34,778 DEBUG dataReceived len:8
+2017-05-11 18:48:34,779 DEBUG dataReceived len:8
+2017-05-11 18:48:34,779 DEBUG dataReceived len:8
+2017-05-11 18:48:34,779 DEBUG dataReceived len:8
+2017-05-11 18:48:34,779 DEBUG dataReceived len:8
+2017-05-11 18:48:34,779 DEBUG dataReceived len:8
+2017-05-11 18:48:34,779 DEBUG dataReceived len:8
+2017-05-11 18:48:34,779 DEBUG dataReceived len:8
+2017-05-11 18:48:34,780 DEBUG dataReceived len:8
+2017-05-11 18:48:34,780 DEBUG dataReceived len:8
+2017-05-11 18:48:34,782 DEBUG dataReceived len:8
+2017-05-11 18:48:34,782 DEBUG dataReceived len:8
+2017-05-11 18:48:34,782 DEBUG dataReceived len:8
+2017-05-11 18:48:34,782 DEBUG dataReceived len:8
+2017-05-11 18:48:34,782 DEBUG dataReceived len:8
+2017-05-11 18:48:34,782 DEBUG dataReceived len:8
+2017-05-11 18:48:34,996 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:34,996 DEBUG removeProtocol(), id=5 len(self.__pmap)=108
+2017-05-11 18:48:34,996 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:34,996 DEBUG removeProtocol(), id=6 len(self.__pmap)=107
+2017-05-11 18:48:34,996 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:34,996 DEBUG removeProtocol(), id=7 len(self.__pmap)=106
+2017-05-11 18:48:34,997 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:34,997 DEBUG removeProtocol(), id=8 len(self.__pmap)=105
+2017-05-11 18:48:34,997 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:34,999 DEBUG removeProtocol(), id=9 len(self.__pmap)=104
+2017-05-11 18:48:34,999 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:34,999 DEBUG removeProtocol(), id=10 len(self.__pmap)=103
+2017-05-11 18:48:35,000 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,000 DEBUG removeProtocol(), id=11 len(self.__pmap)=102
+2017-05-11 18:48:35,000 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,000 DEBUG removeProtocol(), id=14 len(self.__pmap)=101
+2017-05-11 18:48:35,000 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,002 DEBUG removeProtocol(), id=13 len(self.__pmap)=100
+2017-05-11 18:48:35,002 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,002 DEBUG removeProtocol(), id=12 len(self.__pmap)=99
+2017-05-11 18:48:35,003 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,003 DEBUG removeProtocol(), id=18 len(self.__pmap)=98
+2017-05-11 18:48:35,003 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,003 DEBUG removeProtocol(), id=16 len(self.__pmap)=97
+2017-05-11 18:48:35,005 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,005 DEBUG removeProtocol(), id=15 len(self.__pmap)=96
+2017-05-11 18:48:35,005 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,006 DEBUG removeProtocol(), id=17 len(self.__pmap)=95
+2017-05-11 18:48:35,006 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,006 DEBUG removeProtocol(), id=22 len(self.__pmap)=94
+2017-05-11 18:48:35,007 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,007 DEBUG removeProtocol(), id=19 len(self.__pmap)=93
+2017-05-11 18:48:35,007 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,009 DEBUG removeProtocol(), id=20 len(self.__pmap)=92
+2017-05-11 18:48:35,009 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,009 DEBUG removeProtocol(), id=25 len(self.__pmap)=91
+2017-05-11 18:48:35,009 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,009 DEBUG removeProtocol(), id=23 len(self.__pmap)=90
+2017-05-11 18:48:35,009 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,010 DEBUG removeProtocol(), id=21 len(self.__pmap)=89
+2017-05-11 18:48:35,010 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,010 DEBUG removeProtocol(), id=27 len(self.__pmap)=88
+2017-05-11 18:48:35,012 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,012 DEBUG removeProtocol(), id=26 len(self.__pmap)=87
+2017-05-11 18:48:35,012 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,013 DEBUG removeProtocol(), id=24 len(self.__pmap)=86
+2017-05-11 18:48:35,013 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,013 DEBUG removeProtocol(), id=29 len(self.__pmap)=85
+2017-05-11 18:48:35,013 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,015 DEBUG removeProtocol(), id=30 len(self.__pmap)=84
+2017-05-11 18:48:35,015 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,016 DEBUG removeProtocol(), id=28 len(self.__pmap)=83
+2017-05-11 18:48:35,016 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,016 DEBUG removeProtocol(), id=34 len(self.__pmap)=82
+2017-05-11 18:48:35,017 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,017 DEBUG removeProtocol(), id=32 len(self.__pmap)=81
+2017-05-11 18:48:35,019 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,019 DEBUG removeProtocol(), id=31 len(self.__pmap)=80
+2017-05-11 18:48:35,019 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,019 DEBUG removeProtocol(), id=33 len(self.__pmap)=79
+2017-05-11 18:48:35,020 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,020 DEBUG removeProtocol(), id=35 len(self.__pmap)=78
+2017-05-11 18:48:35,022 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,022 DEBUG removeProtocol(), id=36 len(self.__pmap)=77
+2017-05-11 18:48:35,022 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,023 DEBUG removeProtocol(), id=40 len(self.__pmap)=76
+2017-05-11 18:48:35,023 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,023 DEBUG removeProtocol(), id=37 len(self.__pmap)=75
+2017-05-11 18:48:35,023 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,023 DEBUG removeProtocol(), id=38 len(self.__pmap)=74
+2017-05-11 18:48:35,023 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,023 DEBUG removeProtocol(), id=39 len(self.__pmap)=73
+2017-05-11 18:48:35,025 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,025 DEBUG removeProtocol(), id=41 len(self.__pmap)=72
+2017-05-11 18:48:35,025 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,026 DEBUG removeProtocol(), id=42 len(self.__pmap)=71
+2017-05-11 18:48:35,026 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,026 DEBUG removeProtocol(), id=43 len(self.__pmap)=70
+2017-05-11 18:48:35,026 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,026 DEBUG removeProtocol(), id=47 len(self.__pmap)=69
+2017-05-11 18:48:35,028 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,028 DEBUG removeProtocol(), id=45 len(self.__pmap)=68
+2017-05-11 18:48:35,028 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,029 DEBUG removeProtocol(), id=44 len(self.__pmap)=67
+2017-05-11 18:48:35,029 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,029 DEBUG removeProtocol(), id=48 len(self.__pmap)=66
+2017-05-11 18:48:35,029 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,029 DEBUG removeProtocol(), id=49 len(self.__pmap)=65
+2017-05-11 18:48:35,029 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,030 DEBUG removeProtocol(), id=46 len(self.__pmap)=64
+2017-05-11 18:48:35,030 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,030 DEBUG removeProtocol(), id=52 len(self.__pmap)=63
+2017-05-11 18:48:35,032 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,032 DEBUG removeProtocol(), id=50 len(self.__pmap)=62
+2017-05-11 18:48:35,032 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,032 DEBUG removeProtocol(), id=51 len(self.__pmap)=61
+2017-05-11 18:48:35,032 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,033 DEBUG removeProtocol(), id=57 len(self.__pmap)=60
+2017-05-11 18:48:35,035 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,035 DEBUG removeProtocol(), id=54 len(self.__pmap)=59
+2017-05-11 18:48:35,036 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,036 DEBUG removeProtocol(), id=55 len(self.__pmap)=58
+2017-05-11 18:48:35,036 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,036 DEBUG removeProtocol(), id=53 len(self.__pmap)=57
+2017-05-11 18:48:35,038 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,038 DEBUG removeProtocol(), id=59 len(self.__pmap)=56
+2017-05-11 18:48:35,038 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,039 DEBUG removeProtocol(), id=56 len(self.__pmap)=55
+2017-05-11 18:48:35,039 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,039 DEBUG removeProtocol(), id=62 len(self.__pmap)=54
+2017-05-11 18:48:35,039 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,039 DEBUG removeProtocol(), id=61 len(self.__pmap)=53
+2017-05-11 18:48:35,040 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,040 DEBUG removeProtocol(), id=58 len(self.__pmap)=52
+2017-05-11 18:48:35,040 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,040 DEBUG removeProtocol(), id=60 len(self.__pmap)=51
+2017-05-11 18:48:35,042 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,042 DEBUG removeProtocol(), id=64 len(self.__pmap)=50
+2017-05-11 18:48:35,045 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,045 DEBUG removeProtocol(), id=65 len(self.__pmap)=49
+2017-05-11 18:48:35,045 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,046 DEBUG removeProtocol(), id=63 len(self.__pmap)=48
+2017-05-11 18:48:35,046 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,046 DEBUG removeProtocol(), id=67 len(self.__pmap)=47
+2017-05-11 18:48:35,046 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,046 DEBUG removeProtocol(), id=68 len(self.__pmap)=46
+2017-05-11 18:48:35,048 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,049 DEBUG removeProtocol(), id=66 len(self.__pmap)=45
+2017-05-11 18:48:35,049 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,049 DEBUG removeProtocol(), id=70 len(self.__pmap)=44
+2017-05-11 18:48:35,051 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,052 DEBUG removeProtocol(), id=71 len(self.__pmap)=43
+2017-05-11 18:48:35,052 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,052 DEBUG removeProtocol(), id=69 len(self.__pmap)=42
+2017-05-11 18:48:35,053 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,053 DEBUG removeProtocol(), id=73 len(self.__pmap)=41
+2017-05-11 18:48:35,053 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,055 DEBUG removeProtocol(), id=72 len(self.__pmap)=40
+2017-05-11 18:48:35,055 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,055 DEBUG removeProtocol(), id=74 len(self.__pmap)=39
+2017-05-11 18:48:35,055 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,055 DEBUG removeProtocol(), id=76 len(self.__pmap)=38
+2017-05-11 18:48:35,056 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,056 DEBUG removeProtocol(), id=75 len(self.__pmap)=37
+2017-05-11 18:48:35,056 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,058 DEBUG removeProtocol(), id=77 len(self.__pmap)=36
+2017-05-11 18:48:35,058 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,058 DEBUG removeProtocol(), id=78 len(self.__pmap)=35
+2017-05-11 18:48:35,059 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,059 DEBUG removeProtocol(), id=79 len(self.__pmap)=34
+2017-05-11 18:48:35,059 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,059 DEBUG removeProtocol(), id=80 len(self.__pmap)=33
+2017-05-11 18:48:35,059 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,059 DEBUG removeProtocol(), id=83 len(self.__pmap)=32
+2017-05-11 18:48:35,061 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,061 DEBUG removeProtocol(), id=82 len(self.__pmap)=31
+2017-05-11 18:48:35,061 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,062 DEBUG removeProtocol(), id=81 len(self.__pmap)=30
+2017-05-11 18:48:35,062 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,062 DEBUG removeProtocol(), id=85 len(self.__pmap)=29
+2017-05-11 18:48:35,062 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,063 DEBUG removeProtocol(), id=84 len(self.__pmap)=28
+2017-05-11 18:48:35,063 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,065 DEBUG removeProtocol(), id=87 len(self.__pmap)=27
+2017-05-11 18:48:35,065 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,065 DEBUG removeProtocol(), id=86 len(self.__pmap)=26
+2017-05-11 18:48:35,065 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,065 DEBUG removeProtocol(), id=88 len(self.__pmap)=25
+2017-05-11 18:48:35,066 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,066 DEBUG removeProtocol(), id=89 len(self.__pmap)=24
+2017-05-11 18:48:35,066 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,066 DEBUG removeProtocol(), id=93 len(self.__pmap)=23
+2017-05-11 18:48:35,068 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,068 DEBUG removeProtocol(), id=90 len(self.__pmap)=22
+2017-05-11 18:48:35,069 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,069 DEBUG removeProtocol(), id=91 len(self.__pmap)=21
+2017-05-11 18:48:35,069 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,069 DEBUG removeProtocol(), id=92 len(self.__pmap)=20
+2017-05-11 18:48:35,069 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,069 DEBUG removeProtocol(), id=94 len(self.__pmap)=19
+2017-05-11 18:48:35,071 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,071 DEBUG removeProtocol(), id=95 len(self.__pmap)=18
+2017-05-11 18:48:35,071 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,071 DEBUG removeProtocol(), id=97 len(self.__pmap)=17
+2017-05-11 18:48:35,072 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,072 DEBUG removeProtocol(), id=98 len(self.__pmap)=16
+2017-05-11 18:48:35,072 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,072 DEBUG removeProtocol(), id=96 len(self.__pmap)=15
+2017-05-11 18:48:35,072 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,072 DEBUG removeProtocol(), id=99 len(self.__pmap)=14
+2017-05-11 18:48:35,073 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,073 DEBUG removeProtocol(), id=100 len(self.__pmap)=13
+2017-05-11 18:48:35,073 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,075 DEBUG removeProtocol(), id=103 len(self.__pmap)=12
+2017-05-11 18:48:35,075 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,075 DEBUG removeProtocol(), id=101 len(self.__pmap)=11
+2017-05-11 18:48:35,075 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,075 DEBUG removeProtocol(), id=105 len(self.__pmap)=10
+2017-05-11 18:48:35,075 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,076 DEBUG removeProtocol(), id=102 len(self.__pmap)=9
+2017-05-11 18:48:35,076 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,076 DEBUG removeProtocol(), id=106 len(self.__pmap)=8
+2017-05-11 18:48:35,078 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,078 DEBUG removeProtocol(), id=104 len(self.__pmap)=7
+2017-05-11 18:48:35,078 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,078 DEBUG removeProtocol(), id=107 len(self.__pmap)=6
+2017-05-11 18:48:35,078 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,078 DEBUG removeProtocol(), id=108 len(self.__pmap)=5
+2017-05-11 18:48:35,079 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,079 DEBUG removeProtocol(), id=109 len(self.__pmap)=4
+2017-05-11 18:48:35,079 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,081 DEBUG removeProtocol(), id=110 len(self.__pmap)=3
+2017-05-11 18:48:35,081 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,081 DEBUG removeProtocol(), id=111 len(self.__pmap)=2
+2017-05-11 18:48:35,155 DEBUG buildProtocol(), id=112 len(self.__pmap)=2
+2017-05-11 18:48:35,155 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,157 DEBUG buildProtocol(), id=113 len(self.__pmap)=3
+2017-05-11 18:48:35,157 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,157 DEBUG buildProtocol(), id=114 len(self.__pmap)=4
+2017-05-11 18:48:35,157 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,157 DEBUG buildProtocol(), id=115 len(self.__pmap)=5
+2017-05-11 18:48:35,157 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,158 DEBUG buildProtocol(), id=116 len(self.__pmap)=6
+2017-05-11 18:48:35,158 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,158 DEBUG buildProtocol(), id=117 len(self.__pmap)=7
+2017-05-11 18:48:35,160 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,160 DEBUG buildProtocol(), id=118 len(self.__pmap)=8
+2017-05-11 18:48:35,160 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,161 DEBUG buildProtocol(), id=119 len(self.__pmap)=9
+2017-05-11 18:48:35,161 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,161 DEBUG buildProtocol(), id=120 len(self.__pmap)=10
+2017-05-11 18:48:35,161 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,161 DEBUG buildProtocol(), id=121 len(self.__pmap)=11
+2017-05-11 18:48:35,161 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,161 DEBUG buildProtocol(), id=122 len(self.__pmap)=12
+2017-05-11 18:48:35,163 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,163 DEBUG buildProtocol(), id=123 len(self.__pmap)=13
+2017-05-11 18:48:35,163 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,164 DEBUG buildProtocol(), id=124 len(self.__pmap)=14
+2017-05-11 18:48:35,164 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,164 DEBUG buildProtocol(), id=125 len(self.__pmap)=15
+2017-05-11 18:48:35,164 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,164 DEBUG buildProtocol(), id=126 len(self.__pmap)=16
+2017-05-11 18:48:35,164 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,165 DEBUG buildProtocol(), id=127 len(self.__pmap)=17
+2017-05-11 18:48:35,165 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,165 DEBUG buildProtocol(), id=128 len(self.__pmap)=18
+2017-05-11 18:48:35,167 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,167 DEBUG buildProtocol(), id=129 len(self.__pmap)=19
+2017-05-11 18:48:35,167 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,167 DEBUG buildProtocol(), id=130 len(self.__pmap)=20
+2017-05-11 18:48:35,167 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,167 DEBUG buildProtocol(), id=131 len(self.__pmap)=21
+2017-05-11 18:48:35,167 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,168 DEBUG buildProtocol(), id=132 len(self.__pmap)=22
+2017-05-11 18:48:35,168 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,168 DEBUG buildProtocol(), id=133 len(self.__pmap)=23
+2017-05-11 18:48:35,168 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,170 DEBUG buildProtocol(), id=134 len(self.__pmap)=24
+2017-05-11 18:48:35,170 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,170 DEBUG buildProtocol(), id=135 len(self.__pmap)=25
+2017-05-11 18:48:35,171 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,171 DEBUG buildProtocol(), id=136 len(self.__pmap)=26
+2017-05-11 18:48:35,171 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,171 DEBUG buildProtocol(), id=137 len(self.__pmap)=27
+2017-05-11 18:48:35,171 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,173 DEBUG buildProtocol(), id=138 len(self.__pmap)=28
+2017-05-11 18:48:35,173 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,173 DEBUG buildProtocol(), id=139 len(self.__pmap)=29
+2017-05-11 18:48:35,174 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,174 DEBUG buildProtocol(), id=140 len(self.__pmap)=30
+2017-05-11 18:48:35,174 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,174 DEBUG buildProtocol(), id=141 len(self.__pmap)=31
+2017-05-11 18:48:35,174 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,174 DEBUG buildProtocol(), id=142 len(self.__pmap)=32
+2017-05-11 18:48:35,176 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,176 DEBUG buildProtocol(), id=143 len(self.__pmap)=33
+2017-05-11 18:48:35,176 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,177 DEBUG buildProtocol(), id=144 len(self.__pmap)=34
+2017-05-11 18:48:35,177 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,177 DEBUG buildProtocol(), id=145 len(self.__pmap)=35
+2017-05-11 18:48:35,177 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,177 DEBUG buildProtocol(), id=146 len(self.__pmap)=36
+2017-05-11 18:48:35,177 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,177 DEBUG buildProtocol(), id=147 len(self.__pmap)=37
+2017-05-11 18:48:35,178 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,178 DEBUG buildProtocol(), id=148 len(self.__pmap)=38
+2017-05-11 18:48:35,178 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,180 DEBUG buildProtocol(), id=149 len(self.__pmap)=39
+2017-05-11 18:48:35,180 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,180 DEBUG buildProtocol(), id=150 len(self.__pmap)=40
+2017-05-11 18:48:35,180 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,180 DEBUG buildProtocol(), id=151 len(self.__pmap)=41
+2017-05-11 18:48:35,180 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,181 DEBUG buildProtocol(), id=152 len(self.__pmap)=42
+2017-05-11 18:48:35,181 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,181 DEBUG buildProtocol(), id=153 len(self.__pmap)=43
+2017-05-11 18:48:35,183 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,183 DEBUG buildProtocol(), id=154 len(self.__pmap)=44
+2017-05-11 18:48:35,183 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,183 DEBUG buildProtocol(), id=155 len(self.__pmap)=45
+2017-05-11 18:48:35,184 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,184 DEBUG buildProtocol(), id=156 len(self.__pmap)=46
+2017-05-11 18:48:35,184 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,184 DEBUG buildProtocol(), id=157 len(self.__pmap)=47
+2017-05-11 18:48:35,184 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,184 DEBUG buildProtocol(), id=158 len(self.__pmap)=48
+2017-05-11 18:48:35,186 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,186 DEBUG buildProtocol(), id=159 len(self.__pmap)=49
+2017-05-11 18:48:35,186 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,187 DEBUG buildProtocol(), id=160 len(self.__pmap)=50
+2017-05-11 18:48:35,187 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,188 DEBUG buildProtocol(), id=161 len(self.__pmap)=51
+2017-05-11 18:48:35,188 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,188 DEBUG buildProtocol(), id=162 len(self.__pmap)=52
+2017-05-11 18:48:35,190 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,190 DEBUG buildProtocol(), id=163 len(self.__pmap)=53
+2017-05-11 18:48:35,190 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,190 DEBUG buildProtocol(), id=164 len(self.__pmap)=54
+2017-05-11 18:48:35,190 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,190 DEBUG buildProtocol(), id=165 len(self.__pmap)=55
+2017-05-11 18:48:35,191 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,191 DEBUG buildProtocol(), id=166 len(self.__pmap)=56
+2017-05-11 18:48:35,191 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,193 DEBUG buildProtocol(), id=167 len(self.__pmap)=57
+2017-05-11 18:48:35,193 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,193 DEBUG buildProtocol(), id=168 len(self.__pmap)=58
+2017-05-11 18:48:35,193 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,194 DEBUG buildProtocol(), id=169 len(self.__pmap)=59
+2017-05-11 18:48:35,194 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,194 DEBUG buildProtocol(), id=170 len(self.__pmap)=60
+2017-05-11 18:48:35,194 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,194 DEBUG buildProtocol(), id=171 len(self.__pmap)=61
+2017-05-11 18:48:35,196 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,196 DEBUG buildProtocol(), id=172 len(self.__pmap)=62
+2017-05-11 18:48:35,196 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,197 DEBUG buildProtocol(), id=173 len(self.__pmap)=63
+2017-05-11 18:48:35,197 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,197 DEBUG buildProtocol(), id=174 len(self.__pmap)=64
+2017-05-11 18:48:35,197 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,198 DEBUG buildProtocol(), id=175 len(self.__pmap)=65
+2017-05-11 18:48:35,198 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,198 DEBUG buildProtocol(), id=176 len(self.__pmap)=66
+2017-05-11 18:48:35,200 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,200 DEBUG buildProtocol(), id=177 len(self.__pmap)=67
+2017-05-11 18:48:35,200 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,204 DEBUG buildProtocol(), id=178 len(self.__pmap)=68
+2017-05-11 18:48:35,204 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,206 DEBUG buildProtocol(), id=179 len(self.__pmap)=69
+2017-05-11 18:48:35,206 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,207 DEBUG buildProtocol(), id=180 len(self.__pmap)=70
+2017-05-11 18:48:35,207 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,209 DEBUG buildProtocol(), id=181 len(self.__pmap)=71
+2017-05-11 18:48:35,209 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,209 DEBUG buildProtocol(), id=182 len(self.__pmap)=72
+2017-05-11 18:48:35,210 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,210 DEBUG buildProtocol(), id=183 len(self.__pmap)=73
+2017-05-11 18:48:35,210 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,210 DEBUG buildProtocol(), id=184 len(self.__pmap)=74
+2017-05-11 18:48:35,210 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,210 DEBUG buildProtocol(), id=185 len(self.__pmap)=75
+2017-05-11 18:48:35,211 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,211 DEBUG buildProtocol(), id=186 len(self.__pmap)=76
+2017-05-11 18:48:35,211 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,213 DEBUG buildProtocol(), id=187 len(self.__pmap)=77
+2017-05-11 18:48:35,213 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,213 DEBUG buildProtocol(), id=188 len(self.__pmap)=78
+2017-05-11 18:48:35,213 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,213 DEBUG buildProtocol(), id=189 len(self.__pmap)=79
+2017-05-11 18:48:35,213 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,213 DEBUG buildProtocol(), id=190 len(self.__pmap)=80
+2017-05-11 18:48:35,214 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,214 DEBUG buildProtocol(), id=191 len(self.__pmap)=81
+2017-05-11 18:48:35,214 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,216 DEBUG buildProtocol(), id=192 len(self.__pmap)=82
+2017-05-11 18:48:35,217 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,217 DEBUG buildProtocol(), id=193 len(self.__pmap)=83
+2017-05-11 18:48:35,217 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,219 DEBUG buildProtocol(), id=194 len(self.__pmap)=84
+2017-05-11 18:48:35,219 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,219 DEBUG buildProtocol(), id=195 len(self.__pmap)=85
+2017-05-11 18:48:35,220 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,220 DEBUG buildProtocol(), id=196 len(self.__pmap)=86
+2017-05-11 18:48:35,220 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,220 DEBUG buildProtocol(), id=197 len(self.__pmap)=87
+2017-05-11 18:48:35,220 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,221 DEBUG buildProtocol(), id=198 len(self.__pmap)=88
+2017-05-11 18:48:35,221 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,221 DEBUG buildProtocol(), id=199 len(self.__pmap)=89
+2017-05-11 18:48:35,223 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,223 DEBUG buildProtocol(), id=200 len(self.__pmap)=90
+2017-05-11 18:48:35,223 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,223 DEBUG buildProtocol(), id=201 len(self.__pmap)=91
+2017-05-11 18:48:35,223 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,223 DEBUG buildProtocol(), id=202 len(self.__pmap)=92
+2017-05-11 18:48:35,223 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,224 DEBUG buildProtocol(), id=203 len(self.__pmap)=93
+2017-05-11 18:48:35,224 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,224 DEBUG buildProtocol(), id=204 len(self.__pmap)=94
+2017-05-11 18:48:35,226 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,226 DEBUG buildProtocol(), id=205 len(self.__pmap)=95
+2017-05-11 18:48:35,227 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,227 DEBUG buildProtocol(), id=206 len(self.__pmap)=96
+2017-05-11 18:48:35,229 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,229 DEBUG buildProtocol(), id=207 len(self.__pmap)=97
+2017-05-11 18:48:35,229 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,230 DEBUG buildProtocol(), id=208 len(self.__pmap)=98
+2017-05-11 18:48:35,230 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,230 DEBUG buildProtocol(), id=209 len(self.__pmap)=99
+2017-05-11 18:48:35,230 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,230 DEBUG buildProtocol(), id=210 len(self.__pmap)=100
+2017-05-11 18:48:35,230 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,232 DEBUG buildProtocol(), id=211 len(self.__pmap)=101
+2017-05-11 18:48:35,232 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,232 DEBUG buildProtocol(), id=212 len(self.__pmap)=102
+2017-05-11 18:48:35,233 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,233 DEBUG buildProtocol(), id=213 len(self.__pmap)=103
+2017-05-11 18:48:35,233 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,233 DEBUG buildProtocol(), id=214 len(self.__pmap)=104
+2017-05-11 18:48:35,233 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,233 DEBUG buildProtocol(), id=215 len(self.__pmap)=105
+2017-05-11 18:48:35,234 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,234 DEBUG buildProtocol(), id=216 len(self.__pmap)=106
+2017-05-11 18:48:35,234 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,236 DEBUG buildProtocol(), id=217 len(self.__pmap)=107
+2017-05-11 18:48:35,236 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,236 DEBUG buildProtocol(), id=218 len(self.__pmap)=108
+2017-05-11 18:48:35,236 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,236 DEBUG buildProtocol(), id=219 len(self.__pmap)=109
+2017-05-11 18:48:35,236 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,237 DEBUG buildProtocol(), id=220 len(self.__pmap)=110
+2017-05-11 18:48:35,239 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,239 DEBUG buildProtocol(), id=221 len(self.__pmap)=111
+2017-05-11 18:48:35,239 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,240 DEBUG buildProtocol(), id=222 len(self.__pmap)=112
+2017-05-11 18:48:35,240 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,240 DEBUG buildProtocol(), id=223 len(self.__pmap)=113
+2017-05-11 18:48:35,240 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,240 DEBUG buildProtocol(), id=224 len(self.__pmap)=114
+2017-05-11 18:48:35,240 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,242 DEBUG buildProtocol(), id=225 len(self.__pmap)=115
+2017-05-11 18:48:35,242 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,242 DEBUG buildProtocol(), id=226 len(self.__pmap)=116
+2017-05-11 18:48:35,243 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,243 DEBUG buildProtocol(), id=227 len(self.__pmap)=117
+2017-05-11 18:48:35,243 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,243 DEBUG buildProtocol(), id=228 len(self.__pmap)=118
+2017-05-11 18:48:35,243 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,243 DEBUG buildProtocol(), id=229 len(self.__pmap)=119
+2017-05-11 18:48:35,244 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,244 DEBUG buildProtocol(), id=230 len(self.__pmap)=120
+2017-05-11 18:48:35,246 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,246 DEBUG buildProtocol(), id=231 len(self.__pmap)=121
+2017-05-11 18:48:35,246 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,249 DEBUG buildProtocol(), id=232 len(self.__pmap)=122
+2017-05-11 18:48:35,249 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,250 DEBUG buildProtocol(), id=233 len(self.__pmap)=123
+2017-05-11 18:48:35,250 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,250 DEBUG buildProtocol(), id=234 len(self.__pmap)=124
+2017-05-11 18:48:35,250 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,250 DEBUG buildProtocol(), id=235 len(self.__pmap)=125
+2017-05-11 18:48:35,252 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,252 DEBUG buildProtocol(), id=236 len(self.__pmap)=126
+2017-05-11 18:48:35,253 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,253 DEBUG buildProtocol(), id=237 len(self.__pmap)=127
+2017-05-11 18:48:35,253 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,253 DEBUG buildProtocol(), id=238 len(self.__pmap)=128
+2017-05-11 18:48:35,253 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,253 DEBUG buildProtocol(), id=239 len(self.__pmap)=129
+2017-05-11 18:48:35,255 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,255 DEBUG buildProtocol(), id=240 len(self.__pmap)=130
+2017-05-11 18:48:35,255 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,256 DEBUG buildProtocol(), id=241 len(self.__pmap)=131
+2017-05-11 18:48:35,256 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,256 DEBUG buildProtocol(), id=242 len(self.__pmap)=132
+2017-05-11 18:48:35,256 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,256 DEBUG buildProtocol(), id=243 len(self.__pmap)=133
+2017-05-11 18:48:35,256 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,257 DEBUG buildProtocol(), id=244 len(self.__pmap)=134
+2017-05-11 18:48:35,257 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,259 DEBUG buildProtocol(), id=245 len(self.__pmap)=135
+2017-05-11 18:48:35,259 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,259 DEBUG buildProtocol(), id=246 len(self.__pmap)=136
+2017-05-11 18:48:35,259 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,259 DEBUG buildProtocol(), id=247 len(self.__pmap)=137
+2017-05-11 18:48:35,259 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,259 DEBUG buildProtocol(), id=248 len(self.__pmap)=138
+2017-05-11 18:48:35,260 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,260 DEBUG buildProtocol(), id=249 len(self.__pmap)=139
+2017-05-11 18:48:35,260 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,266 DEBUG buildProtocol(), id=250 len(self.__pmap)=140
+2017-05-11 18:48:35,266 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,266 DEBUG buildProtocol(), id=251 len(self.__pmap)=141
+2017-05-11 18:48:35,266 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,267 DEBUG buildProtocol(), id=252 len(self.__pmap)=142
+2017-05-11 18:48:35,267 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,269 DEBUG buildProtocol(), id=253 len(self.__pmap)=143
+2017-05-11 18:48:35,269 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,269 DEBUG buildProtocol(), id=254 len(self.__pmap)=144
+2017-05-11 18:48:35,269 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,269 DEBUG buildProtocol(), id=255 len(self.__pmap)=145
+2017-05-11 18:48:35,269 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,270 DEBUG buildProtocol(), id=256 len(self.__pmap)=146
+2017-05-11 18:48:35,270 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,270 DEBUG buildProtocol(), id=257 len(self.__pmap)=147
+2017-05-11 18:48:35,270 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,272 DEBUG buildProtocol(), id=258 len(self.__pmap)=148
+2017-05-11 18:48:35,272 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,272 DEBUG buildProtocol(), id=259 len(self.__pmap)=149
+2017-05-11 18:48:35,273 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,273 DEBUG buildProtocol(), id=260 len(self.__pmap)=150
+2017-05-11 18:48:35,273 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,273 DEBUG buildProtocol(), id=261 len(self.__pmap)=151
+2017-05-11 18:48:35,273 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,275 DEBUG buildProtocol(), id=262 len(self.__pmap)=152
+2017-05-11 18:48:35,275 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,275 DEBUG buildProtocol(), id=263 len(self.__pmap)=153
+2017-05-11 18:48:35,275 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,276 DEBUG buildProtocol(), id=264 len(self.__pmap)=154
+2017-05-11 18:48:35,276 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,276 DEBUG buildProtocol(), id=265 len(self.__pmap)=155
+2017-05-11 18:48:35,276 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,276 DEBUG buildProtocol(), id=266 len(self.__pmap)=156
+2017-05-11 18:48:35,278 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,278 DEBUG buildProtocol(), id=267 len(self.__pmap)=157
+2017-05-11 18:48:35,278 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,279 DEBUG buildProtocol(), id=268 len(self.__pmap)=158
+2017-05-11 18:48:35,279 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,279 DEBUG buildProtocol(), id=269 len(self.__pmap)=159
+2017-05-11 18:48:35,279 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,279 DEBUG buildProtocol(), id=270 len(self.__pmap)=160
+2017-05-11 18:48:35,279 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,280 DEBUG buildProtocol(), id=271 len(self.__pmap)=161
+2017-05-11 18:48:35,280 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,280 DEBUG buildProtocol(), id=272 len(self.__pmap)=162
+2017-05-11 18:48:35,280 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,282 DEBUG buildProtocol(), id=273 len(self.__pmap)=163
+2017-05-11 18:48:35,282 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,282 DEBUG buildProtocol(), id=274 len(self.__pmap)=164
+2017-05-11 18:48:35,282 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,283 DEBUG buildProtocol(), id=275 len(self.__pmap)=165
+2017-05-11 18:48:35,283 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,283 DEBUG buildProtocol(), id=276 len(self.__pmap)=166
+2017-05-11 18:48:35,285 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,285 DEBUG buildProtocol(), id=277 len(self.__pmap)=167
+2017-05-11 18:48:35,285 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,286 DEBUG buildProtocol(), id=278 len(self.__pmap)=168
+2017-05-11 18:48:35,286 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,286 DEBUG buildProtocol(), id=279 len(self.__pmap)=169
+2017-05-11 18:48:35,286 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,286 DEBUG buildProtocol(), id=280 len(self.__pmap)=170
+2017-05-11 18:48:35,286 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,286 DEBUG buildProtocol(), id=281 len(self.__pmap)=171
+2017-05-11 18:48:35,288 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,292 DEBUG dataReceived len:8
+2017-05-11 18:48:35,292 DEBUG dataReceived len:8
+2017-05-11 18:48:35,292 DEBUG dataReceived len:8
+2017-05-11 18:48:35,292 DEBUG dataReceived len:8
+2017-05-11 18:48:35,293 DEBUG dataReceived len:8
+2017-05-11 18:48:35,293 DEBUG dataReceived len:8
+2017-05-11 18:48:35,293 DEBUG dataReceived len:8
+2017-05-11 18:48:35,295 DEBUG dataReceived len:8
+2017-05-11 18:48:35,295 DEBUG dataReceived len:8
+2017-05-11 18:48:35,296 DEBUG dataReceived len:8
+2017-05-11 18:48:35,296 DEBUG dataReceived len:8
+2017-05-11 18:48:35,296 DEBUG dataReceived len:8
+2017-05-11 18:48:35,296 DEBUG dataReceived len:8
+2017-05-11 18:48:35,296 DEBUG dataReceived len:8
+2017-05-11 18:48:35,298 DEBUG dataReceived len:8
+2017-05-11 18:48:35,298 DEBUG dataReceived len:8
+2017-05-11 18:48:35,298 DEBUG dataReceived len:8
+2017-05-11 18:48:35,299 DEBUG dataReceived len:8
+2017-05-11 18:48:35,299 DEBUG dataReceived len:8
+2017-05-11 18:48:35,299 DEBUG dataReceived len:8
+2017-05-11 18:48:35,299 DEBUG dataReceived len:8
+2017-05-11 18:48:35,299 DEBUG dataReceived len:8
+2017-05-11 18:48:35,299 DEBUG dataReceived len:8
+2017-05-11 18:48:35,301 DEBUG dataReceived len:8
+2017-05-11 18:48:35,301 DEBUG dataReceived len:8
+2017-05-11 18:48:35,301 DEBUG dataReceived len:8
+2017-05-11 18:48:35,302 DEBUG dataReceived len:8
+2017-05-11 18:48:35,302 DEBUG dataReceived len:8
+2017-05-11 18:48:35,302 DEBUG dataReceived len:8
+2017-05-11 18:48:35,302 DEBUG dataReceived len:8
+2017-05-11 18:48:35,302 DEBUG dataReceived len:8
+2017-05-11 18:48:35,302 DEBUG dataReceived len:8
+2017-05-11 18:48:35,303 DEBUG dataReceived len:8
+2017-05-11 18:48:35,303 DEBUG dataReceived len:8
+2017-05-11 18:48:35,303 DEBUG dataReceived len:8
+2017-05-11 18:48:35,303 DEBUG dataReceived len:8
+2017-05-11 18:48:35,305 DEBUG dataReceived len:8
+2017-05-11 18:48:35,305 DEBUG dataReceived len:8
+2017-05-11 18:48:35,305 DEBUG dataReceived len:8
+2017-05-11 18:48:35,305 DEBUG dataReceived len:8
+2017-05-11 18:48:35,305 DEBUG dataReceived len:8
+2017-05-11 18:48:35,305 DEBUG dataReceived len:8
+2017-05-11 18:48:35,306 DEBUG dataReceived len:8
+2017-05-11 18:48:35,306 DEBUG dataReceived len:8
+2017-05-11 18:48:35,306 DEBUG dataReceived len:8
+2017-05-11 18:48:35,308 DEBUG dataReceived len:8
+2017-05-11 18:48:35,308 DEBUG dataReceived len:8
+2017-05-11 18:48:35,308 DEBUG dataReceived len:8
+2017-05-11 18:48:35,309 DEBUG dataReceived len:8
+2017-05-11 18:48:35,309 DEBUG dataReceived len:8
+2017-05-11 18:48:35,309 DEBUG dataReceived len:8
+2017-05-11 18:48:35,309 DEBUG dataReceived len:8
+2017-05-11 18:48:35,309 DEBUG dataReceived len:8
+2017-05-11 18:48:35,309 DEBUG dataReceived len:8
+2017-05-11 18:48:35,311 DEBUG dataReceived len:8
+2017-05-11 18:48:35,311 DEBUG dataReceived len:8
+2017-05-11 18:48:35,311 DEBUG dataReceived len:8
+2017-05-11 18:48:35,312 DEBUG dataReceived len:8
+2017-05-11 18:48:35,312 DEBUG dataReceived len:8
+2017-05-11 18:48:35,312 DEBUG dataReceived len:8
+2017-05-11 18:48:35,312 DEBUG dataReceived len:8
+2017-05-11 18:48:35,312 DEBUG dataReceived len:8
+2017-05-11 18:48:35,312 DEBUG dataReceived len:8
+2017-05-11 18:48:35,312 DEBUG dataReceived len:8
+2017-05-11 18:48:35,313 DEBUG dataReceived len:8
+2017-05-11 18:48:35,313 DEBUG dataReceived len:8
+2017-05-11 18:48:35,313 DEBUG dataReceived len:8
+2017-05-11 18:48:35,315 DEBUG dataReceived len:8
+2017-05-11 18:48:35,315 DEBUG dataReceived len:8
+2017-05-11 18:48:35,315 DEBUG dataReceived len:8
+2017-05-11 18:48:35,315 DEBUG dataReceived len:8
+2017-05-11 18:48:35,315 DEBUG dataReceived len:8
+2017-05-11 18:48:35,316 DEBUG dataReceived len:8
+2017-05-11 18:48:35,316 DEBUG dataReceived len:8
+2017-05-11 18:48:35,318 DEBUG dataReceived len:8
+2017-05-11 18:48:35,318 DEBUG dataReceived len:8
+2017-05-11 18:48:35,318 DEBUG dataReceived len:8
+2017-05-11 18:48:35,319 DEBUG dataReceived len:8
+2017-05-11 18:48:35,319 DEBUG dataReceived len:8
+2017-05-11 18:48:35,319 DEBUG dataReceived len:8
+2017-05-11 18:48:35,319 DEBUG dataReceived len:8
+2017-05-11 18:48:35,319 DEBUG dataReceived len:8
+2017-05-11 18:48:35,319 DEBUG dataReceived len:8
+2017-05-11 18:48:35,321 DEBUG dataReceived len:8
+2017-05-11 18:48:35,321 DEBUG dataReceived len:8
+2017-05-11 18:48:35,321 DEBUG dataReceived len:8
+2017-05-11 18:48:35,322 DEBUG dataReceived len:8
+2017-05-11 18:48:35,322 DEBUG dataReceived len:8
+2017-05-11 18:48:35,322 DEBUG dataReceived len:8
+2017-05-11 18:48:35,322 DEBUG dataReceived len:8
+2017-05-11 18:48:35,322 DEBUG dataReceived len:8
+2017-05-11 18:48:35,322 DEBUG dataReceived len:8
+2017-05-11 18:48:35,322 DEBUG dataReceived len:8
+2017-05-11 18:48:35,323 DEBUG dataReceived len:8
+2017-05-11 18:48:35,323 DEBUG dataReceived len:8
+2017-05-11 18:48:35,323 DEBUG dataReceived len:8
+2017-05-11 18:48:35,325 DEBUG dataReceived len:8
+2017-05-11 18:48:35,325 DEBUG dataReceived len:8
+2017-05-11 18:48:35,325 DEBUG dataReceived len:8
+2017-05-11 18:48:35,325 DEBUG dataReceived len:8
+2017-05-11 18:48:35,325 DEBUG dataReceived len:8
+2017-05-11 18:48:35,326 DEBUG dataReceived len:8
+2017-05-11 18:48:35,328 DEBUG dataReceived len:8
+2017-05-11 18:48:35,328 DEBUG dataReceived len:8
+2017-05-11 18:48:35,328 DEBUG dataReceived len:8
+2017-05-11 18:48:35,328 DEBUG dataReceived len:8
+2017-05-11 18:48:35,328 DEBUG dataReceived len:8
+2017-05-11 18:48:35,328 DEBUG dataReceived len:8
+2017-05-11 18:48:35,329 DEBUG dataReceived len:8
+2017-05-11 18:48:35,329 DEBUG dataReceived len:8
+2017-05-11 18:48:35,329 DEBUG dataReceived len:8
+2017-05-11 18:48:35,331 DEBUG dataReceived len:8
+2017-05-11 18:48:35,331 DEBUG dataReceived len:8
+2017-05-11 18:48:35,331 DEBUG dataReceived len:8
+2017-05-11 18:48:35,332 DEBUG dataReceived len:8
+2017-05-11 18:48:35,332 DEBUG dataReceived len:8
+2017-05-11 18:48:35,332 DEBUG dataReceived len:8
+2017-05-11 18:48:35,332 DEBUG dataReceived len:8
+2017-05-11 18:48:35,332 DEBUG dataReceived len:8
+2017-05-11 18:48:35,332 DEBUG dataReceived len:8
+2017-05-11 18:48:35,332 DEBUG dataReceived len:8
+2017-05-11 18:48:35,334 DEBUG dataReceived len:8
+2017-05-11 18:48:35,334 DEBUG dataReceived len:8
+2017-05-11 18:48:35,334 DEBUG dataReceived len:8
+2017-05-11 18:48:35,335 DEBUG dataReceived len:8
+2017-05-11 18:48:35,335 DEBUG dataReceived len:8
+2017-05-11 18:48:35,335 DEBUG dataReceived len:8
+2017-05-11 18:48:35,335 DEBUG dataReceived len:8
+2017-05-11 18:48:35,335 DEBUG dataReceived len:8
+2017-05-11 18:48:35,335 DEBUG dataReceived len:8
+2017-05-11 18:48:35,335 DEBUG dataReceived len:8
+2017-05-11 18:48:35,336 DEBUG dataReceived len:8
+2017-05-11 18:48:35,336 DEBUG dataReceived len:8
+2017-05-11 18:48:35,336 DEBUG dataReceived len:8
+2017-05-11 18:48:35,338 DEBUG dataReceived len:8
+2017-05-11 18:48:35,338 DEBUG dataReceived len:8
+2017-05-11 18:48:35,338 DEBUG dataReceived len:8
+2017-05-11 18:48:35,338 DEBUG dataReceived len:8
+2017-05-11 18:48:35,338 DEBUG dataReceived len:8
+2017-05-11 18:48:35,338 DEBUG dataReceived len:8
+2017-05-11 18:48:35,339 DEBUG dataReceived len:8
+2017-05-11 18:48:35,339 DEBUG dataReceived len:8
+2017-05-11 18:48:35,339 DEBUG dataReceived len:8
+2017-05-11 18:48:35,341 DEBUG dataReceived len:8
+2017-05-11 18:48:35,341 DEBUG dataReceived len:8
+2017-05-11 18:48:35,341 DEBUG dataReceived len:8
+2017-05-11 18:48:35,342 DEBUG dataReceived len:8
+2017-05-11 18:48:35,342 DEBUG dataReceived len:8
+2017-05-11 18:48:35,342 DEBUG dataReceived len:8
+2017-05-11 18:48:35,342 DEBUG dataReceived len:8
+2017-05-11 18:48:35,342 DEBUG dataReceived len:8
+2017-05-11 18:48:35,342 DEBUG dataReceived len:8
+2017-05-11 18:48:35,344 DEBUG dataReceived len:8
+2017-05-11 18:48:35,344 DEBUG dataReceived len:8
+2017-05-11 18:48:35,344 DEBUG dataReceived len:8
+2017-05-11 18:48:35,345 DEBUG dataReceived len:8
+2017-05-11 18:48:35,345 DEBUG dataReceived len:8
+2017-05-11 18:48:35,345 DEBUG dataReceived len:8
+2017-05-11 18:48:35,345 DEBUG dataReceived len:8
+2017-05-11 18:48:35,345 DEBUG dataReceived len:8
+2017-05-11 18:48:35,346 DEBUG dataReceived len:8
+2017-05-11 18:48:35,346 DEBUG dataReceived len:8
+2017-05-11 18:48:35,348 DEBUG dataReceived len:8
+2017-05-11 18:48:35,348 DEBUG dataReceived len:8
+2017-05-11 18:48:35,348 DEBUG dataReceived len:8
+2017-05-11 18:48:35,348 DEBUG dataReceived len:8
+2017-05-11 18:48:35,348 DEBUG dataReceived len:8
+2017-05-11 18:48:35,348 DEBUG dataReceived len:8
+2017-05-11 18:48:35,349 DEBUG dataReceived len:8
+2017-05-11 18:48:35,349 DEBUG dataReceived len:8
+2017-05-11 18:48:35,677 DEBUG buildProtocol(), id=282 len(self.__pmap)=172
+2017-05-11 18:48:35,677 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,687 DEBUG buildProtocol(), id=283 len(self.__pmap)=173
+2017-05-11 18:48:35,687 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,687 DEBUG buildProtocol(), id=284 len(self.__pmap)=174
+2017-05-11 18:48:35,687 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,687 DEBUG buildProtocol(), id=285 len(self.__pmap)=175
+2017-05-11 18:48:35,688 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,688 DEBUG buildProtocol(), id=286 len(self.__pmap)=176
+2017-05-11 18:48:35,688 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,746 DEBUG buildProtocol(), id=287 len(self.__pmap)=177
+2017-05-11 18:48:35,749 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,750 DEBUG buildProtocol(), id=288 len(self.__pmap)=178
+2017-05-11 18:48:35,750 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,750 DEBUG buildProtocol(), id=289 len(self.__pmap)=179
+2017-05-11 18:48:35,750 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,752 DEBUG buildProtocol(), id=290 len(self.__pmap)=180
+2017-05-11 18:48:35,753 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,753 DEBUG buildProtocol(), id=291 len(self.__pmap)=181
+2017-05-11 18:48:35,753 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,753 DEBUG buildProtocol(), id=292 len(self.__pmap)=182
+2017-05-11 18:48:35,753 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,755 DEBUG buildProtocol(), id=293 len(self.__pmap)=183
+2017-05-11 18:48:35,755 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,756 DEBUG buildProtocol(), id=294 len(self.__pmap)=184
+2017-05-11 18:48:35,756 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,756 DEBUG buildProtocol(), id=295 len(self.__pmap)=185
+2017-05-11 18:48:35,756 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,756 DEBUG buildProtocol(), id=296 len(self.__pmap)=186
+2017-05-11 18:48:35,757 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,757 DEBUG buildProtocol(), id=297 len(self.__pmap)=187
+2017-05-11 18:48:35,757 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,759 DEBUG buildProtocol(), id=298 len(self.__pmap)=188
+2017-05-11 18:48:35,759 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,759 DEBUG buildProtocol(), id=299 len(self.__pmap)=189
+2017-05-11 18:48:35,759 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,759 DEBUG buildProtocol(), id=300 len(self.__pmap)=190
+2017-05-11 18:48:35,760 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,760 DEBUG buildProtocol(), id=301 len(self.__pmap)=191
+2017-05-11 18:48:35,762 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,762 DEBUG buildProtocol(), id=302 len(self.__pmap)=192
+2017-05-11 18:48:35,762 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,763 DEBUG buildProtocol(), id=303 len(self.__pmap)=193
+2017-05-11 18:48:35,763 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,763 DEBUG buildProtocol(), id=304 len(self.__pmap)=194
+2017-05-11 18:48:35,763 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,763 DEBUG buildProtocol(), id=305 len(self.__pmap)=195
+2017-05-11 18:48:35,765 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,765 DEBUG buildProtocol(), id=306 len(self.__pmap)=196
+2017-05-11 18:48:35,765 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,766 DEBUG buildProtocol(), id=307 len(self.__pmap)=197
+2017-05-11 18:48:35,772 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,773 DEBUG buildProtocol(), id=308 len(self.__pmap)=198
+2017-05-11 18:48:35,773 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,773 DEBUG buildProtocol(), id=309 len(self.__pmap)=199
+2017-05-11 18:48:35,773 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,775 DEBUG buildProtocol(), id=310 len(self.__pmap)=200
+2017-05-11 18:48:35,775 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,776 DEBUG buildProtocol(), id=311 len(self.__pmap)=201
+2017-05-11 18:48:35,776 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,776 DEBUG buildProtocol(), id=312 len(self.__pmap)=202
+2017-05-11 18:48:35,776 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,776 DEBUG buildProtocol(), id=313 len(self.__pmap)=203
+2017-05-11 18:48:35,778 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,778 DEBUG buildProtocol(), id=314 len(self.__pmap)=204
+2017-05-11 18:48:35,778 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,779 DEBUG buildProtocol(), id=315 len(self.__pmap)=205
+2017-05-11 18:48:35,779 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,779 DEBUG buildProtocol(), id=316 len(self.__pmap)=206
+2017-05-11 18:48:35,779 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,779 DEBUG buildProtocol(), id=317 len(self.__pmap)=207
+2017-05-11 18:48:35,780 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,780 DEBUG buildProtocol(), id=318 len(self.__pmap)=208
+2017-05-11 18:48:35,780 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,782 DEBUG buildProtocol(), id=319 len(self.__pmap)=209
+2017-05-11 18:48:35,782 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,782 DEBUG buildProtocol(), id=320 len(self.__pmap)=210
+2017-05-11 18:48:35,782 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,782 DEBUG buildProtocol(), id=321 len(self.__pmap)=211
+2017-05-11 18:48:35,783 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,783 DEBUG buildProtocol(), id=322 len(self.__pmap)=212
+2017-05-11 18:48:35,783 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,785 DEBUG buildProtocol(), id=323 len(self.__pmap)=213
+2017-05-11 18:48:35,785 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,785 DEBUG buildProtocol(), id=324 len(self.__pmap)=214
+2017-05-11 18:48:35,786 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,786 DEBUG buildProtocol(), id=325 len(self.__pmap)=215
+2017-05-11 18:48:35,786 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,786 DEBUG buildProtocol(), id=326 len(self.__pmap)=216
+2017-05-11 18:48:35,786 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,786 DEBUG buildProtocol(), id=327 len(self.__pmap)=217
+2017-05-11 18:48:35,786 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,788 DEBUG buildProtocol(), id=328 len(self.__pmap)=218
+2017-05-11 18:48:35,788 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,789 DEBUG buildProtocol(), id=329 len(self.__pmap)=219
+2017-05-11 18:48:35,789 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,789 DEBUG buildProtocol(), id=330 len(self.__pmap)=220
+2017-05-11 18:48:35,789 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,789 DEBUG buildProtocol(), id=331 len(self.__pmap)=221
+2017-05-11 18:48:35,789 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,789 DEBUG buildProtocol(), id=332 len(self.__pmap)=222
+2017-05-11 18:48:35,790 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,790 DEBUG buildProtocol(), id=333 len(self.__pmap)=223
+2017-05-11 18:48:35,790 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,792 DEBUG buildProtocol(), id=334 len(self.__pmap)=224
+2017-05-11 18:48:35,792 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,792 DEBUG buildProtocol(), id=335 len(self.__pmap)=225
+2017-05-11 18:48:35,792 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,792 DEBUG buildProtocol(), id=336 len(self.__pmap)=226
+2017-05-11 18:48:35,792 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,793 DEBUG buildProtocol(), id=337 len(self.__pmap)=227
+2017-05-11 18:48:35,793 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,795 DEBUG buildProtocol(), id=338 len(self.__pmap)=228
+2017-05-11 18:48:35,795 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,795 DEBUG buildProtocol(), id=339 len(self.__pmap)=229
+2017-05-11 18:48:35,796 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,796 DEBUG buildProtocol(), id=340 len(self.__pmap)=230
+2017-05-11 18:48:35,796 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,796 DEBUG buildProtocol(), id=341 len(self.__pmap)=231
+2017-05-11 18:48:35,798 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,798 DEBUG buildProtocol(), id=342 len(self.__pmap)=232
+2017-05-11 18:48:35,798 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,799 DEBUG buildProtocol(), id=343 len(self.__pmap)=233
+2017-05-11 18:48:35,799 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,799 DEBUG buildProtocol(), id=344 len(self.__pmap)=234
+2017-05-11 18:48:35,799 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,799 DEBUG buildProtocol(), id=345 len(self.__pmap)=235
+2017-05-11 18:48:35,799 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,801 DEBUG buildProtocol(), id=346 len(self.__pmap)=236
+2017-05-11 18:48:35,801 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,801 DEBUG buildProtocol(), id=347 len(self.__pmap)=237
+2017-05-11 18:48:35,802 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,802 DEBUG buildProtocol(), id=348 len(self.__pmap)=238
+2017-05-11 18:48:35,802 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,802 DEBUG buildProtocol(), id=349 len(self.__pmap)=239
+2017-05-11 18:48:35,802 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,802 DEBUG buildProtocol(), id=350 len(self.__pmap)=240
+2017-05-11 18:48:35,803 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,803 DEBUG buildProtocol(), id=351 len(self.__pmap)=241
+2017-05-11 18:48:35,803 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,805 DEBUG buildProtocol(), id=352 len(self.__pmap)=242
+2017-05-11 18:48:35,805 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,805 DEBUG buildProtocol(), id=353 len(self.__pmap)=243
+2017-05-11 18:48:35,805 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,805 DEBUG buildProtocol(), id=354 len(self.__pmap)=244
+2017-05-11 18:48:35,805 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,806 DEBUG buildProtocol(), id=355 len(self.__pmap)=245
+2017-05-11 18:48:35,806 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,808 DEBUG buildProtocol(), id=356 len(self.__pmap)=246
+2017-05-11 18:48:35,808 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,809 DEBUG buildProtocol(), id=357 len(self.__pmap)=247
+2017-05-11 18:48:35,809 DEBUG Client.connectionMade() ip=127.0.0.1
+2017-05-11 18:48:35,901 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,903 DEBUG removeProtocol(), id=112 len(self.__pmap)=247
+2017-05-11 18:48:35,903 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,904 DEBUG removeProtocol(), id=113 len(self.__pmap)=246
+2017-05-11 18:48:35,904 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,904 DEBUG removeProtocol(), id=114 len(self.__pmap)=245
+2017-05-11 18:48:35,905 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,905 DEBUG removeProtocol(), id=115 len(self.__pmap)=244
+2017-05-11 18:48:35,905 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,907 DEBUG removeProtocol(), id=117 len(self.__pmap)=243
+2017-05-11 18:48:35,907 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,907 DEBUG removeProtocol(), id=116 len(self.__pmap)=242
+2017-05-11 18:48:35,907 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,907 DEBUG removeProtocol(), id=119 len(self.__pmap)=241
+2017-05-11 18:48:35,907 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,908 DEBUG removeProtocol(), id=118 len(self.__pmap)=240
+2017-05-11 18:48:35,908 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,908 DEBUG removeProtocol(), id=120 len(self.__pmap)=239
+2017-05-11 18:48:35,910 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,910 DEBUG removeProtocol(), id=123 len(self.__pmap)=238
+2017-05-11 18:48:35,910 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,911 DEBUG removeProtocol(), id=121 len(self.__pmap)=237
+2017-05-11 18:48:35,911 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,911 DEBUG removeProtocol(), id=124 len(self.__pmap)=236
+2017-05-11 18:48:35,911 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,911 DEBUG removeProtocol(), id=122 len(self.__pmap)=235
+2017-05-11 18:48:35,911 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,913 DEBUG removeProtocol(), id=125 len(self.__pmap)=234
+2017-05-11 18:48:35,913 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,914 DEBUG removeProtocol(), id=126 len(self.__pmap)=233
+2017-05-11 18:48:35,914 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,914 DEBUG removeProtocol(), id=128 len(self.__pmap)=232
+2017-05-11 18:48:35,914 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,914 DEBUG removeProtocol(), id=131 len(self.__pmap)=231
+2017-05-11 18:48:35,915 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,915 DEBUG removeProtocol(), id=129 len(self.__pmap)=230
+2017-05-11 18:48:35,917 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,917 DEBUG removeProtocol(), id=127 len(self.__pmap)=229
+2017-05-11 18:48:35,917 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,917 DEBUG removeProtocol(), id=132 len(self.__pmap)=228
+2017-05-11 18:48:35,917 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,917 DEBUG removeProtocol(), id=133 len(self.__pmap)=227
+2017-05-11 18:48:35,918 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,918 DEBUG removeProtocol(), id=130 len(self.__pmap)=226
+2017-05-11 18:48:35,918 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,920 DEBUG removeProtocol(), id=135 len(self.__pmap)=225
+2017-05-11 18:48:35,920 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,920 DEBUG removeProtocol(), id=136 len(self.__pmap)=224
+2017-05-11 18:48:35,921 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,921 DEBUG removeProtocol(), id=134 len(self.__pmap)=223
+2017-05-11 18:48:35,921 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,921 DEBUG removeProtocol(), id=139 len(self.__pmap)=222
+2017-05-11 18:48:35,923 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,923 DEBUG removeProtocol(), id=140 len(self.__pmap)=221
+2017-05-11 18:48:35,924 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,924 DEBUG removeProtocol(), id=138 len(self.__pmap)=220
+2017-05-11 18:48:35,924 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,924 DEBUG removeProtocol(), id=137 len(self.__pmap)=219
+2017-05-11 18:48:35,924 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,924 DEBUG removeProtocol(), id=141 len(self.__pmap)=218
+2017-05-11 18:48:35,926 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,926 DEBUG removeProtocol(), id=142 len(self.__pmap)=217
+2017-05-11 18:48:35,927 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,927 DEBUG removeProtocol(), id=143 len(self.__pmap)=216
+2017-05-11 18:48:35,927 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,927 DEBUG removeProtocol(), id=146 len(self.__pmap)=215
+2017-05-11 18:48:35,927 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,927 DEBUG removeProtocol(), id=144 len(self.__pmap)=214
+2017-05-11 18:48:35,928 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,928 DEBUG removeProtocol(), id=145 len(self.__pmap)=213
+2017-05-11 18:48:35,928 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,930 DEBUG removeProtocol(), id=149 len(self.__pmap)=212
+2017-05-11 18:48:35,930 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,930 DEBUG removeProtocol(), id=147 len(self.__pmap)=211
+2017-05-11 18:48:35,930 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,930 DEBUG removeProtocol(), id=148 len(self.__pmap)=210
+2017-05-11 18:48:35,931 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,931 DEBUG removeProtocol(), id=153 len(self.__pmap)=209
+2017-05-11 18:48:35,934 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,934 DEBUG removeProtocol(), id=150 len(self.__pmap)=208
+2017-05-11 18:48:35,934 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,936 DEBUG removeProtocol(), id=151 len(self.__pmap)=207
+2017-05-11 18:48:35,936 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,937 DEBUG removeProtocol(), id=156 len(self.__pmap)=206
+2017-05-11 18:48:35,937 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,937 DEBUG removeProtocol(), id=154 len(self.__pmap)=205
+2017-05-11 18:48:35,937 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,937 DEBUG removeProtocol(), id=152 len(self.__pmap)=204
+2017-05-11 18:48:35,937 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,938 DEBUG removeProtocol(), id=157 len(self.__pmap)=203
+2017-05-11 18:48:35,938 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,938 DEBUG removeProtocol(), id=158 len(self.__pmap)=202
+2017-05-11 18:48:35,940 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,940 DEBUG removeProtocol(), id=155 len(self.__pmap)=201
+2017-05-11 18:48:35,940 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,940 DEBUG removeProtocol(), id=161 len(self.__pmap)=200
+2017-05-11 18:48:35,940 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,940 DEBUG removeProtocol(), id=160 len(self.__pmap)=199
+2017-05-11 18:48:35,940 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,941 DEBUG removeProtocol(), id=159 len(self.__pmap)=198
+2017-05-11 18:48:35,941 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,941 DEBUG removeProtocol(), id=164 len(self.__pmap)=197
+2017-05-11 18:48:35,943 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,943 DEBUG removeProtocol(), id=162 len(self.__pmap)=196
+2017-05-11 18:48:35,943 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,943 DEBUG removeProtocol(), id=163 len(self.__pmap)=195
+2017-05-11 18:48:35,944 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,944 DEBUG removeProtocol(), id=167 len(self.__pmap)=194
+2017-05-11 18:48:35,944 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,944 DEBUG removeProtocol(), id=168 len(self.__pmap)=193
+2017-05-11 18:48:35,944 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,944 DEBUG removeProtocol(), id=165 len(self.__pmap)=192
+2017-05-11 18:48:35,944 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,946 DEBUG removeProtocol(), id=166 len(self.__pmap)=191
+2017-05-11 18:48:35,946 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,946 DEBUG removeProtocol(), id=172 len(self.__pmap)=190
+2017-05-11 18:48:35,947 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,947 DEBUG removeProtocol(), id=170 len(self.__pmap)=189
+2017-05-11 18:48:35,947 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,947 DEBUG removeProtocol(), id=169 len(self.__pmap)=188
+2017-05-11 18:48:35,947 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,947 DEBUG removeProtocol(), id=173 len(self.__pmap)=187
+2017-05-11 18:48:35,948 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,948 DEBUG removeProtocol(), id=171 len(self.__pmap)=186
+2017-05-11 18:48:35,948 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,950 DEBUG removeProtocol(), id=174 len(self.__pmap)=185
+2017-05-11 18:48:35,950 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,950 DEBUG removeProtocol(), id=176 len(self.__pmap)=184
+2017-05-11 18:48:35,950 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,950 DEBUG removeProtocol(), id=177 len(self.__pmap)=183
+2017-05-11 18:48:35,953 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,953 DEBUG removeProtocol(), id=175 len(self.__pmap)=182
+2017-05-11 18:48:35,953 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,953 DEBUG removeProtocol(), id=180 len(self.__pmap)=181
+2017-05-11 18:48:35,953 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,953 DEBUG removeProtocol(), id=179 len(self.__pmap)=180
+2017-05-11 18:48:35,954 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,954 DEBUG removeProtocol(), id=178 len(self.__pmap)=179
+2017-05-11 18:48:35,954 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,956 DEBUG removeProtocol(), id=183 len(self.__pmap)=178
+2017-05-11 18:48:35,956 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,956 DEBUG removeProtocol(), id=181 len(self.__pmap)=177
+2017-05-11 18:48:35,957 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,957 DEBUG removeProtocol(), id=184 len(self.__pmap)=176
+2017-05-11 18:48:35,957 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,957 DEBUG removeProtocol(), id=182 len(self.__pmap)=175
+2017-05-11 18:48:35,957 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,957 DEBUG removeProtocol(), id=188 len(self.__pmap)=174
+2017-05-11 18:48:35,959 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,959 DEBUG removeProtocol(), id=185 len(self.__pmap)=173
+2017-05-11 18:48:35,959 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,960 DEBUG removeProtocol(), id=186 len(self.__pmap)=172
+2017-05-11 18:48:35,960 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,960 DEBUG removeProtocol(), id=191 len(self.__pmap)=171
+2017-05-11 18:48:35,960 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,960 DEBUG removeProtocol(), id=189 len(self.__pmap)=170
+2017-05-11 18:48:35,961 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,961 DEBUG removeProtocol(), id=187 len(self.__pmap)=169
+2017-05-11 18:48:35,963 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,963 DEBUG removeProtocol(), id=194 len(self.__pmap)=168
+2017-05-11 18:48:35,963 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,963 DEBUG removeProtocol(), id=193 len(self.__pmap)=167
+2017-05-11 18:48:35,963 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,963 DEBUG removeProtocol(), id=192 len(self.__pmap)=166
+2017-05-11 18:48:35,964 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,964 DEBUG removeProtocol(), id=190 len(self.__pmap)=165
+2017-05-11 18:48:35,966 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,966 DEBUG removeProtocol(), id=197 len(self.__pmap)=164
+2017-05-11 18:48:35,966 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,967 DEBUG removeProtocol(), id=195 len(self.__pmap)=163
+2017-05-11 18:48:35,967 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,967 DEBUG removeProtocol(), id=196 len(self.__pmap)=162
+2017-05-11 18:48:35,967 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,967 DEBUG removeProtocol(), id=199 len(self.__pmap)=161
+2017-05-11 18:48:35,967 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,967 DEBUG removeProtocol(), id=200 len(self.__pmap)=160
+2017-05-11 18:48:35,969 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,969 DEBUG removeProtocol(), id=198 len(self.__pmap)=159
+2017-05-11 18:48:35,969 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,970 DEBUG removeProtocol(), id=203 len(self.__pmap)=158
+2017-05-11 18:48:35,970 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,970 DEBUG removeProtocol(), id=201 len(self.__pmap)=157
+2017-05-11 18:48:35,974 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,976 DEBUG removeProtocol(), id=202 len(self.__pmap)=156
+2017-05-11 18:48:35,976 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,976 DEBUG removeProtocol(), id=207 len(self.__pmap)=155
+2017-05-11 18:48:35,977 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,979 DEBUG removeProtocol(), id=205 len(self.__pmap)=154
+2017-05-11 18:48:35,980 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,980 DEBUG removeProtocol(), id=204 len(self.__pmap)=153
+2017-05-11 18:48:35,980 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,980 DEBUG removeProtocol(), id=210 len(self.__pmap)=152
+2017-05-11 18:48:35,980 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,982 DEBUG removeProtocol(), id=208 len(self.__pmap)=151
+2017-05-11 18:48:35,982 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,982 DEBUG removeProtocol(), id=206 len(self.__pmap)=150
+2017-05-11 18:48:35,983 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,983 DEBUG removeProtocol(), id=211 len(self.__pmap)=149
+2017-05-11 18:48:35,983 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,983 DEBUG removeProtocol(), id=209 len(self.__pmap)=148
+2017-05-11 18:48:35,984 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,984 DEBUG removeProtocol(), id=213 len(self.__pmap)=147
+2017-05-11 18:48:35,986 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,986 DEBUG removeProtocol(), id=216 len(self.__pmap)=146
+2017-05-11 18:48:35,986 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,986 DEBUG removeProtocol(), id=214 len(self.__pmap)=145
+2017-05-11 18:48:35,987 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,989 DEBUG removeProtocol(), id=212 len(self.__pmap)=144
+2017-05-11 18:48:35,990 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,990 DEBUG removeProtocol(), id=219 len(self.__pmap)=143
+2017-05-11 18:48:35,992 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,992 DEBUG removeProtocol(), id=217 len(self.__pmap)=142
+2017-05-11 18:48:35,992 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,993 DEBUG removeProtocol(), id=215 len(self.__pmap)=141
+2017-05-11 18:48:35,993 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,993 DEBUG removeProtocol(), id=222 len(self.__pmap)=140
+2017-05-11 18:48:35,993 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,994 DEBUG removeProtocol(), id=220 len(self.__pmap)=139
+2017-05-11 18:48:35,994 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,994 DEBUG removeProtocol(), id=218 len(self.__pmap)=138
+2017-05-11 18:48:35,996 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,996 DEBUG removeProtocol(), id=221 len(self.__pmap)=137
+2017-05-11 18:48:35,996 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,996 DEBUG removeProtocol(), id=225 len(self.__pmap)=136
+2017-05-11 18:48:35,996 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,996 DEBUG removeProtocol(), id=223 len(self.__pmap)=135
+2017-05-11 18:48:35,996 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:35,997 DEBUG removeProtocol(), id=224 len(self.__pmap)=134
+2017-05-11 18:48:35,999 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,000 DEBUG removeProtocol(), id=227 len(self.__pmap)=133
+2017-05-11 18:48:36,000 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,000 DEBUG removeProtocol(), id=228 len(self.__pmap)=132
+2017-05-11 18:48:36,000 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,000 DEBUG removeProtocol(), id=226 len(self.__pmap)=131
+2017-05-11 18:48:36,002 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,002 DEBUG removeProtocol(), id=229 len(self.__pmap)=130
+2017-05-11 18:48:36,002 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,002 DEBUG removeProtocol(), id=231 len(self.__pmap)=129
+2017-05-11 18:48:36,003 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,003 DEBUG removeProtocol(), id=230 len(self.__pmap)=128
+2017-05-11 18:48:36,003 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,003 DEBUG removeProtocol(), id=233 len(self.__pmap)=127
+2017-05-11 18:48:36,003 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,003 DEBUG removeProtocol(), id=234 len(self.__pmap)=126
+2017-05-11 18:48:36,005 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,005 DEBUG removeProtocol(), id=232 len(self.__pmap)=125
+2017-05-11 18:48:36,005 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,006 DEBUG removeProtocol(), id=236 len(self.__pmap)=124
+2017-05-11 18:48:36,006 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,006 DEBUG removeProtocol(), id=235 len(self.__pmap)=123
+2017-05-11 18:48:36,006 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,006 DEBUG removeProtocol(), id=238 len(self.__pmap)=122
+2017-05-11 18:48:36,006 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,006 DEBUG removeProtocol(), id=237 len(self.__pmap)=121
+2017-05-11 18:48:36,007 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,007 DEBUG removeProtocol(), id=239 len(self.__pmap)=120
+2017-05-11 18:48:36,007 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,009 DEBUG removeProtocol(), id=240 len(self.__pmap)=119
+2017-05-11 18:48:36,009 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,009 DEBUG removeProtocol(), id=241 len(self.__pmap)=118
+2017-05-11 18:48:36,009 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,009 DEBUG removeProtocol(), id=243 len(self.__pmap)=117
+2017-05-11 18:48:36,009 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,009 DEBUG removeProtocol(), id=242 len(self.__pmap)=116
+2017-05-11 18:48:36,010 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,010 DEBUG removeProtocol(), id=244 len(self.__pmap)=115
+2017-05-11 18:48:36,010 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,012 DEBUG removeProtocol(), id=245 len(self.__pmap)=114
+2017-05-11 18:48:36,012 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,012 DEBUG removeProtocol(), id=246 len(self.__pmap)=113
+2017-05-11 18:48:36,013 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,013 DEBUG removeProtocol(), id=247 len(self.__pmap)=112
+2017-05-11 18:48:36,013 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,013 DEBUG removeProtocol(), id=248 len(self.__pmap)=111
+2017-05-11 18:48:36,013 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,013 DEBUG removeProtocol(), id=250 len(self.__pmap)=110
+2017-05-11 18:48:36,013 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,015 DEBUG removeProtocol(), id=249 len(self.__pmap)=109
+2017-05-11 18:48:36,015 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,015 DEBUG removeProtocol(), id=251 len(self.__pmap)=108
+2017-05-11 18:48:36,016 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,016 DEBUG removeProtocol(), id=252 len(self.__pmap)=107
+2017-05-11 18:48:36,016 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,016 DEBUG removeProtocol(), id=253 len(self.__pmap)=106
+2017-05-11 18:48:36,016 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,016 DEBUG removeProtocol(), id=255 len(self.__pmap)=105
+2017-05-11 18:48:36,017 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,017 DEBUG removeProtocol(), id=254 len(self.__pmap)=104
+2017-05-11 18:48:36,019 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,019 DEBUG removeProtocol(), id=256 len(self.__pmap)=103
+2017-05-11 18:48:36,019 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,019 DEBUG removeProtocol(), id=257 len(self.__pmap)=102
+2017-05-11 18:48:36,019 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,020 DEBUG removeProtocol(), id=259 len(self.__pmap)=101
+2017-05-11 18:48:36,020 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,020 DEBUG removeProtocol(), id=260 len(self.__pmap)=100
+2017-05-11 18:48:36,022 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,022 DEBUG removeProtocol(), id=258 len(self.__pmap)=99
+2017-05-11 18:48:36,022 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,023 DEBUG removeProtocol(), id=262 len(self.__pmap)=98
+2017-05-11 18:48:36,023 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,023 DEBUG removeProtocol(), id=263 len(self.__pmap)=97
+2017-05-11 18:48:36,023 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,023 DEBUG removeProtocol(), id=261 len(self.__pmap)=96
+2017-05-11 18:48:36,025 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,025 DEBUG removeProtocol(), id=264 len(self.__pmap)=95
+2017-05-11 18:48:36,026 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,026 DEBUG removeProtocol(), id=265 len(self.__pmap)=94
+2017-05-11 18:48:36,028 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,028 DEBUG removeProtocol(), id=266 len(self.__pmap)=93
+2017-05-11 18:48:36,029 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,029 DEBUG removeProtocol(), id=267 len(self.__pmap)=92
+2017-05-11 18:48:36,029 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,029 DEBUG removeProtocol(), id=268 len(self.__pmap)=91
+2017-05-11 18:48:36,029 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,032 DEBUG removeProtocol(), id=269 len(self.__pmap)=90
+2017-05-11 18:48:36,032 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,032 DEBUG removeProtocol(), id=270 len(self.__pmap)=89
+2017-05-11 18:48:36,033 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,033 DEBUG removeProtocol(), id=272 len(self.__pmap)=88
+2017-05-11 18:48:36,033 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,033 DEBUG removeProtocol(), id=271 len(self.__pmap)=87
+2017-05-11 18:48:36,035 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,035 DEBUG removeProtocol(), id=274 len(self.__pmap)=86
+2017-05-11 18:48:36,035 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,036 DEBUG removeProtocol(), id=273 len(self.__pmap)=85
+2017-05-11 18:48:36,036 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,036 DEBUG removeProtocol(), id=275 len(self.__pmap)=84
+2017-05-11 18:48:36,038 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,038 DEBUG removeProtocol(), id=276 len(self.__pmap)=83
+2017-05-11 18:48:36,039 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,039 DEBUG removeProtocol(), id=277 len(self.__pmap)=82
+2017-05-11 18:48:36,040 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,040 DEBUG removeProtocol(), id=279 len(self.__pmap)=81
+2017-05-11 18:48:36,042 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,042 DEBUG removeProtocol(), id=278 len(self.__pmap)=80
+2017-05-11 18:48:36,042 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,042 DEBUG removeProtocol(), id=280 len(self.__pmap)=79
+2017-05-11 18:48:36,045 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,045 DEBUG removeProtocol(), id=281 len(self.__pmap)=78
+2017-05-11 18:48:36,046 DEBUG dataReceived len:8
+2017-05-11 18:48:36,048 DEBUG dataReceived len:8
+2017-05-11 18:48:36,048 DEBUG dataReceived len:8
+2017-05-11 18:48:36,049 DEBUG dataReceived len:8
+2017-05-11 18:48:36,049 DEBUG dataReceived len:8
+2017-05-11 18:48:36,049 DEBUG dataReceived len:8
+2017-05-11 18:48:36,049 DEBUG dataReceived len:8
+2017-05-11 18:48:36,051 DEBUG dataReceived len:8
+2017-05-11 18:48:36,051 DEBUG dataReceived len:8
+2017-05-11 18:48:36,052 DEBUG dataReceived len:8
+2017-05-11 18:48:36,052 DEBUG dataReceived len:8
+2017-05-11 18:48:36,052 DEBUG dataReceived len:8
+2017-05-11 18:48:36,052 DEBUG dataReceived len:8
+2017-05-11 18:48:36,052 DEBUG dataReceived len:8
+2017-05-11 18:48:36,052 DEBUG dataReceived len:8
+2017-05-11 18:48:36,053 DEBUG dataReceived len:8
+2017-05-11 18:48:36,053 DEBUG dataReceived len:8
+2017-05-11 18:48:36,053 DEBUG dataReceived len:8
+2017-05-11 18:48:36,055 DEBUG dataReceived len:8
+2017-05-11 18:48:36,055 DEBUG dataReceived len:8
+2017-05-11 18:48:36,056 DEBUG dataReceived len:8
+2017-05-11 18:48:36,058 DEBUG dataReceived len:8
+2017-05-11 18:48:36,058 DEBUG dataReceived len:8
+2017-05-11 18:48:36,058 DEBUG dataReceived len:8
+2017-05-11 18:48:36,059 DEBUG dataReceived len:8
+2017-05-11 18:48:36,059 DEBUG dataReceived len:8
+2017-05-11 18:48:36,059 DEBUG dataReceived len:8
+2017-05-11 18:48:36,059 DEBUG dataReceived len:8
+2017-05-11 18:48:36,059 DEBUG dataReceived len:8
+2017-05-11 18:48:36,059 DEBUG dataReceived len:8
+2017-05-11 18:48:36,061 DEBUG dataReceived len:8
+2017-05-11 18:48:36,061 DEBUG dataReceived len:8
+2017-05-11 18:48:36,061 DEBUG dataReceived len:8
+2017-05-11 18:48:36,062 DEBUG dataReceived len:8
+2017-05-11 18:48:36,062 DEBUG dataReceived len:8
+2017-05-11 18:48:36,062 DEBUG dataReceived len:8
+2017-05-11 18:48:36,062 DEBUG dataReceived len:8
+2017-05-11 18:48:36,062 DEBUG dataReceived len:8
+2017-05-11 18:48:36,062 DEBUG dataReceived len:8
+2017-05-11 18:48:36,063 DEBUG dataReceived len:8
+2017-05-11 18:48:36,063 DEBUG dataReceived len:8
+2017-05-11 18:48:36,063 DEBUG dataReceived len:8
+2017-05-11 18:48:36,065 DEBUG dataReceived len:8
+2017-05-11 18:48:36,065 DEBUG dataReceived len:8
+2017-05-11 18:48:36,065 DEBUG dataReceived len:8
+2017-05-11 18:48:36,065 DEBUG dataReceived len:8
+2017-05-11 18:48:36,065 DEBUG dataReceived len:8
+2017-05-11 18:48:36,066 DEBUG dataReceived len:8
+2017-05-11 18:48:36,066 DEBUG dataReceived len:8
+2017-05-11 18:48:36,066 DEBUG dataReceived len:8
+2017-05-11 18:48:36,068 DEBUG dataReceived len:8
+2017-05-11 18:48:36,068 DEBUG dataReceived len:8
+2017-05-11 18:48:36,068 DEBUG dataReceived len:8
+2017-05-11 18:48:36,069 DEBUG dataReceived len:8
+2017-05-11 18:48:36,069 DEBUG dataReceived len:8
+2017-05-11 18:48:36,069 DEBUG dataReceived len:8
+2017-05-11 18:48:36,069 DEBUG dataReceived len:8
+2017-05-11 18:48:36,069 DEBUG dataReceived len:8
+2017-05-11 18:48:36,069 DEBUG dataReceived len:8
+2017-05-11 18:48:36,071 DEBUG dataReceived len:8
+2017-05-11 18:48:36,071 DEBUG dataReceived len:8
+2017-05-11 18:48:36,071 DEBUG dataReceived len:8
+2017-05-11 18:48:36,072 DEBUG dataReceived len:8
+2017-05-11 18:48:36,072 DEBUG dataReceived len:8
+2017-05-11 18:48:36,072 DEBUG dataReceived len:8
+2017-05-11 18:48:36,072 DEBUG dataReceived len:8
+2017-05-11 18:48:36,072 DEBUG dataReceived len:8
+2017-05-11 18:48:36,072 DEBUG dataReceived len:8
+2017-05-11 18:48:36,072 DEBUG dataReceived len:8
+2017-05-11 18:48:36,073 DEBUG dataReceived len:8
+2017-05-11 18:48:36,073 DEBUG dataReceived len:8
+2017-05-11 18:48:36,073 DEBUG dataReceived len:8
+2017-05-11 18:48:36,075 DEBUG dataReceived len:8
+2017-05-11 18:48:36,075 DEBUG dataReceived len:8
+2017-05-11 18:48:36,075 DEBUG dataReceived len:8
+2017-05-11 18:48:36,075 DEBUG dataReceived len:8
+2017-05-11 18:48:36,316 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,316 DEBUG removeProtocol(), id=283 len(self.__pmap)=77
+2017-05-11 18:48:36,318 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,318 DEBUG removeProtocol(), id=282 len(self.__pmap)=76
+2017-05-11 18:48:36,318 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,319 DEBUG removeProtocol(), id=286 len(self.__pmap)=75
+2017-05-11 18:48:36,319 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,319 DEBUG removeProtocol(), id=284 len(self.__pmap)=74
+2017-05-11 18:48:36,319 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,319 DEBUG removeProtocol(), id=285 len(self.__pmap)=73
+2017-05-11 18:48:36,321 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,321 DEBUG removeProtocol(), id=287 len(self.__pmap)=72
+2017-05-11 18:48:36,322 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,322 DEBUG removeProtocol(), id=289 len(self.__pmap)=71
+2017-05-11 18:48:36,322 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,322 DEBUG removeProtocol(), id=290 len(self.__pmap)=70
+2017-05-11 18:48:36,322 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,322 DEBUG removeProtocol(), id=288 len(self.__pmap)=69
+2017-05-11 18:48:36,323 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,323 DEBUG removeProtocol(), id=293 len(self.__pmap)=68
+2017-05-11 18:48:36,325 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,325 DEBUG removeProtocol(), id=291 len(self.__pmap)=67
+2017-05-11 18:48:36,325 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,325 DEBUG removeProtocol(), id=295 len(self.__pmap)=66
+2017-05-11 18:48:36,325 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,325 DEBUG removeProtocol(), id=294 len(self.__pmap)=65
+2017-05-11 18:48:36,326 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,326 DEBUG removeProtocol(), id=292 len(self.__pmap)=64
+2017-05-11 18:48:36,326 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,328 DEBUG removeProtocol(), id=298 len(self.__pmap)=63
+2017-05-11 18:48:36,328 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,328 DEBUG removeProtocol(), id=296 len(self.__pmap)=62
+2017-05-11 18:48:36,328 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,328 DEBUG removeProtocol(), id=297 len(self.__pmap)=61
+2017-05-11 18:48:36,329 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,329 DEBUG removeProtocol(), id=299 len(self.__pmap)=60
+2017-05-11 18:48:36,331 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,331 DEBUG removeProtocol(), id=300 len(self.__pmap)=59
+2017-05-11 18:48:36,332 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,332 DEBUG removeProtocol(), id=301 len(self.__pmap)=58
+2017-05-11 18:48:36,332 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,334 DEBUG removeProtocol(), id=304 len(self.__pmap)=57
+2017-05-11 18:48:36,335 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,335 DEBUG removeProtocol(), id=303 len(self.__pmap)=56
+2017-05-11 18:48:36,335 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,336 DEBUG removeProtocol(), id=302 len(self.__pmap)=55
+2017-05-11 18:48:36,336 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,338 DEBUG removeProtocol(), id=308 len(self.__pmap)=54
+2017-05-11 18:48:36,338 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,338 DEBUG removeProtocol(), id=306 len(self.__pmap)=53
+2017-05-11 18:48:36,339 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,339 DEBUG removeProtocol(), id=305 len(self.__pmap)=52
+2017-05-11 18:48:36,342 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,342 DEBUG removeProtocol(), id=310 len(self.__pmap)=51
+2017-05-11 18:48:36,342 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,344 DEBUG removeProtocol(), id=309 len(self.__pmap)=50
+2017-05-11 18:48:36,344 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,345 DEBUG removeProtocol(), id=307 len(self.__pmap)=49
+2017-05-11 18:48:36,345 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,345 DEBUG removeProtocol(), id=311 len(self.__pmap)=48
+2017-05-11 18:48:36,345 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,346 DEBUG removeProtocol(), id=312 len(self.__pmap)=47
+2017-05-11 18:48:36,348 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,348 DEBUG removeProtocol(), id=313 len(self.__pmap)=46
+2017-05-11 18:48:36,348 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,348 DEBUG removeProtocol(), id=316 len(self.__pmap)=45
+2017-05-11 18:48:36,348 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,348 DEBUG removeProtocol(), id=315 len(self.__pmap)=44
+2017-05-11 18:48:36,349 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,349 DEBUG removeProtocol(), id=314 len(self.__pmap)=43
+2017-05-11 18:48:36,349 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,351 DEBUG removeProtocol(), id=320 len(self.__pmap)=42
+2017-05-11 18:48:36,351 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,351 DEBUG removeProtocol(), id=317 len(self.__pmap)=41
+2017-05-11 18:48:36,351 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,351 DEBUG removeProtocol(), id=318 len(self.__pmap)=40
+2017-05-11 18:48:36,351 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,351 DEBUG removeProtocol(), id=321 len(self.__pmap)=39
+2017-05-11 18:48:36,352 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,352 DEBUG removeProtocol(), id=322 len(self.__pmap)=38
+2017-05-11 18:48:36,352 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,354 DEBUG removeProtocol(), id=319 len(self.__pmap)=37
+2017-05-11 18:48:36,354 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,354 DEBUG removeProtocol(), id=325 len(self.__pmap)=36
+2017-05-11 18:48:36,355 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,355 DEBUG removeProtocol(), id=323 len(self.__pmap)=35
+2017-05-11 18:48:36,355 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,357 DEBUG removeProtocol(), id=324 len(self.__pmap)=34
+2017-05-11 18:48:36,357 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,357 DEBUG removeProtocol(), id=327 len(self.__pmap)=33
+2017-05-11 18:48:36,358 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,358 DEBUG removeProtocol(), id=326 len(self.__pmap)=32
+2017-05-11 18:48:36,358 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,358 DEBUG removeProtocol(), id=330 len(self.__pmap)=31
+2017-05-11 18:48:36,358 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,358 DEBUG removeProtocol(), id=329 len(self.__pmap)=30
+2017-05-11 18:48:36,359 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,361 DEBUG removeProtocol(), id=328 len(self.__pmap)=29
+2017-05-11 18:48:36,361 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,361 DEBUG removeProtocol(), id=333 len(self.__pmap)=28
+2017-05-11 18:48:36,362 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,362 DEBUG removeProtocol(), id=332 len(self.__pmap)=27
+2017-05-11 18:48:36,364 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,364 DEBUG removeProtocol(), id=331 len(self.__pmap)=26
+2017-05-11 18:48:36,365 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,365 DEBUG removeProtocol(), id=335 len(self.__pmap)=25
+2017-05-11 18:48:36,365 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,367 DEBUG removeProtocol(), id=334 len(self.__pmap)=24
+2017-05-11 18:48:36,367 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,368 DEBUG removeProtocol(), id=336 len(self.__pmap)=23
+2017-05-11 18:48:36,368 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,368 DEBUG removeProtocol(), id=341 len(self.__pmap)=22
+2017-05-11 18:48:36,369 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,369 DEBUG removeProtocol(), id=339 len(self.__pmap)=21
+2017-05-11 18:48:36,371 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,371 DEBUG removeProtocol(), id=338 len(self.__pmap)=20
+2017-05-11 18:48:36,375 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,375 DEBUG removeProtocol(), id=337 len(self.__pmap)=19
+2017-05-11 18:48:36,378 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,378 DEBUG removeProtocol(), id=342 len(self.__pmap)=18
+2017-05-11 18:48:36,380 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,380 DEBUG removeProtocol(), id=340 len(self.__pmap)=17
+2017-05-11 18:48:36,380 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,381 DEBUG removeProtocol(), id=343 len(self.__pmap)=16
+2017-05-11 18:48:36,381 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,381 DEBUG removeProtocol(), id=347 len(self.__pmap)=15
+2017-05-11 18:48:36,381 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,381 DEBUG removeProtocol(), id=344 len(self.__pmap)=14
+2017-05-11 18:48:36,382 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,382 DEBUG removeProtocol(), id=345 len(self.__pmap)=13
+2017-05-11 18:48:36,382 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,382 DEBUG removeProtocol(), id=348 len(self.__pmap)=12
+2017-05-11 18:48:36,384 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,384 DEBUG removeProtocol(), id=346 len(self.__pmap)=11
+2017-05-11 18:48:36,384 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,384 DEBUG removeProtocol(), id=349 len(self.__pmap)=10
+2017-05-11 18:48:36,384 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,385 DEBUG removeProtocol(), id=351 len(self.__pmap)=9
+2017-05-11 18:48:36,385 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,385 DEBUG removeProtocol(), id=353 len(self.__pmap)=8
+2017-05-11 18:48:36,387 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,387 DEBUG removeProtocol(), id=350 len(self.__pmap)=7
+2017-05-11 18:48:36,388 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,388 DEBUG removeProtocol(), id=355 len(self.__pmap)=6
+2017-05-11 18:48:36,388 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,388 DEBUG removeProtocol(), id=352 len(self.__pmap)=5
+2017-05-11 18:48:36,390 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,390 DEBUG removeProtocol(), id=354 len(self.__pmap)=4
+2017-05-11 18:48:36,391 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,391 DEBUG removeProtocol(), id=357 len(self.__pmap)=3
+2017-05-11 18:48:36,391 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:48:36,391 DEBUG removeProtocol(), id=356 len(self.__pmap)=2
+2017-05-11 18:49:04,971 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:49:04,973 DEBUG removeProtocol(), id=1 len(self.__pmap)=1
+2017-05-11 18:49:10,155 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-11 18:49:10,155 DEBUG removeProtocol(), id=0 len(self.__pmap)=0
