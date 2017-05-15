@@ -2,7 +2,6 @@
 
 from twisted.internet import protocol
 import struct
-import logging
 import time
 from common import const
 
@@ -25,13 +24,11 @@ class FProtocol(protocol.Protocol):
         return self.__lastactivetime
 
     def dataReceived(self, data):
-        logging.debug("dataReceived len:%d", len(data))
         self.__buffer += data
         self.__lastactivetime = time.time()
         try:
             self.__parseBuffer()
         except Exception:
-            logging.exception(u"dataReceived()")
             self.abort()
 
     def __parseBuffer(self):

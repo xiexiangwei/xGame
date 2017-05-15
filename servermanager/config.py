@@ -20,6 +20,8 @@ class Config(object):
         self.max_logingate = 88
         #最大登录服务器数量
         self.max_loginserver = 200
+        #最大游戏网关数量
+        self.max_gamegate = 100
 
 
 

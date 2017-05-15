@@ -21,24 +21,19 @@ import random
 import time
 from common import servermanager,utils,const
 import redishelper
-import mysqlhelper
-
 
 
 def MainStop():
-    redishelper.instance.stop()
-    mysqlhelper.instance.stop()
+    pass
 
 def MainRun(isdaemon,id):
     random.seed(time.time())
     logging.getLogger().setLevel(config.instance.log_level)
-
     handler = TimedRotatingFileHandler(filename=config.instance.log_file,when='D',interval=1)
     handler.setLevel(config.instance.log_level)
     formatter = logging.Formatter(config.instance.log_format)
     handler.setFormatter(formatter)
     logging.getLogger().addHandler(handler)
-   
     log.PythonLoggingObserver().start()
     if not isdaemon:
         handler = logging.StreamHandler()
@@ -49,23 +44,19 @@ def MainRun(isdaemon,id):
 
     #建立socket监听
     clientfactory.instance.start(config.instance.server_ip,config.instance.server_port,config.instance.max_client)
-    #连接redis
     redishelper.instance.start()
-    redishelper.instance.AddLoginServer(id,utils.getExternalIP(),config.instance.server_port)
-    #连接mysql
-    mysqlhelper.instance.start()
 
-    logging.info(u"登录服务器启动成功!服务器ID:%u",id)
+    logging.info(u"游戏网关服务器启动成功!服务器ID:%u",id)
 
 
 def StartRequest(isdaemon):
     config.instance.server_ip = utils.getExternalIP()
-    servermanager.instance.start(const.CLIENT_TYPE_LOGINSERVER,
-                                 config.instance,
-                                 MainRun,
-                                 isdaemon)
+    servermanager.instance.start(const.CLIENT_TYPE_GAMEGATE,
+                                config.instance,
+                                MainRun,
+                                isdaemon)
     reactor.run()
-    logging.info(u"登录服务器停止运行!服务器ID:%u",id)
+    logging.info(u"游戏网关服务器停止运行!服务器ID:%u",id)
     MainStop()
 
 def Run():

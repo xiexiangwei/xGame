@@ -5,7 +5,7 @@ Created on 2016年1月11日
 @author: xxw
 '''
 
-from common import baseclientfactory,const
+from common import baseclientfactory
 import client
 import time
 
@@ -22,15 +22,12 @@ class ClientFactory(baseclientfactory.BaseClientFactory):
     
     def checkClients(self, clients):
         curtime = time.time()
+
         for c in clients:
-            if c.getState() == client.CLIENT_STATE_TO_CLOSE and curtime-c.toclosetime > 10:
+            if c.getState()==client.CLIENT_STATE_TO_CLOSE and curtime-c.toclosetime > 10:
                 c.abort()
             elif curtime-c.getLastActiveTime() > 60:
-                #如果是用戶socket，60秒內沒消息直接T掉
-                if c.type == const.CLIENT_TYPE_USER:
-                    c.abort()
-                else:
-                    c.sendKeepAlive()
+                c.abort()
 
 
 instance = ClientFactory()

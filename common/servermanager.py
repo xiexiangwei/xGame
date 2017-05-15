@@ -2,16 +2,9 @@
 
 from twisted.internet.protocol import ReconnectingClientFactory
 from twisted.internet import reactor
-import logging
 import fprotocol
-import struct
 import const
 import json
-
-START_TYPE_LOGINGATE=1
-START_TYPE_LOGINSERVER=2
-
-
 
 class ConfigException(Exception):
     "xGame Config Error"
@@ -21,19 +14,16 @@ class ServerManagerFactory(ReconnectingClientFactory):
         ReconnectingClientFactory.maxDelay = 5
 
     def buildProtocol(self, addr):
-        logging.info(u"servermanager is connected !")
         self.resetDelay()
         return instance
 
     def startedConnecting(self, connector):
-        logging.info(u"servermanager is  connecting ...")
+        pass
 
     def clientConnectionLost(self, connector, reason):
-        logging.warn(u"servermanager connection is lost !")
         ReconnectingClientFactory.clientConnectionLost(self, connector, reason)
 
     def clientConnectionFailed(self, connector, reason):
-        logging.warn(u"servermanager connect fail !")
         ReconnectingClientFactory.clientConnectionFailed(self, connector, reason)
 
 
@@ -43,14 +33,12 @@ class ServerManager(fprotocol.FProtocol):
         self.startconfig = None
         self.callback = None
         self.isdaemon = False
-        self.starttype = None
+        self.servertype = None
 
-    def startLogingate(self, conf,callback,isdaemon):
+    def start(self,type,conf,callback,isdaemon):
         if conf.servermanager_ip == None:
-            logging.error(u"没有配置管理服务器地址!")
             raise ConfigException
         if conf.servermanager_port == None:
-            logging.error(u"没有配置管理服务器端口!")
             raise ConfigException
         reactor.connectTCP(conf.servermanager_ip,
                            conf.servermanager_port,
@@ -58,50 +46,27 @@ class ServerManager(fprotocol.FProtocol):
         self.startconfig = conf
         self.callback = callback
         self.isdaemon = isdaemon
-        self.starttype = START_TYPE_LOGINGATE
-
-    def startLoginServer(self,conf,callback,isdaemon):
-        if conf.servermanager_ip == None:
-            logging.error(u"没有配置管理服务器地址!")
-            raise ConfigException
-        if conf.servermanager_port == None:
-            logging.error(u"没有配置管理服务器端口!")
-            raise ConfigException
-        reactor.connectTCP(conf.servermanager_ip,
-                           conf.servermanager_port,
-                           ServerManagerFactory())
-        self.startconfig = conf
-        self.callback = callback
-        self.isdaemon = isdaemon
-        self.starttype = START_TYPE_LOGINSERVER
+        self.servertype = type
 
     def stop(self):
         pass
 
     def connectionMade(self):
-        logging.info(u"servermanager.connectionMade()")
         fprotocol.FProtocol.reset(self)
-        if self.starttype ==  START_TYPE_LOGINGATE:
-            self.sendCmd(const.LG2SM_REQUEST_CONFIG,
-                         json.dumps({'server_ip':self.startconfig.server_ip,
-                                 'server_port':self.startconfig.server_port
-                                 }
-                                ))
-        elif self.starttype == START_TYPE_LOGINSERVER:
-            self.sendCmd(const.L2SM_REQUEST_CONFIG,
-                         json.dumps({'server_ip': self.startconfig.server_ip,
-                                     'server_port': self.startconfig.server_port
-                                     }
-                                    ))
+        data = dict(server_ip=self.startconfig.server_ip,
+                    server_port=self.startconfig.server_port,
+                    server_type = self.servertype)
+        self.sendCmd(const.S2SM_REQUEST_START, json.dumps(data))
+
 
     def packetReceived(self, cmd, pkt):
-        if cmd in (const.SM2L_REPLY_CONFIG, const.SM2LG_REPLY_CONFIG):
+        if cmd == const.SM2S_START_REPLY:
             config = json.loads(pkt)
             if config[u"error"]==const.ERROR_OK:
                 self.callback(self.isdaemon,config[u"id"])
-                logging.debug(u"servermanager.packetReceived()")
-        else:
-            logging.warn(u"unknow cmd :%d",cmd)
+            else:
+                print (u"开启服务器数量达到上限!")
+
 instance = ServerManager()
 
 if __name__ == '__main__':

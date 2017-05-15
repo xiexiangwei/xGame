@@ -43,17 +43,17 @@ def MainRun(isdaemon):
     #建立socket监听
     clientfactory.instance.start(config.instance.server_ip,config.instance.server_port,config.instance.max_client)
     redishelper.instance.start()
-    clientmanager.instance.start(config.instance)
+    clientmanager.instance.start()
     logging.info(u"服务器管理服务器启动成功!")
     reactor.run()
     logging.info(u"服务器管理服务器停止运行!")
     MainStop()
 
 
-def run():
+def Run():
     daemon.run(config.instance.server_pid,MainRun)
 
 if __name__ == "__main__":
-    run()
+    Run()
 
 

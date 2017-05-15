@@ -8,12 +8,8 @@ import struct
 from common import fprotocol,const
 import logging
 
-#登录
-def c2lg_login(client,pkt):
-    client.Trans2Loginserver(const.C2LG_LOGIN, pkt)
-
 __cmdTable = {
-                const.C2LG_LOGIN:c2lg_login,
+
              }
 
 def parse(clinet, cmd, pkt):
