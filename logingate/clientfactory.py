@@ -27,7 +27,7 @@ class ClientFactory(baseclientfactory.BaseClientFactory):
             if c.getState()==client.CLIENT_STATE_TO_CLOSE and curtime-c.toclosetime > 10:
                 c.abort()
             elif curtime-c.getLastActiveTime() > 60:
-                c.sendKeepAlive()
+                c.abort()
 
 
 instance = ClientFactory()
