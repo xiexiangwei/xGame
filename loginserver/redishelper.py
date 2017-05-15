@@ -98,6 +98,24 @@ class RedisHelper(object):
         self.loginserver_ip = None
         self.loginserver_port = None
 
+    #记录用户登录token
+    def RecordAccountToken(self,account_id,token):
+        cmd = redispool.RedisCommand(index=self.HashIndex(account_id),
+                                 func=self.RecordAccountTokenFunc,
+                                 params=(account_id,token),
+                                 ctx=(account_id,token),
+                                 finish=self.RecordAccountTokenFinish)
+        self.__redispool.putCmd(cmd)
+
+    def RecordAccountTokenFunc(self,redisclient,account_id,token):
+        redisclient.sadd(u"accounttoken:accounttoken_list", account_id)
+        token_key = u"accounttoken:accounttoken%d" % account_id
+        redisclient.set(token_key,token)
+        redisclient.expire(token_key,60*60*12)
+
+    def RecordAccountTokenFinish(self, error,ctx,rows):
+       logging.debug(u"RecordAccountTokenFinish() error:%s",error)
+
 
 
 

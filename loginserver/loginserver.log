@@ -587,3 +587,141 @@ ValueError: No JSON object could be decoded
 2017-05-15 13:19:20,398 DEBUG dataReceived len:27
 2017-05-15 13:19:20,401 DEBUG Login() account_name:xiexiangwei account_pwd:123456
 2017-05-15 13:19:20,401 DEBUG 登录成功
+2017-05-15 13:20:16,546 DEBUG dataReceived len:8
+2017-05-15 13:20:16,546 WARNING unknow cmd :1
+2017-05-15 13:20:43,253 WARNING servermanager connection is lost !
+2017-05-15 13:20:43,253 INFO <twisted.internet.iocpreactor.tcp.Connector instance at 0x0000000002BD10C8> will retry in 2 seconds
+2017-05-15 13:20:43,255 INFO Stopping factory <common.servermanager.ServerManagerFactory instance at 0x0000000002BD1088>
+2017-05-15 13:20:43,329 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 13:20:43,331 DEBUG removeProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 14:53:23,812 INFO ClientFactory starting on 3002
+2017-05-15 14:53:23,812 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000046B2288>
+2017-05-15 14:53:23,825 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:53:23,828 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:53:23,832 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:53:23,838 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:53:23,842 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:53:23,848 INFO 登录服务器启动成功!服务器ID:199
+2017-05-15 14:53:23,848 DEBUG servermanager.packetReceived()
+2017-05-15 14:53:23,852 INFO AddLoginServerFinish() [199] 192.168.111.1:3002
+2017-05-15 14:53:23,871 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 14:53:23,871 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 14:53:29,367 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 14:53:29,367 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 14:53:31,408 DEBUG dataReceived len:27
+2017-05-15 14:53:31,408 DEBUG Login() account_name:xiexiangwei account_pwd:123456
+2017-05-15 14:53:31,414 ERROR cmd.execute()
+Traceback (most recent call last):
+  File "C:\xGame\common\dbpool.py", line 232, in svc
+    cmd.execute(self.__con)
+  File "C:\xGame\common\dbpool.py", line 59, in execute
+    c.execute(self.__sql, self.__params)
+  File "C:\Python27\lib\site-packages\MySQLdb\cursors.py", line 183, in execute
+    query = query % db.literal(args)
+TypeError: not all arguments converted during string formatting
+2017-05-15 14:53:31,415 ERROR cmd.excute exception, class=<class 'common.dbpool.QueryCmd'> error=not all arguments converted during string formatting
+2017-05-15 14:56:36,503 INFO ClientFactory starting on 3002
+2017-05-15 14:56:36,503 INFO Starting factory <clientfactory.ClientFactory instance at 0x0000000004316288>
+2017-05-15 14:56:36,516 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:56:36,519 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:56:36,525 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:56:36,529 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:56:36,533 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:56:36,538 INFO 登录服务器启动成功!服务器ID:199
+2017-05-15 14:56:36,539 DEBUG servermanager.packetReceived()
+2017-05-15 14:56:36,539 INFO AddLoginServerFinish() [199] 192.168.111.1:3002
+2017-05-15 14:56:36,555 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 14:56:36,555 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 14:56:45,278 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 14:56:45,279 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 14:56:47,325 DEBUG dataReceived len:27
+2017-05-15 14:56:47,325 DEBUG Login() account_name:xiexiangwei account_pwd:123456
+2017-05-15 14:57:46,020 DEBUG dataReceived len:8
+2017-05-15 14:57:46,020 WARNING unknow cmd :1
+2017-05-15 14:58:56,020 DEBUG dataReceived len:8
+2017-05-15 14:58:56,022 WARNING unknow cmd :1
+2017-05-15 15:00:06,020 DEBUG dataReceived len:8
+2017-05-15 15:00:06,022 WARNING unknow cmd :1
+2017-05-15 15:01:16,020 DEBUG dataReceived len:8
+2017-05-15 15:01:16,020 WARNING unknow cmd :1
+2017-05-15 15:02:26,020 DEBUG dataReceived len:8
+2017-05-15 15:02:26,020 WARNING unknow cmd :1
+2017-05-15 15:03:36,020 DEBUG dataReceived len:8
+2017-05-15 15:03:36,020 WARNING unknow cmd :1
+2017-05-15 15:04:46,020 DEBUG dataReceived len:8
+2017-05-15 15:04:46,020 WARNING unknow cmd :1
+2017-05-15 15:05:56,020 DEBUG dataReceived len:8
+2017-05-15 15:05:56,020 WARNING unknow cmd :1
+2017-05-15 15:07:06,020 DEBUG dataReceived len:8
+2017-05-15 15:07:06,020 WARNING unknow cmd :1
+2017-05-15 15:08:16,020 DEBUG dataReceived len:8
+2017-05-15 15:08:16,022 WARNING unknow cmd :1
+2017-05-15 15:09:26,020 DEBUG dataReceived len:8
+2017-05-15 15:09:26,020 WARNING unknow cmd :1
+2017-05-15 15:10:36,020 DEBUG dataReceived len:8
+2017-05-15 15:10:36,020 WARNING unknow cmd :1
+2017-05-15 15:11:46,020 DEBUG dataReceived len:8
+2017-05-15 15:11:46,020 WARNING unknow cmd :1
+2017-05-15 15:12:56,020 DEBUG dataReceived len:8
+2017-05-15 15:12:56,022 WARNING unknow cmd :1
+2017-05-15 15:14:06,020 DEBUG dataReceived len:8
+2017-05-15 15:14:06,020 WARNING unknow cmd :1
+2017-05-15 15:15:16,020 DEBUG dataReceived len:8
+2017-05-15 15:15:16,022 WARNING unknow cmd :1
+2017-05-15 15:16:26,020 DEBUG dataReceived len:8
+2017-05-15 15:16:26,020 WARNING unknow cmd :1
+2017-05-15 15:17:36,020 DEBUG dataReceived len:8
+2017-05-15 15:17:36,020 WARNING unknow cmd :1
+2017-05-15 15:18:46,020 DEBUG dataReceived len:8
+2017-05-15 15:18:46,022 WARNING unknow cmd :1
+2017-05-15 15:19:56,020 DEBUG dataReceived len:8
+2017-05-15 15:19:56,022 WARNING unknow cmd :1
+2017-05-15 15:21:06,020 DEBUG dataReceived len:8
+2017-05-15 15:21:06,020 WARNING unknow cmd :1
+2017-05-15 15:22:16,020 DEBUG dataReceived len:8
+2017-05-15 15:22:16,020 WARNING unknow cmd :1
+2017-05-15 15:23:26,020 DEBUG dataReceived len:8
+2017-05-15 15:23:26,020 WARNING unknow cmd :1
+2017-05-15 15:24:36,020 DEBUG dataReceived len:8
+2017-05-15 15:24:36,020 WARNING unknow cmd :1
+2017-05-15 15:25:46,020 DEBUG dataReceived len:8
+2017-05-15 15:25:46,020 WARNING unknow cmd :1
+2017-05-15 15:26:56,022 DEBUG dataReceived len:8
+2017-05-15 15:26:56,023 WARNING unknow cmd :1
+2017-05-15 15:28:06,020 DEBUG dataReceived len:8
+2017-05-15 15:28:06,020 WARNING unknow cmd :1
+2017-05-15 15:29:16,020 DEBUG dataReceived len:8
+2017-05-15 15:29:16,020 WARNING unknow cmd :1
+2017-05-15 15:29:27,440 WARNING servermanager connection is lost !
+2017-05-15 15:29:27,441 INFO <twisted.internet.iocpreactor.tcp.Connector instance at 0x0000000002D49C08> will retry in 2 seconds
+2017-05-15 15:29:27,441 INFO Stopping factory <common.servermanager.ServerManagerFactory instance at 0x0000000002D49B48>
+2017-05-15 15:29:50,653 INFO ClientFactory starting on 3002
+2017-05-15 15:29:50,654 INFO Starting factory <clientfactory.ClientFactory instance at 0x0000000002DCF888>
+2017-05-15 15:29:50,664 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 15:29:50,667 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 15:29:50,673 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 15:29:50,677 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 15:29:50,683 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 15:29:50,687 INFO 登录服务器启动成功!服务器ID:199
+2017-05-15 15:29:50,687 DEBUG servermanager.packetReceived()
+2017-05-15 15:29:50,700 INFO AddLoginServerFinish() [199] 192.168.111.1:3002
+2017-05-15 15:29:50,707 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 15:29:50,707 WARNING mysql 127.0.0.1:3306 connected
+2017-05-15 15:30:54,464 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 15:30:54,466 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 15:30:57,118 DEBUG dataReceived len:27
+2017-05-15 15:30:57,119 DEBUG Login() account_name:xiexiangwei account_pwd:123456
+2017-05-15 15:30:57,125 DEBUG LoginFinish() account:xiexiangwei:123456  rows:((1L, 0L),)
+2017-05-15 15:30:57,125 DEBUG LoginFinish() account not exists! xiexiangwei:123456
+2017-05-15 15:30:59,625 DEBUG dataReceived len:8
+2017-05-15 15:30:59,625 WARNING unknow cmd :1
+2017-05-15 15:31:31,628 DEBUG buildProtocol(), id=1 len(self.__pmap)=1
+2017-05-15 15:31:31,628 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 15:31:33,375 DEBUG dataReceived len:20
+2017-05-15 15:31:33,375 DEBUG Login() account_name:test account_pwd:123456
+2017-05-15 15:31:33,391 DEBUG LoginFinish() account:test:123456  rows:((0L, 1L),)
+2017-05-15 15:31:33,391 DEBUG LoginFinish() success! test:123456
+2017-05-15 15:31:33,404 DEBUG RecordAccountTokenFinish() error:None
+2017-05-15 15:32:09,625 DEBUG dataReceived len:8
+2017-05-15 15:32:09,625 WARNING unknow cmd :1

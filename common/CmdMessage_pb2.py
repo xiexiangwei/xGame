@@ -13,7 +13,7 @@ from google.protobuf import descriptor_pb2
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='CmdMessage.proto',
   package='',
-  serialized_pb='\n\x10\x43mdMessage.proto\"\x1b\n\x19Request_Get_LoginGateInfo\"B\n\x17RePly_Get_LoginGateInfo\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\n\n\x02ip\x18\x02 \x01(\t\x12\x0c\n\x04port\x18\x03 \x01(\r\"(\n\x17Reply_Connect_Logingate\x12\r\n\x05\x65rror\x18\x01 \x02(\r\":\n\rRequest_Login\x12\x14\n\x0c\x61\x63\x63ount_name\x18\x01 \x02(\t\x12\x13\n\x0b\x61\x63\x63ount_pwd\x18\x02 \x02(\t\"\x1c\n\x0bReply_Login\x12\r\n\x05\x65rror\x18\x01 \x02(\r')
+  serialized_pb='\n\x10\x43mdMessage.proto\"\x1b\n\x19Request_Get_LoginGateInfo\"B\n\x17RePly_Get_LoginGateInfo\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\n\n\x02ip\x18\x02 \x01(\t\x12\x0c\n\x04port\x18\x03 \x01(\r\"(\n\x17Reply_Connect_Logingate\x12\r\n\x05\x65rror\x18\x01 \x02(\r\":\n\rRequest_Login\x12\x14\n\x0c\x61\x63\x63ount_name\x18\x01 \x02(\t\x12\x13\n\x0b\x61\x63\x63ount_pwd\x18\x02 \x02(\t\"?\n\x0bReply_Login\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\r\n\x05token\x18\x03 \x01(\t')
 
 
 
@@ -158,6 +158,20 @@ _REPLY_LOGIN = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='account_id', full_name='Reply_Login.account_id', index=1,
+      number=2, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='token', full_name='Reply_Login.token', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=unicode("", "utf-8"),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -168,7 +182,7 @@ _REPLY_LOGIN = _descriptor.Descriptor(
   is_extendable=False,
   extension_ranges=[],
   serialized_start=219,
-  serialized_end=247,
+  serialized_end=282,
 )
 
 DESCRIPTOR.message_types_by_name['Request_Get_LoginGateInfo'] = _REQUEST_GET_LOGINGATEINFO

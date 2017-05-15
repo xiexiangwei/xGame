@@ -1628,3 +1628,234 @@ error: argument for 's' must be a string
 2017-05-15 13:19:20,401 DEBUG loginserver parse() func:l2lg_transform_client
 2017-05-15 13:19:20,401 DEBUG l2lg_transform_client parse() data:{u'cmd': 802, u'pkt': u'\x08\x00'}
 2017-05-15 13:19:20,404 DEBUG send2client() cmd:802 data:<type 'str'>
+2017-05-15 13:20:16,546 DEBUG dataReceived len:8
+2017-05-15 13:20:16,546 WARNING unknow cmd :1
+2017-05-15 13:20:22,947 DEBUG dataReceived len:8
+2017-05-15 13:20:22,947 DEBUG loginserver parse() func:keeplive
+2017-05-15 13:20:43,253 WARNING servermanager connection is lost !
+2017-05-15 13:20:43,255 INFO <twisted.internet.iocpreactor.tcp.Connector instance at 0x00000000047028C8> will retry in 2 seconds
+2017-05-15 13:20:43,255 INFO Stopping factory <common.servermanager.ServerManagerFactory instance at 0x0000000004702888>
+2017-05-15 14:53:20,164 INFO ClientFactory starting on 2001
+2017-05-15 14:53:20,164 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000047477C8>
+2017-05-15 14:53:20,176 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:53:20,180 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:53:20,184 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:53:20,187 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:53:20,191 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:53:20,196 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:53:20,200 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:53:20,203 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:53:20,207 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:53:20,210 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:53:20,210 INFO 登录网关服务器启动成功!服务器ID:87
+2017-05-15 14:53:20,211 DEBUG servermanager.packetReceived()
+2017-05-15 14:53:29,364 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 14:53:29,364 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 14:53:29,364 WARNING 分配用户空闲登录服务器成功 client_id:0 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 14:53:29,365 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000002C4B048>
+2017-05-15 14:53:29,365 WARNING  LoginServer connecting!!!
+2017-05-15 14:53:29,365 WARNING  LoginServer CONNECTED!!!
+2017-05-15 14:53:29,367 WARNING LoginServer.connectionMade()
+2017-05-15 14:53:31,407 DEBUG dataReceived len:27
+2017-05-15 14:53:31,407 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 14:54:12,236 WARNING  LoginServer DOWN!!! reason:[Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 14:54:12,236 WARNING LoginServer.onConnectionLost()
+2017-05-15 14:54:12,236 INFO Stopping factory <loginserver.LoginServerFactory instance at 0x0000000002C4B048>
+2017-05-15 14:56:30,953 INFO ClientFactory starting on 2001
+2017-05-15 14:56:30,954 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000046077C8>
+2017-05-15 14:56:30,967 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:56:30,971 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:56:30,976 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:56:30,982 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:56:31,002 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:56:31,006 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:56:31,013 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:56:31,036 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:56:31,040 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:56:31,043 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 14:56:31,043 INFO 登录网关服务器启动成功!服务器ID:87
+2017-05-15 14:56:31,045 DEBUG servermanager.packetReceived()
+2017-05-15 14:56:45,275 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 14:56:45,276 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 14:56:45,276 WARNING 分配用户空闲登录服务器成功 client_id:0 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 14:56:45,276 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000002BCB388>
+2017-05-15 14:56:45,276 WARNING  LoginServer connecting!!!
+2017-05-15 14:56:45,278 WARNING  LoginServer CONNECTED!!!
+2017-05-15 14:56:45,279 WARNING LoginServer.connectionMade()
+2017-05-15 14:56:47,323 DEBUG dataReceived len:27
+2017-05-15 14:56:47,323 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 14:57:36,020 DEBUG dataReceived len:8
+2017-05-15 14:57:36,020 WARNING unknow cmd :1
+2017-05-15 14:57:56,505 DEBUG dataReceived len:8
+2017-05-15 14:57:56,505 DEBUG loginserver parse() func:keeplive
+2017-05-15 14:58:46,020 DEBUG dataReceived len:8
+2017-05-15 14:58:46,020 WARNING unknow cmd :1
+2017-05-15 14:59:06,505 DEBUG dataReceived len:8
+2017-05-15 14:59:06,505 DEBUG loginserver parse() func:keeplive
+2017-05-15 14:59:56,020 DEBUG dataReceived len:8
+2017-05-15 14:59:56,020 WARNING unknow cmd :1
+2017-05-15 15:00:16,505 DEBUG dataReceived len:8
+2017-05-15 15:00:16,505 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:01:06,020 DEBUG dataReceived len:8
+2017-05-15 15:01:06,020 WARNING unknow cmd :1
+2017-05-15 15:01:26,505 DEBUG dataReceived len:8
+2017-05-15 15:01:26,505 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:02:16,020 DEBUG dataReceived len:8
+2017-05-15 15:02:16,020 WARNING unknow cmd :1
+2017-05-15 15:02:36,505 DEBUG dataReceived len:8
+2017-05-15 15:02:36,505 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:03:16,022 DEBUG dataReceived len:8
+2017-05-15 15:03:16,022 WARNING unknow cmd :1
+2017-05-15 15:03:46,505 DEBUG dataReceived len:8
+2017-05-15 15:03:46,506 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:04:26,022 DEBUG dataReceived len:8
+2017-05-15 15:04:26,022 WARNING unknow cmd :1
+2017-05-15 15:04:56,505 DEBUG dataReceived len:8
+2017-05-15 15:04:56,506 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:05:36,022 DEBUG dataReceived len:8
+2017-05-15 15:05:36,022 WARNING unknow cmd :1
+2017-05-15 15:06:06,505 DEBUG dataReceived len:8
+2017-05-15 15:06:06,506 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:06:46,022 DEBUG dataReceived len:8
+2017-05-15 15:06:46,023 WARNING unknow cmd :1
+2017-05-15 15:07:16,505 DEBUG dataReceived len:8
+2017-05-15 15:07:16,505 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:07:56,022 DEBUG dataReceived len:8
+2017-05-15 15:07:56,022 WARNING unknow cmd :1
+2017-05-15 15:08:26,505 DEBUG dataReceived len:8
+2017-05-15 15:08:26,505 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:09:06,022 DEBUG dataReceived len:8
+2017-05-15 15:09:06,022 WARNING unknow cmd :1
+2017-05-15 15:09:36,505 DEBUG dataReceived len:8
+2017-05-15 15:09:36,505 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:10:16,022 DEBUG dataReceived len:8
+2017-05-15 15:10:16,022 WARNING unknow cmd :1
+2017-05-15 15:10:46,505 DEBUG dataReceived len:8
+2017-05-15 15:10:46,505 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:11:26,022 DEBUG dataReceived len:8
+2017-05-15 15:11:26,023 WARNING unknow cmd :1
+2017-05-15 15:11:56,505 DEBUG dataReceived len:8
+2017-05-15 15:11:56,506 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:12:36,022 DEBUG dataReceived len:8
+2017-05-15 15:12:36,023 WARNING unknow cmd :1
+2017-05-15 15:13:06,505 DEBUG dataReceived len:8
+2017-05-15 15:13:06,505 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:13:46,022 DEBUG dataReceived len:8
+2017-05-15 15:13:46,022 WARNING unknow cmd :1
+2017-05-15 15:14:16,505 DEBUG dataReceived len:8
+2017-05-15 15:14:16,505 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:14:56,022 DEBUG dataReceived len:8
+2017-05-15 15:14:56,022 WARNING unknow cmd :1
+2017-05-15 15:15:26,505 DEBUG dataReceived len:8
+2017-05-15 15:15:26,506 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:16:06,022 DEBUG dataReceived len:8
+2017-05-15 15:16:06,023 WARNING unknow cmd :1
+2017-05-15 15:16:36,505 DEBUG dataReceived len:8
+2017-05-15 15:16:36,506 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:17:16,022 DEBUG dataReceived len:8
+2017-05-15 15:17:16,022 WARNING unknow cmd :1
+2017-05-15 15:17:46,505 DEBUG dataReceived len:8
+2017-05-15 15:17:46,506 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:18:26,022 DEBUG dataReceived len:8
+2017-05-15 15:18:26,023 WARNING unknow cmd :1
+2017-05-15 15:18:46,506 DEBUG dataReceived len:8
+2017-05-15 15:18:46,506 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:19:36,022 DEBUG dataReceived len:8
+2017-05-15 15:19:36,022 WARNING unknow cmd :1
+2017-05-15 15:19:56,505 DEBUG dataReceived len:8
+2017-05-15 15:19:56,506 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:20:46,022 DEBUG dataReceived len:8
+2017-05-15 15:20:46,022 WARNING unknow cmd :1
+2017-05-15 15:21:06,505 DEBUG dataReceived len:8
+2017-05-15 15:21:06,505 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:21:56,022 DEBUG dataReceived len:8
+2017-05-15 15:21:56,022 WARNING unknow cmd :1
+2017-05-15 15:22:16,505 DEBUG dataReceived len:8
+2017-05-15 15:22:16,505 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:23:06,022 DEBUG dataReceived len:8
+2017-05-15 15:23:06,022 WARNING unknow cmd :1
+2017-05-15 15:23:26,505 DEBUG dataReceived len:8
+2017-05-15 15:23:26,505 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:24:16,022 DEBUG dataReceived len:8
+2017-05-15 15:24:16,022 WARNING unknow cmd :1
+2017-05-15 15:24:36,506 DEBUG dataReceived len:8
+2017-05-15 15:24:36,507 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:25:26,022 DEBUG dataReceived len:8
+2017-05-15 15:25:26,022 WARNING unknow cmd :1
+2017-05-15 15:25:46,505 DEBUG dataReceived len:8
+2017-05-15 15:25:46,505 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:26:36,022 DEBUG dataReceived len:8
+2017-05-15 15:26:36,022 WARNING unknow cmd :1
+2017-05-15 15:26:56,505 DEBUG dataReceived len:8
+2017-05-15 15:26:56,506 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:27:46,022 DEBUG dataReceived len:8
+2017-05-15 15:27:46,022 WARNING unknow cmd :1
+2017-05-15 15:28:06,505 DEBUG dataReceived len:8
+2017-05-15 15:28:06,505 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:28:56,022 DEBUG dataReceived len:8
+2017-05-15 15:28:56,022 WARNING unknow cmd :1
+2017-05-15 15:29:16,505 DEBUG dataReceived len:8
+2017-05-15 15:29:16,505 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:29:27,440 WARNING servermanager connection is lost !
+2017-05-15 15:29:27,441 INFO <twisted.internet.iocpreactor.tcp.Connector instance at 0x0000000004610888> will retry in 2 seconds
+2017-05-15 15:29:27,441 INFO Stopping factory <common.servermanager.ServerManagerFactory instance at 0x0000000004610848>
+2017-05-15 15:29:28,066 WARNING  LoginServer DOWN!!! reason:[Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 15:29:28,069 WARNING LoginServer.onConnectionLost()
+2017-05-15 15:29:28,069 INFO Stopping factory <loginserver.LoginServerFactory instance at 0x0000000002BCB388>
+2017-05-15 15:29:45,431 INFO ClientFactory starting on 2001
+2017-05-15 15:29:45,433 INFO Starting factory <clientfactory.ClientFactory instance at 0x00000000046F9A08>
+2017-05-15 15:29:45,444 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 15:29:45,450 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 15:29:45,454 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 15:29:45,460 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 15:29:45,464 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 15:29:45,470 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 15:29:45,473 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 15:29:45,480 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 15:29:45,483 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 15:29:45,487 INFO redis connected 192.168.1.6:6379[0]
+2017-05-15 15:29:45,487 INFO 登录网关服务器启动成功!服务器ID:87
+2017-05-15 15:29:45,489 DEBUG servermanager.packetReceived()
+2017-05-15 15:30:49,625 DEBUG dataReceived len:8
+2017-05-15 15:30:49,625 WARNING unknow cmd :1
+2017-05-15 15:30:54,461 DEBUG buildProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 15:30:54,461 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 15:30:54,463 WARNING 分配用户空闲登录服务器成功 client_id:0 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 15:30:54,463 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000002CE0048>
+2017-05-15 15:30:54,463 WARNING  LoginServer connecting!!!
+2017-05-15 15:30:54,464 WARNING  LoginServer CONNECTED!!!
+2017-05-15 15:30:54,464 WARNING LoginServer.connectionMade()
+2017-05-15 15:30:57,118 DEBUG dataReceived len:27
+2017-05-15 15:30:57,118 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 15:30:57,127 DEBUG dataReceived len:37
+2017-05-15 15:30:57,127 DEBUG loginserver parse() func:l2lg_transform_client
+2017-05-15 15:30:57,127 DEBUG l2lg_transform_client parse() data:{u'cmd': 802, u'pkt': u'\x08\x06'}
+2017-05-15 15:31:10,506 DEBUG Client.connectionLost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly: Connection done.
+]
+2017-05-15 15:31:10,506 DEBUG removeProtocol(), id=0 len(self.__pmap)=0
+2017-05-15 15:31:31,625 DEBUG buildProtocol(), id=1 len(self.__pmap)=0
+2017-05-15 15:31:31,625 DEBUG Client.connectionMade() ip=192.168.111.1
+2017-05-15 15:31:31,625 WARNING 分配用户空闲登录服务器成功 client_id:1 loginserver_id:199 loginserver_ip:192.168.111.1 loginserver_port:3002
+2017-05-15 15:31:31,625 INFO Starting factory <loginserver.LoginServerFactory instance at 0x0000000002CE0A88>
+2017-05-15 15:31:31,627 WARNING  LoginServer connecting!!!
+2017-05-15 15:31:31,628 WARNING  LoginServer CONNECTED!!!
+2017-05-15 15:31:31,628 WARNING LoginServer.connectionMade()
+2017-05-15 15:31:33,374 DEBUG dataReceived len:20
+2017-05-15 15:31:33,374 DEBUG clientparse() cmd:c2lg_login
+2017-05-15 15:31:33,392 DEBUG dataReceived len:88
+2017-05-15 15:31:33,392 DEBUG loginserver parse() func:l2lg_transform_client
+2017-05-15 15:31:33,392 DEBUG l2lg_transform_client parse() data:{u'cmd': 802, u'pkt': u'\x08\x00\x10\x01\x1a GAWTCNBZGQ4DGMZUHEZS4MZZGIYDAMA='}
+2017-05-15 15:31:49,625 DEBUG dataReceived len:8
+2017-05-15 15:31:49,625 WARNING unknow cmd :1
+2017-05-15 15:32:00,654 DEBUG dataReceived len:8
+2017-05-15 15:32:00,655 DEBUG loginserver parse() func:keeplive
+2017-05-15 15:32:15,578 WARNING  LoginServer DOWN!!! reason:[Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 15:32:15,579 WARNING LoginServer.onConnectionLost()
+2017-05-15 15:32:15,579 INFO Stopping factory <loginserver.LoginServerFactory instance at 0x0000000002CE0A88>
+2017-05-15 15:32:15,581 WARNING  LoginServer DOWN!!! reason:[Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: read error -- unknown (64).
+]
+2017-05-15 15:32:15,581 WARNING LoginServer.onConnectionLost()
+2017-05-15 15:32:15,585 INFO Stopping factory <loginserver.LoginServerFactory instance at 0x0000000002CE0048>

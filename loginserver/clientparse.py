@@ -8,18 +8,16 @@ import struct
 from common import fprotocol,const,CmdMessage_pb2
 import json
 import logging
+import mysqlhelper
 
 
 def Login(client,pkt):
     login_request = CmdMessage_pb2.Request_Login()
     login_request.ParseFromString(pkt)
     logging.debug(u"Login() account_name:%s account_pwd:%s",login_request.account_name,login_request.account_pwd)
-
-    reply = CmdMessage_pb2.Reply_Login()
-    reply.error = const.ERROR_OK
-    if login_request.account_name and login_request.account_pwd:
-        logging.debug(u"登录成功")
-    client.send2client(const.LG2C_LOGIN_RESULT,reply.SerializeToString())
+    mysqlhelper.instance.Login(client,
+                               login_request.account_name,
+                               login_request.account_pwd)
 
 __cmdTable = {
                 const.C2LG_Login:Login,
