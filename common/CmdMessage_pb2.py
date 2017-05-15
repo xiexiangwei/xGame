@@ -13,7 +13,7 @@ from google.protobuf import descriptor_pb2
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='CmdMessage.proto',
   package='',
-  serialized_pb='\n\x10\x43mdMessage.proto\"\x1b\n\x19Request_Get_LoginGateInfo\"B\n\x17RePly_Get_LoginGateInfo\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\n\n\x02ip\x18\x02 \x01(\t\x12\x0c\n\x04port\x18\x03 \x01(\r')
+  serialized_pb='\n\x10\x43mdMessage.proto\"\x1b\n\x19Request_Get_LoginGateInfo\"B\n\x17RePly_Get_LoginGateInfo\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\n\n\x02ip\x18\x02 \x01(\t\x12\x0c\n\x04port\x18\x03 \x01(\r\"(\n\x17Reply_Connect_Logingate\x12\r\n\x05\x65rror\x18\x01 \x02(\r')
 
 
 
@@ -80,8 +80,37 @@ _REPLY_GET_LOGINGATEINFO = _descriptor.Descriptor(
   serialized_end=115,
 )
 
+
+_REPLY_CONNECT_LOGINGATE = _descriptor.Descriptor(
+  name='Reply_Connect_Logingate',
+  full_name='Reply_Connect_Logingate',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='error', full_name='Reply_Connect_Logingate.error', index=0,
+      number=1, type=13, cpp_type=3, label=2,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  extension_ranges=[],
+  serialized_start=117,
+  serialized_end=157,
+)
+
 DESCRIPTOR.message_types_by_name['Request_Get_LoginGateInfo'] = _REQUEST_GET_LOGINGATEINFO
 DESCRIPTOR.message_types_by_name['RePly_Get_LoginGateInfo'] = _REPLY_GET_LOGINGATEINFO
+DESCRIPTOR.message_types_by_name['Reply_Connect_Logingate'] = _REPLY_CONNECT_LOGINGATE
 
 class Request_Get_LoginGateInfo(_message.Message):
   __metaclass__ = _reflection.GeneratedProtocolMessageType
@@ -94,6 +123,12 @@ class RePly_Get_LoginGateInfo(_message.Message):
   DESCRIPTOR = _REPLY_GET_LOGINGATEINFO
 
   # @@protoc_insertion_point(class_scope:RePly_Get_LoginGateInfo)
+
+class Reply_Connect_Logingate(_message.Message):
+  __metaclass__ = _reflection.GeneratedProtocolMessageType
+  DESCRIPTOR = _REPLY_CONNECT_LOGINGATE
+
+  # @@protoc_insertion_point(class_scope:Reply_Connect_Logingate)
 
 
 # @@protoc_insertion_point(module_scope)
