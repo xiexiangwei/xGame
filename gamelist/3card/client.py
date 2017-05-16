@@ -7,16 +7,17 @@ Created on 2016年1月11日
 
 import logging
 import time
+
 from twisted.internet import protocol
-from common import fprotocol,const
-import clientfactory
+
 import clientparse
-import clientmanager
+from common import fprotocol
 
 CLIENT_STATE_INIT               = 0
 CLIENT_STATE_AUTH               = 1
 CLIENT_STATE_LOGINED            = 2
 CLIENT_STATE_TO_CLOSE           = 3
+
 
 class Client(fprotocol.FProtocol):
     def __init__(self, pid, addr):
@@ -26,8 +27,6 @@ class Client(fprotocol.FProtocol):
         self.__ip = addr.host.decode('utf-8')
         self.toclosetime = time.time()
         self.state = CLIENT_STATE_INIT
-        self.id = None
-        self.type= const.CLIENT_TYPE_USER
 
     def getId(self):
         return self.__id
@@ -51,17 +50,12 @@ class Client(fprotocol.FProtocol):
             self.abort()
 
     def connectionMade(self):
-        logging.debug(u"Client.connectionMade() ip=%s", self.__ip) 
+        logging.debug(u"Client.connectionMade() ip=%s", self.__ip)
+
    
     def connectionLost(self, reason=protocol.connectionDone):
         logging.debug(u"Client.connectionLost %s", reason) 
-        clientfactory.instance.removeProtocol(self)
-        if self.type == const.CLIENT_TYPE_LOGINGATE:
-            clientmanager.instance.RemoveLogingate(self.id)
-        elif self.type == const.CLIENT_TYPE_LOGINSERVER:
-            clientmanager.instance.RemoveLoginServer(self.id)
-        elif self.type == const.CLIENT_TYPE_3CARD:
-            clientmanager.instance.Remove3Card(self.id)
+
     
     def goToClose(self):
         self.state = CLIENT_STATE_TO_CLOSE
@@ -70,4 +64,5 @@ class Client(fprotocol.FProtocol):
     def kick(self):
         logging.debug(u"Client.kick()")
         self.goToClose()
-        
+
+

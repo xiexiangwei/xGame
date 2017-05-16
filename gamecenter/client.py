@@ -7,9 +7,11 @@ Created on 2016年1月11日
 
 import logging
 import time
+
 from twisted.internet import protocol
-from common import fprotocol
+
 import clientparse
+from common import fprotocol
 
 CLIENT_STATE_INIT               = 0
 CLIENT_STATE_AUTH               = 1

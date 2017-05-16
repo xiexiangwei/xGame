@@ -18,16 +18,16 @@ def s2sm_request_start(client, pkt):
         active_id=clientmanager.instance.GetLogingateID()
     elif server_config[u"server_type"]==const.CLIENT_TYPE_LOGINSERVER:
         active_id = clientmanager.instance.GetLoginServerID()
-    elif server_config[u"server_type"] == const.CLIENT_TYPE_GAMEGATE:
-        active_id = clientmanager.instance.GetGameGateID()
+    elif server_config[u"server_type"] == const.CLIENT_TYPE_3CARD:
+        active_id = clientmanager.instance.Get3CardID()
 
     if active_id != None:
         client.id = active_id
         client.type = server_config[u"server_type"]
         if server_config[u"server_type"] == const.CLIENT_TYPE_LOGINGATE:
             clientmanager.instance.AddLogingate(active_id,server_config[u"server_ip"],server_config[u"server_port"])
-        elif server_config[u"server_type"] == const.CLIENT_TYPE_GAMEGATE:
-            clientmanager.instance.AddGameGate(active_id, server_config[u"server_ip"], server_config[u"server_port"])
+        elif server_config[u"server_type"] == const.CLIENT_TYPE_3CARD:
+            clientmanager.instance.Add3Card(active_id, server_config[u"server_ip"], server_config[u"server_port"])
         reply[u"id"]=active_id
     else:
         reply[u"error"]=const.ERROR_SERVER_FULL

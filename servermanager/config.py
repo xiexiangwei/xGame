@@ -10,18 +10,18 @@ class Config(object):
         self.log_format = u"%(asctime)s %(levelname)s %(message)s"
         self.log_level = u"DEBUG"
 
-        self.redis_ip = u"192.168.1.6"
+        self.redis_ip = u"192.168.195.128"
         self.redis_port = 6379
         self.redis_db = 0
-        self.redis_pwd = u"zhanghe"
+        self.redis_pwd = u""
         self.redis_linkcount=1
 
         #最大登录网关数量
         self.max_logingate = 88
         #最大登录服务器数量
         self.max_loginserver = 200
-        #最大游戏网关数量
-        self.max_gamegate = 100
+        #扎金花游戏服务器最大数量
+        self.max_3cardserver = 100
 
 
 

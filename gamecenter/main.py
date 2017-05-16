@@ -1,6 +1,8 @@
 #coding:utf-8
 
-import sys,platform
+import platform
+import sys
+
 sys.path.append("../")
 if 'twisted.internet.reactor' not in sys.modules:
     if platform.system() == "Linux":
@@ -19,17 +21,16 @@ import clientfactory
 import config
 import random
 import time
-from common import servermanager,utils,const
 import redishelper
 
 
 def MainStop():
     pass
 
-def MainRun(isdaemon,id):
+def MainRun(isdaemon):
     random.seed(time.time())
     logging.getLogger().setLevel(config.instance.log_level)
-    handler = TimedRotatingFileHandler(filename=config.instance.log_file,when='D',interval=1)
+    handler = TimedRotatingFileHandler(filename=config.instance.log_file, when='D', interval=1)
     handler.setLevel(config.instance.log_level)
     formatter = logging.Formatter(config.instance.log_format)
     handler.setFormatter(formatter)
@@ -42,25 +43,16 @@ def MainRun(isdaemon,id):
         handler.setFormatter(formatter)
         logging.getLogger().addHandler(handler)
 
-    #建立socket监听
-    clientfactory.instance.start(config.instance.server_ip,config.instance.server_port,config.instance.max_client)
     redishelper.instance.start()
-
-    logging.info(u"游戏网关服务器启动成功!服务器ID:%u",id)
-
-
-def StartRequest(isdaemon):
-    config.instance.server_ip = utils.getExternalIP()
-    servermanager.instance.start(const.CLIENT_TYPE_GAMEGATE,
-                                config.instance,
-                                MainRun,
-                                isdaemon)
+    clientfactory.instance.start(config.instance.server_ip, config.instance.server_port, config.instance.max_client)
+    logging.info(u"游戏中心服务器启动成功")
     reactor.run()
-    logging.info(u"游戏网关服务器停止运行!服务器ID:%u",id)
+    logging.info(u"游戏中心服务器停止运行")
     MainStop()
 
+
 def Run():
-    daemon.run(config.instance.server_pid,StartRequest)
+    daemon.run(config.instance.server_pid, MainRun)
 
 if __name__ == "__main__":
     Run()

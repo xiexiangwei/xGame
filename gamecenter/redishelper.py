@@ -1,9 +1,9 @@
 #coding=utf-8
-import logging
 from twisted.internet import task
+
 import config
 from common import redispool
-import time
+
 
 class RedisHelper(object):
     def __init__(self):

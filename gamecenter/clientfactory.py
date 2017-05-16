@@ -5,9 +5,11 @@ Created on 2016年1月11日
 @author: xxw
 '''
 
-from common import baseclientfactory
-import client
 import time
+
+import client
+from common import baseclientfactory
+
 
 class ClientFactory(baseclientfactory.BaseClientFactory):
 
@@ -24,7 +26,7 @@ class ClientFactory(baseclientfactory.BaseClientFactory):
         curtime = time.time()
 
         for c in clients:
-            if c.getState()==client.CLIENT_STATE_TO_CLOSE and curtime-c.toclosetime > 10:
+            if c.getState()== client.CLIENT_STATE_TO_CLOSE and curtime-c.toclosetime > 10:
                 c.abort()
             elif curtime-c.getLastActiveTime() > 60:
                 c.abort()
