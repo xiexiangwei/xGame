@@ -13,7 +13,7 @@ from google.protobuf import descriptor_pb2
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='CmdMessage.proto',
   package='',
-  serialized_pb='\n\x10\x43mdMessage.proto\"\x1b\n\x19Request_Get_LoginGateInfo\"B\n\x17RePly_Get_LoginGateInfo\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\n\n\x02ip\x18\x02 \x01(\t\x12\x0c\n\x04port\x18\x03 \x01(\r\"(\n\x17Reply_Connect_Logingate\x12\r\n\x05\x65rror\x18\x01 \x02(\r\":\n\rRequest_Login\x12\x14\n\x0c\x61\x63\x63ount_name\x18\x01 \x02(\t\x12\x13\n\x0b\x61\x63\x63ount_pwd\x18\x02 \x02(\t\"?\n\x0bReply_Login\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\r\n\x05token\x18\x03 \x01(\t')
+  serialized_pb='\n\x10\x43mdMessage.proto\"\x1b\n\x19Request_Get_LoginGateInfo\"B\n\x17RePly_Get_LoginGateInfo\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\n\n\x02ip\x18\x02 \x01(\t\x12\x0c\n\x04port\x18\x03 \x01(\r\"(\n\x17Reply_Connect_Logingate\x12\r\n\x05\x65rror\x18\x01 \x02(\r\":\n\rRequest_Login\x12\x14\n\x0c\x61\x63\x63ount_name\x18\x01 \x02(\t\x12\x13\n\x0b\x61\x63\x63ount_pwd\x18\x02 \x02(\t\"?\n\x0bReply_Login\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\r\n\x05token\x18\x03 \x01(\t\";\n\x16Request_Get_GameCenter\x12\x12\n\naccount_id\x18\x01 \x02(\r\x12\r\n\x05token\x18\x02 \x02(\t\"U\n\x14Reply_Get_GameCenter\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\x15\n\rgamecenter_ip\x18\x02 \x01(\t\x12\x17\n\x0fgamecenter_port\x18\x03 \x01(\r')
 
 
 
@@ -185,11 +185,90 @@ _REPLY_LOGIN = _descriptor.Descriptor(
   serialized_end=282,
 )
 
+
+_REQUEST_GET_GAMECENTER = _descriptor.Descriptor(
+  name='Request_Get_GameCenter',
+  full_name='Request_Get_GameCenter',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='account_id', full_name='Request_Get_GameCenter.account_id', index=0,
+      number=1, type=13, cpp_type=3, label=2,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='token', full_name='Request_Get_GameCenter.token', index=1,
+      number=2, type=9, cpp_type=9, label=2,
+      has_default_value=False, default_value=unicode("", "utf-8"),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  extension_ranges=[],
+  serialized_start=284,
+  serialized_end=343,
+)
+
+
+_REPLY_GET_GAMECENTER = _descriptor.Descriptor(
+  name='Reply_Get_GameCenter',
+  full_name='Reply_Get_GameCenter',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='error', full_name='Reply_Get_GameCenter.error', index=0,
+      number=1, type=13, cpp_type=3, label=2,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='gamecenter_ip', full_name='Reply_Get_GameCenter.gamecenter_ip', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=unicode("", "utf-8"),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='gamecenter_port', full_name='Reply_Get_GameCenter.gamecenter_port', index=2,
+      number=3, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  extension_ranges=[],
+  serialized_start=345,
+  serialized_end=430,
+)
+
 DESCRIPTOR.message_types_by_name['Request_Get_LoginGateInfo'] = _REQUEST_GET_LOGINGATEINFO
 DESCRIPTOR.message_types_by_name['RePly_Get_LoginGateInfo'] = _REPLY_GET_LOGINGATEINFO
 DESCRIPTOR.message_types_by_name['Reply_Connect_Logingate'] = _REPLY_CONNECT_LOGINGATE
 DESCRIPTOR.message_types_by_name['Request_Login'] = _REQUEST_LOGIN
 DESCRIPTOR.message_types_by_name['Reply_Login'] = _REPLY_LOGIN
+DESCRIPTOR.message_types_by_name['Request_Get_GameCenter'] = _REQUEST_GET_GAMECENTER
+DESCRIPTOR.message_types_by_name['Reply_Get_GameCenter'] = _REPLY_GET_GAMECENTER
 
 class Request_Get_LoginGateInfo(_message.Message):
   __metaclass__ = _reflection.GeneratedProtocolMessageType
@@ -220,6 +299,18 @@ class Reply_Login(_message.Message):
   DESCRIPTOR = _REPLY_LOGIN
 
   # @@protoc_insertion_point(class_scope:Reply_Login)
+
+class Request_Get_GameCenter(_message.Message):
+  __metaclass__ = _reflection.GeneratedProtocolMessageType
+  DESCRIPTOR = _REQUEST_GET_GAMECENTER
+
+  # @@protoc_insertion_point(class_scope:Request_Get_GameCenter)
+
+class Reply_Get_GameCenter(_message.Message):
+  __metaclass__ = _reflection.GeneratedProtocolMessageType
+  DESCRIPTOR = _REPLY_GET_GAMECENTER
+
+  # @@protoc_insertion_point(class_scope:Reply_Get_GameCenter)
 
 
 # @@protoc_insertion_point(module_scope)

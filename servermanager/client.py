@@ -62,6 +62,8 @@ class Client(fprotocol.FProtocol):
             clientmanager.instance.RemoveLoginServer(self.id)
         elif self.type == const.CLIENT_TYPE_3CARD:
             clientmanager.instance.Remove3Card(self.id)
+        elif self.type == const.CLIENT_TYPE_GAMECENTER:
+            clientmanager.instance.ResetGameCenter()
     
     def goToClose(self):
         self.state = CLIENT_STATE_TO_CLOSE

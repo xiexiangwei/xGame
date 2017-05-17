@@ -2,3 +2,4 @@ logingate/logingate.log.2017-04-29
 *.xml
 *.log
 *.iml
+*.pyc

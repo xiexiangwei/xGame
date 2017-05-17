@@ -16,3 +16,9 @@ class CardRoom(object):
         self.tablemap = {}  # 房间内的桌子
         for i in range(roomconfig.tablecount):
             self.tablemap[i] = cardtable.CardTable(roomconfig.seatnum)
+
+    def UserEnter(self):
+        pass
+
+    def UserLeave(self):
+        pass
