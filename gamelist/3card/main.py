@@ -22,6 +22,8 @@ import config
 import random
 import time
 from common import servermanager,utils,const
+import gamecenter
+import cardserver
 
 
 def MainStop():
@@ -43,6 +45,9 @@ def MainRun(isdaemon,id):
         handler.setFormatter(formatter)
         logging.getLogger().addHandler(handler)
 
+    cardserver.instance.start(id)
+    #连接游戏中心
+    gamecenter.instance.start()
     #建立socket监听
     clientfactory.instance.start(config.instance.server_ip, config.instance.server_port, config.instance.max_client)
 

@@ -8,7 +8,7 @@ class CLoginGate(object):
         self.port=port
         self.usetimes=0
 
-class CGameGate(object):
+class C3Card(object):
     def __init__(self,ip,port):
         self.ip=ip
         self.port=port
@@ -58,7 +58,7 @@ class ClientManager(object):
         self.logingatemap[id] = logingate
 
     def Add3Card(self, id, ip, port):
-        gg = CGameGate(ip,port)
+        gg = C3Card(ip, port)
         self.gamegatemap[id] = gg
 
     def RemoveLogingate(self,id):

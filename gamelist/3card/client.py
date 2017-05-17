@@ -1,4 +1,4 @@
-#coding=utf-8
+# coding=utf-8
 '''
 Created on 2016年1月11日
 
@@ -13,10 +13,10 @@ from twisted.internet import protocol
 import clientparse
 from common import fprotocol
 
-CLIENT_STATE_INIT               = 0
-CLIENT_STATE_AUTH               = 1
-CLIENT_STATE_LOGINED            = 2
-CLIENT_STATE_TO_CLOSE           = 3
+CLIENT_STATE_INIT = 0
+CLIENT_STATE_AUTH = 1
+CLIENT_STATE_LOGINED = 2
+CLIENT_STATE_TO_CLOSE = 3
 
 
 class Client(fprotocol.FProtocol):
@@ -30,16 +30,16 @@ class Client(fprotocol.FProtocol):
 
     def getId(self):
         return self.__id
-    
+
     def getIp(self):
         return self.__ip
 
     def getState(self):
         return self.state
-    
+
     def isLogined(self):
-        return self.state==CLIENT_STATE_LOGINED
-        
+        return self.state == CLIENT_STATE_LOGINED
+
     def packetReceived(self, cmd, pkt):
         if self.state == CLIENT_STATE_TO_CLOSE:
             return
@@ -52,17 +52,13 @@ class Client(fprotocol.FProtocol):
     def connectionMade(self):
         logging.debug(u"Client.connectionMade() ip=%s", self.__ip)
 
-   
     def connectionLost(self, reason=protocol.connectionDone):
-        logging.debug(u"Client.connectionLost %s", reason) 
+        logging.debug(u"Client.connectionLost %s", reason)
 
-    
     def goToClose(self):
         self.state = CLIENT_STATE_TO_CLOSE
         self.toclosetime = time.time()
-        
+
     def kick(self):
         logging.debug(u"Client.kick()")
         self.goToClose()
-
-

@@ -1,4 +1,4 @@
-#coding=utf-8
+# coding=utf-8
 class Config(object):
     def __init__(self):
         self.server_ip = u""
@@ -6,9 +6,13 @@ class Config(object):
         self.max_client = 10000
         self.server_pid = u"/tmp/3card.pid"
 
-        #管理服务器地址
+        # 管理服务器地址
         self.servermanager_ip = u"127.0.0.1"
         self.servermanager_port = 1111
+
+        # 游戏中心服务器地址
+        self.gamecenter_ip = u"127.0.0.1"
+        self.gamecenter_port = 6000
 
         self.log_file = u"3card.log"
         self.log_format = u"%(asctime)s %(levelname)s %(message)s"

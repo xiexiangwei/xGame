@@ -1,4 +1,4 @@
-#coding:utf-8
+# coding:utf-8
 
 import platform
 import sys
@@ -7,9 +7,11 @@ sys.path.append("../")
 if 'twisted.internet.reactor' not in sys.modules:
     if platform.system() == "Linux":
         from twisted.internet import epollreactor
+
         epollreactor.install()
     else:
         from twisted.internet import iocpreactor
+
         iocpreactor.install()
 
 import logging
@@ -27,6 +29,7 @@ import redishelper
 def MainStop():
     pass
 
+
 def MainRun(isdaemon):
     random.seed(time.time())
     logging.getLogger().setLevel(config.instance.log_level)
@@ -43,7 +46,7 @@ def MainRun(isdaemon):
         handler.setFormatter(formatter)
         logging.getLogger().addHandler(handler)
 
-    redishelper.instance.start()
+    # redishelper.instance.start()
     clientfactory.instance.start(config.instance.server_ip, config.instance.server_port, config.instance.max_client)
     logging.info(u"游戏中心服务器启动成功")
     reactor.run()
@@ -54,7 +57,6 @@ def MainRun(isdaemon):
 def Run():
     daemon.run(config.instance.server_pid, MainRun)
 
+
 if __name__ == "__main__":
     Run()
-
-

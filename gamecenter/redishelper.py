@@ -1,4 +1,4 @@
-#coding=utf-8
+# coding=utf-8
 from twisted.internet import task
 
 import config
@@ -14,20 +14,16 @@ class RedisHelper(object):
                                                          password=config.instance.redis_pwd,
                                                          linkcount=self.redis_linkcount)
 
-
     def start(self):
         l = task.LoopingCall(self.OnTimer)
         l.start(1, False)
         self.__redispool.start()
-
 
     def OnTimer(self):
         pass
 
     def HashIndex(self, v):
         return int(v) % self.redis_linkcount
-
-
 
 
 instance = RedisHelper()

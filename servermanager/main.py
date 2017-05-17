@@ -40,10 +40,11 @@ def MainRun(isdaemon):
         formatter = logging.Formatter(config.instance.log_format)
         handler.setFormatter(formatter)
         logging.getLogger().addHandler(handler)
-    #建立socket监听
-    clientfactory.instance.start(config.instance.server_ip,config.instance.server_port,config.instance.max_client)
-    redishelper.instance.start()
+
+   # redishelper.instance.start()
     clientmanager.instance.start()
+    # 建立socket监听
+    clientfactory.instance.start(config.instance.server_ip, config.instance.server_port, config.instance.max_client)
     logging.info(u"服务器管理服务器启动成功!")
     reactor.run()
     logging.info(u"服务器管理服务器停止运行!")
