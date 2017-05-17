@@ -53,7 +53,7 @@ class RedisHelper(object):
         logging.debug(u"VerifyTokenFinish() account_id:%d token:%s res:%d", account_id, token, res)
         reply = CmdMessage_pb2.Reply_Get_GameCenter()
         reply.error = const.ERROR_OK
-        if not error:
+        if not error and res == const.ERROR_OK:
             gc = clientmanager.instance.GetGameCenter()
             if gc:
                 reply.gamecenter_ip = gc.ip
