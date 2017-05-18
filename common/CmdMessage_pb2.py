@@ -8,12 +8,13 @@ from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 
+import Common_pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='CmdMessage.proto',
   package='',
-  serialized_pb='\n\x10\x43mdMessage.proto\"\x1b\n\x19Request_Get_LoginGateInfo\"B\n\x17RePly_Get_LoginGateInfo\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\n\n\x02ip\x18\x02 \x01(\t\x12\x0c\n\x04port\x18\x03 \x01(\r\"(\n\x17Reply_Connect_Logingate\x12\r\n\x05\x65rror\x18\x01 \x02(\r\":\n\rRequest_Login\x12\x14\n\x0c\x61\x63\x63ount_name\x18\x01 \x02(\t\x12\x13\n\x0b\x61\x63\x63ount_pwd\x18\x02 \x02(\t\"?\n\x0bReply_Login\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\r\n\x05token\x18\x03 \x01(\t\";\n\x16Request_Get_GameCenter\x12\x12\n\naccount_id\x18\x01 \x02(\r\x12\r\n\x05token\x18\x02 \x02(\t\"U\n\x14Reply_Get_GameCenter\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\x15\n\rgamecenter_ip\x18\x02 \x01(\t\x12\x17\n\x0fgamecenter_port\x18\x03 \x01(\r\"=\n\x18Request_Enter_GameCenter\x12\x12\n\naccount_id\x18\x01 \x02(\r\x12\r\n\x05token\x18\x02 \x02(\t\"Z\n\x16RePly_Enter_GameCenter\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\x0f\n\x07user_id\x18\x02 \x01(\r\x12\x11\n\tuser_name\x18\x03 \x01(\t\x12\r\n\x05money\x18\x04 \x01(\r')
+  serialized_pb='\n\x10\x43mdMessage.proto\x1a\x0c\x43ommon.proto\"\x1b\n\x19Request_Get_LoginGateInfo\"B\n\x17RePly_Get_LoginGateInfo\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\n\n\x02ip\x18\x02 \x01(\t\x12\x0c\n\x04port\x18\x03 \x01(\r\"(\n\x17Reply_Connect_Logingate\x12\r\n\x05\x65rror\x18\x01 \x02(\r\":\n\rRequest_Login\x12\x14\n\x0c\x61\x63\x63ount_name\x18\x01 \x02(\t\x12\x13\n\x0b\x61\x63\x63ount_pwd\x18\x02 \x02(\t\"?\n\x0bReply_Login\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\r\n\x05token\x18\x03 \x01(\t\";\n\x16Request_Get_GameCenter\x12\x12\n\naccount_id\x18\x01 \x02(\r\x12\r\n\x05token\x18\x02 \x02(\t\"U\n\x14Reply_Get_GameCenter\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\x15\n\rgamecenter_ip\x18\x02 \x01(\t\x12\x17\n\x0fgamecenter_port\x18\x03 \x01(\r\"=\n\x18Request_Enter_GameCenter\x12\x12\n\naccount_id\x18\x01 \x02(\r\x12\r\n\x05token\x18\x02 \x02(\t\"\x80\x01\n\x16RePly_Enter_GameCenter\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\x0f\n\x07user_id\x18\x02 \x01(\r\x12\x11\n\tuser_name\x18\x03 \x01(\t\x12\r\n\x05money\x18\x04 \x01(\r\x12$\n\tgame_list\x18\x05 \x03(\x0b\x32\x11.struct_game_info')
 
 
 
@@ -34,8 +35,8 @@ _REQUEST_GET_LOGINGATEINFO = _descriptor.Descriptor(
   options=None,
   is_extendable=False,
   extension_ranges=[],
-  serialized_start=20,
-  serialized_end=47,
+  serialized_start=34,
+  serialized_end=61,
 )
 
 
@@ -76,8 +77,8 @@ _REPLY_GET_LOGINGATEINFO = _descriptor.Descriptor(
   options=None,
   is_extendable=False,
   extension_ranges=[],
-  serialized_start=49,
-  serialized_end=115,
+  serialized_start=63,
+  serialized_end=129,
 )
 
 
@@ -104,8 +105,8 @@ _REPLY_CONNECT_LOGINGATE = _descriptor.Descriptor(
   options=None,
   is_extendable=False,
   extension_ranges=[],
-  serialized_start=117,
-  serialized_end=157,
+  serialized_start=131,
+  serialized_end=171,
 )
 
 
@@ -139,8 +140,8 @@ _REQUEST_LOGIN = _descriptor.Descriptor(
   options=None,
   is_extendable=False,
   extension_ranges=[],
-  serialized_start=159,
-  serialized_end=217,
+  serialized_start=173,
+  serialized_end=231,
 )
 
 
@@ -181,8 +182,8 @@ _REPLY_LOGIN = _descriptor.Descriptor(
   options=None,
   is_extendable=False,
   extension_ranges=[],
-  serialized_start=219,
-  serialized_end=282,
+  serialized_start=233,
+  serialized_end=296,
 )
 
 
@@ -216,8 +217,8 @@ _REQUEST_GET_GAMECENTER = _descriptor.Descriptor(
   options=None,
   is_extendable=False,
   extension_ranges=[],
-  serialized_start=284,
-  serialized_end=343,
+  serialized_start=298,
+  serialized_end=357,
 )
 
 
@@ -258,8 +259,8 @@ _REPLY_GET_GAMECENTER = _descriptor.Descriptor(
   options=None,
   is_extendable=False,
   extension_ranges=[],
-  serialized_start=345,
-  serialized_end=430,
+  serialized_start=359,
+  serialized_end=444,
 )
 
 
@@ -293,8 +294,8 @@ _REQUEST_ENTER_GAMECENTER = _descriptor.Descriptor(
   options=None,
   is_extendable=False,
   extension_ranges=[],
-  serialized_start=432,
-  serialized_end=493,
+  serialized_start=446,
+  serialized_end=507,
 )
 
 
@@ -333,6 +334,13 @@ _REPLY_ENTER_GAMECENTER = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='game_list', full_name='RePly_Enter_GameCenter.game_list', index=4,
+      number=5, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -342,10 +350,11 @@ _REPLY_ENTER_GAMECENTER = _descriptor.Descriptor(
   options=None,
   is_extendable=False,
   extension_ranges=[],
-  serialized_start=495,
-  serialized_end=585,
+  serialized_start=510,
+  serialized_end=638,
 )
 
+_REPLY_ENTER_GAMECENTER.fields_by_name['game_list'].message_type = Common_pb2._STRUCT_GAME_INFO
 DESCRIPTOR.message_types_by_name['Request_Get_LoginGateInfo'] = _REQUEST_GET_LOGINGATEINFO
 DESCRIPTOR.message_types_by_name['RePly_Get_LoginGateInfo'] = _REPLY_GET_LOGINGATEINFO
 DESCRIPTOR.message_types_by_name['Reply_Connect_Logingate'] = _REPLY_CONNECT_LOGINGATE

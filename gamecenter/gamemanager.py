@@ -34,5 +34,8 @@ class GameManager(object):
                     gslist.pop(index)
                     break
 
+    def GetGameMap(self):
+        return self.gamemap
+
 
 instance = GameManager()

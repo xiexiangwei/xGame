@@ -12,6 +12,7 @@ from twisted.internet import task, reactor
 import logging
 from common import dbpool, CmdMessage_pb2, const
 import usermanager
+import gamemanager
 
 
 class MysqlHelper(object):
@@ -71,6 +72,16 @@ class MysqlHelper(object):
                 reply.user_id = rows[0][1]
                 reply.user_name = rows[0][2]
                 reply.money = rows[0][3]
+                # 游戏中心游戏列表
+                for (gtype, gamelist) in gamemanager.instance.GetGameMap().items():
+                    gcount = len(gamelist)
+                    if gcount > 0:
+                        hashindex = reply.user_id % gcount
+                        game = reply.game_list.add()
+                        game.game_type = gtype
+                        game.game_ip = gamelist[hashindex].ip
+                        game.game_port = gamelist[hashindex].port
+
                 usermanager.instance.AddUser(user_id=rows[0][1],
                                              user_name=rows[0][2],
                                              money=rows[0][3])
