@@ -26,3 +26,7 @@ class GameUser(object):
 
     def GetClient(self):
         return self.client
+
+    # 发消息给客户端
+    def SendCmd(self, cmd, pkt):
+        return self.__client.sendCmd(cmd, pkt)

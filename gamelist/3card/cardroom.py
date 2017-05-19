@@ -17,9 +17,12 @@ class CardRoom(object):
         self.tablecount = roomconfig.tablecount  # 房间内桌子数量
         self.description = roomconfig.description  # 房间说明
         self.pagetablenum = 10  # 一页显示10张桌子信息
-        self.tablelist = []  # 房间内的桌子
+        self.tablelist = []  # 房间内的桌子列表
+        self.tablemap = {}  # 房间内桌子map,为了快速查找到房间
         for i in range(self.tablecount):
-            self.tablelist.append(cardtable.CardTable(i, roomconfig.seatnum))
+            t = cardtable.CardTable(i, roomconfig.seatnum)
+            self.tablelist.append(t)
+            self.tablemap[i] = t
 
     def GetMaxTablePage(self):
         # 一页10张桌子信息
@@ -29,8 +32,13 @@ class CardRoom(object):
     def GetTableListByPageIndex(self, page_index):
         return self.tablelist[page_index * self.pagetablenum:(page_index + 1) * self.pagetablenum]
 
-    def UserEnter(self):
-        pass
+    # 根据桌子索引获取桌子
+    def GetTableByIndex(self, table_index):
+        return self.tablemap.get(table_index)
 
-    def UserLeave(self):
+    def UserEnter(self, user, table_index, seat_index):
+        table = self.tablemap.get(table_index)
+
+
+    def UserLeave(self, user):
         pass

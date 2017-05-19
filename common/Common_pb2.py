@@ -13,7 +13,7 @@ from google.protobuf import descriptor_pb2
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Common.proto',
   package='',
-  serialized_pb='\n\x0c\x43ommon.proto\"I\n\x10struct_game_info\x12\x11\n\tgame_type\x18\x01 \x02(\r\x12\x0f\n\x07game_ip\x18\x02 \x02(\t\x12\x11\n\tgame_port\x18\x03 \x02(\r\"E\n\x10struct_user_info\x12\x0f\n\x07user_id\x18\x01 \x02(\r\x12\x11\n\tuser_name\x18\x02 \x02(\t\x12\r\n\x05money\x18\x03 \x02(\r\"\x9b\x01\n\x10struct_room_info\x12\x12\n\nroom_index\x18\x01 \x02(\r\x12\x11\n\troom_type\x18\x02 \x02(\r\x12\x11\n\tmin_money\x18\x03 \x02(\r\x12\x11\n\tmax_money\x18\x04 \x02(\r\x12\x13\n\x0btable_count\x18\x05 \x02(\r\x12\x10\n\x08seat_num\x18\x06 \x02(\r\x12\x13\n\x0b\x64\x65scription\x18\x07 \x02(\t\"P\n\x16struct_table_user_info\x12\x0f\n\x07user_id\x18\x01 \x02(\r\x12\x11\n\tuser_name\x18\x02 \x02(\t\x12\x12\n\nseat_index\x18\x03 \x02(\r\"o\n\x11struct_table_info\x12\x13\n\x0btable_index\x18\x01 \x02(\r\x12\x13\n\x0btable_state\x18\x02 \x02(\r\x12\x30\n\x0ftable_user_list\x18\x03 \x03(\x0b\x32\x17.struct_table_user_info')
+  serialized_pb='\n\x0c\x43ommon.proto\"I\n\x10struct_game_info\x12\x11\n\tgame_type\x18\x01 \x02(\r\x12\x0f\n\x07game_ip\x18\x02 \x02(\t\x12\x11\n\tgame_port\x18\x03 \x02(\r\"E\n\x10struct_user_info\x12\x0f\n\x07user_id\x18\x01 \x02(\r\x12\x11\n\tuser_name\x18\x02 \x02(\t\x12\r\n\x05money\x18\x03 \x02(\r\"\x9b\x01\n\x10struct_room_info\x12\x12\n\nroom_index\x18\x01 \x02(\r\x12\x11\n\troom_type\x18\x02 \x02(\r\x12\x11\n\tmin_money\x18\x03 \x02(\r\x12\x11\n\tmax_money\x18\x04 \x02(\r\x12\x13\n\x0btable_count\x18\x05 \x02(\r\x12\x10\n\x08seat_num\x18\x06 \x02(\r\x12\x13\n\x0b\x64\x65scription\x18\x07 \x02(\t\"_\n\x16struct_table_user_info\x12\x0f\n\x07user_id\x18\x01 \x02(\r\x12\x11\n\tuser_name\x18\x02 \x02(\t\x12\x12\n\nseat_index\x18\x03 \x02(\r\x12\r\n\x05money\x18\x04 \x01(\r\"\x89\x01\n\x11struct_table_info\x12\x13\n\x0btable_index\x18\x01 \x02(\r\x12\x13\n\x0btable_state\x18\x02 \x02(\r\x12\x18\n\x10table_seat_count\x18\x03 \x02(\r\x12\x30\n\x0ftable_user_list\x18\x04 \x03(\x0b\x32\x17.struct_table_user_info')
 
 
 
@@ -200,6 +200,13 @@ _STRUCT_TABLE_USER_INFO = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='money', full_name='struct_table_user_info.money', index=3,
+      number=4, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -210,7 +217,7 @@ _STRUCT_TABLE_USER_INFO = _descriptor.Descriptor(
   is_extendable=False,
   extension_ranges=[],
   serialized_start=320,
-  serialized_end=400,
+  serialized_end=415,
 )
 
 
@@ -236,8 +243,15 @@ _STRUCT_TABLE_INFO = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='table_user_list', full_name='struct_table_info.table_user_list', index=2,
-      number=3, type=11, cpp_type=10, label=3,
+      name='table_seat_count', full_name='struct_table_info.table_seat_count', index=2,
+      number=3, type=13, cpp_type=3, label=2,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='table_user_list', full_name='struct_table_info.table_user_list', index=3,
+      number=4, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -251,8 +265,8 @@ _STRUCT_TABLE_INFO = _descriptor.Descriptor(
   options=None,
   is_extendable=False,
   extension_ranges=[],
-  serialized_start=402,
-  serialized_end=513,
+  serialized_start=418,
+  serialized_end=555,
 )
 
 _STRUCT_TABLE_INFO.fields_by_name['table_user_list'].message_type = _STRUCT_TABLE_USER_INFO

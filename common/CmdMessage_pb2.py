@@ -14,7 +14,7 @@ import Common_pb2
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='CmdMessage.proto',
   package='',
-  serialized_pb='\n\x10\x43mdMessage.proto\x1a\x0c\x43ommon.proto\"\x1b\n\x19Request_Get_LoginGateInfo\"B\n\x17RePly_Get_LoginGateInfo\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\n\n\x02ip\x18\x02 \x01(\t\x12\x0c\n\x04port\x18\x03 \x01(\r\"(\n\x17Reply_Connect_Logingate\x12\r\n\x05\x65rror\x18\x01 \x02(\r\":\n\rRequest_Login\x12\x14\n\x0c\x61\x63\x63ount_name\x18\x01 \x02(\t\x12\x13\n\x0b\x61\x63\x63ount_pwd\x18\x02 \x02(\t\"?\n\x0bReply_Login\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\r\n\x05token\x18\x03 \x01(\t\";\n\x16Request_Get_GameCenter\x12\x12\n\naccount_id\x18\x01 \x02(\r\x12\r\n\x05token\x18\x02 \x02(\t\"U\n\x14Reply_Get_GameCenter\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\x15\n\rgamecenter_ip\x18\x02 \x01(\t\x12\x17\n\x0fgamecenter_port\x18\x03 \x01(\r\"=\n\x18Request_Enter_GameCenter\x12\x12\n\naccount_id\x18\x01 \x02(\r\x12\r\n\x05token\x18\x02 \x02(\t\"s\n\x16RePly_Enter_GameCenter\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12$\n\tuser_info\x18\x02 \x01(\x0b\x32\x11.struct_user_info\x12$\n\tgame_list\x18\x03 \x03(\x0b\x32\x11.struct_game_info\"%\n\x12Request_Enter_Game\x12\x0f\n\x07user_id\x18\x01 \x01(\r\"m\n\x10Reply_Enter_Game\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12$\n\tuser_info\x18\x02 \x01(\x0b\x32\x11.struct_user_info\x12$\n\troom_list\x18\x03 \x03(\x0b\x32\x11.struct_room_info\"B\n\x18Request_Room_Tables_Info\x12\x12\n\nroom_index\x18\x01 \x02(\r\x12\x12\n\ntable_page\x18\x02 \x02(\r\"c\n\x16Reply_Room_Tables_Info\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\x12\n\ntable_page\x18\x02 \x02(\r\x12&\n\ntable_list\x18\x03 \x03(\x0b\x32\x12.struct_table_info')
+  serialized_pb='\n\x10\x43mdMessage.proto\x1a\x0c\x43ommon.proto\"\x1b\n\x19Request_Get_LoginGateInfo\"B\n\x17RePly_Get_LoginGateInfo\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\n\n\x02ip\x18\x02 \x01(\t\x12\x0c\n\x04port\x18\x03 \x01(\r\"(\n\x17Reply_Connect_Logingate\x12\r\n\x05\x65rror\x18\x01 \x02(\r\":\n\rRequest_Login\x12\x14\n\x0c\x61\x63\x63ount_name\x18\x01 \x02(\t\x12\x13\n\x0b\x61\x63\x63ount_pwd\x18\x02 \x02(\t\"?\n\x0bReply_Login\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\r\n\x05token\x18\x03 \x01(\t\";\n\x16Request_Get_GameCenter\x12\x12\n\naccount_id\x18\x01 \x02(\r\x12\r\n\x05token\x18\x02 \x02(\t\"U\n\x14Reply_Get_GameCenter\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\x15\n\rgamecenter_ip\x18\x02 \x01(\t\x12\x17\n\x0fgamecenter_port\x18\x03 \x01(\r\"=\n\x18Request_Enter_GameCenter\x12\x12\n\naccount_id\x18\x01 \x02(\r\x12\r\n\x05token\x18\x02 \x02(\t\"s\n\x16RePly_Enter_GameCenter\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12$\n\tuser_info\x18\x02 \x01(\x0b\x32\x11.struct_user_info\x12$\n\tgame_list\x18\x03 \x03(\x0b\x32\x11.struct_game_info\"%\n\x12Request_Enter_Game\x12\x0f\n\x07user_id\x18\x01 \x01(\r\"m\n\x10Reply_Enter_Game\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12$\n\tuser_info\x18\x02 \x01(\x0b\x32\x11.struct_user_info\x12$\n\troom_list\x18\x03 \x03(\x0b\x32\x11.struct_room_info\"B\n\x18Request_Room_Tables_Info\x12\x12\n\nroom_index\x18\x01 \x02(\r\x12\x12\n\ntable_page\x18\x02 \x02(\r\"c\n\x16Reply_Room_Tables_Info\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\x12\n\ntable_page\x18\x02 \x01(\r\x12&\n\ntable_list\x18\x03 \x03(\x0b\x32\x12.struct_table_info\"J\n\x0bRequest_Sit\x12\x12\n\nroom_index\x18\x01 \x02(\r\x12\x13\n\x0btable_index\x18\x02 \x02(\r\x12\x12\n\nseat_index\x18\x03 \x01(\r\"\x83\x01\n\tReply_Sit\x12\r\n\x05\x65rror\x18\x01 \x02(\r\x12\x12\n\nroom_index\x18\x02 \x01(\r\x12\x13\n\x0btable_index\x18\x03 \x01(\r\x12\x12\n\nseat_index\x18\x04 \x01(\r\x12*\n\tuser_list\x18\x05 \x03(\x0b\x32\x17.struct_table_user_info\"?\n\x12\x42roadcast_User_Sit\x12)\n\x08new_user\x18\x01 \x02(\x0b\x32\x17.struct_table_user_info')
 
 
 
@@ -462,7 +462,7 @@ _REPLY_ROOM_TABLES_INFO = _descriptor.Descriptor(
       options=None),
     _descriptor.FieldDescriptor(
       name='table_page', full_name='Reply_Room_Tables_Info.table_page', index=1,
-      number=2, type=13, cpp_type=3, label=2,
+      number=2, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -487,11 +487,139 @@ _REPLY_ROOM_TABLES_INFO = _descriptor.Descriptor(
   serialized_end=943,
 )
 
+
+_REQUEST_SIT = _descriptor.Descriptor(
+  name='Request_Sit',
+  full_name='Request_Sit',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='room_index', full_name='Request_Sit.room_index', index=0,
+      number=1, type=13, cpp_type=3, label=2,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='table_index', full_name='Request_Sit.table_index', index=1,
+      number=2, type=13, cpp_type=3, label=2,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='seat_index', full_name='Request_Sit.seat_index', index=2,
+      number=3, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  extension_ranges=[],
+  serialized_start=945,
+  serialized_end=1019,
+)
+
+
+_REPLY_SIT = _descriptor.Descriptor(
+  name='Reply_Sit',
+  full_name='Reply_Sit',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='error', full_name='Reply_Sit.error', index=0,
+      number=1, type=13, cpp_type=3, label=2,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='room_index', full_name='Reply_Sit.room_index', index=1,
+      number=2, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='table_index', full_name='Reply_Sit.table_index', index=2,
+      number=3, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='seat_index', full_name='Reply_Sit.seat_index', index=3,
+      number=4, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='user_list', full_name='Reply_Sit.user_list', index=4,
+      number=5, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  extension_ranges=[],
+  serialized_start=1022,
+  serialized_end=1153,
+)
+
+
+_BROADCAST_USER_SIT = _descriptor.Descriptor(
+  name='Broadcast_User_Sit',
+  full_name='Broadcast_User_Sit',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='new_user', full_name='Broadcast_User_Sit.new_user', index=0,
+      number=1, type=11, cpp_type=10, label=2,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  extension_ranges=[],
+  serialized_start=1155,
+  serialized_end=1218,
+)
+
 _REPLY_ENTER_GAMECENTER.fields_by_name['user_info'].message_type = Common_pb2._STRUCT_USER_INFO
 _REPLY_ENTER_GAMECENTER.fields_by_name['game_list'].message_type = Common_pb2._STRUCT_GAME_INFO
 _REPLY_ENTER_GAME.fields_by_name['user_info'].message_type = Common_pb2._STRUCT_USER_INFO
 _REPLY_ENTER_GAME.fields_by_name['room_list'].message_type = Common_pb2._STRUCT_ROOM_INFO
 _REPLY_ROOM_TABLES_INFO.fields_by_name['table_list'].message_type = Common_pb2._STRUCT_TABLE_INFO
+_REPLY_SIT.fields_by_name['user_list'].message_type = Common_pb2._STRUCT_TABLE_USER_INFO
+_BROADCAST_USER_SIT.fields_by_name['new_user'].message_type = Common_pb2._STRUCT_TABLE_USER_INFO
 DESCRIPTOR.message_types_by_name['Request_Get_LoginGateInfo'] = _REQUEST_GET_LOGINGATEINFO
 DESCRIPTOR.message_types_by_name['RePly_Get_LoginGateInfo'] = _REPLY_GET_LOGINGATEINFO
 DESCRIPTOR.message_types_by_name['Reply_Connect_Logingate'] = _REPLY_CONNECT_LOGINGATE
@@ -505,6 +633,9 @@ DESCRIPTOR.message_types_by_name['Request_Enter_Game'] = _REQUEST_ENTER_GAME
 DESCRIPTOR.message_types_by_name['Reply_Enter_Game'] = _REPLY_ENTER_GAME
 DESCRIPTOR.message_types_by_name['Request_Room_Tables_Info'] = _REQUEST_ROOM_TABLES_INFO
 DESCRIPTOR.message_types_by_name['Reply_Room_Tables_Info'] = _REPLY_ROOM_TABLES_INFO
+DESCRIPTOR.message_types_by_name['Request_Sit'] = _REQUEST_SIT
+DESCRIPTOR.message_types_by_name['Reply_Sit'] = _REPLY_SIT
+DESCRIPTOR.message_types_by_name['Broadcast_User_Sit'] = _BROADCAST_USER_SIT
 
 class Request_Get_LoginGateInfo(_message.Message):
   __metaclass__ = _reflection.GeneratedProtocolMessageType
@@ -583,6 +714,24 @@ class Reply_Room_Tables_Info(_message.Message):
   DESCRIPTOR = _REPLY_ROOM_TABLES_INFO
 
   # @@protoc_insertion_point(class_scope:Reply_Room_Tables_Info)
+
+class Request_Sit(_message.Message):
+  __metaclass__ = _reflection.GeneratedProtocolMessageType
+  DESCRIPTOR = _REQUEST_SIT
+
+  # @@protoc_insertion_point(class_scope:Request_Sit)
+
+class Reply_Sit(_message.Message):
+  __metaclass__ = _reflection.GeneratedProtocolMessageType
+  DESCRIPTOR = _REPLY_SIT
+
+  # @@protoc_insertion_point(class_scope:Reply_Sit)
+
+class Broadcast_User_Sit(_message.Message):
+  __metaclass__ = _reflection.GeneratedProtocolMessageType
+  DESCRIPTOR = _BROADCAST_USER_SIT
+
+  # @@protoc_insertion_point(class_scope:Broadcast_User_Sit)
 
 
 # @@protoc_insertion_point(module_scope)
