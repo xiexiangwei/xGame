@@ -20,7 +20,7 @@ def Login(client,pkt):
                                login_request.account_pwd)
 
 __cmdTable = {
-                const.C2LG_LOGIN:Login,
+                const.C2LG_REQUEST_LOGIN:Login,
              }
 
 def parse(clinet, cmd, pkt):

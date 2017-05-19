@@ -79,7 +79,7 @@ class MysqlHelper(object):
                 reply.error = const.ERROR_ACCOUNT_PWD_ERROR
         else:
             reply.error = const.ERROR_SERVER
-        client.send2client(const.LG2C_LOGIN_RESULT, reply.SerializeToString())
+        client.send2client(const.LG2C_REPLY_LOGIN, reply.SerializeToString())
 
 
 instance = MysqlHelper()

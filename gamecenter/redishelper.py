@@ -4,6 +4,7 @@ from twisted.internet import task
 import config
 from common import redispool, CmdMessage_pb2, const
 import logging
+import mysqlhelper
 
 
 class RedisHelper(object):
@@ -55,11 +56,13 @@ class RedisHelper(object):
         res = rows[0]
         logging.debug(u"VerifyTokenFinish() account_id:%d token:%s res:%d", account_id, token, res)
         if error or res != const.ERROR_OK:
+            # token验证失败直接返回客户端
             reply = CmdMessage_pb2.RePly_Enter_GameCenter()
             reply.error = const.ERROR_ACCOUNT_TOKEN_INVALID
             clinet.sendCmd(const.SM2C_GET_GAMECENTER_REPLY, reply.SerializeToString())
         else:
-            pass
+            # token验证成功,加载用户数据
+            mysqlhelper.instance.LoadUserData(clinet, account_id)
 
 
 instance = RedisHelper()

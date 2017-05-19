@@ -56,11 +56,11 @@ class Logingate(fprotocol.FProtocol):
 
     def packetReceived(self, cmd, pkt):
         logging.info(u"servermanager.packetReceived() cmd:%d pkt:%s",cmd,pkt)
-        if cmd == const.LG2C_READY_TO_LOGIN:
+        if cmd == const.LG2C_READY_LOGIN:
             reply = json.loads(pkt)
             if reply[u"error"]==const.ERROR_OK:
                 self.robot.Login()
-        elif cmd == const.LG2C_LOGIN_RESULT:
+        elif cmd == const.LG2C_REPLY_LOGIN:
             reply = json.loads(pkt)
             if reply[u"error"]==const.ERROR_OK:
                 logging.debug(u"机器人登录成功! robot:%d",self.robot.id)

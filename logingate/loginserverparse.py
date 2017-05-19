@@ -15,7 +15,7 @@ def l2lg_transform_client(client,pkt):
 def l2lg_login_result(client,pkt):
     logging.debug(u"l2lg_login_result() pkt:%s",pkt)
     if client.user:
-        client.user.sendCmd(const.LG2C_LOGIN_RESULT,pkt)
+        client.user.sendCmd(const.LG2C_REPLY_LOGIN, pkt)
     else:
         logging.error(u"l2lg_login_result() 玩家句柄无效")
 

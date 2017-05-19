@@ -30,6 +30,6 @@ class Robot(object):
 
     def Login(self):
         logging.debug(u"机器人开始请求登录 robot:%d", self.id)
-        self.logingate.sendCmd(const.C2LG_LOGIN,
+        self.logingate.sendCmd(const.C2LG_REQUEST_LOGIN,
                                json.dumps({u"user_name":"robot_%d"%self.id,u"user_pwd":"123456"}))
 

@@ -13,7 +13,7 @@ from google.protobuf import descriptor_pb2
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Common.proto',
   package='',
-  serialized_pb='\n\x0c\x43ommon.proto\"I\n\x10struct_game_info\x12\x11\n\tgame_type\x18\x01 \x02(\r\x12\x0f\n\x07game_ip\x18\x02 \x01(\t\x12\x11\n\tgame_port\x18\x03 \x01(\r')
+  serialized_pb='\n\x0c\x43ommon.proto\"I\n\x10struct_game_info\x12\x11\n\tgame_type\x18\x01 \x02(\r\x12\x0f\n\x07game_ip\x18\x02 \x02(\t\x12\x11\n\tgame_port\x18\x03 \x02(\r\"E\n\x10struct_user_info\x12\x0f\n\x07user_id\x18\x01 \x02(\r\x12\x11\n\tuser_name\x18\x02 \x02(\t\x12\r\n\x05money\x18\x03 \x02(\r\"\x9b\x01\n\x10struct_room_info\x12\x12\n\nroom_index\x18\x01 \x02(\r\x12\x11\n\troom_type\x18\x02 \x02(\r\x12\x11\n\tmin_money\x18\x03 \x02(\r\x12\x11\n\tmax_money\x18\x04 \x02(\r\x12\x13\n\x0btable_count\x18\x05 \x02(\r\x12\x10\n\x08seat_num\x18\x06 \x02(\r\x12\x13\n\x0b\x64\x65scription\x18\x07 \x02(\t')
 
 
 
@@ -34,14 +34,14 @@ _STRUCT_GAME_INFO = _descriptor.Descriptor(
       options=None),
     _descriptor.FieldDescriptor(
       name='game_ip', full_name='struct_game_info.game_ip', index=1,
-      number=2, type=9, cpp_type=9, label=1,
+      number=2, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=unicode("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='game_port', full_name='struct_game_info.game_port', index=2,
-      number=3, type=13, cpp_type=3, label=1,
+      number=3, type=13, cpp_type=3, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -59,13 +59,139 @@ _STRUCT_GAME_INFO = _descriptor.Descriptor(
   serialized_end=89,
 )
 
+
+_STRUCT_USER_INFO = _descriptor.Descriptor(
+  name='struct_user_info',
+  full_name='struct_user_info',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='user_id', full_name='struct_user_info.user_id', index=0,
+      number=1, type=13, cpp_type=3, label=2,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='user_name', full_name='struct_user_info.user_name', index=1,
+      number=2, type=9, cpp_type=9, label=2,
+      has_default_value=False, default_value=unicode("", "utf-8"),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='money', full_name='struct_user_info.money', index=2,
+      number=3, type=13, cpp_type=3, label=2,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  extension_ranges=[],
+  serialized_start=91,
+  serialized_end=160,
+)
+
+
+_STRUCT_ROOM_INFO = _descriptor.Descriptor(
+  name='struct_room_info',
+  full_name='struct_room_info',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='room_index', full_name='struct_room_info.room_index', index=0,
+      number=1, type=13, cpp_type=3, label=2,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='room_type', full_name='struct_room_info.room_type', index=1,
+      number=2, type=13, cpp_type=3, label=2,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='min_money', full_name='struct_room_info.min_money', index=2,
+      number=3, type=13, cpp_type=3, label=2,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='max_money', full_name='struct_room_info.max_money', index=3,
+      number=4, type=13, cpp_type=3, label=2,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='table_count', full_name='struct_room_info.table_count', index=4,
+      number=5, type=13, cpp_type=3, label=2,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='seat_num', full_name='struct_room_info.seat_num', index=5,
+      number=6, type=13, cpp_type=3, label=2,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='description', full_name='struct_room_info.description', index=6,
+      number=7, type=9, cpp_type=9, label=2,
+      has_default_value=False, default_value=unicode("", "utf-8"),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  extension_ranges=[],
+  serialized_start=163,
+  serialized_end=318,
+)
+
 DESCRIPTOR.message_types_by_name['struct_game_info'] = _STRUCT_GAME_INFO
+DESCRIPTOR.message_types_by_name['struct_user_info'] = _STRUCT_USER_INFO
+DESCRIPTOR.message_types_by_name['struct_room_info'] = _STRUCT_ROOM_INFO
 
 class struct_game_info(_message.Message):
   __metaclass__ = _reflection.GeneratedProtocolMessageType
   DESCRIPTOR = _STRUCT_GAME_INFO
 
   # @@protoc_insertion_point(class_scope:struct_game_info)
+
+class struct_user_info(_message.Message):
+  __metaclass__ = _reflection.GeneratedProtocolMessageType
+  DESCRIPTOR = _STRUCT_USER_INFO
+
+  # @@protoc_insertion_point(class_scope:struct_user_info)
+
+class struct_room_info(_message.Message):
+  __metaclass__ = _reflection.GeneratedProtocolMessageType
+  DESCRIPTOR = _STRUCT_ROOM_INFO
+
+  # @@protoc_insertion_point(class_scope:struct_room_info)
 
 
 # @@protoc_insertion_point(module_scope)

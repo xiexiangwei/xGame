@@ -69,9 +69,10 @@ class MysqlHelper(object):
         reply.error = const.ERROR_OK
         if not error:
             if len(rows) == 1:
-                reply.user_id = rows[0][1]
-                reply.user_name = rows[0][2]
-                reply.money = rows[0][3]
+                # 玩家信息
+                reply.user_info.user_id = rows[0][1]
+                reply.user_info.user_name = rows[0][2]
+                reply.user_info.money = rows[0][3]
                 # 游戏中心游戏列表
                 for (gtype, gamelist) in gamemanager.instance.GetGameMap().items():
                     gcount = len(gamelist)
@@ -82,9 +83,10 @@ class MysqlHelper(object):
                         game.game_ip = gamelist[hashindex].ip
                         game.game_port = gamelist[hashindex].port
 
-                usermanager.instance.AddUser(user_id=rows[0][1],
-                                             user_name=rows[0][2],
-                                             money=rows[0][3])
+                usermanager.instance.AddUser(user_id=reply.user_info.user_id,
+                                             user_name=reply.user_info.user_name,
+                                             money=reply.user_info.money,
+                                             client=client)
             else:
                 reply.error = const.ERROR_USER_NOT_EXISTS
         else:

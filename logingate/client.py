@@ -69,7 +69,7 @@ class Client(fprotocol.FProtocol):
         else:
             reply = CmdMessage_pb2.Reply_Connect_Logingate()
             reply.error = const.ERROR_NOT_READY_LOGIN
-            self.sendCmd(const.LG2C_READY_TO_LOGIN,reply.SerializeToString())
+            self.sendCmd(const.LG2C_READY_LOGIN, reply.SerializeToString())
 
             self.kick()
             logging.warn(u"分配用户空闲登录服务器失败() client_id:%d",self.getId())
@@ -94,7 +94,7 @@ class Client(fprotocol.FProtocol):
             redishelper.instance.UpdateLoginServerTimes(self.loginserver_id, 1)
         else:
             reply.error=const.ERROR_NOT_READY_LOGIN
-        self.sendCmd(const.LG2C_READY_TO_LOGIN, reply.SerializeToString())
+        self.sendCmd(const.LG2C_READY_LOGIN, reply.SerializeToString())
 
     def Trans2Loginserver(self,cmd,pkt):
         if self.loginserver:

@@ -10,10 +10,10 @@ import logging
 
 #登录
 def c2lg_login(client,pkt):
-    client.Trans2Loginserver(const.C2LG_LOGIN, pkt)
+    client.Trans2Loginserver(const.C2LG_REQUEST_LOGIN, pkt)
 
 __cmdTable = {
-                const.C2LG_LOGIN:c2lg_login,
+                const.C2LG_REQUEST_LOGIN:c2lg_login,
              }
 
 def parse(clinet, cmd, pkt):
