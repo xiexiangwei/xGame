@@ -14,7 +14,9 @@ class ThreeCardServer(object):
         self.__id = id
         try:
             for index, roomcfg in enumerate(cardconfig.instance.roomlist):
-                self.__cardroomlist.append(cardroom.CardRoom(roomcfg))
+                room = cardroom.CardRoom(roomcfg)
+                self.__cardroomlist.append(room)
+                room.Start()
                 logging.info(u"创建游戏房间 房间类型:%d 最小携带金币:%d 最大携带金币:%d 房间桌子数量:%d 桌子座位数量:%d",
                              roomcfg.roomtype,
                              roomcfg.minmoney,

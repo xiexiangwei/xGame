@@ -57,6 +57,7 @@ L2LG_TRANSFORM_CLIENT = 902  # 转发到客户端
 TCS2GC_REGISTER = 1001  # 向游戏中心注册游戏
 TCS2GC_CHECK_USER = 1002  # 向游戏中心验证玩家
 TCS2GC_UPDATE_USER_GAMESTATE = 1003  # 更新游戏中心玩家状态
+TCS2GC_SYNC_USER_MONEY = 1004  # 同步玩家金币
 
 # 游戏中心--->炸金花游戏消息ID:[2001-3000]
 GC2TCS_CHECK_USER_RESULT = 2001  # 游戏中心验证玩家返回

@@ -24,5 +24,7 @@ class CardGameConfig(object):
         self.roomlist.append(RoomConfig(index=2, rtype=2, minmoney=5000, maxmoney=20000, tablecount=300, seatnum=4, description=u"底注3房间"))
         self.roomlist.append(RoomConfig(index=3 ,rtype=3, minmoney=20000, maxmoney=0, tablecount=100, seatnum=4, description=u"底注4房间"))
 
+        self.syncmoneyinterval = 5  # 定时同步金币到游戏中心时间间隔
+        self.syncmoneydiff = 100  # 当金币变化大于等于n时同步金币到游戏中心
 
 instance = CardGameConfig()

@@ -4,6 +4,7 @@
 # @File    : cardroom.py
 # @Software: PyCharm
 
+from twisted.internet import task
 import cardtable
 
 
@@ -24,6 +25,14 @@ class CardRoom(object):
             self.tablelist.append(t)
             self.tablemap[i] = t
 
+    def Start(self):
+        lc = task.LoopingCall(self.OnTimer)
+        lc.start(1, False)
+
+    def OnTimer(self):
+        for (_, table) in enumerate(self.tablelist):
+            table.CheckUser()
+
     def GetMaxTablePage(self):
         # 一页10张桌子信息
         return self.tablecount / self.pagetablenum + 1
@@ -38,7 +47,6 @@ class CardRoom(object):
 
     def UserEnter(self, user, table_index, seat_index):
         table = self.tablemap.get(table_index)
-
 
     def UserLeave(self, user):
         pass

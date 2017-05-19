@@ -60,12 +60,21 @@ def UpdateUserGameState(client, pkt):
     else:
         logging.warn(u"UpdateUserGameState() user is offline! user_id:%d", user_id)
 
+def SyncUserMoney(client,pkt):
+    data = json.loads(pkt)
+    user_id = data[u"user_id"]
+    money_change = data[u"money_change"]
+    logging.debug(u"SyncUserMoney() user_id:%d money_change:%d", user_id, money_change)
+
+
+
 
 __cmdTable = {
     const.TCS2GC_REGISTER: GameRegister,
     const.C2GC_REQUEST_ENTER_GC: RequestEnterGameCenter,
     const.TCS2GC_CHECK_USER: CheckUser,
     const.TCS2GC_UPDATE_USER_GAMESTATE: UpdateUserGameState,
+    const.TCS2GC_SYNC_USER_MONEY: SyncUserMoney,
 }
 
 

@@ -5,6 +5,10 @@
 # @Software: PyCharm
 
 import logging
+import time
+import cardconfig
+import gamecenter
+from  common import const
 
 TABLE_STATE_GAMING = 1  # 正在游戏
 TABLE_STATE_FREE = 2  # 空闲
@@ -17,6 +21,17 @@ class CardTable(object):
         self.seatnum = seatnum  # 座位数量
         self.usermap = {}  # 每个座位对应的玩家
         self.tablestate = TABLE_STATE_FREE  # 桌子游戏状态
+
+    # 定时检查玩家
+    def CheckUser(self):
+        now = time.time()
+        for (_, user) in enumerate(self.usermap):
+            if now - user.GetLastSyncMoneyTime() > cardconfig.instance.syncmoneyinterval or user.GetMoneyChange() >= cardconfig.instance.syncmoneydiff:
+                if user.GetMoneyChange() != 0:
+                    gamecenter.instance.sendCmd(const.TCS2GC_SYNC_USER_MONEY,
+                                                dict(user_id=user.GetUserID(), money_change=user.GetMoneyChange()))
+                user.SetLastSyncMoneyTime(now)
+                user.SetMoneyChange(0)
 
     def GetTableIndex(self):
         return self.tableindex

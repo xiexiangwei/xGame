@@ -1,6 +1,5 @@
 # coding=utf-8
 from twisted.internet import task
-
 import config
 from common import redispool, CmdMessage_pb2, const
 import logging
