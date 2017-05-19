@@ -23,6 +23,7 @@ def CheckUserResult(client, pkt):
         reply = CmdMessage_pb2.Reply_Enter_Game()
         reply.error = error
         if reply.error == const.ERROR_OK:  # 验证成功
+            user_clinet.SetUserID(user_id)
             user_name = data[u"user_name"]
             money = data[u"money"]
             # 玩家信息

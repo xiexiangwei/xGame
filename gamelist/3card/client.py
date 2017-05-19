@@ -7,11 +7,10 @@ Created on 2016年1月11日
 
 import logging
 import time
-
 from twisted.internet import protocol
-
 import clientparse
 from common import fprotocol
+import gameusermanager
 
 CLIENT_STATE_INIT = 0
 CLIENT_STATE_AUTH = 1
@@ -27,6 +26,7 @@ class Client(fprotocol.FProtocol):
         self.__ip = addr.host.decode('utf-8')
         self.toclosetime = time.time()
         self.state = CLIENT_STATE_INIT
+        self.__user_id = None  # 玩家ID
 
     def getId(self):
         return self.__id
@@ -54,6 +54,8 @@ class Client(fprotocol.FProtocol):
 
     def connectionLost(self, reason=protocol.connectionDone):
         logging.debug(u"Client.connectionLost %s", reason)
+        if self.__user_id:
+            gameusermanager.instance.RemoveGameUser(self.__user_id)
 
     def goToClose(self):
         self.state = CLIENT_STATE_TO_CLOSE
@@ -62,3 +64,9 @@ class Client(fprotocol.FProtocol):
     def kick(self):
         logging.debug(u"Client.kick()")
         self.goToClose()
+
+    def SetUserID(self, user_id):
+        self.__user_id = user_id
+
+    def GetUserID(self):
+        return self.__user_id

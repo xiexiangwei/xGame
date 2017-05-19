@@ -30,5 +30,11 @@ class ThreeCardServer(object):
     def GetCardRoomList(self):
         return self.__cardroomlist
 
+    def GetRoomByIndex(self, room_index):
+        for (_, room) in enumerate(self.__cardroomlist):
+            if room.roomindex == room_index:
+                return room
+        return None
+
 
 instance = ThreeCardServer()

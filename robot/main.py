@@ -1,13 +1,16 @@
-#coding:utf-8
+# coding:utf-8
 
-import sys,platform
+import sys, platform
+
 sys.path.append("../")
 if 'twisted.internet.reactor' not in sys.modules:
     if platform.system() == "Linux":
         from twisted.internet import epollreactor
+
         epollreactor.install()
     else:
         from twisted.internet import iocpreactor
+
         iocpreactor.install()
 
 import logging
@@ -24,10 +27,11 @@ import robotmanager
 def MainStop():
     pass
 
+
 def MainRun(isdaemon):
     random.seed(time.time())
     logging.getLogger().setLevel(config.instance.log_level)
-    handler = TimedRotatingFileHandler(filename=config.instance.log_file,when='D',interval=1)
+    handler = TimedRotatingFileHandler(filename=config.instance.log_file, when='D', interval=1)
     handler.setLevel(config.instance.log_level)
     formatter = logging.Formatter(config.instance.log_format)
     handler.setFormatter(formatter)
@@ -47,9 +51,8 @@ def MainRun(isdaemon):
 
 
 def run():
-    daemon.run(config.instance.server_pid,MainRun)
+    daemon.run(config.instance.server_pid, MainRun)
+
 
 if __name__ == "__main__":
     run()
-
-

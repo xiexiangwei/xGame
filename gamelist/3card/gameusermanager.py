@@ -19,6 +19,10 @@ class GameUserManager(object):
         gu = gameuser.GameUser(user_id, user_name, money, client)
         self.__gameusermap[user_id] = gu
 
+    def RemoveGameUser(self, user_id):
+        logging.debug(u"RemoveGameUser() user_id:%d", user_id)
+        self.__gameusermap.pop(user_id)
+
     def GetGameUser(self, user_id):
         return self.__gameusermap.get(user_id)
 
