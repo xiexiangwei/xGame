@@ -12,7 +12,7 @@ class Config(object):
 
         # 游戏中心服务器地址
         self.gamecenter_ip = u"127.0.0.1"
-        self.gamecenter_port = 6000
+        self.gamecenter_port = 8001
 
         self.log_file = u"3card.log"
         self.log_format = u"%(asctime)s %(levelname)s %(message)s"

@@ -52,7 +52,7 @@ class RedisHelper(object):
         clinet = ctx[0]
         account_id = ctx[1]
         token = ctx[2]
-        res = rows[0]
+        res = rows
         logging.debug(u"VerifyTokenFinish() account_id:%d token:%s res:%d", account_id, token, res)
         if error or res != const.ERROR_OK:
             # token验证失败直接返回客户端

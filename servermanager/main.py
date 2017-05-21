@@ -41,7 +41,7 @@ def MainRun(isdaemon):
         handler.setFormatter(formatter)
         logging.getLogger().addHandler(handler)
 
-   # redishelper.instance.start()
+    redishelper.instance.start()
     clientmanager.instance.start()
     # 建立socket监听
     clientfactory.instance.start(config.instance.server_ip, config.instance.server_port, config.instance.max_client)

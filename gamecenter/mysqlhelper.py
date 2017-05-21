@@ -65,7 +65,7 @@ class MysqlHelper(object):
     def LoadUserDataFinish(self, ctx, error, rows):
         client = ctx[0]
         account_id = ctx[1]
-        logging.debug(u"LoadUserDataFinish() account_id:%s:%s  rows:%s", account_id, rows)
+        logging.debug(u"LoadUserDataFinish() account_id:%s  rows:%s", account_id, rows)
         reply = CmdMessage_pb2.RePly_Enter_GameCenter()
         reply.error = const.ERROR_OK
         if not error:
@@ -78,7 +78,7 @@ class MysqlHelper(object):
                 for (gtype, gamelist) in gamemanager.instance.GetGameMap().items():
                     gcount = len(gamelist)
                     if gcount > 0:
-                        hashindex = reply.user_id % gcount
+                        hashindex = reply.user_info.user_id % gcount
                         game = reply.game_list.add()
                         game.game_type = gtype
                         game.game_ip = gamelist[hashindex].ip
@@ -92,7 +92,7 @@ class MysqlHelper(object):
                 reply.error = const.ERROR_USER_NOT_EXISTS
         else:
             reply.error = const.ERROR_SERVER
-        client.send2client(const.GC2C_REPLY_ENTER_GC, reply.SerializeToString())
+        client.sendCmd(const.GC2C_REPLY_ENTER_GC, reply.SerializeToString())
 
     def SyncUsersMoney(self, syncuserlist):
         struerslist = ""

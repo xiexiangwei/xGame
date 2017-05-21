@@ -15,6 +15,8 @@ import redishelper
 def s2sm_request_start(client, pkt):
     reply = {u"error": const.ERROR_OK}
     server_config = json.loads(pkt)
+    server_ip = server_config[u"server_ip"]
+    server_port = server_config[u"server_port"]
     active_id = None
     if server_config[u"server_type"] == const.CLIENT_TYPE_LOGINGATE:
         active_id = clientmanager.instance.GetLogingateID()
@@ -22,6 +24,7 @@ def s2sm_request_start(client, pkt):
         active_id = clientmanager.instance.GetLoginServerID()
     elif server_config[u"server_type"] == const.CLIENT_TYPE_GAMECENTER:
         active_id = 0
+        clientmanager.instance.SetGameCenter(server_ip, server_port)
     elif server_config[u"server_type"] == const.CLIENT_TYPE_3CARD:
         active_id = clientmanager.instance.Get3CardID()
 
@@ -29,9 +32,9 @@ def s2sm_request_start(client, pkt):
         client.id = active_id
         client.type = server_config[u"server_type"]
         if server_config[u"server_type"] == const.CLIENT_TYPE_LOGINGATE:
-            clientmanager.instance.AddLogingate(active_id, server_config[u"server_ip"], server_config[u"server_port"])
+            clientmanager.instance.AddLogingate(active_id, server_ip, server_port)
         elif server_config[u"server_type"] == const.CLIENT_TYPE_3CARD:
-            clientmanager.instance.Add3Card(active_id, server_config[u"server_ip"], server_config[u"server_port"])
+            clientmanager.instance.Add3Card(active_id, server_ip, server_port)
         reply[u"id"] = active_id
     else:
         reply[u"error"] = const.ERROR_SERVER_FULL
@@ -53,7 +56,7 @@ def c2sm_get_logingate(client, pkt):
 
 # 客户端请求获取游戏中心地址
 def c2sm_get_gamecenter(client, pkt):
-    request = CmdMessage_pb2.Reply_Get_GameCenter()
+    request = CmdMessage_pb2.Request_Get_GameCenter()
     request.ParseFromString(pkt)
     logging.debug(u"c2sm_get_gamecenter() account_id:%s token:%s", request.account_id, request.token)
     # 验证token是否有效

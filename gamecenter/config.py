@@ -2,7 +2,7 @@
 class Config(object):
     def __init__(self):
         self.server_ip = u""
-        self.server_port = 6000
+        self.server_port = 8001
         self.max_client = 10000
         self.server_pid = u"/tmp/gamecenter.pid"
 

@@ -38,6 +38,7 @@ class RedisHelper(object):
             token_key = u"accounttoken:accounttoken%d" % account_id
             if redisclient.exists(token_key):
                 r_token = redisclient.get(token_key)
+                logging.debug(u"VerifyTokenFunc() account_id:%d r_token:%s token:%s", account_id, r_token, token)
                 if r_token != token:
                     ret = 1  # token不相等
             else:
@@ -49,7 +50,7 @@ class RedisHelper(object):
         clinet = ctx[0]
         account_id = ctx[1]
         token = ctx[2]
-        res = rows[0]
+        res = rows
         logging.debug(u"VerifyTokenFinish() account_id:%d token:%s res:%d", account_id, token, res)
         reply = CmdMessage_pb2.Reply_Get_GameCenter()
         reply.error = const.ERROR_OK

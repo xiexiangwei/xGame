@@ -24,13 +24,14 @@ import config
 import random
 import time
 import redishelper
+import mysqlhelper
 
 
 def MainStop():
     pass
 
 
-def MainRun(isdaemon,id):
+def MainRun(isdaemon, id):
     random.seed(time.time())
     logging.getLogger().setLevel(config.instance.log_level)
     handler = TimedRotatingFileHandler(filename=config.instance.log_file, when='D', interval=1)
@@ -46,8 +47,9 @@ def MainRun(isdaemon,id):
         handler.setFormatter(formatter)
         logging.getLogger().addHandler(handler)
 
-    # redishelper.instance.start()
-    clientfactory.instance.start(config.instance.server_ip, config.instance.server_port, config.instance.max_client)
+    redishelper.instance.start()
+    mysqlhelper.instance.start()
+    clientfactory.instance.start(u"", config.instance.server_port, config.instance.max_client)
     logging.info(u"游戏中心服务器启动成功")
 
 
