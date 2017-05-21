@@ -13,6 +13,7 @@ import logging
 from common import dbpool, CmdMessage_pb2, const
 import usermanager
 import gamemanager
+import time
 
 
 class MysqlHelper(object):
@@ -93,10 +94,36 @@ class MysqlHelper(object):
             reply.error = const.ERROR_SERVER
         client.send2client(const.GC2C_REPLY_ENTER_GC, reply.SerializeToString())
 
+    def SyncUsersMoney(self, syncuserlist):
+        struerslist = ""
+        for n in range(len(syncuserlist)):
+            struerslist += (str(syncuserlist[n][u"user_id"]) + u",")
+            struerslist += (str(syncuserlist[n][u"money_change"]) + u";")
+
+        self.query(self.hashIndex(time.time()),
+                   (syncuserlist,),
+                   u"call p_sync_users_money(%s)",
+                   (struerslist,),
+                   self.SyncUsersMoneyFinish)
+        logging.debug(u"SyncUsersMoney() struerslist:%s", struerslist)
+
+
+    def SyncUsersMoneyFinish(self,ctx, error, rows):
+        syncuserlist = ctx[0]
+        logging.debug(u"SyncUsersMoneyFinish() syncuserlist:%s error:%s rows:%s",syncuserlist,error,rows)
+        if not error:
+            for n in range(len(syncuserlist)):
+                user_id = syncuserlist[n][u"user_id"]
+                money_change = syncuserlist[n][u"money_change"]
+                user = usermanager.instance.GetUser(user_id)
+                if user:
+                    user.UpdateMoney(money_change)
 
 instance = MysqlHelper()
 
 if __name__ == "__main__":
     instance.start()
-    instance.LoadUserData("clinet", 1)
+    #instance.LoadUserData("clinet", 1)
+    instance.SyncUsersMoney([dict(user_id=1,money_change=100),dict(user_id=2,money_change=1000)])
+
     reactor.run()

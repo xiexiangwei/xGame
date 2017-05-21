@@ -33,3 +33,6 @@ class User(object):
 
     def SetGameState(self, state):
         self.__gamestate = state
+
+    def UpdateMoney(self, v):
+        self.__money = self.__money + v if self.__money + v > 0 else 0

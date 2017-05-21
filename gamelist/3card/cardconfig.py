@@ -26,5 +26,6 @@ class CardGameConfig(object):
 
         self.syncmoneyinterval = 5  # 定时同步金币到游戏中心时间间隔
         self.syncmoneydiff = 100  # 当金币变化大于等于n时同步金币到游戏中心
+        self.syncmoneypagesize = 50  # 每次同步玩家金币一页玩家个数(主要为了减少服务器通讯次数)
 
 instance = CardGameConfig()

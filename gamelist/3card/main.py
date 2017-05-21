@@ -24,6 +24,7 @@ import time
 from common import servermanager,utils,const
 import gamecenter
 import cardserver
+import gameusermanager
 
 
 def MainStop():
@@ -48,6 +49,7 @@ def MainRun(isdaemon,id):
     cardserver.instance.start(id)
     #连接游戏中心
     gamecenter.instance.start()
+    gameusermanager.instance.Start()
     #建立socket监听
     clientfactory.instance.start(config.instance.server_ip, config.instance.server_port, config.instance.max_client)
 

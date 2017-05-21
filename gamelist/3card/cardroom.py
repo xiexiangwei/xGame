@@ -33,9 +33,9 @@ class CardRoom(object):
         for (_, table) in enumerate(self.tablelist):
             table.CheckUser()
 
+    # 最大多少页桌子
     def GetMaxTablePage(self):
-        # 一页10张桌子信息
-        return self.tablecount / self.pagetablenum + 1
+        return (self.tablecount + self.pagetablenum - 1) / self.pagetablenum
 
     # 获取一张某一页的桌子列表
     def GetTableListByPageIndex(self, page_index):

@@ -10,6 +10,7 @@ import logging
 import gamemanager
 import redishelper
 import usermanager
+import mysqlhelper
 
 
 def GameRegister(clinet, pkt):
@@ -60,13 +61,12 @@ def UpdateUserGameState(client, pkt):
     else:
         logging.warn(u"UpdateUserGameState() user is offline! user_id:%d", user_id)
 
-def SyncUserMoney(client,pkt):
+
+def SyncUserMoney(client, pkt):
     data = json.loads(pkt)
-    user_id = data[u"user_id"]
-    money_change = data[u"money_change"]
-    logging.debug(u"SyncUserMoney() user_id:%d money_change:%d", user_id, money_change)
-
-
+    syncuserlist = data[u"syncuserlist"]
+    logging.debug(u"SyncUserMoney() syncuserlist:%s", syncuserlist)
+    mysqlhelper.instance.SyncUsersMoney(syncuserlist)
 
 
 __cmdTable = {
