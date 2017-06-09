@@ -70,7 +70,7 @@ class MysqlHelper(object):
                 reply.account_id = res[1]
                 reply.token =token
                 #记录到redis,提供游戏服务器查询
-                redishelper.instance.RecordAccountToken(reply.account_id,token)
+                redishelper.instance.RecordAccountToken(client,reply.account_id,token)
             elif res[0]==1:
                 logging.debug(u"LoginFinish() account not exists! %s:%s", account_name, account_pwd)
                 reply.error = const.ERROR_ACCOUNT_NOT_EXISTS
@@ -79,7 +79,8 @@ class MysqlHelper(object):
                 reply.error = const.ERROR_ACCOUNT_PWD_ERROR
         else:
             reply.error = const.ERROR_SERVER
-        client.send2client(const.LG2C_REPLY_LOGIN, reply.SerializeToString())
+        if reply.error != const.ERROR_OK:
+            client.send2client(const.LG2C_REPLY_LOGIN, reply.SerializeToString())
 
 
 instance = MysqlHelper()
